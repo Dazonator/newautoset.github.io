@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto';
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+}
+h1, h2, h3, h4, h5, h6, p, ul, button{
+  margin: 0;
+  padding: 0;
+}
+li{
+  list-style-type: none; 
+}
+a{
+  text-decoration: none;
+}
+a, label. p, button, span{
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+button{
+  font-family: inherit;
+  font: inherit;
+}
+.container-block {
+  width: 1340px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.linkBlind {
+  display: inline-block;
+  text-indent: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+* {
+  box-sizing: border-box;
+}
+*:focus{
+  outline: none;
+}
+
+
+@media (max-width: 1440px) {
+  .container-block {
+    width: 1200px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container-block {
+    width: 960px;
+  }
+}
+
+@media (max-width: 959px) {
+  .container-block {
+    width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-block {
+    width: 640px;
+  }
+}
+
+@media (max-width: 639px) {
+  .container-block {
+    width: 480px;
+  }
+}
+
+@media (max-width: 479px) {
+  .container-block {
+    width: 100%;
+  }
+}

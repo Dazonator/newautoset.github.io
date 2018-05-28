@@ -1,0 +1,135 @@
+.footer-navBlock__caption:hover,
+.footer-navBlock__link:hover,
+.footer-contentBlock__worktime-link:hover{
+  color: #828282;
+}
+
+
+
+
+
+footer{
+  background-color: #eee;
+  padding: 20px 0px;
+  color: #4d4d4d;
+}
+.footer-navBlock{
+  margin: 0px -20px;
+}
+.footer-navBlock__item{
+  float: left;
+  width: 25%;
+  padding: 0px 20px;
+}
+.footer-navBlock__caption{
+  font-size: 18px;
+  font-weight: 700;
+  color: inherit;
+}
+.footer-navBlock__list-links{
+  margin-top: 10px;
+}
+.footer-navBlock__list-item + .footer-navBlock__list-item{
+  margin-top: 5px;
+}
+.footer-navBlock__link{
+  display: table ;
+  font-size: 12px;
+  line-height: 16px;
+  color: inherit;
+}
+.footer-contentBlock{
+  margin-top: 15px;
+  text-align: center;
+}
+.footer-contentBlock__worktime-item{
+  font-size: 12px;
+  line-height: 20px;
+  color: inherit;
+}
+.footer-contentBlock__worktime-link{
+  font-weight: bold;
+  color: inherit;
+}
+.footer-contentBlock__copyright-item{
+  font-size: 10px;
+  line-height: 18px;
+  color: inherit;
+}
+.footer-contentBlock__paysystem{
+  margin-top: 15px;
+}
+.footer-contentBlock__paysystem-item{
+  width: 55px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer-contentBlock__paysystem-item:first-of-type{
+  margin-right: 20px;
+}
+@media (max-width: 1440px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 959px) {}
+
+@media (max-width: 767px) {
+  .footer-navBlock {
+    margin: 0px -10px;
+  }
+  .footer-navBlock__item {
+    padding: 0px 10px;
+  }
+  .footer-navBlock__caption {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 639px) {
+  .container-block {
+    width: 100%;
+  }
+  
+  .footer-navBlock {
+    margin: 0px;
+  }
+  .footer-navBlock__item {
+    padding: 0px 5px;
+  }
+  .footer-navBlock__item {
+    width: 25%;
+  }
+  .footer-navBlock__caption {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 479px) {
+  footer {
+    padding: 5px 0px 20px 0px;
+  }
+  .footer-navBlock {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .footer-navBlock__item {
+    width: 50%;
+    margin-top: 15px;
+  }
+  .footer-navBlock__caption {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 320px) {}

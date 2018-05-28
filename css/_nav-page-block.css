@@ -1,0 +1,59 @@
+.nav-page-block{
+  padding: 20px 0px;
+  text-align: center;
+  position: relative;
+  
+}
+.nav-page-block .nav-page-block__link,
+.nav-page-block span.nav-page-block__link-dots{
+    font-size: 22px;
+    font-weight: bold;
+    color: #4c4c4c;
+    display: inline-block;
+    vertical-align: center;
+    position: relative;
+    margin-left: 20px;
+}
+.nav-page-block .nav-page-block__link svg{
+    width: 15px;
+    height: 15px;
+    color: #4c4c4c;
+}
+.nav-page-block .nav-page-block__link svg:hover{
+    color: #e2001a;
+}
+.nav-page-block .nav-page-block__link:hover{
+  color: #e2001a;
+  cursor: pointer;
+}
+.nav-page-block .nav-page-block__link + .nav-page-block__link{
+      margin-left: 20px;
+}
+.nav-page-block a.nav-page-block__link-active{
+  color: #e2001a;
+}
+
+.nav-page-block a.nav-page-block__link-arrow-left{
+  display: none;
+}
+.nav-page-block span.nav-page-block__link-dots{
+    
+    top: -5px;
+}
+@media (max-width: 1440px) {}
+@media (max-width: 1199px) {}
+@media (max-width: 959px) {
+  .nav-page-block .nav-page-block__link, .nav-page-block span.nav-page-block__link-dots {
+      font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .nav-page-block .nav-page-block__link, .nav-page-block span.nav-page-block__link-dots {
+      font-size: 18px;
+  }
+}
+@media (max-width: 639px) {}
+@media (max-width: 479px) {}
+@media (max-width: 320px) {}
+
+

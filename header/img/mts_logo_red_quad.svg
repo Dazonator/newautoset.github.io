@@ -1,0 +1,15 @@
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+    <style>
+        .st0{fill:#ed1d24}.st1{fill:#fff}
+    </style>
+    <g id="Document" transform="scale(1 -1)">
+        <g id="Spread" transform="translate(0 -144.004)">
+            <g id="Layer_1_1_">
+                <g id="Group">
+                    <path class="st0" d="M144 14.4c0-8-6.4-14.4-14.4-14.4H14.4C6.4 0 0 6.5 0 14.4v115.2c0 7.9 6.4 14.4 14.4 14.4h115.2c7.9 0 14.4-6.4 14.4-14.4V14.4z"/>
+                    <path class="st1" d="M72 18.6c-26.9 0-39 21.5-39 42.7 0 29.9 20.8 64 38.9 64 18.2 0 39-34.1 39-64 .1-21.2-12-42.7-38.9-42.7z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
