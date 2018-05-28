@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>FAQ</title>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/_banner-caption.css">
+	<link rel="stylesheet" href="css/_form-style.css">
+	<link rel="stylesheet" href="css/_nav-page-block.css">
+	<link rel="stylesheet" href="faq-page/css/_faq.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+	<script src="js/slick-slider.min.js"></script>
+	<script src="js/browser-plugin.min.js"></script>
+	<script src="js/inputmask.min.js"></script>
+	<script src="faq-page/js/faq.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+      if (/MSIE|Trident/.test(navigator.userAgent)) {
+          var iEobject;
+          iEobject = document.createElement('script');
+          iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+          iEobject.onload = function () {
+              svg4everybody();
+          };
+          document.getElementsByTagName('head')[0].appendChild(iEobject);
+      }
+  </script>
+</head>
+<body>
+	<div class="overlay js-overlay"></div>
+
+
+
+
+	<div class="banner-caption" style="background-image: url(faq-page/img/5.jpg)">
+		<div class="container-block">
+			<div class="banner-caption__content">
+				<h1 class="banner-caption__name">вопросы экспертам</h1>
+				<div class="banner-caption__description">
+					<p class="banner-caption__description-text">В разделе вопросов и ответов вы можете обратиться к техническим экспертам компании Автосеть и получить краткий или подробный ответ. Задайте свой технический вопрос по шинам или аккумуляторам или ознакомьтесь с заданными ранее вопросами и данными на них ответами. Пожалуйста, не задавайте вопросов, касающихся наличия, покупки и статусов заказа — для этого вы можете позвонить нам, используя удобный для вас номер телефона со страницы контактов.</p>
+				</div>
+				<div class="banner-caption-content__btn blank-modal">
+				    <a class="js-open-modal banner-caption-content__link" href="#popup-help">
+				    	Задайте вопрос
+				    </a>
+			    </div>
+			    <div class="banner-caption-content-modal blank-modal-container js-modal-container">
+				    <div class="banner-caption-content-modal__body modal" id="popup-help">
+				    	<button class="banner-caption-content-modal__close js-close-modal" type="button">
+				    		<svg>
+				    			<use xlink:href="img/sprite.svg#close_cross_simple"></use>
+				    		</svg>
+				    	</button>
+				    	<div class="banner-caption-content-modal__header">
+				    		<span>Задайте вопрос нашему эксперту</span>
+				    	</div>
+				    	<div class="banner-caption-content-modal__main">
+				    		<textarea name="question" class="write-your-question" placeholder="Впишите суть вопроса здесь"></textarea>
+				    	</div>
+				    	<div class="banner-caption-content-modal__footer">
+				    		<span>Как вас зовут:</span>
+				    		<input type="text" class="input-your-name">
+				    		<button class="sent-question">Задать вопрос</button>
+				    	</div>
+				      
+				    </div>
+
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="faq-backcolor">
+		<div class="container-block">
+			<div class="faq">
+				<div class="faq__caption">
+					<span>Недавно заданные вопросы</span>
+				</div>
+				<div class="faq-body">
+					<div class="faq-body__item">
+						<div class="faq-body__question">
+							<p class="question1">Добрый день. Задумываюсь о приобретении всесезонных шин. Хочу узнать у специалистов информацию об особенностях использования “всесезонок”. Когда и в каких случаях использование всесезонных шин не рекомендуется.</p>
+							<span class="faq-body__username">Антон Чехов</span>
+							<span class="faq-body__date">1 ноября 2016</span>
+						</div>
+						<div class="faq-body__btn">
+							<div class=" faq-body-btn-link">
+								<span class="faq-show-answer" onmousedown="return false" onselectstart="return false">Скрыть ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+								<span class="faq-hide-answer" onmousedown="return false" onselectstart="return false">Показать ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+							</div>
+					        
+						</div>
+						<div class="faq-body__answer ">
+					            <div class="faq-body__answer-caption">
+					            	<span>Ответ эксперта:</span>
+					            </div>
+					            <div class="faq-body__answer-content">
+					            	<p>
+					            		Добрый день, <span class="faq-body__username"> Юрий</span>, Зимней резины в таком размере с защитным рантом валом, и даже очень сильно больше. Обратите внимание на модель <span class="faq-body__tiremodel">CONTINENTAL ContiPremiumContact 5 </span>
+					            	</p>
+					            </div>
+					     </div>
+					</div>
+					<div class="faq-body__item">
+						<div class="faq-body__question">
+							<p class="question2">Добрый день. Задумываюсь о приобретении всесезонных шин. Хочу узнать у специалистов информацию об особенностях использования “всесезонок”. Когда и в каких случаях использование всесезонных шин не рекомендуется.</p>
+							<span class="faq-body__username">Антон Чехов</span>
+							<span class="faq-body__date">1 ноября 2016</span>
+						</div>
+						<div class="faq-body__btn ">
+							<div class=" faq-body-btn-link">
+								<span class="faq-show-answer" onmousedown="return false" onselectstart="return false">Скрыть ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+								<span class="faq-hide-answer" onmousedown="return false" onselectstart="return false">Показать ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+							</div>
+					        
+						</div>
+						<div class="faq-body__answer ">
+					            <div class="faq-body__answer-caption">
+					            	<span>Ответ эксперта:</span>
+					            </div>
+					            <div class="faq-body__answer-content">
+					            	<p>
+					            		Добрый день, <span class="faq-body__username"> Юрий</span>, Зимней резины в таком размере с защитным рантом валом, и даже очень сильно больше. Обратите внимание на модель <span class="faq-body__tiremodel">CONTINENTAL ContiPremiumContact 5 </span>
+					            	</p>
+					            </div>
+					     </div>
+					</div>
+					<div class="faq-body__item">
+						<div class="faq-body__question">
+							<p class="question3">Добрый день. Задумываюсь о приобретении всесезонных шин. Хочу узнать у специалистов информацию об особенностях использования “всесезонок”. Когда и в каких случаях использование всесезонных шин не рекомендуется.</p>
+							<span class="faq-body__username">Антон Чехов</span>
+							<span class="faq-body__date">1 ноября 2016</span>
+						</div>
+						<div class="faq-body__btn ">
+							<div class=" faq-body-btn-link">
+								<span class="faq-show-answer" onmousedown="return false" onselectstart="return false">Скрыть ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+								<span class="faq-hide-answer" onmousedown="return false" onselectstart="return false">Показать ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+							</div>
+					        
+						</div>
+						<div class="faq-body__answer ">
+					            <div class="faq-body__answer-caption">
+					            	<span>Ответ эксперта:</span>
+					            </div>
+					            <div class="faq-body__answer-content">
+					            	<p>
+					            		Добрый день, <span class="faq-body__username"> Юрий</span>, Зимней резины в таком размере с защитным рантом валом, и даже очень сильно больше. Обратите внимание на модель <span class="faq-body__tiremodel">CONTINENTAL ContiPremiumContact 5 </span>
+					            	</p>
+					            </div>
+					     </div>
+					</div>
+					<div class="faq-body__item">
+						<div class="faq-body__question">
+							<p class="question4">Добрый день. Задумываюсь о приобретении всесезонных шин. Хочу узнать у специалистов информацию об особенностях использования “всесезонок”. Когда и в каких случаях использование всесезонных шин не рекомендуется.
+							</p>
+							<span class="faq-body__username">Антон Чехов</span>
+							<span class="faq-body__date">1 ноября 2016</span>
+						</div>
+						<div class="faq-body__btn ">
+							<div class=" faq-body-btn-link">
+								<span class="faq-show-answer" onmousedown="return false" onselectstart="return false">Скрыть ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+								<span class="faq-hide-answer" onmousedown="return false" onselectstart="return false">Показать ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+							</div>
+					        
+						</div>
+						<div class="faq-body__answer ">
+					            <div class="faq-body__answer-caption">
+					            	<span>Ответ эксперта:</span>
+					            </div>
+					            <div class="faq-body__answer-content">
+					            	<p>
+					            		Добрый день, <span class="faq-body__username"> Юрий</span>, Зимней резины в таком размере с защитным рантом валом, и даже очень сильно больше. Обратите внимание на модель <span class="faq-body__tiremodel">CONTINENTAL ContiPremiumContact 5 </span>
+					            	</p>
+					            </div>
+					     </div>
+					</div>
+					<div class="faq-body__item">
+						<div class="faq-body__question">
+							<p class="question5">Добрый день. Задумываюсь о приобретении всесезонных шин. Хочу узнать у специалистов информацию об особенностях использования “всесезонок”. Когда и в каких случаях использование всесезонных шин не рекомендуется.</p>
+							<span class="faq-body__username">Антон Чехов</span>
+							<span class="faq-body__date">1 ноября 2016</span>
+						</div>
+						<div class="faq-body__btn ">
+							<div class=" faq-body-btn-link">
+								<span class="faq-show-answer" onmousedown="return false" onselectstart="return false">Скрыть ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+								<span class="faq-hide-answer" onmousedown="return false" onselectstart="return false">Показать ответ
+								<svg >
+									<use xlink:href="img/sprite.svg#arrow_down"></use>
+								</svg></span>
+							</div>
+					        
+						</div>
+						<div class="faq-body__answer ">
+					            <div class="faq-body__answer-caption">
+					            	<span>Ответ эксперта:</span>
+					            </div>
+					            <div class="faq-body__answer-content">
+					            	<p>
+					            		Добрый день, <span class="faq-body__username"> Юрий</span>, Зимней резины в таком размере с защитным рантом валом, и даже очень сильно больше. Обратите внимание на модель <span class="faq-body__tiremodel">CONTINENTAL ContiPremiumContact 5 </span>
+					            	</p>
+					            </div>
+					     </div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-page-block faq-nav">
+				<a href="" class="nav-page-block__link nav-page-block__link-arrow-left">
+					<svg class="">
+						<use xlink:href="img/sprite.svg#arrow_left"></use>
+					</svg>
+				</a>
+				<a href="" class="nav-page-block__link nav-page-block__link-active">1</a>
+				<a href="" class="nav-page-block__link">2</a>
+				<a href="" class="nav-page-block__link">3</a>
+				<span class="nav-page-block__link-dots">...</span>
+				<a href="" class="nav-page-block__link">5</a>
+				<a href="" class="nav-page-block__link nav-page-block__link-arrow-right">
+					<svg class="">
+						<use xlink:href="img/sprite.svg#arrow_right"></use>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

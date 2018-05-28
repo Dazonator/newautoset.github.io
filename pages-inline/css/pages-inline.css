@@ -1,0 +1,71 @@
+.pages-inline {
+  background-color: #dbdbdb;
+  padding: 10px 0px;
+}
+
+.pages-inline__body {
+  position: relative;
+  padding-right: 40px;
+  display: inline-block;
+}
+
+.pages-inline__link {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 14px;
+  color: #000;
+  text-decoration: none;
+  position: relative;
+  margin-right: 10px;
+}
+.pages-inline__link:last-of-type {
+  color: #656565;
+  margin-right: 0px;
+}
+.pages-inline__link:hover:last-of-type {
+  box-shadow:inset 0px -1px 0px 0px #656565;
+}
+
+.pages-inline__link + .pages-inline__link{
+  margin-left: 17px;
+}
+.pages-inline__link + .pages-inline__link:before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 3px;
+  left: -15px;
+  border: 3px solid transparent;
+  border-left: 4px solid #000;
+}
+
+.pages-inline__link:hover {
+  box-shadow:inset 0px -1px 0px 0px #000;
+}
+
+.pages-inline__btn {
+  position: absolute;
+  display: none;
+  right: 20px;
+  top: 3px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  padding: 0px;
+}
+.pages-inline__btn:hover{
+  cursor: pointer;
+}
+
+.pages-inline__btn .pages-inline__svg {
+  display: block;
+  width: 12px;
+  height: 12px;
+  color: #636363;
+  fill: #636363;
+ -webkit-transition: all  0.2s;
+  -moz-transition: all  0.2s;
+  -o-transition: all  0.2s;
+  transition: all  0.2s;
+}
