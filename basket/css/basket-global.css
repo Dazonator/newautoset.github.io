@@ -84,3 +84,30 @@
 .bskt-hover:hover {
   color: #666;
 }
+@media (max-width: 1440px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 959px) {
+  .container-block {
+    width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  .container-block {
+    width: 640px;
+  }
+}
+
+@media (max-width: 639px) {
+   .container-block {
+    width: 480px;
+  }
+}
+
+@media (max-width: 479px) {
+   .container-block {
+    width: 100%;
+  }
+}
