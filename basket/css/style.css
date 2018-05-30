@@ -196,6 +196,7 @@
 
 .bskt-main__cart-delete {
   position: absolute;
+  z-index: 5;
   top: 20px;
   right: 0px;
   width: 20px;
