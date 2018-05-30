@@ -399,6 +399,8 @@
   bottom: 2px;
   right: 0px;
   font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 3px;
   line-height: 12px;
   color: #999;
 }
@@ -648,12 +650,10 @@
     padding-top: 20px;
   }
   .bskt-footer-right_total-list_item-left {
-    float: left;
-    width: 30%;
+    width: 29%;
   }
   .bskt-footer-right_total-list_item-right {
-    float: left;
-    width: 70%;
+    width: 69%;
   }
 }
 
