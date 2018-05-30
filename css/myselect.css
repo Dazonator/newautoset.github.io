@@ -52,7 +52,7 @@ body.touch select.bskt-main__cart-pay_count-choose_block {
   right: 8px;
   margin-top: -4px;
   transition: 0.3s;
-  background-image: url(../img/arrow_666666_down.svg);
+  background-image: url(../img/items-count-drop.png);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
