@@ -47,6 +47,8 @@
   vertical-align: middle;
   line-height: inherit;
   margin-left: 10px;
+  font-size: 22px;
+  font-weight: bold;
 }
 @media (max-width: 1440px) {}
 
@@ -56,13 +58,19 @@
   .bskt-header__item-text {
       display: block;
       margin-left: 0px;
+      line-height: 24px;
+      margin-top: 10px;
   }
   .bskt-header__item:last-of-type {
       text-align: center;
   }
 }
 
-@media (max-width: 767px) {}
+@media (max-width: 767px) {
+  .bskt-header__block {
+    padding: 10px 0px;
+  }
+}
 
 @media (max-width: 639px) {}
 
