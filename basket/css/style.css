@@ -245,6 +245,10 @@
   font-size: 14px;
   text-transform: uppercase;
   padding: 0px 25px 0px 15px;
+   -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
 }
 
 .bskt-footer-left__top-delete {
@@ -306,6 +310,10 @@
   max-width: 125px;
   position: relative;
   font-size: 12px;
+   -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
 }
 
 .bskt-footer-left__bottom-link + .bskt-footer-left__bottom-link {
