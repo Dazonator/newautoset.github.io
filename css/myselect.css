@@ -65,7 +65,7 @@ body.touch select.bskt-main__cart-pay_count-choose_block {
   right: 0;
   left: 0;
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   display: none;
   width: 55px;
   box-shadow: inset 0 0 0 1px #eee;
