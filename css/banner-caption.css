@@ -194,7 +194,10 @@
 
 
 
-
+.banner-caption a:hover {
+  opacity: 0.9;
+  color: #FFF;
+}
 
 
 
