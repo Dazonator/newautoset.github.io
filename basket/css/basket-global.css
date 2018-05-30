@@ -53,6 +53,9 @@
 .bskt-fz-24 {
   font-size: 24px;
 }
+.bskt-fz-30 {
+  font-size: 30px;
+}
 
 .bskt-lh-28 {
   line-height: 28px;
@@ -76,31 +79,3 @@
 .bskt-hover:hover {
   color: #666;
 }
-.container-block {
-  width: 960px;
-  padding: 0 20px;
-  margin: 0 auto;
-}
-@media (max-width: 1440px) {}
-
-@media (max-width: 1199px) {}
-
-@media (max-width: 959px) {
-  .container-block {
-    width: 768px;
-  }
-}
-
-@media (max-width: 767px) {
-  .container-block {
-    width: 640px;
-  }
-}
-
-@media (max-width: 639px) {
-  .container-block {
-    width: 100%;
-  }
-}
-
-@media (max-width: 479px) {}
