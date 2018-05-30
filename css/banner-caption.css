@@ -192,10 +192,33 @@
 
 @media (max-width: 320px) {}
 
+.banner-caption-content__link {
+  background-color: #e2001a;
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: 20px;
+  display: inline-block;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
 
+.banner-caption-content__link:hover {
+    background-color: #FF011D;
+    cursor: pointer;
+}
 
+.banner-caption a:hover {
+  color: #FFF;
+}
 
-
+.banner-caption__link-item:hover, .banner-caption__link-strike-item:hover {
+    opacity: 0.9;
+}
 
 
 
