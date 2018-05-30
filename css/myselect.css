@@ -1,0 +1,103 @@
+body.touch select.bskt-main__cart-pay_count-choose_block {
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  z-index: 2;
+}
+
+.bskt-main__cart-pay_count-choose_body {
+  width: 55px;
+  height: 26px;
+  display: table;
+  margin-top: 2px;
+}
+
+.bskt-main__cart-pay_count-choose_block.js-select-visual {
+  position: relative;
+}
+
+.bskt-main__cart-pay_count-choose_block.js-select {
+  display: none;
+  position: relative;
+}
+
+.bskt-main__cart-pay_count-choose_block span.select-value {
+  width: 55px;
+  height: 26px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  display: table;
+  line-height: 26px;
+  text-align: left;
+  box-shadow: inset 0 0 0 1px #eee;
+  border-radius: 3px;
+  position: relative;
+  z-index: 1;
+  padding-left: 7px;
+}
+
+.bskt-main__cart-pay_count-choose_block span.select-value:hover {
+  cursor: pointer;
+}
+
+.bskt-main__cart-pay_count-choose_block span.select-value:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 8px;
+  margin-top: -4px;
+  transition: 0.3s;
+  background-image: url(../img/arrow_666666_down.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  width: 13px;
+  height: 8px;
+}
+
+.bskt-main__cart-pay_count-choose_block ul.select-list {
+  display: none;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: 2;
+  display: none;
+  width: 55px;
+  box-shadow: inset 0 0 0 1px #eee;
+  list-style: none;
+  background-color: #fff;
+  padding: 5px 0px;
+}
+
+.bskt-main__cart-pay_count-choose_block ul.select-list li {
+  padding: 0 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+.bskt-main__cart-pay_count-choose_block ul.select-list li.active {
+  background-color: red;
+  color: #fff;
+}
+
+.bskt-main__cart-pay_count-choose_block ul.select-list li:hover {
+  color: #fff;
+  background-color: red;
+  cursor: pointer;
+}
+
+.bskt-main__cart-pay_count-choose_block.open ul.select-list {
+  display: block;
+}
+
+.bskt-main__cart-pay_count-choose_block.open span.select-value:after {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
