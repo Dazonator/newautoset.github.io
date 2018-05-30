@@ -1,3 +1,8 @@
+.container-block{
+  width: 960px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
 .bskt-col_rd {
   color: #e2001a;
 }
