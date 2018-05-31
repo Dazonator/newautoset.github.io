@@ -83,11 +83,10 @@ body.touch select.bskt-main__cart-pay_count-choose_block {
 }
 
 .bskt-main__cart-pay_count-choose_block ul.select-list li {
-  padding: 0 10px;
+  padding: 0 7px;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-  text-align: center;
 }
 
 .bskt-main__cart-pay_count-choose_block ul.select-list li.active {
