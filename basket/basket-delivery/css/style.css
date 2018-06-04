@@ -246,6 +246,7 @@
   border: none;
   box-shadow: inset 0 0 0 1px #eee;
   border-radius: 3px;
+  -webkit-appearance: none;
 }
 
 .bskt-delivery-page__city-change_modal-main_inputs-search-tool {
@@ -492,6 +493,7 @@
   box-shadow: inset 0 0 0 1px #eee;
   border-radius: 3px;
   margin-top: 5px;
+  -webkit-appearance: none;
 }
 
 .bskt-delivery-page__adress-inputs_adress {
