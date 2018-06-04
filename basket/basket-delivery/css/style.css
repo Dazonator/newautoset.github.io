@@ -1,0 +1,775 @@
+.bskt-delivery-main__cart {
+  padding: 20px 0px 20px 0px;
+}
+
+.bskt-delivery-main__cart-tire_name {
+  padding-left: 0px;
+  max-width: 559px;
+  width: 559px;
+}
+
+.bskt-delivery-main__cart-pay_price {
+  padding-left: 25px;
+}
+
+.bskt-delivery-main__cart-pay_count {
+  padding-left: 20px;
+}
+
+.bskt-delivery-main__cart-pay_total {
+  padding-left: 20px;
+}
+
+.bskt-delivery-main__block {
+  display: none;
+}
+
+.bskt-delivery-main__block.open {
+  display: block;
+}
+
+.modal-open .bskt-delivery-page__city-change_container {
+  display: block;
+}
+
+.modal-open .bskt-delivery-page__city-change_modal.open {
+  display: block;
+}
+
+.bskt-delivery-page__block {
+  padding: 20px 0px;
+}
+
+.bskt-delivery-page__block-caption {
+  text-align: center;
+}
+
+.bskt-delivery-page__block + .bskt-delivery-page__block {
+  box-shadow: inset 0px 1px 0px 0px #eee;
+}
+
+.bskt-delivery-page__block-text {
+  display: inline-block;
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.bskt-delivery-page__city-change {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.bskt-delivery-page__city-change_value {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.bskt-delivery-page__city-change_btn {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.bskt-delivery-page__city-change_container {
+  width: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.bskt-delivery-page__city-change_modal {
+  margin: 0 auto;
+  width: 920px;
+  display: none;
+  justify-content: flex-end;
+  background-color: #fff;
+  z-index: 100000;
+  position: relative;
+}
+
+.bskt-delivery-page__city-change_modal-header {
+  background-color: #999;
+  padding: 12px 0px;
+  text-align: center;
+  position: relative;
+}
+
+.bskt-delivery-page__city-change_modal-header-text {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+}
+
+.bskt-delivery-page__city-change_modal-close {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.bskt-delivery-page__city-change_modal-close:hover {
+  cursor: pointer;
+}
+
+.bskt-delivery-page__city-change_modal-close_icon {
+  display: block;
+  width: inherit;
+  height: inherit;
+  color: #fff;
+  fill: #fff;
+}
+
+.bskt-delivery-page__city-change_modal-main_city {
+  padding: 20px;
+}
+
+.bskt-delivery-page__city-change_modal-main_bigcity {
+  list-style-type: none;
+  text-align: left;
+  float: left;
+  width: 50%;
+}
+
+.bskt-delivery-page__city-change_modal-main_bigcity-item {
+  float: left;
+  width: 33.333333333%;
+}
+
+.bskt-delivery-page__city-change_modal-main_bigcity-item + .bskt-delivery-page__city-change_modal-main_bigcity-item {
+  margin-top: 20px;
+}
+
+.bskt-delivery-page__city-change_modal-main_bigcity-item:first-of-type {
+  width: 100%;
+}
+
+.bskt-delivery-page__city-change_modal-main_bigcity-item:first-of-type .bskt-delivery-page__city-change_modal-main_bigcity-item_text {
+  font-size: 20px;
+}
+
+.bskt-delivery-page__city-change_modal-main_bigcity-item_text {
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  padding-right: 40px;
+}
+
+.bskt-delivery-page__city-change_modal-main_bigcity-item_text:hover {
+  cursor: pointer;
+}
+
+.bskt-delivery-page__city-change_modal-main_bigcity-item_icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 27px;
+}
+
+.bskt-delivery-page__city-change_modal-main_smallcity {
+  list-style-type: none;
+  text-align: left;
+  float: left;
+  width: 50%;
+}
+
+.bskt-delivery-page__city-change_modal-main_smallcity-item {
+  float: left;
+  width: 33.33333333%;
+}
+
+.bskt-delivery-page__city-change_modal-main_smallcity-item_text {
+  display: inline-block;
+  color: #000;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.bskt-delivery-page__city-change_modal-main_smallcity-item_text:hover {
+  cursor: pointer;
+}
+
+.bskt-delivery-page__city-change_modal-main_smallcity-item + .bskt-delivery-page__city-change_modal-main_smallcity-item {
+  margin-top: 10px;
+}
+
+.bskt-delivery-page__city-change_modal-main_smallcity-item:nth-of-type(2), .bskt-delivery-page__city-change_modal-main_smallcity-item:nth-of-type(3) {
+  margin-top: 0px;
+}
+
+.bskt-delivery-page__city-change_modal-main_inputs {
+  padding: 20px;
+  box-shadow: inset 0px 1px 0px 0px  #ddd;
+}
+
+.bskt-delivery-page__city-change_modal-main_inputs-caption {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.bskt-delivery-page__city-change_modal-main_inputs-block {
+  margin: 0 -10px;
+  margin-top: 20px;
+}
+
+.bskt-delivery-page__city-change_modal-main_inputs-block_item {
+  float: left;
+  width: 25%;
+  height: 30px;
+  padding: 0px 10px;
+}
+
+.bskt-delivery-page__city-change_modal-main_inputs-search {
+  position: relative;
+}
+
+.bskt-delivery-page__city-change_modal-main_inputs-search-block {
+  width: 100%;
+  height: 100%;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  padding: 0px 30px 0px 7px;
+  border: none;
+  box-shadow: inset 0 0 0 1px #eee;
+  border-radius: 3px;
+}
+
+.bskt-delivery-page__city-change_modal-main_inputs-search-tool {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+  display: block;
+  width: 16px;
+}
+
+.bskt-delivery-page__city-change_modal-main_select span.select-value {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.bskt-delivery-page__city-change_modal-main_select ul.select-list {
+  width: 100%;
+}
+
+.bskt-delivery-page__city-change_modal-main_select ul.select-list li {
+  text-align: left;
+  padding: 0 7px;
+  font-weight: normal;
+  line-height: 22px;
+}
+
+.bskt-delivery-page__city-change_modal-main_confirm {
+  padding: 0 20px 20px 20px;
+  margin: 0 -10px;
+}
+
+.bskt-delivery-page__city-change_modal-main_confirm-item {
+  float: right;
+  width: 25%;
+  height: 30px;
+  padding: 0 10px;
+}
+
+.bskt-delivery-page__city-change_modal-main_confirm-cancel {
+  display: block;
+  border-radius: 3px;
+  background-color: #e0e0e0;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.bskt-delivery-page__city-change_modal-main_confirm-cancel:hover {
+  box-shadow: inset 0px 0px 0px 1px #ccc;
+  color: #666;
+  cursor: pointer;
+}
+
+.bskt-delivery-page__city-change_modal-main_confirm-btn {
+  display: block;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.bskt-delivery-page__city-change_modal-main_confirm-btn:hover {
+  background-color: #ff2c2c;
+  cursor: pointer;
+}
+
+.bskt-delivery-page__city-description {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.bskt-delivery-page__city-description_text {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  padding-left: 10px;
+}
+
+.bskt-delivery-page__method-block {
+  margin-top: 22px;
+}
+
+.bskt-delivery-page__method-block_item + .bskt-delivery-page__method-block_item {
+  margin-top: 30px;
+}
+
+.bskt-delivery-page__method-block_item-caption {
+  float: left;
+  width: 45%;
+}
+
+.bskt-delivery-page__method-block_item-caption-text {
+  display: inline-block;
+  padding-left: 85px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+.bskt-delivery-page__method-block_item-caption-text:hover {
+  cursor: pointer;
+}
+
+.bskt-delivery-page__method-block_item-caption-icon {
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: 30px;
+  vertical-align: middle;
+  width: 40px;
+  height: 30px;
+  color: #e2001a;
+  fill: #e2001a;
+}
+
+.bskt-delivery-page__method-block_item-money {
+  float: left;
+  width: 25%;
+}
+
+.bskt-delivery-page__method-block_item-description {
+  float: left;
+  width: 30%;
+}
+
+.bskt-delivery-page__method-block_dropdown {
+  display: none;
+  float: left;
+  width: 100%;
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  opacity: 0;
+}
+
+.bskt-delivery-page__method-block_dropdown.open {
+  display: block;
+  opacity: 1;
+  transition: all 2s;
+}
+
+.bskt-delivery-page__method-block_dropdown p {
+  font-size: 14px;
+  position: relative;
+  line-height: 20px;
+}
+
+.bskt-delivery-page__method-block_dropdown p + p {
+  margin-top: 10px;
+}
+
+.bskt-delivery-page__punkt-block {
+  margin-top: 20px;
+}
+
+.bskt-delivery-page__punkt-block_item + .bskt-delivery-page__punkt-block_item {
+  margin-top: 20px;
+}
+
+.bskt-delivery-page__punkt-block_item-text {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  font-size: 16px;
+}
+
+.bskt-delivery-page__punkt-block_item-text:hover {
+  cursor: pointer;
+}
+
+.bskt-delivery-page__punkt-block_item-map {
+  display: inline-block;
+  padding-left: 30px;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #519a00;
+  position: relative;
+  padding-right: 20px;
+}
+
+.bskt-delivery-page__punkt-block_item-map_icon {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 12px;
+  height: 17px;
+  color: #e2001a;
+  fill: #e2001a;
+}
+
+.bskt-delivery-page__punkt-block_item-map-modal-main {
+  height: 400px;
+}
+
+.bskt-delivery-page__adress-block {
+  margin-top: 20px;
+}
+
+.bskt-delivery-page__adress-label {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.bskt-delivery-page__adress-city-change {
+  text-align: left;
+}
+
+.bskt-delivery-page__adress-city-your {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.bskt-delivery-page__adress-city-value {
+  margin-left: 20px;
+  font-size: 16px;
+}
+
+.bskt-delivery-page__adress-inputs {
+  margin: 0 -10px;
+  margin-top: 20px;
+}
+
+.bskt-delivery-page__adress-inputs > div {
+  float: left;
+  padding: 0 10px;
+}
+
+.bskt-delivery-page__adress-inputs_field {
+  display: block;
+  width: 100%;
+  height: 30px;
+  font-family: 'Roboto';
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  padding: 0px 7px 0px 7px;
+  border: none;
+  box-shadow: inset 0 0 0 1px #eee;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.bskt-delivery-page__adress-inputs_adress {
+  width: 24%;
+}
+
+.bskt-delivery-page__adress-inputs_adress-select-block span.select-value {
+  width: 100%;
+  margin-top: 5px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.bskt-delivery-page__adress-inputs_adress-select-block ul.select-list {
+  width: 100%;
+}
+
+.bskt-delivery-page__adress-inputs_adress-select-block ul.select-list li {
+  text-align: left;
+  padding: 0px 7px;
+  line-height: 22px;
+}
+
+.bskt-delivery-page__adress-inputs_adress-name {
+  width: 44%;
+}
+
+.bskt-delivery-page__adress-inputs_house {
+  width: 11%;
+}
+
+.bskt-delivery-page__adress-inputs_korpus {
+  width: 10%;
+}
+
+.bskt-delivery-page__adress-inputs_flat {
+  width: 11%;
+}
+
+.bskt-footer-left__bottom {
+  padding-top: 8px;
+}
+
+@media (max-width: 959px) {
+  .bskt-delivery-page__city-change_modal {
+    width: 728px;
+  }
+  .bskt-delivery-page__city-change_modal-main_bigcity {
+    padding-right: 85px;
+  }
+  .bskt-delivery-page__city-change_modal-main_bigcity-item {
+    float: left;
+    width: 50%;
+  }
+  .bskt-delivery-page__city-change_modal-main_inputs {
+    padding: 20px 20px 10px 20px;
+    box-shadow: inset 0px 1px 0px 0px #ddd;
+  }
+  .bskt-delivery-page__city-change_modal-main_inputs-block {
+    margin-top: 10px;
+  }
+  .bskt-delivery-page__city-change_modal-main_inputs-block_item {
+    width: 50%;
+    height: 50px;
+    padding: 10px 10px;
+  }
+  .bskt-delivery-page__city-change_modal-main_inputs-search-tool {
+    top: 16px;
+  }
+  .bskt-delivery-page__city-change_modal-main_confirm-item {
+    width: 50%;
+  }
+  .bskt-delivery-page__punkt-block_item-map-modal {
+    width: 728px;
+  }
+  .bskt-delivery-page__adress-inputs_adress {
+    width: 50%;
+  }
+  .bskt-delivery-page__adress-inputs_adress-name {
+    width: 50%;
+  }
+  .bskt-delivery-page__adress-inputs_house,
+  .bskt-delivery-page__adress-inputs_korpus,
+  .bskt-delivery-page__adress-inputs_flat {
+    width: 15%;
+    margin-top: 20px;
+  }
+  .bskt-footer-right_back {
+    display: none;
+  }
+  .bskt-footer-left__bottom {
+    padding-top: 0px;
+  }
+  .bskt-delivery-main__cart-tire_name {
+    max-width: 379px;
+    width: 379px;
+  }
+  .bskt-delivery-main__cart-pay_price {
+    padding-left: 13px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bskt-delivery-page__city-change_modal {
+    width: 600px;
+  }
+  .bskt-delivery-page__city-change_modal-main_bigcity {
+    padding-right: 0px;
+  }
+  .bskt-delivery-page__city-change_modal-main_smallcity-item {
+    width: 50%;
+    max-height: 16px;
+  }
+  .bskt-delivery-page__city-change_modal-main_smallcity-item:nth-of-type(3) {
+    margin-top: 10px;
+  }
+  .bskt-delivery-page__city-change_modal-main_smallcity {
+    padding-left: 40px;
+  }
+  .bskt-delivery-page__method-block_item-caption {
+    width: 42%;
+  }
+  .bskt-delivery-page__method-block_item-money {
+    width: 29%;
+  }
+  .bskt-delivery-page__method-block_item-description {
+    width: 29%;
+  }
+  .bskt-delivery-page__punkt-block_item-map-modal {
+    width: 600px;
+  }
+  .bskt-delivery-page__punkt-block_item-text-region {
+    display: block;
+  }
+  .bskt-delivery-page__adress-inputs_adress {
+    width: 100%;
+  }
+  .bskt-delivery-page__adress-inputs_adress-name {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .bskt-delivery-page__adress-inputs_house, .bskt-delivery-page__adress-inputs_korpus, .bskt-delivery-page__adress-inputs_flat {
+    width: 33.3333333333%;
+    margin-top: 20px;
+  }
+  .bskt-delivery-main__cart-tire_name {
+    max-width: 279px;
+    width: 279px;
+    padding-right: 0px;
+    margin-bottom: 0px;
+  }
+  .bskt-delivery-main__cart-pay_price {
+    padding-left: 0px;
+    margin-left: 35px;
+    width: 100px;
+  }
+  .bskt-main__cart-pay_count,
+  .bskt-main__cart-pay_total {
+    padding-left: 0px;
+    margin-left: 15px;
+  }
+  .bskt-main__cart-pay_total {
+    width: 100px;
+  }
+  .bskt-main__cart-pay_price-top_caption {
+    max-width: 90px;
+  }
+  .bskt-main__cart-pay_total-top_caption {
+    max-width: 75px;
+  }
+  .bskt-main__cart-pay_count-caption {
+    height: 28px;
+    max-height: 28px;
+  }
+}
+
+@media (max-width: 639px) {
+  .bskt-delivery-page__city-change_btn {
+    display: block;
+    max-width: 80px;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+  .bskt-delivery-page__city-description_text {
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  .bskt-delivery-page__city-change_modal {
+    width: 440px;
+  }
+  .bskt-delivery-page__city-change_modal-main_city {
+    padding: 20px 20px 0px 20px;
+  }
+  .bskt-delivery-page__city-change_modal-main_bigcity {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  .bskt-delivery-page__city-change_modal-main_smallcity {
+    padding-left: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: inset 0px 1px 0px 0px #ddd, inset 0px -1px 0px 0px #ddd;
+  }
+  .bskt-delivery-page__city-change_modal-main_confirm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .bskt-delivery-page__city-change_modal-main_confirm-item:first-of-type {
+    order: 1;
+    margin-top: 20px;
+  }
+  .bskt-delivery-page__city-change_modal-main_inputs-block_item {
+    width: 100%;
+  }
+  .bskt-delivery-page__city-change_modal-main_confirm-item {
+    width: 100%;
+  }
+  .bskt-delivery-page__punkt-block_item-map-modal {
+    width: 440px;
+  }
+  .bskt-footer-right {
+    padding-top: 0px;
+  }
+  .bskt-delivery-page__city-change_modal-main_inputs {
+    box-shadow: none;
+  }
+  .bskt-delivery-page__method-block_item-caption {
+    width: 44%;
+  }
+  .bskt-delivery-page__method-block_item-money {
+    width: 27%;
+  }
+  .bskt-delivery-main__cart-tire_name {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .bskt-delivery-main__cart-pay_price {
+    padding-left: 0px;
+    margin-left: 0px;
+    width: 36%;
+  }
+  .bskt-main__cart-pay_count,
+  .bskt-main__cart-pay_total {
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+  .bskt-main__cart-pay_count {
+    text-align: center;
+  }
+  .bskt-main__cart-pay_total {
+    width: 36%;
+  }
+  .bskt-delivery-page__adress-city-change_btn {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 479px) {
+  .bskt-delivery-page__city-change_modal {
+    width: calc(100% - 40px);
+  }
+  .bskt-delivery-page__punkt-block_item-map-modal {
+    width: calc(100% - 40px);
+  }
+  .bskt-delivery-page__method-block_item-caption {
+    width: 100%;
+  }
+  .bskt-delivery-page__method-block_item-money,
+  .bskt-delivery-page__method-block_item-description {
+    width: 100%;
+    padding-left: 85px;
+  }
+  .bskt-delivery-page__punkt-block_item-map-modal-header-text {
+    max-width: 165px;
+  }
+}

@@ -1,0 +1,536 @@
+.bskt-main__block
+{
+    padding: 20px 0 0 0;
+}
+
+.bskt-main__caption
+{
+    text-align: center;
+}
+
+.bskt-main__caption-text
+{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+
+    display: block;
+}
+
+.bskt-main__cart
+{
+    position: relative;
+
+    padding: 20px 20px 20px 0;
+}
+
+.bskt-main__cart + .bskt-main__cart
+{
+    box-shadow: inset 0 1px 0 0 #eee;
+}
+
+.bskt-main__cart-tire_pic
+{
+    display: inline-block;
+
+    vertical-align: top;
+}
+
+.bskt-main__cart-tire_pic-link
+{
+    position: relative;
+    z-index: 1;
+
+    display: block;
+
+    padding-left: 35px;
+
+    -webkit-tap-highlight-color: transparent;
+        -ms-tap-highlight-color: transparent;
+       -moz-tap-highlight-color: transparent;
+         -o-tap-highlight-color: transparent;
+}
+
+.bskt-main__cart-tire_pic-svg
+{
+    position: absolute;
+    z-index: inherit;
+    top: 0;
+    left: 0;
+
+    width: 24px;
+    height: 28px;
+
+    color: #00b0ff;
+
+    fill: #00b0ff;
+}
+
+.bskt-main__cart-tire_pic-link_img
+{
+    display: block;
+
+    width: 147px;
+}
+
+.bskt-main__cart-tire_name
+{
+    display: inline-block;
+
+    width: 320px;
+    max-width: 320px;
+    padding-left: 20px;
+
+    vertical-align: top;
+}
+
+.bskt-main__cart-tire_name-mobile
+{
+    display: none;
+}
+
+.bskt-main__cart-tire_name-link
+{
+    line-height: 24px;
+
+    display: table;
+}
+
+.bskt-main__cart-tire_name-producer
+{
+    font-size: 22px;
+    font-weight: bold;
+
+    -webkit-tap-highlight-color: transparent;
+        -ms-tap-highlight-color: transparent;
+       -moz-tap-highlight-color: transparent;
+         -o-tap-highlight-color: transparent;
+}
+
+.bskt-main__cart-tire_name-description,
+.bskt-main__cart-tire_name-size
+{
+    font-size: 16px;
+
+    -webkit-tap-highlight-color: transparent;
+        -ms-tap-highlight-color: transparent;
+       -moz-tap-highlight-color: transparent;
+         -o-tap-highlight-color: transparent;
+}
+
+.bskt-main__cart-pay_caption
+{
+    font-size: 12px;
+}
+
+.bskt-main__cart-pay_mt
+{
+    margin-top: 7px;
+}
+
+.bskt-main__cart-pay_price
+{
+    display: inline-block;
+
+    padding-left: 20px;
+
+    vertical-align: top;
+}
+
+.bskt-main__cart-pay_price-withSale_value,
+.bskt-main__cart-pay_price-withSale_rub
+{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.bskt-main__cart-pay_price-withOutSale_value,
+.bskt-main__cart-pay_price-withOutSale_rub
+{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.bskt-main__cart-pay_price-top_caption
+{
+    display: table;
+}
+
+.bskt-main__cart-pay_price-top_value
+{
+    line-height: 22px;
+
+    display: inline-block;
+
+    margin-top: 4px;
+}
+
+.bskt-main__cart-pay_price-top_rub
+{
+    display: inline-block;
+
+    vertical-align: bottom;
+}
+
+.bskt-main__cart-pay_price-bottom_caption
+{
+    display: table;
+}
+
+.bskt-main__cart-pay_price-bottom_value
+{
+    line-height: 20px;
+
+    display: inline-block;
+
+    margin-top: 2px;
+}
+
+.bskt-main__cart-pay_price-bottom_rub
+{
+    line-height: 20px;
+
+    display: inline-block;
+
+    margin-top: 2px;
+
+    vertical-align: bottom;
+}
+
+.bskt-main__cart-pay_count
+{
+    display: inline-block;
+
+    padding-left: 20px;
+
+    vertical-align: top;
+}
+
+.bskt-main__cart-pay_count-caption
+{
+    display: block;
+
+    text-align: center;
+}
+.bskt-main__cart-pay_count-caption_value
+{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+
+    display: inline-block;
+
+    margin-top: 4px;
+
+    color: #000;
+}
+
+.bskt-main__cart-pay_total
+{
+    display: inline-block;
+
+    padding-left: 20px;
+
+    vertical-align: top;
+}
+
+.bskt-main__cart-pay_total-top_caption
+{
+    display: table;
+}
+
+.bskt-main__cart-pay_total-top_value
+{
+    line-height: 26px;
+
+    display: inline-block;
+
+    margin-top: 2px;
+}
+
+.bskt-main__cart-pay_total-top_rub
+{
+    display: inline-block;
+
+    vertical-align: bottom;
+}
+
+.bskt-main__cart-pay_total-bottom_caption
+{
+    display: table;
+}
+
+.bskt-main__cart-pay_total-bottom_value
+{
+    display: inline-block;
+}
+
+.bskt-main__cart-pay_total-bottom_rub
+{
+    display: inline-block;
+
+    vertical-align: bottom;
+}
+
+.bskt-main__cart-delete
+{
+    position: absolute;
+    z-index: 5;
+    top: 20px;
+    right: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url(../img/close-rect.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.bskt-main__cart-delete:hover
+{
+    cursor: pointer;
+
+    background-image: url(../img/close-rect_red.png);
+}
+.bskt-main__hidden
+{
+    display: block;
+
+    margin-top: 20px;
+
+    text-align: center;
+}
+.bskt-main__hidden-btn
+{
+    font-size: 16px;
+    line-height: 20px;
+
+    position: relative;
+}
+
+
+
+@media (max-width:959px)
+{
+    .bskt-main__cart-tire_pic-svg
+    {
+        width: 18px;
+        height: 20px;
+    }
+
+    .bskt-main__cart-tire_pic-link
+    {
+        padding-left: 20px;
+    }
+
+    .bskt-main__cart-tire_pic-link_img
+    {
+        width: 140px;
+    }
+
+    .bskt-main__cart-tire_name
+    {
+        max-width: 220px;
+        padding-left: 7px;
+    }
+
+    .bskt-main__cart-tire_name-producer
+    {
+        font-size: 18px;
+    }
+
+    .bskt-main__cart-tire_name-link
+    {
+        line-height: normal;
+    }
+
+    .bskt-main__cart-tire_name-description,
+    .bskt-main__cart-tire_name-size
+    {
+        font-size: 14px;
+    }
+
+    .bskt-main__cart-pay_price
+    {
+        padding-left: 7px;
+    }
+
+    .bskt-main__cart-pay_count,
+    .bskt-main__cart-pay_total
+    {
+        padding-left: 7px;
+    }
+
+   
+}
+
+@media (max-width:767px)
+{
+   
+
+    .bskt-main__cart
+    {
+        display: -webkit-flex;
+        display:    -moz-flex;
+        display:     -ms-flex;
+        display:      -o-flex;
+        display:         flex;
+
+        justify-content: flex-start;
+        -ms-align-items: flex-start;
+            align-items: flex-start;
+        -webkit-flex-wrap: wrap;
+           -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+             -o-flex-wrap: wrap;
+                flex-wrap: wrap;
+    }
+
+    .bskt-main__cart-tire_name
+    {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 0;
+
+        order: -1;
+    }
+
+    .bskt-main__cart-tire_name-producer
+    {
+        font-size: 22px;
+    }
+
+    .bskt-main__cart-tire_name-description,
+    .bskt-main__cart-tire_name-size
+    {
+        font-size: 16px;
+    }
+
+    .bskt-main__cart-tire_pic-link
+    {
+        padding-left: 35px;
+    }
+
+    .bskt-main__cart-tire_pic-svg
+    {
+        width: 24px;
+        height: 28px;
+    }
+
+    .bskt-main__cart-pay_price
+    {
+        padding-left: 40px;
+    }
+
+    .bskt-main__cart-pay_count,
+    .bskt-main__cart-pay_total
+    {
+        padding-left: 20px;
+    }
+
+    
+}
+
+@media (max-width:639px)
+{
+    
+
+    .bskt-main__cart
+    {
+        padding: 20px 0 20px 0;
+    }
+
+    .bskt-main__cart-tire_pic
+    {
+        display: -webkit-flex;
+        display:    -moz-flex;
+        display:     -ms-flex;
+        display:      -o-flex;
+        display:         flex;
+
+        width: 100%;
+        margin-bottom: 10px;
+
+        justify-content: center;
+    }
+
+    .bskt-main__cart-tire_pic-link
+    {
+        padding-left: 25px;
+    }
+
+    .bskt-main__cart-tire_pic-link_img
+    {
+        width: 230px;
+    }
+
+    .bskt-main__cart-pay_count-choose.js-input-all
+    {
+        display: -webkit-flex;
+        display:    -moz-flex;
+        display:     -ms-flex;
+        display:      -o-flex;
+        display:         flex;
+
+        justify-content: center;
+    }
+
+    .bskt-main__cart-pay_price
+    {
+        padding-left: 0;
+    }
+
+    .bskt-main__cart-pay_count,
+    .bskt-main__cart-pay_total
+    {
+        padding-left: 0;
+    }
+
+    .bskt-main__cart-pay_price,
+    .bskt-main__cart-pay_total
+    {
+        width: 36%;
+    }
+
+    .bskt-main__cart-pay_count
+    {
+        width: 28%;
+    }
+
+    
+}
+
+@media (max-width:479px)
+{
+    .bskt-main__cart-tire_name
+    {
+        margin-bottom: 5px;
+    }
+
+    .bskt-main__cart-tire_pic-link_img
+    {
+        width: 100%;
+    }
+
+    .bskt-main__cart-pay_price-top_caption
+    {
+        width: 95px;
+        max-width: 95px;
+    }
+
+    .bskt-main__cart-pay_count-caption
+    {
+        height: 28px;
+        max-height: 28px;
+    }
+
+    .bskt-main__cart-pay_total-top_caption
+    {
+        width: 130px;
+        max-width: 130px;
+    }
+}

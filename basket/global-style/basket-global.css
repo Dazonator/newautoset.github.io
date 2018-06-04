@@ -1,3 +1,17 @@
+.overlay {
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 4;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.overlay-open .overlay {
+  display: block;
+}
 .container-block{
   width: 960px;
   padding: 0 20px;
@@ -83,6 +97,55 @@
 
 .bskt-hover:hover {
   color: #666;
+}
+.bskt-link-dashed:after{
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  border-bottom: 1px dashed #979797;
+}
+.bskt-link-dashed:hover{
+  color: #666;
+  cursor: pointer;
+}
+.bskt-link-dashed:hover:after{
+  border-bottom: 1px dashed #666;
+}
+.bskt-text-with-dot{
+  position: relative;
+  padding-left: 10px;
+}
+.bskt-text-with-dot:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #e2001a;
+}
+.radio-choose:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #fff;
+  border-radius: 50%;;
+  box-shadow: 0px 0px 0px 1px #ddd;
+}
+.radio-choose.active:before{
+  background-color: #000;
+}
+.radio-choose.disabled:before{
+  background-color: #999;
 }
 @media (max-width: 1440px) {}
 

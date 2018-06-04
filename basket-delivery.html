@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Basket-Delivery</title>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/myselect.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/basket-global.css">
+	<link rel="stylesheet" href="css/basket-header.css">
+	<link rel="stylesheet" href="css/basket-footer.css">
+	<link rel="stylesheet" href="css/basket-main-style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+	<script src="js/slick-slider.min.js"></script>
+	<script src="js/browser-plugin.min.js"></script>
+	<script src="js/inputmask.min.js"></script>
+	<script src="js/basket.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+      if (/MSIE|Trident/.test(navigator.userAgent)) {
+          var iEobject;
+          iEobject = document.createElement('script');
+          iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+          iEobject.onload = function () {
+              svg4everybody();
+          };
+          document.getElementsByTagName('head')[0].appendChild(iEobject);
+      }
+
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?callback=initMap"></script>
+	<script type="text/javascript">
+	    // Определяем переменную map
+	    var map;
+	    var map2;
+
+	    // Функция initMap которая отрисует карту на странице
+	    function initMap() {
+
+	        // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+	        map = new google.maps.Map(document.getElementById('service1'), {
+	            // При создании объекта карты необходимо указать его свойства
+	            // center - определяем точку на которой карта будет центрироваться
+	            center: {lat: 53.892851, lng: 27.647610},
+	            // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+	            zoom: 16,
+	        });
+	        map2 = new google.maps.Map(document.getElementById('service2'), {
+	            // При создании объекта карты необходимо указать его свойства
+	            // center - определяем точку на которой карта будет центрироваться
+	            center: {lat: 53.873989, lng: 27.499356},
+	            // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+	            zoom: 16,
+	        });
+	        map3 = new google.maps.Map(document.getElementById('service3'), {
+	            // При создании объекта карты необходимо указать его свойства
+	            // center - определяем точку на которой карта будет центрироваться
+	            center: {lat: 53.851934, lng: 27.676483},
+	            // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+	            zoom: 16,
+	        });
+			// Создаем маркер на карте
+			var marker = new google.maps.Marker({
+
+			    // Определяем позицию маркера
+			    position: {lat: 53.892842, lng: 27.647620},
+
+			    // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+			    map: map,
+
+			    // Пишем название маркера - появится если навести на него курсор и немного подождать
+			    // title: 'Наш маркер: Большой театр',
+			    // Укажем свою иконку для маркера
+				icon: 'img/map-pointer-red.png'
+			});
+			var marker = new google.maps.Marker({
+
+			    // Определяем позицию маркера
+			    position: {lat: 53.873989, lng: 27.499356},
+
+			    // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+			    map: map2,
+
+			    // Пишем название маркера - появится если навести на него курсор и немного подождать
+			    // title: 'Наш маркер: Большой театр',
+			    // Укажем свою иконку для маркера
+				icon: 'img/map-pointer-red.png'
+			});
+			var marker = new google.maps.Marker({
+
+			    // Определяем позицию маркера
+			    position: {lat: 53.851934, lng: 27.676483},
+
+			    // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+			    map: map3,
+
+			    // Пишем название маркера - появится если навести на него курсор и немного подождать
+			    // title: 'Наш маркер: Большой театр',
+			    // Укажем свою иконку для маркера
+				icon: 'img/map-pointer-red.png'
+			});
+	    }
+	</script>
+</head>
+<body>
+	<div class="overlay modal-close-click js-overlay"></div>
+	<section class="bskt-header bskt-bgc-lightgr">
+		<div class="container-block">
+			<div class="bskt-header__block clear">
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#cart-red"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Корзина</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg bskt-icon_active">
+						<use xlink:href="img/sprite.svg#delivery-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Доставка</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#payment-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Оплата</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#checkout-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Оформление</span>
+				</section>
+			</div>
+		</div>
+	</section>
+	<section class="bskt-delivery-page">
+		<div class="container-block">
+			<section class="bskt-delivery-page__city bskt-delivery-page__block">
+				<div class="bskt-delivery-page__city-caption bskt-delivery-page__block-caption">
+					<span class="bskt-delivery-page__city-caption-text bskt-delivery-page__block-text bskt-col_gr">Город доставки</span>
+				</div>
+				<div class="bskt-delivery-page__city-change">
+					<span class="bskt-delivery-page__city-change_value .bskt-col_bl">г. Полоцк</span>
+					<a href="#city-change" class="bskt-delivery-page__city-change_btn bskt-col_gr bskt-link-dashed js-open-modal">Изменить</a>
+					<div class="bskt-delivery-page__city-change_container modal-container js-modal-container">
+					    <div class="bskt-delivery-page__city-change_modal modal" id="city-change">
+					    	<div class="bskt-delivery-page__city-change_modal-header">
+					    		<span class="bskt-delivery-page__city-change_modal-header-text bskt-col_wh">Выбор города доставки</span>
+					    		<span class="bskt-delivery-page__city-change_modal-close js-close-modal modal-close-click">
+						    		<svg class="modal-close-click_icon">
+						    			<use xlink:href="img/sprite.svg#close-cross-white"></use>
+						    		</svg>
+					    		</span>
+					    	</div>
+					    	<div class="bskt-delivery-page__city-change_modal-main">
+					    		<div class="bskt-delivery-page__city-change_modal-main_city clear">
+					    			<ul class="bskt-delivery-page__city-change_modal-main_bigcity">
+					    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Минск
+					    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+					    					</span>
+											
+					    				</li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Бобруйск
+												<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+					    					</span>
+											
+					    				</li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Брест
+					    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+					    					</span>
+											
+					    				</li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Витебск
+					    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+					    					</span>
+											
+					    				</li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Гомель
+					    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+					    					</span>
+					    				</li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Гродно
+					    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+					    					</span>
+					    				</li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Могилёв
+					    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+					    					</span>
+					    				</li>
+					    			</ul>
+					    			<ul class="bskt-delivery-page__city-change_modal-main_smallcity">
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Барановичи</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Борисов</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Лида</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Мозырь</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Молодечно</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Новополоцк</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Орша</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Пинск</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Полоцк</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Светлогорс</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Слуцк</span></li>
+					    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Солигорск</span></li>
+					    			</ul>
+					    		</div>
+					    		<div class="bskt-delivery-page__city-change_modal-main_inputs">
+					    				<span class="bskt-delivery-page__city-change_modal-main_inputs-caption bskt-col_bl">Поиск и выбор населённого пункта:
+					    				</span>
+					    				<div class="bskt-delivery-page__city-change_modal-main_inputs-block clear">
+					    					<div class="bskt-delivery-page__city-change_modal-main_inputs-block_item bskt-delivery-page__city-change_modal-main_inputs-search">
+					    						<input type="text" class="bskt-delivery-page__city-change_modal-main_inputs-search-block input-data">
+					    						<img src="img/search-tool.png" alt="" class="bskt-delivery-page__city-change_modal-main_inputs-search-tool">
+					    					</div>
+					    					<div class="bskt-delivery-page__city-change_modal-main_inputs-block_item js-input-all">
+					    					    <div class="js-dropdown js-dropdown-onclick">
+					    					        <select class="bskt-delivery-page__city-change_modal-main_select myselect_block js-select">
+					    					            <option value="0" selected>Выберите область</option>
+					    					            <option value="1">Выберите область2</option>
+					    					            <option value="2">Выберите область3</option>
+					    					            <option value="3">Выберете область4</option>
+					    					            <option value="4">Выберите область5</option>
+					    					            <option value="5">Выберите область6</option>
+					    					            <option value="6">Выберите область7</option>
+					    					            <option value="7">Выберите область8</option>
+					    					        </select>
+					    					    </div>
+					    					</div>
+					    					<div class="bskt-delivery-page__city-change_modal-main_inputs-block_item js-input-all">
+					    					    <div class="js-dropdown js-dropdown-onclick">
+					    					        <select class="bskt-delivery-page__city-change_modal-main_select myselect_block js-select">
+					    					            <option value="0" selected>Выберите район</option>
+					    					            <option value="1">Выберите район2</option>
+					    					            <option value="2">Выберите район3</option>
+					    					            <option value="3">Выберите район4</option>
+					    					            <option value="4">Выберите район5</option>
+					    					            <option value="5">Выберите район6</option>
+					    					            <option value="6">Выберите район7</option>
+					    					            <option value="7">Выберите район8</option>
+					    					        </select>
+					    					    </div>
+					    					</div>
+					    					<div class="bskt-delivery-page__city-change_modal-main_inputs-block_item js-input-all">
+					    					    <div class="js-dropdown js-dropdown-onclick">
+					    					        <select class="bskt-delivery-page__city-change_modal-main_select myselect_block js-select">
+					    					            <option value="0" selected>Выберирте город</option>
+					    					            <option value="1">Выберирте город2</option>
+					    					            <option value="2">Выберирте город3</option>
+					    					            <option value="3">Выберирте город4</option>
+					    					            <option value="4">Выберирте город5</option>
+					    					            <option value="5">Выберирте город6</option>
+					    					            <option value="6">Выберирте город7</option>
+					    					            <option value="7">Выберирте город8</option>
+					    					        </select>
+					    					    </div>
+					    					</div>
+					    				</div>
+				    			</div>
+				    			<div class="bskt-delivery-page__city-change_modal-main_confirm clear">
+				    				<div class="bskt-delivery-page__city-change_modal-main_confirm-item">
+				    					<span class="bskt-delivery-page__city-change_modal-main_confirm-cancel bskt-col_gr">Отменить</span>
+				    				</div>
+				    				<div class="bskt-delivery-page__city-change_modal-main_confirm-item">
+				    					<span class="bskt-delivery-page__city-change_modal-main_confirm-btn bskt-bgc-rd bskt-col_wh confirm-click">Выбрать</span>
+				    				</div>
+				    				
+				    			</div>
+					    	</div>
+					    </div>
+				  	</div>
+				</div>
+				<div class="bskt-delivery-page__city-description">
+					<p class="bskt-delivery-page__city-description_text bskt-text-with-dot bskt-col_bl">Возможные способы доставки зависят от выбранного населенного пункта</p>
+				</div>
+			</section>
+			<section class="bskt-delivery-page__method bskt-delivery-page__block">
+				<div class="bskt-delivery-page__method-caption bskt-delivery-page__block-caption">
+					<span class="bskt-delivery-page__method-caption-text bskt-delivery-page__block-text bskt-col_gr">Способ доставки</span>
+				</div>
+				<div class="bskt-delivery-page__method-block">
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose active">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pointer"></use>
+								</svg>
+								Самовывоз
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_rd">Бесплатная доставка</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_gr">Оплата при получении</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown open">
+							<p class="bskt-text-with-dot bskt-col_bl">Самовывоз в данном случае осуществляется через магазины/сервисы «Автосеть».</p>
+							<p class="bskt-text-with-dot bskt-col_bl">При выдаче товара можно воспользоваться услугой шиномонтажа с персональной скидкой.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">В магазинах есть возможность наличной формы оплаты, а также оплата банковской картой.</p>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pointer"></use>
+								</svg>
+								Самовывоз
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_rd">Бесплатная доставка</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_gr">Предоплата ЕРИП</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown">
+							<p class="bskt-text-with-dot bskt-col_bl">Самовывоз в данном случае осуществляется через магазины/сервисы «Автосеть».</p>
+							<p class="bskt-text-with-dot bskt-col_bl">При выдаче товара можно воспользоваться услугой шиномонтажа с персональной скидкой.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">В магазинах есть возможность наличной формы оплаты, а также оплата банковской картой.</p>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-truck"></use>
+								</svg>
+								Доставка по адресу
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_bl">12 р.</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_gr">Оплата при получении</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown">
+							<p class="bskt-text-with-dot bskt-col_bl">Самовывоз в данном случае осуществляется через магазины/сервисы «Автосеть».</p>
+							<p class="bskt-text-with-dot bskt-col_bl">При выдаче товара можно воспользоваться услугой шиномонтажа с персональной скидкой.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">В магазинах есть возможность наличной формы оплаты, а также оплата банковской картой.</p>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-truck"></use>
+								</svg>
+								Доставка по адресу
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_rd">Бесплатная доставка</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_gr">Предоплата ЕРИП</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown">
+							<p class="bskt-text-with-dot bskt-col_bl">Самовывоз в данном случае осуществляется через магазины/сервисы «Автосеть».</p>
+							<p class="bskt-text-with-dot bskt-col_bl">При выдаче товара можно воспользоваться услугой шиномонтажа с персональной скидкой.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">В магазинах есть возможность наличной формы оплаты, а также оплата банковской картой.</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="bskt-delivery-page__punkt bskt-delivery-page__block">
+				<div class="bskt-delivery-page__punkt-caption bskt-delivery-page__block-caption">
+					<span class="bskt-delivery-page__punkt-caption-text bskt-delivery-page__block-text bskt-col_gr">Пункт самовывоза</span>
+				</div>
+				<div class="bskt-delivery-page__punkt-block">
+					<div class="bskt-delivery-page__punkt-block_item">
+						<p class="bskt-delivery-page__punkt-block_item-text bskt-col_bl punkt-click radio-choose active">
+							г. Минск, ул. Радиальная, 40/2 (магазин/сервис «Автосеть») <span class="bskt-delivery-page__punkt-block_item-text-region bskt-col_gr">Заводской район.</span>
+						</p>
+						<a href="#map" class="bskt-delivery-page__punkt-block_item-map js-open-modal">Смотреть на карте
+							<svg class="bskt-delivery-page__punkt-block_item-map_icon">
+								<use xlink:href="img/sprite.svg#map-pointer-red"></use>
+							</svg>
+						</a>
+						<div class="bskt-delivery-page__punkt-block_item-map-container modal-container js-modal-container">
+						    <div class="bskt-delivery-page__punkt-block_item-map-modal modal" id="map">
+						    	<div class="bskt-delivery-page__punkt-block_item-map-modal-header modal-header">
+						    		<span class="bskt-delivery-page__punkt-block_item-map-modal-header-text modal-header-text bskt-col_wh">Расположение пункта самовывоза</span>
+						    		<span class="modal-close-click js-close-modal">
+							    		<svg class="modal-close-click_icon">
+							    			<use xlink:href="img/sprite.svg#close-cross-white"></use>
+							    		</svg>
+						    		</span>
+						    	</div>
+						    	<div id="service1" class="bskt-delivery-page__punkt-block_item-map-modal-main"></div>
+						    	
+						    </div>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__punkt-block_item">
+						<p class="bskt-delivery-page__punkt-block_item-text bskt-col_bl punkt-click radio-choose disabled">
+							г. Минск, ул. Уманская, 54/1 (магазин/сервис «Автосеть») <span class="bskt-delivery-page__punkt-block_item-text-region bskt-col_gr">Юго-западный район.</span>
+						</p>
+						<a href="#map2" class="bskt-delivery-page__punkt-block_item-map js-open-modal">Смотреть на карте
+							<svg class="bskt-delivery-page__punkt-block_item-map_icon">
+								<use xlink:href="img/sprite.svg#map-pointer-red"></use>
+							</svg>
+						</a>
+						<div class="bskt-delivery-page__punkt-block_item-map-container modal-container js-modal-container">
+						    <div class="bskt-delivery-page__punkt-block_item-map-modal modal" id="map2">
+						    	<div class="bskt-delivery-page__punkt-block_item-map-modal-header modal-header">
+						    		<span class="bskt-delivery-page__punkt-block_item-map-modal-header-text modal-header-text bskt-col_wh">Расположение пункта самовывоза</span>
+						    		<span class="modal-close-click js-close-modal">
+							    		<svg class="modal-close-click_icon">
+							    			<use xlink:href="img/sprite.svg#close-cross-white"></use>
+							    		</svg>
+						    		</span>
+						    	</div>
+						    	<div id="service2" class="bskt-delivery-page__punkt-block_item-map-modal-main"></div>
+						    </div>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__punkt-block_item">
+						<p class="bskt-delivery-page__punkt-block_item-text bskt-col_bl punkt-click radio-choose">
+							г. Минск, ул. Промышленная, 2/1 (магазин/сервис «Автосеть») <span class="bskt-delivery-page__punkt-block_item-text-region bskt-col_gr">район. Шабаны (МКАД)</span>
+						</p>
+						<a href="#map3" class="bskt-delivery-page__punkt-block_item-map js-open-modal">Смотреть на карте
+							<svg class="bskt-delivery-page__punkt-block_item-map_icon">
+								<use xlink:href="img/sprite.svg#map-pointer-red"></use>
+							</svg>
+						</a>
+						<div class="bskt-delivery-page__punkt-block_item-map-container modal-container js-modal-container">
+						    <div class="bskt-delivery-page__punkt-block_item-map-modal modal" id="map3">
+						    	<div class="bskt-delivery-page__punkt-block_item-map-modal-header modal-header">
+						    		<span class="bskt-delivery-page__punkt-block_item-map-modal-header-text modal-header-text bskt-col_wh">Расположение пункта самовывоза</span>
+						    		<span class="modal-close-click js-close-modal">
+							    		<svg class="modal-close-click_icon">
+							    			<use xlink:href="img/sprite.svg#close-cross-white"></use>
+							    		</svg>
+						    		</span>
+						    	</div>
+						    	<div id="service3" class="bskt-delivery-page__punkt-block_item-map-modal-main"></div>
+						    </div>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			<section class="bskt-delivery-page__adress bskt-delivery-page__block">
+				<div class="bskt-delivery-page__adress-caption bskt-delivery-page__block-caption">
+					<span class="bskt-delivery-page__adress-caption-text bskt-delivery-page__block-text bskt-col_gr">Адрес доставки</span>
+				</div>
+				<div class="bskt-delivery-page__adress-block">
+					<div class="bskt-delivery-page__adress-city-change bskt-delivery-page__city-change">
+						<span class="bskt-delivery-page__adress-city-your bskt-col_bl">Ваш город:</span>
+						<span class="bskt-delivery-page__adress-city-value bskt-delivery-page__city-change_value bskt-col_bl">г. Полоцк</span>
+						<a href="#city-change" class="bskt-delivery-page__city-change_btn bskt-delivery-page__adress-city-change_btn bskt-col_gr bskt-link-dashed js-open-modal">Изменить</a>
+						<div class="bskt-delivery-page__city-change_container modal-container js-modal-container">
+						    <div class="bskt-delivery-page__city-change_modal modal" id="city-change">
+						    	<div class="bskt-delivery-page__city-change_modal-header">
+						    		<span class="bskt-delivery-page__city-change_modal-header-text bskt-col_wh">Выбор города доставки</span>
+						    		<span class="bskt-delivery-page__city-change_modal-close js-close-modal modal-close-click">
+							    		<svg class="modal-close-click_icon">
+							    			<use xlink:href="img/sprite.svg#close-cross-white"></use>
+							    		</svg>
+						    		</span>
+						    	</div>
+						    	<div class="bskt-delivery-page__city-change_modal-main">
+						    		<div class="bskt-delivery-page__city-change_modal-main_city clear">
+						    			<ul class="bskt-delivery-page__city-change_modal-main_bigcity">
+						    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+						    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Минск
+						    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+						    					</span>
+												
+						    				</li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+						    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Бобруйск
+													<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+						    					</span>
+												
+						    				</li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+						    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Брест
+						    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+						    					</span>
+												
+						    				</li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+						    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Витебск
+						    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+						    					</span>
+												
+						    				</li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+						    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Гомель
+						    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+						    					</span>
+						    				</li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+						    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Гродно
+						    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+						    					</span>
+						    				</li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_bigcity-item">
+						    					<span class="bskt-delivery-page__city-change_modal-main_bigcity-item_text bskt-col_bl city-click">Могилёв
+						    						<img src="img/cc-as-pointer-flag.png" alt="" class="bskt-delivery-page__city-change_modal-main_bigcity-item_icon">
+						    					</span>
+						    				</li>
+						    			</ul>
+						    			<ul class="bskt-delivery-page__city-change_modal-main_smallcity">
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Барановичи</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Борисов</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Лида</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Мозырь</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Молодечно</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Новополоцк</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Орша</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Пинск</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Полоцк</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Светлогорс</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Слуцк</span></li>
+						    				<li class="bskt-delivery-page__city-change_modal-main_smallcity-item"><span class="bskt-delivery-page__city-change_modal-main_smallcity-item_text city-click">Солигорск</span></li>
+						    			</ul>
+						    		</div>
+						    		<div class="bskt-delivery-page__city-change_modal-main_inputs">
+						    				<span class="bskt-delivery-page__city-change_modal-main_inputs-caption bskt-col_bl">Поиск и выбор населённого пункта:
+						    				</span>
+						    				<div class="bskt-delivery-page__city-change_modal-main_inputs-block clear">
+						    					<div class="bskt-delivery-page__city-change_modal-main_inputs-block_item bskt-delivery-page__city-change_modal-main_inputs-search">
+						    						<input type="text" class="bskt-delivery-page__city-change_modal-main_inputs-search-block input-data">
+						    						<img src="img/search-tool.png" alt="" class="bskt-delivery-page__city-change_modal-main_inputs-search-tool">
+						    					</div>
+						    					<div class="bskt-delivery-page__city-change_modal-main_inputs-block_item js-input-all">
+						    					    <div class="js-dropdown js-dropdown-onclick">
+						    					        <select class="bskt-delivery-page__city-change_modal-main_select myselect_block js-select">
+						    					            <option value="0" selected>Выберите область</option>
+						    					            <option value="1">Выберите область2</option>
+						    					            <option value="2">Выберите область3</option>
+						    					            <option value="3">Выберете область4</option>
+						    					            <option value="4">Выберите область5</option>
+						    					            <option value="5">Выберите область6</option>
+						    					            <option value="6">Выберите область7</option>
+						    					            <option value="7">Выберите область8</option>
+						    					        </select>
+						    					    </div>
+						    					</div>
+						    					<div class="bskt-delivery-page__city-change_modal-main_inputs-block_item js-input-all">
+						    					    <div class="js-dropdown js-dropdown-onclick">
+						    					        <select class="bskt-delivery-page__city-change_modal-main_select myselect_block js-select">
+						    					            <option value="0" selected>Выберите район</option>
+						    					            <option value="1">Выберите район2</option>
+						    					            <option value="2">Выберите район3</option>
+						    					            <option value="3">Выберите район4</option>
+						    					            <option value="4">Выберите район5</option>
+						    					            <option value="5">Выберите район6</option>
+						    					            <option value="6">Выберите район7</option>
+						    					            <option value="7">Выберите район8</option>
+						    					        </select>
+						    					    </div>
+						    					</div>
+						    					<div class="bskt-delivery-page__city-change_modal-main_inputs-block_item js-input-all">
+						    					    <div class="js-dropdown js-dropdown-onclick">
+						    					        <select class="bskt-delivery-page__city-change_modal-main_select myselect_block js-select">
+						    					            <option value="0" selected>Выберирте город</option>
+						    					            <option value="1">Выберирте город2</option>
+						    					            <option value="2">Выберирте город3</option>
+						    					            <option value="3">Выберирте город4</option>
+						    					            <option value="4">Выберирте город5</option>
+						    					            <option value="5">Выберирте город6</option>
+						    					            <option value="6">Выберирте город7</option>
+						    					            <option value="7">Выберирте город8</option>
+						    					        </select>
+						    					    </div>
+						    					</div>
+						    				</div>
+					    			</div>
+					    			<div class="bskt-delivery-page__city-change_modal-main_confirm clear">
+					    				<div class="bskt-delivery-page__city-change_modal-main_confirm-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_confirm-cancel bskt-col_gr">Отменить</span>
+					    				</div>
+					    				<div class="bskt-delivery-page__city-change_modal-main_confirm-item">
+					    					<span class="bskt-delivery-page__city-change_modal-main_confirm-btn bskt-bgc-rd bskt-col_wh confirm-click">Выбрать</span>
+					    				</div>
+					    				
+					    			</div>
+						    	</div>
+						    </div>
+					  	</div>
+					</div>
+					<div class="bskt-delivery-page__adress-inputs clear">
+						<div class="bskt-delivery-page__adress-inputs_adress">
+							<span class="bskt-delivery-page__adress-label bskt-col_bl">Адрес:</span>
+							<div class="bskt-delivery-page__adress-inputs_adress-select js-input-all">
+							    <div class="js-dropdown js-dropdown-onclick">
+							        <select class="bskt-delivery-page__adress-inputs_adress-select-block myselect_block js-select">
+							            <option value="0">Улица 1</option>
+							            <option value="1">Улица 2</option>
+							            <option value="2">Улица 3</option>
+							            <option value="3" selected>Улица</option>
+							            <option value="4">Улица 5</option>
+							            <option value="5">Улица 6</option>
+							            <option value="6">Улица 7</option>
+							            <option value="7">Улица 8</option>
+							        </select>
+							    </div>
+							</div>
+						</div>
+						<div class="bskt-delivery-page__adress-inputs_adress-name">
+							<span class="bskt-delivery-page__adress-label bskt-col_bl">Наименование:</span>
+							<input type="text" class="bskt-delivery-page__adress-inputs_field" value="Молодогвардейская">
+						</div>
+						<div class="bskt-delivery-page__adress-inputs_house">
+							<span class="bskt-delivery-page__adress-label bskt-col_bl">Дом:</span>
+							<input type="text" class="bskt-delivery-page__adress-inputs_field" value="15">
+						</div>
+						<div class="bskt-delivery-page__adress-inputs_korpus">
+							<span class="bskt-delivery-page__adress-label bskt-col_bl">Корпус:</span>
+							<input type="text" class="bskt-delivery-page__adress-inputs_field">
+						</div>
+						<div class="bskt-delivery-page__adress-inputs_flat">
+							<span class="bskt-delivery-page__adress-label bskt-col_bl">Офис / кв.:</span>
+							<input type="text" class="bskt-delivery-page__adress-inputs_field" value="45">
+						</div>
+					</div>
+				</div>
+
+			</section>
+		</div>
+	</section>
+	<section class="bskt-delivery-footer bskt-footer bskt-bgc-gr">
+		<div class="container-block">
+			<div class="bskt-footer-block clear">
+				<div class="bskt-footer-left">
+					<div class="bskt-footer-left__bottom">
+						<div class="bskt-footer-left__bottom-links clear">
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#05-warranty-car-tires-2-y"></use>
+								</svg>
+								Гарантия 2&nbspгода
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#31-quality-control"></use>
+								</svg>
+								Контроль качества
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#30-handshake"></use>
+								</svg>
+								Доверие клиентов
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#83-delivery-free-free"></use>
+								</svg>
+								Бесплатная доставка
+							</span>
+						</div>
+						<div class="bskt-footer-left__bottom-btn_back">
+							<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
+						</div>	
+					</div>
+				</div>
+				<div class="bskt-footer-right">
+					<div class="bskt-footer-right_total">
+						<ul class="bskt-footer-right_total-list">
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Промокод</span>
+								<span class="bskt-footer-right_total-list_item-right "><span class="bskt-footer-right_total-list_item-value bskt-col_rd">-2%</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Итого</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value">1 268.50 р.</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_rd clear">
+								<span class="bskt-footer-right_total-list_item-left">Итого со скидкой</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value bskt-footer-right_total-list_item-value_big-text">1 199.20 р.</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Экономия</span>
+								<span class="bskt-footer-right_total-list_item-right bskt-col_rd"><span class="bskt-footer-right_total-list_item-value">69.30 р.</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Количество</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value">8 шт.</span></span>
+							</li>
+						</ul>
+					</div>
+					<div class="bskt-footer-right_next">
+						<a href="#" class="bskt-footer-right_next-link bskt-bgc-rd bskt-col_wh">продолжить</a>
+					</div>
+					<div class="bskt-footer-left__bottom-btn_back bskt-footer-left__bottom-btn_back-mobile">
+							<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
+					</div>
+					<div class="bskt-footer-left__bottom-back bskt-footer-right_back">
+						<a href="#" class="bskt-footer-left__bottom-back-link bskt-col_bl bskt-hover">Вернуться в каталог</a>
+					</div>	
+					<div class="bskt-footer-left__bottom-links bskt-footer-left__bottom-links_mobile clear">
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#05-warranty-car-tires-2-y"></use>
+								</svg>
+								Гарантия 2&nbspгода
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#31-quality-control"></use>
+								</svg>
+								Контроль качества
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#30-handshake"></use>
+								</svg>
+								Доверие клиентов
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#83-delivery-free-free"></use>
+								</svg>
+								Бесплатная доставка
+							</span>
+						</div>
+				</div>
+				<div class="bskt-footer-fromCabinet">
+					<span class="bskt-footer-fromCabinet_text">Для заполнения данных из личного кабинета нажмите <a href="#" class="bskt-footer-fromCabinet_link bskt-col_gr bskt-link-dashed">здесь</a> или продолжите оформление.</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bskt-delivery-footer-after bskt-main">
+		<div class="container-block">
+			<div class="bskt-delivery-main__block open bskt-main__block">
+				<section class="bskt-main__caption">
+					<span class="bskt-main__caption-text bskt-col_gr">Товары в корзине</span>
+				</section>
+				<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+					<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+					<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="bskt-main__hidden">
+				<span class="bskt-main__hidden-btn bskt-btn-hidden bskt-col_gr bskt-link-dashed">Скрыть товары в корзине</span>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
