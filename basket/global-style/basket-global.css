@@ -1,3 +1,6 @@
+input{
+  -webkit-appearance: none;
+}
 .overlay {
   display: none;
   top: 0;

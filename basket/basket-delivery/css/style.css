@@ -666,6 +666,7 @@
   .bskt-main__cart-pay_count-caption {
     height: 28px;
     max-height: 28px;
+    min-height: 28px;
   }
 }
 
