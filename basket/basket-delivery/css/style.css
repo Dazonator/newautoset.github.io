@@ -577,7 +577,7 @@
   .bskt-delivery-page__adress-inputs_house,
   .bskt-delivery-page__adress-inputs_korpus,
   .bskt-delivery-page__adress-inputs_flat {
-    width: 15%;
+    width: 125px;
     margin-top: 20px;
   }
   .bskt-footer-right_back {
