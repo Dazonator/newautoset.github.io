@@ -40,11 +40,11 @@ a.tirecart-link:hover {
   color: #666;
   cursor: pointer;
 }
-a.tirecart-link-disabled{
+.tirecart-item-disabled{
   pointer-events: none;
   cursor: default;
 }
-a.tirecart-link-disabled .tirecart-body-left-dopinfo__text{
+.tirecart-item-disabled .tirecart-body-left-dopinfo__text{
   color: #999;
 }
 
@@ -493,6 +493,7 @@ a.tirecart-link-withTriangle:before {
 
 .tirecart-body-left-dopinfo__es-hover_pic {
   width: 220px;
+  max-width: 220px;
   box-shadow: 0px 0px 0px 1px #ddd;
   margin-top: 10px;
   display: block;
