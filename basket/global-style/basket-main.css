@@ -530,7 +530,7 @@
 
     .bskt-main__cart-pay_total-top_caption
     {
-        width: 130px;
-        max-width: 130px;
+        width: 100px;
+        max-width: 100px;
     }
 }
