@@ -2,6 +2,7 @@
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 270px;
 }
 
 .banner-caption__content {
