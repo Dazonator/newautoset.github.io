@@ -465,7 +465,7 @@
 
     .bskt-main__cart-tire_pic-link_img
     {
-        width: 230px;
+        width: 100%;
     }
 
     .bskt-main__cart-pay_count-choose.js-input-all
@@ -511,10 +511,6 @@
         margin-bottom: 5px;
     }
 
-    .bskt-main__cart-tire_pic-link_img
-    {
-        width: 100%;
-    }
 
     .bskt-main__cart-pay_price-top_caption
     {
