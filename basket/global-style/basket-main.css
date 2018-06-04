@@ -282,7 +282,7 @@
     width: 20px;
     height: 20px;
 
-    background-image: url(../img/close-rect.png);
+    background-image: url(../basket-main/img/close-rect.png);
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -292,7 +292,7 @@
 {
     cursor: pointer;
 
-    background-image: url(../img/close-rect_red.png);
+    background-image: url(../basket-main/img/close-rect_red.png);
 }
 .bskt-main__hidden
 {
