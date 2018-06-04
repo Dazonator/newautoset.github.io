@@ -1,0 +1,219 @@
+@font-face {
+  font-family: Roboto-Regular;
+  src: url(../fonts/Roboto-Regular.ttf); }
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url(../fonts/Roboto-Bold.ttf); }
+
+@font-face {
+  font-family: Roboto-Light;
+  src: url(../fonts/Roboto-Light.ttf); }
+
+@font-face {
+  font-family: Roboto-LightItalic;
+  src: url(../fonts/Roboto-LightItalic.ttf); }
+
+body, .select .reset,
+.select .choice {
+  font-family: Roboto-Regular; }
+
+.container-delivery__title, .select #search, .select__city, .select__cityRegion, .select__cityArea, .select__villageCouncil, .select__Type {
+  font-family: Roboto-Bold; }
+
+/********************************/
+.container-delivery {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.3); }
+  .container-delivery__block {
+    width: 50%;
+    display: block;
+    position: relative; }
+  .container-delivery__title {
+    width: 100%;
+    background-color: #666;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 16px 0;
+    font-size: 18px; }
+  .container-delivery__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s;
+    transform: rotate(45deg); }
+    .container-delivery__close:before {
+      content: '';
+      position: absolute;
+      width: 32px;
+      height: 4px;
+      background-color: #fff;
+      top: 50%;
+      margin-top: -2px;
+      left: 50%;
+      margin-left: -16px; }
+    .container-delivery__close:after {
+      content: '';
+      position: absolute;
+      height: 32px;
+      width: 4px;
+      background-color: #fff;
+      top: 50%;
+      margin-top: -16px;
+      left: 50%;
+      margin-left: -2px; }
+    .container-delivery__close:hover {
+      transform: rotate(135deg); }
+
+.search {
+  width: 45%;
+  position: absolute;
+  z-index: 1000;
+  top: 95px;
+  left: 4.6%;
+  max-height: 250px;
+  overflow-y: auto;
+  background-color: #666;
+  display: none; }
+  .search__result {
+    width: 100%;
+    margin: 0;
+    display: block;
+    background-color: #cdcdcd;
+    /* border-radius: 5px; */
+    /* padding: 5px 10px; */
+    /* margin: 5px; */
+    border: 1px solid #666;
+    cursor: pointer;
+    display: flex; }
+    .search__result p {
+      width: 50%;
+      margin: 0; }
+      .search__result p:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .search__result p:first-child span {
+          margin-right: 5px; }
+      .search__result p:last-child {
+        background-color: #999;
+        display: flex;
+        flex-direction: column; }
+        .search__result p:last-child span {
+          padding: 0 5px;
+          line-height: 32px;
+          width: 100%;
+          text-align: center;
+          border-bottom: 1px solid #cdcdcd;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.select {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 50px 0;
+  width: 100%;
+  background-color: #fff;
+  position: relative; }
+  .select #search {
+    background-color: transparent;
+    border: 2px solid #cdcdcd;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #000;
+    margin: 5px;
+    height: 40px;
+    width: 45%; }
+  .select__city, .select__cityRegion, .select__cityArea, .select__villageCouncil, .select__Type {
+    background-color: #fff;
+    color: #000;
+    margin: 5px;
+    border: 2px solid #cdcdcd;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 5px;
+    width: 45%; }
+  .select .reset,
+  .select .choice {
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 45%;
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer; }
+  .select .reset {
+    display: inline-block;
+    color: #000;
+    background-color: #ddd;
+    transition: all 0.5s;
+    position: relative;
+    border: 2px solid #ddd;
+    z-index: 999; }
+    .select .reset:before {
+      transition: all 0.8s;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+      z-index: -1;
+      background-color: transparent;
+      border-radius: 7px; }
+    .select .reset:hover:before {
+      right: 0;
+      width: 100%;
+      left: auto;
+      background-color: #fff; }
+  .select .choice {
+    display: inline-block;
+    color: #fff;
+    background-color: #e2001a;
+    transition: all 0.5s;
+    position: relative;
+    border: 2px solid #e2001a;
+    z-index: 999; }
+    .select .choice:before {
+      transition: all 0.8s;
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 0;
+      z-index: -1;
+      background-color: transparent;
+      border-radius: 7px; }
+    .select .choice:hover {
+      color: #e2001a; }
+      .select .choice:hover:before {
+        left: 0;
+        width: 100%;
+        right: auto;
+        background-color: #fff; }
