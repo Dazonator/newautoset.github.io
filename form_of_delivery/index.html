@@ -7,19 +7,21 @@
     <meta charset="UTF-8" />
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
     <div class="container-delivery">
         <div class="container-delivery__block">
             <h4 class="container-delivery__title">Выбор города доставки</h4>
-            <div class="form_delivery select"><input id="search" type="search" /><select class="select__city"><option value="main">Населённый пункт</option></select><select class="select__Type"><option value="main">Тип населенного пункта</option></select><select class="select__cityRegion"><option value="main">Область</option></select>
+            <div class="form_delivery select"><input id="search" type="search" placeholder="Поиск..." /><select class="select__city"><option value="main">Населённый пункт</option></select><select class="select__Type"><option value="main">Тип населенного пункта</option></select>
                 <select
-                    class="select__cityArea">
-                    <option value="main">Район</option>
-                    </select><select class="select__villageCouncil"><option value="main">Сельский совет</option></select><span class="reset">Сброс</span><span class="choice">Выбрать</span>
-                    <div class="search"></div>
-            </div><span class="container-delivery__close"></span></div>
+                    class="select__cityRegion">
+                    <option value="main">Область</option>
+                    </select><select class="select__cityArea"><option value="main">Район</option></select><select class="select__villageCouncil"><option value="main">Сельский совет</option></select><span class="reset">Сброс</span><span class="choice">Выбрать</span>
+                    <div
+                        class="search"></div>
+        </div><span class="container-delivery__close"></span></div>
     </div>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/app.js"></script>

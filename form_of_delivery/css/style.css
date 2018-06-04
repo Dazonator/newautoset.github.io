@@ -21,6 +21,9 @@ body, .select .reset,
 .container-delivery__title, .select #search, .select__city, .select__cityRegion, .select__cityArea, .select__villageCouncil, .select__Type {
   font-family: Roboto-Bold; }
 
+body {
+  min-width: 320px; }
+
 /********************************/
 .container-delivery {
   position: fixed;
@@ -39,6 +42,15 @@ body, .select .reset,
     width: 50%;
     display: block;
     position: relative; }
+    @media (max-width: 1170px) {
+      .container-delivery__block {
+        width: 70%; } }
+    @media (max-width: 992px) {
+      .container-delivery__block {
+        width: 85%; } }
+    @media (max-width: 768px) {
+      .container-delivery__block {
+        width: 95%; } }
   .container-delivery__title {
     width: 100%;
     background-color: #666;
@@ -90,14 +102,15 @@ body, .select .reset,
   overflow-y: auto;
   background-color: #666;
   display: none; }
+  @media (max-width: 550px) {
+    .search {
+      width: 90%;
+      top: 65px; } }
   .search__result {
     width: 100%;
     margin: 0;
     display: block;
     background-color: #cdcdcd;
-    /* border-radius: 5px; */
-    /* padding: 5px 10px; */
-    /* margin: 5px; */
     border: 1px solid #666;
     cursor: pointer;
     display: flex; }
@@ -132,6 +145,9 @@ body, .select .reset,
   width: 100%;
   background-color: #fff;
   position: relative; }
+  @media (max-width: 550px) {
+    .select {
+      padding: 20px 0; } }
   .select #search {
     background-color: transparent;
     border: 2px solid #cdcdcd;
@@ -142,6 +158,9 @@ body, .select .reset,
     margin: 5px;
     height: 40px;
     width: 45%; }
+    @media (max-width: 550px) {
+      .select #search {
+        width: 90%; } }
   .select__city, .select__cityRegion, .select__cityArea, .select__villageCouncil, .select__Type {
     background-color: #fff;
     color: #000;
@@ -151,6 +170,9 @@ body, .select .reset,
     height: 40px;
     padding-left: 5px;
     width: 45%; }
+    @media (max-width: 550px) {
+      .select__city, .select__cityRegion, .select__cityArea, .select__villageCouncil, .select__Type {
+        width: 90%; } }
   .select .reset,
   .select .choice {
     margin: 5px;
@@ -167,6 +189,10 @@ body, .select .reset,
     box-sizing: border-box;
     border-radius: 10px;
     cursor: pointer; }
+    @media (max-width: 550px) {
+      .select .reset,
+      .select .choice {
+        width: 90%; } }
   .select .reset {
     display: inline-block;
     color: #000;
