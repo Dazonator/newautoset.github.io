@@ -111,7 +111,7 @@ function option_city() { //заполнение select__city
             select__city.push(city[i].city);
         }
     }
-    console.log(select__city);
+    // console.log(select__city);
     for (var i = 0; i < select__city.length; i++) {
         $('.select__city').append('<option value="'+ select__city[i] +'">' + select__city[i] + '</option>');
     }
@@ -126,7 +126,7 @@ function option_cityRegion() { //заполнение select__cityRegion
             select__cityRegion.push(city[i].cityRegion);
         }
     }
-    console.log(select__cityRegion);
+    // console.log(select__cityRegion);
     for (var i = 0; i < select__cityRegion.length; i++) {
         $('.select__cityRegion').append('<option value="'+ select__cityRegion[i] +'">' + select__cityRegion[i] + '</option>');
     }
@@ -140,7 +140,7 @@ function option_cityArea() { //заполнение select__cityArea
             select__cityArea.push(city[i].cityArea);
         }
     }
-    console.log(select__cityArea);
+    // console.log(select__cityArea);
     for (var i = 0; i < select__cityArea.length; i++) {        
         $('.select__cityArea').append('<option value="'+ select__cityArea[i] +'">' + select__cityArea[i] + '</option>');
     }
@@ -154,7 +154,7 @@ function option_Type() { //заполнение select__Type
             select__Type.push(city[i].Type);
         }
     }
-    console.log(select__Type);
+    // console.log(select__Type);
     for (var i = 0; i < select__Type.length; i++) {        
         $('.select__Type').append('<option value="'+ select__Type[i] +'">' + select__Type[i] + '</option>');
     }
@@ -168,7 +168,7 @@ function option_villageCouncil() { //заполнение select__villageCouncil
             select__villageCouncil.push(city[i].villageCouncil);
         }
     }
-    console.log(select__villageCouncil);
+    // console.log(select__villageCouncil);
     for (var i = 0; i < select__villageCouncil.length; i++) {        
         $('.select__villageCouncil').append('<option value="'+ select__villageCouncil[i] +'">' + select__villageCouncil[i] + '</option>');
     }
