@@ -52,7 +52,7 @@ body.touch select.myselect_block {
   right: 8px;
   margin-top: -4px;
   transition: 0.3s;
-  background-image: url(../basket-main/img/arrow_666666_down.svg);
+  background-image: url(../basket/basket-main/img/arrow_666666_down.svg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
