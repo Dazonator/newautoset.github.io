@@ -263,7 +263,7 @@
     display: inline-block;
     overflow: hidden;
 
-    width: 170px;
+    width: 183px;
 
     text-align: right;
     vertical-align: bottom;
@@ -464,10 +464,6 @@
     .bskt-footer-right_total-list_item-right {
         width: 175px;
     }
-    .bskt-footer-left__bottom-btn_back
-    {
-        margin-top: 92px;
-    }
     .bskt-footer-fromCabinet
     {
         padding: 0 100px;
@@ -475,7 +471,10 @@
 }
 
 @media (max-width: 639px)
-{
+{   
+    .bskt-footer-block {
+         margin: 0px; 
+    }
     .bskt-footer-left
     {
         display: block;
@@ -547,8 +546,7 @@
     .bskt-footer-left__bottom-btn_back-mobile
     {
         display: block;
-
-        margin-top: 20px;
+        padding: 20px 0px 0px 0px;
     }
     .bskt-footer-fromCabinet
     {
