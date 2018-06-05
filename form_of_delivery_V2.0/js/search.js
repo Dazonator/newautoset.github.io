@@ -478,7 +478,7 @@ $.fn.search = function(parameters) {
           },
           value: function(value) {
             module.verbose('Setting search input value', value);
-            $prompt.val(value);//вывод при клике
+            $prompt.val('');//вывод при клике
             for (var i = 0; i < city.length; i++) {
               if(value.toLowerCase() == city[i].title.toLowerCase()){
                 $('.select__city').val(city[i].title);
