@@ -799,6 +799,7 @@
   }
   .bskt-delivery-page__adress-city-your {
     display: block;
+    margin-bottom: 5px;
   }
 
   .bskt-delivery-page__adress-city-value {
