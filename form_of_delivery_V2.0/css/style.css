@@ -121,7 +121,8 @@ body {
       left: 30px;
       top: 55px;
       width: auto;
-      right: 30px; } }
+      right: 30px;
+      max-height: 200px; } }
   .results .message.empty {
     width: auto;
     padding: 5px 10px; }
