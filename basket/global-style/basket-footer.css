@@ -1,11 +1,14 @@
 .bskt-footer-block
 {
     padding: 20px 0;
+    margin: 0 -10px;
 }
 
 .bskt-footer-left
 {
     float: left;
+    width: 62%;
+    padding: 0px 10px;
 }
 
 .bskt-footer-left__top
@@ -133,7 +136,7 @@
 
 .bskt-footer-left__bottom-link + .bskt-footer-left__bottom-link
 {
-    margin-left: 17px;
+    margin-left: 16px;
 }
 
 .bskt-footer-left__bottom-link_icon
@@ -188,9 +191,10 @@
 }
 .bskt-footer-left__bottom-btn_back
 {
-    margin-top: 128px;
-
+    float: left;
     text-align: right;
+    width: 62%;
+    padding: 20px 10px 0px 10px;
 }
 .bskt-footer-left__bottom-btn_back-mobile
 {
@@ -225,8 +229,8 @@
 .bskt-footer-right
 {
     float: left;
-
-    padding-left: 32px;
+    width: 38%;
+    padding: 0px 10px;
 }
 
 .bskt-footer-right_total-list_item
@@ -306,7 +310,10 @@
 
 .bskt-footer-right_next
 {
-    margin-top: 20px;
+    margin-top: 0px;
+    float: left;
+    width: 38%;
+    padding: 20px 10px 0px 10px;
 }
 
 .bskt-footer-right_next-link
