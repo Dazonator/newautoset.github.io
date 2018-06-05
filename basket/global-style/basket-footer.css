@@ -468,6 +468,9 @@
     {
         padding: 0 100px;
     }
+    .bskt-footer-left__bottom-link {
+        max-width: 72px;
+    }
 }
 
 @media (max-width: 639px)
@@ -496,7 +499,7 @@
         float: left;
         width: 100%;
 
-        margin-top: 40px;
+        margin-top: 30px;
     }
     .bskt-footer-left__bottom-link
     {
