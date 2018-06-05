@@ -38,6 +38,9 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   background-color: rgba(0, 0, 0, 0.3); }
+  @media (max-width: 550px) {
+    .container-delivery {
+      align-items: start; } }
   .container-delivery__block {
     margin-top: -50px;
     width: 50%;
@@ -52,6 +55,9 @@ body {
     @media (max-width: 768px) {
       .container-delivery__block {
         width: 95%; } }
+    @media (max-width: 550px) {
+      .container-delivery__block {
+        margin-top: 10px; } }
   .container-delivery__title {
     width: 100%;
     background-color: #666;
@@ -60,6 +66,9 @@ body {
     margin: 0;
     padding: 16px 0;
     font-size: 18px; }
+    @media (max-width: 550px) {
+      .container-delivery__title {
+        font-size: 14px; } }
   .container-delivery__close {
     position: absolute;
     top: 0;
