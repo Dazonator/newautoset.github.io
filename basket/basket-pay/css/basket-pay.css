@@ -108,9 +108,6 @@
 .bskt-pay-page__block-for-icon-question_time-work{
   display: block;
 }
-.bskt-footer-left__bottom-btn_back {
-    margin-top: 254px;
-}
 @media (max-width: 1440px) {}
 
 @media (max-width: 1199px) {}
@@ -128,9 +125,6 @@
   .bskt-pay-page__list-item-right {
     width: 180px;
   }
-  .bskt-footer-left__bottom-btn_back {
-    margin-top: 189px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -139,9 +133,6 @@
   }
   .bskt-pay-page__block-for-icon-question {
     width: 600px;
-  }
-  .bskt-footer-left__bottom-btn_back {
-    margin-top: 218px;
   }
 }
 
@@ -196,9 +187,6 @@
   }
   .bskt-pay-page__block-for-icon-question {
     width: 440px;
-  }
-  .bskt-footer-left__bottom-btn_back {
-    margin-top: 20px;
   }
   
 
