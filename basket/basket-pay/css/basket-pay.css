@@ -109,7 +109,7 @@
   display: block;
 }
 .bskt-footer-left__bottom-btn_back {
-    margin-top: 206px;
+    margin-top: 254px;
 }
 @media (max-width: 1440px) {}
 
@@ -129,7 +129,7 @@
     width: 180px;
   }
   .bskt-footer-left__bottom-btn_back {
-    margin-top: 160px;
+    margin-top: 189px;
   }
 }
 
@@ -141,7 +141,7 @@
     width: 600px;
   }
   .bskt-footer-left__bottom-btn_back {
-    margin-top: 170px;
+    margin-top: 218px;
   }
 }
 
