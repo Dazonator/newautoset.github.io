@@ -435,7 +435,8 @@
     }
     .bskt-footer-right_back
     {
-        display: block;
+        float: right;
+        width: 50%;
 
         margin-top: 20px;
     }
@@ -455,13 +456,12 @@
     {
         margin-left: 0;
     }
-    .bskt-footer-right
-    {
-        padding-left: 36px;
-    }
     .bskt-footer-right_total-list_item-left
     {
         width: 110px;
+    }
+    .bskt-footer-right_total-list_item-right {
+        width: 175px;
     }
     .bskt-footer-left__bottom-btn_back
     {
