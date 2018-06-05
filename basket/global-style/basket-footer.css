@@ -94,7 +94,7 @@
     border-radius: 3px;
     background-color: #e0e0e0;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 32px;
     text-transform: uppercase;
 }
 
@@ -380,7 +380,7 @@
 {
     .bskt-footer-left__top-promo
     {
-        display: block;
+        width: 100%;
     }
     .bskt-footer-left__top-input
     {
@@ -388,11 +388,8 @@
     }
     .bskt-footer-left__top-label
     {
-        display: block;
-
         width: 100%;
         margin-top: 20px;
-        margin-left: 0;
     }
     .bskt-footer-left__bottom-link
     {
