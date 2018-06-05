@@ -1,6 +1,7 @@
 input{
   -webkit-appearance: none;
 }
+
 .overlay {
   display: none;
   top: 0;
@@ -14,6 +15,20 @@ input{
 }
 .overlay-open .overlay {
   display: block;
+}
+.allClose{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 99;
+    display: none;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+}
+.allClose.open{
+    display: block;
 }
 .container-block{
   width: 960px;

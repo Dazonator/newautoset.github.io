@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Basket-Pay</title>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/myselect.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="basket/global-style/basket-global.css">
+	<link rel="stylesheet" href="basket/global-style/basket-header.css">
+	<link rel="stylesheet" href="basket/global-style/basket-footer.css">
+	<link rel="stylesheet" href="basket/global-style/basket-main.css">
+	<link rel="stylesheet" href="basket/basket-delivery/css/basket-delivery.css">
+	<link rel="stylesheet" href="basket/basket-pay/css/basket-pay.css">
+	<script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+	<script src="js/slick-slider.min.js"></script>
+	<script src="js/browser-plugin.min.js"></script>
+	<script src="js/inputmask.min.js"></script>
+	<script src="basket/js/basket.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script>
+      if (/MSIE|Trident/.test(navigator.userAgent)) {
+          var iEobject;
+          iEobject = document.createElement('script');
+          iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+          iEobject.onload = function () {
+              svg4everybody();
+          };
+          document.getElementsByTagName('head')[0].appendChild(iEobject);
+      }
+
+	</script>
+	
+</head>
+<body>
+	<div class="allClose blockHidden"></div>
+	<div class="overlay modal-close-click js-overlay"></div>
+	<section class="bskt-header bskt-bgc-lightgr">
+		<div class="container-block">
+			<div class="bskt-header__block clear">
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#cart-red"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Корзина</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#delivery-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Доставка</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg bskt-icon_active">
+						<use xlink:href="img/sprite.svg#payment-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Оплата</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#checkout-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Оформление</span>
+				</section>
+			</div>
+		</div>
+	</section>
+	<section class="bskt-delivery-page">
+		<div class="container-block">
+			<section class="bskt-delivery-page__method bskt-delivery-page__block">
+				<div class="bskt-main__caption">
+					<span class="bskt-main__caption-text bskt-col_gr">Способ оплаты</span>
+				</div>
+				<div class="bskt-delivery-page__method-block">
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose active">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pay-cash"></use>
+								</svg>
+								Оплата при получении
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_gr">Наличные</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_bl">К оплате со скидкой: <span class="bskt-pay-page__total-price-item bskt-col_rd bskt-weight_bold">1175.22 р.</span></span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown open">
+							<p class="bskt-text-with-dot bskt-col_bl">После оформления заказа вы получите его уникальный номер, который нужно указать при оплате.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">Оплатить заказ можно через: интернет-банкинг, кассы банков, электронные деньги, банкомат.</p>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pay-card"></use>
+								</svg>
+								Оплата при получении
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_gr">Банковской картой</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_bl">К оплате со скидкой: <span class="bskt-pay-page__total-price-item bskt-col_rd bskt-weight_bold">1175.22 р.</span></span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown">
+							<p class="bskt-text-with-dot bskt-col_bl">После оформления заказа вы получите его уникальный номер, который нужно указать при оплате.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">Оплатить заказ можно через: интернет-банкинг, кассы банков, электронные деньги, банкомат.</p>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pay-ltcard"></use>
+								</svg>
+								Оплата при получении
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_gr">Картой рассрочки</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_bl">К оплате без скидки: <span class="bskt-pay-page__total-price-item bskt-col_bl bskt-weight_bold">1243.13 р.</span></span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown">
+							<p class="bskt-text-with-dot bskt-col_bl">После оформления заказа вы получите его уникальный номер, который нужно указать при оплате.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">Оплатить заказ можно через: интернет-банкинг, кассы банков, электронные деньги, банкомат.</p>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pay-erip"></use>
+								</svg>
+								Предоплата ЕРИП
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_gr">Через интернет-банкинг</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_bl">К оплате со скидкой: <span class="bskt-pay-page__total-price-item bskt-col_rd bskt-weight_bold">1175.22 р.</span></span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown">
+							<p class="bskt-text-with-dot bskt-col_bl">После оформления заказа вы получите его уникальный номер, который нужно указать при оплате.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">Оплатить заказ можно через: интернет-банкинг, кассы банков, электронные деньги, банкомат.</p>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pay-bank"></use>
+								</svg>
+								Предоплата
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_gr">Через кассу банка</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_bl">К оплате со скидкой: <span class="bskt-pay-page__total-price-item bskt-col_rd bskt-weight_bold">1175.22 р.</span></span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown">
+							<p class="bskt-text-with-dot bskt-col_bl">После оформления заказа вы получите его уникальный номер, который нужно указать при оплате.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">Оплатить заказ можно через: интернет-банкинг, кассы банков, электронные деньги, банкомат.</p>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pay-longterm"></use>
+								</svg>
+								Рассрочка
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_gr">До 6 месяцев</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_bl">К оплате со скидкой: <span class="bskt-pay-page__total-price-item bskt-col_bl bskt-weight_bold">1243.13 р.</span></span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown bskt-pay-page__longterm method-dropdown">
+							<div class="bskt-pay-page__longterm-block clear">
+								<div class="bskt-pay-page__longterm-item">
+									<span class="bskt-pay-page__longterm-item-period bskt-col_bl">Срок рассрочки:</span>
+									<span class="bskt-pay-page__longterm-item-period_value bskt-col-_bl">2 мес.</span>
+								</div>
+								<div class="bskt-pay-page__longterm-item">
+									<span class="bskt-pay-page__longterm-item-first-pay bskt-col_bl">Первый взнос:</span>
+									<span class="bskt-pay-page__longterm-item-first-pay_value bskt-col-_bl">0.00 р.</span>
+								</div>
+								<div class="bskt-pay-page__longterm-item ">
+									<div class="bskt-pay-page__longterm-item-period_slider"></div>
+								</div>
+								<div class="bskt-pay-page__longterm-item">
+									<div class="bskt-pay-page__longterm-item-first-pay_slider"></div>
+								</div>
+								<div class="bskt-pay-page__longterm-item">
+									<ul class="bskt-footer-right_total-list">
+										<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+											<span class="bskt-footer-right_total-list_item-left bskt-pay-page__list-item-left bskt-col_bl">Стоимость заказа:</span>
+											<span class="bskt-footer-right_total-list_item-right bskt-pay-page__list-item-right"><span class="bskt-footer-right_total-list_item-value bskt-pay-page__list-item-right-value bskt-col_bl">1243.18</span></span>
+										</li>
+										<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+											<span class="bskt-footer-right_total-list_item-left bskt-pay-page__list-item-left bskt-col_bl">Ежемесячно:</span>
+											<span class="bskt-footer-right_total-list_item-right bskt-pay-page__list-item-right"><span class="bskt-footer-right_total-list_item-value bskt-pay-page__list-item-right-value bskt-col_bl">621.57</span></span>
+										</li>
+									</ul>
+								</div>
+								<div class="bskt-pay-page__longterm-item">
+									<ul class="bskt-footer-right_total-list">
+										<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+											<span class="bskt-footer-right_total-list_item-left bskt-pay-page__list-item-left bskt-col_bl">Сумма в рассрочку:</span>
+											<span class="bskt-footer-right_total-list_item-right bskt-pay-page__list-item-right"><span class="bskt-footer-right_total-list_item-value bskt-pay-page__list-item-right-value bskt-col_bl">1243.13</span></span>
+										</li>
+										<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+											<span class="bskt-footer-right_total-list_item-left bskt-pay-page__list-item-left bskt-col_bl">Переплата:</span>
+											<span class="bskt-footer-right_total-list_item-right bskt-pay-page__list-item-right"><span class="bskt-footer-right_total-list_item-value bskt-pay-page__list-item-right-value bskt-col_bl">0%</span></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="bskt-delivery-page__method-block_item clear">
+						<div class="bskt-delivery-page__method-block_item-caption">
+							<span class="bskt-delivery-page__method-block_item-caption-text bskt-col_bl method-click radio-choose">
+								<svg class="bskt-delivery-page__method-block_item-caption-icon">
+									<use xlink:href="img/sprite.svg#cc-pay-corp"></use>
+								</svg>
+								Оплата по безналичному расчёту
+							</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-money">
+							<span class="bskt-delivery-page__method-block_item-money-text bskt-col_gr">Для юридических лиц&nbspи ИП</span>
+						</div>
+						<div class="bskt-delivery-page__method-block_item-description">
+							<span class="bskt-delivery-page__method-block_item-description-text bskt-col_bl">К оплате со скидкой: <span class="bskt-pay-page__total-price-item bskt-col_rd bskt-weight_bold">1175.22 р.</span></span>
+						</div>
+						<div class="bskt-delivery-page__method-block_dropdown method-dropdown">
+							<p class="bskt-text-with-dot bskt-col_bl">После оформления заказа вы получите его уникальный номер, который нужно указать при оплате.</p>
+							<p class="bskt-text-with-dot bskt-col_bl">Оплатить заказ можно через: интернет-банкинг, кассы банков, электронные деньги, банкомат.</p>
+						</div>
+					</div>
+				
+					
+					
+				</div>
+			</section>
+		</div>
+	</section>
+	<section class="bskt-delivery-footer bskt-footer bskt-bgc-gr">
+		<div class="container-block">
+			<div class="bskt-footer-block clear">
+				<div class="bskt-footer-left">
+					<div class="bskt-footer-left__bottom">
+						<div class="bskt-footer-left__bottom-links clear">
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#warranty_car_tires_2y"></use>
+								</svg>
+								Гарантия 2&nbspгода
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#quality_control"></use>
+								</svg>
+								Контроль качества
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#handshake"></use>
+								</svg>
+								Доверие клиентов
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#delivery_free"></use>
+								</svg>
+								Бесплатная доставка
+							</span>
+						</div>	
+					</div>
+				</div>
+				<div class="bskt-footer-right">
+					<div class="bskt-footer-right_total">
+						<ul class="bskt-footer-right_total-list">
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Тип доставки:</span>
+								<span class="bskt-footer-right_total-list_item-right bskt-footer-right_total-list_item-right_witoutDot"><span class="bskt-footer-right_total-list_item-value bskt-col_bl">Самовывоз</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Адрес пункта самовывоза: </span>
+								<div class="bskt-footer-right_total-list_item-right bskt-footer-right_total-list_item-right_witoutDot"><span class="bskt-footer-right_total-list_item-value bskt-col_bl">
+								<svg class="bskt-pay-page__icon-question">
+									<use xlink:href="img/sprite.svg#question_circle"></use>
+								</svg>
+								г. Минск, ул. Радиальная,&nbsp40/2</span></div>
+								<div class="bskt-pay-page__block-for-icon-question">
+									<svg class="bskt-pay-page__block-for-icon-question_icon-close blockHidden">
+										<use xlink:href="img/sprite.svg#close_cross_simple"></use>
+									</svg>
+									<p class="bskt-pay-page__block-for-icon-question_text bskt-col_bl">Магазин/сервис «Автосеть»</p>
+									<p class="bskt-pay-page__block-for-icon-question_text bskt-col_bl bskt-weight_bold">Режим работы пункта самовывоза: </p>
+									<span class="bskt-pay-page__block-for-icon-question_time-work bskt-col_bl">пн-сб 8:00 - 21:00
+									</span>
+									<span class="bskt-pay-page__block-for-icon-question_time-work bskt-col_bl">вс: 8:00 - 18:00
+									</span>
+								</div>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Стоимость доставки:</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value bskt-col_rd">Бесплатно</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Промокод</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value bskt-col_rd">-2%</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Итого</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value">1 268.50 р.</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_rd clear">
+								<span class="bskt-footer-right_total-list_item-left">Итого со скидкой</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value bskt-footer-right_total-list_item-value_big-text">1 199.20 р.</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Экономия</span>
+								<span class="bskt-footer-right_total-list_item-right bskt-col_rd"><span class="bskt-footer-right_total-list_item-value">69.30 р.</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Количество</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value">8 шт.</span></span>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bskt-footer-left__bottom-btn_back">
+					<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
+				</div>
+				<div class="bskt-footer-right_next">
+					<a href="#" class="bskt-footer-right_next-link bskt-bgc-rd bskt-col_wh">продолжить</a>
+				</div>
+				<div class="bskt-footer-left__bottom-back bskt-footer-right_back">
+					<a href="#" class="bskt-footer-left__bottom-back-link bskt-col_bl bskt-hover">Вернуться в каталог</a>
+				</div>	
+				<div class="bskt-footer-left__bottom-btn_back bskt-footer-left__bottom-btn_back-mobile">
+					<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
+				</div>
+				<div class="bskt-footer-fromCabinet">
+					<span class="bskt-footer-fromCabinet_text">Для заполнения данных из личного кабинета нажмите <a href="#" class="bskt-footer-fromCabinet_link bskt-col_gr bskt-link-dashed">здесь</a> или продолжите оформление.</span>
+				</div>
+				<div class="bskt-footer-left__bottom-links bskt-footer-left__bottom-links_mobile clear">
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#warranty_car_tires_2y"></use>
+								</svg>
+								Гарантия 2&nbspгода
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#quality_control"></use>
+								</svg>
+								Контроль качества
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#handshake"></use>
+								</svg>
+								Доверие клиентов
+							</span>
+							<span class="bskt-footer-left__bottom-link bskt-col_bl">
+								<svg class="bskt-footer-left__bottom-link_icon">
+									<use xlink:href="img/sprite.svg#delivery_free"></use>
+								</svg>
+								Бесплатная доставка
+							</span>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bskt-delivery-footer-after bskt-main">
+		<div class="container-block">
+			<div class="bskt-delivery-main__block bskt-main__block">
+				<section class="bskt-main__caption">
+					<span class="bskt-main__caption-text bskt-col_gr">Товары в корзине</span>
+				</section>
+				<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+					<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+					<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="bskt-main__hidden">
+				<span class="bskt-main__hidden-btn bskt-btn-hidden bskt-col_gr bskt-link-dashed">Показать товары в корзине</span>
+			</div>
+		</div>
+	</section>
+</body>
+</html>

@@ -1,11 +1,14 @@
 .bskt-footer-block
 {
     padding: 20px 0;
+    margin: 0 -10px;
 }
 
 .bskt-footer-left
 {
     float: left;
+    width: 62%;
+    padding: 0px 10px;
 }
 
 .bskt-footer-left__top
@@ -13,15 +16,15 @@
     padding-bottom: 20px;
 
     box-shadow: inset 0 -2px 0 0 #fff;
+    margin: 0 -10px;
 }
 
 .bskt-footer-left__top-promo
 {
     position: relative;
-
-    display: inline-block;
-
-    vertical-align: middle;
+    float: left;
+    width: 50%;
+    padding: 0 10px;
 }
 
 .bskt-footer-left__top-input
@@ -48,7 +51,7 @@
 {
     position: absolute;
     top: 7px;
-    right: 7px;
+    right: 17px;
 
     display: block;
 
@@ -76,25 +79,22 @@
 
 .bskt-footer-left__top-label
 {
-    display: inline-block;
-
-    width: 270px;
-    height: 30px;
-    margin-left: 20px;
-
-    text-align: center;
-    vertical-align: middle;
-
-    color: #999;
-    border-radius: 3px;
-    background-color: #e0e0e0;
+    float: left;
+    width: 50%;
+    padding: 0 10px;
 }
 
 .bskt-footer-left__top-label_text
 {
+    display: block;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    color: #999;
+    border-radius: 3px;
+    background-color: #e0e0e0;
     font-size: 14px;
-    line-height: 30px;
-
+    line-height: 32px;
     text-transform: uppercase;
 }
 
@@ -133,7 +133,7 @@
 
 .bskt-footer-left__bottom-link + .bskt-footer-left__bottom-link
 {
-    margin-left: 17px;
+    margin-left: 16px;
 }
 
 .bskt-footer-left__bottom-link_icon
@@ -188,9 +188,10 @@
 }
 .bskt-footer-left__bottom-btn_back
 {
-    margin-top: 128px;
-
+    float: left;
     text-align: right;
+    width: 62%;
+    padding: 20px 10px 0px 10px;
 }
 .bskt-footer-left__bottom-btn_back-mobile
 {
@@ -212,6 +213,10 @@
 
     border-radius: 3px;
     background-color: #e0e0e0;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 .bskt-footer-left__bottom-btn_back-link:hover
 {
@@ -221,8 +226,8 @@
 .bskt-footer-right
 {
     float: left;
-
-    padding-left: 32px;
+    width: 38%;
+    padding: 0px 10px;
 }
 
 .bskt-footer-right_total-list_item
@@ -258,7 +263,7 @@
     display: inline-block;
     overflow: hidden;
 
-    width: 170px;
+    width: 183px;
 
     text-align: right;
     vertical-align: bottom;
@@ -277,6 +282,9 @@
     content: '.........................................................................................................................................';
     letter-spacing: 3px;
     color: #999;
+}
+.bskt-footer-right_total-list_item-right_witoutDot:before{
+    display: none;
 }
 
 .bskt-footer-right_total-list_item-value
@@ -299,7 +307,10 @@
 
 .bskt-footer-right_next
 {
-    margin-top: 20px;
+    margin-top: 0px;
+    float: left;
+    width: 38%;
+    padding: 20px 10px 0px 10px;
 }
 
 .bskt-footer-right_next-link
@@ -352,6 +363,10 @@
 .bskt-footer-fromCabinet_link
 {
     position: relative;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 @media (max-width: 1440px)
 {
@@ -365,7 +380,7 @@
 {
     .bskt-footer-left__top-promo
     {
-        display: block;
+        width: 100%;
     }
     .bskt-footer-left__top-input
     {
@@ -373,11 +388,8 @@
     }
     .bskt-footer-left__top-label
     {
-        display: block;
-
         width: 100%;
         margin-top: 20px;
-        margin-left: 0;
     }
     .bskt-footer-left__bottom-link
     {
@@ -401,13 +413,21 @@
         margin: 0 auto;
         margin-bottom: 10px;
     }
-    .bskt-footer-right
-    {
-        padding-left: 18px;
+    .bskt-footer-left,
+    .bskt-footer-right,
+    .bskt-footer-left__bottom-btn_back,
+    .bskt-footer-right_next{
+        width: 50%;
+    }
+    .bskt-footer-right_total-list_item-right {
+        width: 165px;
     }
     .bskt-footer-right_total-list_item-left
     {
         width: 185px;
+    }
+    .bskt-footer-left__bottom-link + .bskt-footer-left__bottom-link {
+        margin-left: 20px;
     }
     .bskt-footer-left__bottom-back
     {
@@ -416,16 +436,14 @@
     .bskt-footer-right_back
     {
         display: block;
+        float: right;
+        width: 50%;
 
         margin-top: 20px;
     }
     .bskt-footer-left__bottom-btn_back-link
     {
         width: 100%;
-    }
-    .bskt-footer-left__bottom-btn_back
-    {
-        margin-top: 82px;
     }
 }
 
@@ -439,31 +457,33 @@
     {
         margin-left: 0;
     }
-    .bskt-footer-right
-    {
-        padding-left: 36px;
-    }
     .bskt-footer-right_total-list_item-left
     {
         width: 110px;
     }
-    .bskt-footer-left__bottom-btn_back
-    {
-        margin-top: 92px;
+    .bskt-footer-right_total-list_item-right {
+        width: 175px;
     }
     .bskt-footer-fromCabinet
     {
         padding: 0 100px;
     }
+    .bskt-footer-left__bottom-link {
+        max-width: 72px;
+    }
 }
 
 @media (max-width: 639px)
-{
+{   
+    .bskt-footer-block {
+         margin: 0px; 
+    }
     .bskt-footer-left
     {
         display: block;
 
         width: 100%;
+        padding: 0px;
     }
     .bskt-footer-left__bottom
     {
@@ -476,8 +496,10 @@
     .bskt-footer-left__bottom-links_mobile
     {
         display: block;
+        float: left;
+        width: 100%;
 
-        margin-top: 40px;
+        margin-top: 30px;
     }
     .bskt-footer-left__bottom-link
     {
@@ -495,20 +517,30 @@
         display: block;
 
         width: 100%;
-        padding-top: 20px;
-        padding-left: 0;
+        padding: 20px 0px 0px 0px;
+    }
+    .bskt-footer-left,
+    .bskt-footer-right,
+    .bskt-footer-left__bottom-btn_back,
+    .bskt-footer-right_next {
+        width: 100%;
+    }
+    .bskt-footer-right_back {
+        width: 100%;
+    }
+    .bskt-footer-right_next {
+        padding: 20px 0px 0px 0px;
     }
     .bskt-footer-right_total-list_item-left
     {
-        float: left;
 
-        width: 30%;
+        width: 38%;
     }
     .bskt-footer-right_total-list_item-right
     {
-        float: left;
 
-        width: 70%;
+        width: 60%;
+        padding-left: 10px;
     }
     .bskt-footer-left__bottom-btn_back
     {
@@ -517,8 +549,7 @@
     .bskt-footer-left__bottom-btn_back-mobile
     {
         display: block;
-
-        margin-top: 20px;
+        padding: 20px 0px 0px 0px;
     }
     .bskt-footer-fromCabinet
     {

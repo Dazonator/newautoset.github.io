@@ -73,6 +73,10 @@
   font-size: 16px;
   margin-left: 20px;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__city-change_container {
@@ -337,7 +341,7 @@
 
 .bskt-delivery-page__method-block_item-caption {
   float: left;
-  width: 45%;
+  width: 43%;
 }
 
 .bskt-delivery-page__method-block_item-caption-text {
@@ -347,6 +351,10 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__method-block_item-caption-text:hover {
@@ -367,12 +375,12 @@
 
 .bskt-delivery-page__method-block_item-money {
   float: left;
-  width: 25%;
+  width: 32%;
 }
 
 .bskt-delivery-page__method-block_item-description {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 @keyframes dropdown{
   0%{
@@ -422,6 +430,10 @@
   padding-left: 30px;
   position: relative;
   font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__punkt-block_item-text:hover {
@@ -502,6 +514,10 @@
   border-radius: 3px;
   margin-top: 5px;
   -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__adress-inputs_adress {
@@ -732,10 +748,12 @@
     box-shadow: none;
   }
   .bskt-delivery-page__method-block_item-caption {
-    width: 44%;
+      width: 100%;
   }
-  .bskt-delivery-page__method-block_item-money {
-    width: 27%;
+  .bskt-delivery-page__method-block_item-money,
+  .bskt-delivery-page__method-block_item-description {
+    width: 100%;
+    padding-left: 85px;
   }
   .bskt-delivery-main__cart-tire_name {
     max-width: 100%;
@@ -775,13 +793,17 @@
   .bskt-delivery-page__method-block_item-caption {
     width: 100%;
   }
-  .bskt-delivery-page__method-block_item-money,
-  .bskt-delivery-page__method-block_item-description {
-    width: 100%;
-    padding-left: 85px;
-  }
+  
   .bskt-delivery-page__punkt-block_item-map-modal-header-text {
     max-width: 165px;
+  }
+  .bskt-delivery-page__adress-city-your {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .bskt-delivery-page__adress-city-value {
+    margin-left: 0px;
   }
 }
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Basket</title>
+	<title>Basket-Pay</title>
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/myselect.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -11,12 +11,14 @@
 	<link rel="stylesheet" href="basket/global-style/basket-header.css">
 	<link rel="stylesheet" href="basket/global-style/basket-footer.css">
 	<link rel="stylesheet" href="basket/global-style/basket-main.css">
+	<link rel="stylesheet" href="basket/basket-oder/css/basket-oder.css">
 	<script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
 	<script src="js/slick-slider.min.js"></script>
 	<script src="js/browser-plugin.min.js"></script>
 	<script src="js/inputmask.min.js"></script>
 	<script src="basket/js/basket.js"></script>
 	<script src="js/script.js"></script>
+	
 	<script>
       if (/MSIE|Trident/.test(navigator.userAgent)) {
           var iEobject;
@@ -28,14 +30,17 @@
           document.getElementsByTagName('head')[0].appendChild(iEobject);
       }
 
-  </script>
+	</script>
+	
 </head>
 <body>
+	<div class="allClose blockHidden"></div>
+	<div class="overlay modal-close-click js-overlay"></div>
 	<section class="bskt-header bskt-bgc-lightgr">
 		<div class="container-block">
 			<div class="bskt-header__block clear">
 				<section class="bskt-header__item">
-					<svg class="bskt-header__item-svg bskt-icon_active">
+					<svg class="bskt-header__item-svg">
 						<use xlink:href="img/sprite.svg#cart-red"></use>
 					</svg>
 					<span class="bskt-header__item-text bskt-col_bl">Корзина</span>
@@ -47,7 +52,7 @@
 					<span class="bskt-header__item-text bskt-col_bl">Доставка</span>
 				</section>
 				<section class="bskt-header__item">
-					<svg class="bskt-header__item-svg">
+					<svg class="bskt-header__item-svg bskt-icon_active">
 						<use xlink:href="img/sprite.svg#payment-gray"></use>
 					</svg>
 					<span class="bskt-header__item-text bskt-col_bl">Оплата</span>
@@ -61,218 +66,17 @@
 			</div>
 		</div>
 	</section>
-	<section class="bskt-main">
+	<section class="bskt-delivery-page">
 		<div class="container-block">
-			<div class="bskt-main__block">
-				<section class="bskt-main__caption">
-					<span class="bskt-main__caption-text bskt-col_gr">Товары в корзине</span>
-				</section>
-				<section class="bskt-main__cart">
-					<div class="bskt-main__cart-tire_pic">
-							<a href="#" class="bskt-main__cart-tire_pic-link">
-								<svg class="bskt-main__cart-tire_pic-svg">
-									<use xlink:href="img/sprite.svg#season_winter"></use>
-								</svg>
-								<img src="basket/basket-main/img/bitmap.jpg" alt="" class="bskt-main__cart-tire_pic-link_img">
-							</a>
-					</div>
-					<div class="bskt-main__cart-tire_name">
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
-					</div>
-					<div class="bskt-main__cart-pay_price">
-						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
-							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
-							<span class="bskt-main__cart-pay_price-top_value
-							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
-							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
-						</div>
-						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
-							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
-							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
-							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
-						</div>
-					</div>
-					<div class="bskt-main__cart-pay_count">
-						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
-						<div class="bskt-main__cart-pay_count-choose js-input-all">
-					        <div class="bskt-main__cart-pay_count-choose_body js-dropdown js-dropdown-onclick">
-					            <select class="myselect_block js-select">
-					                <option value="0">1</option>
-					                <option value="1">2</option>
-					                <option value="2">3</option>
-					                <option value="3" selected>4</option>
-					                <option value="4">5</option>
-					                <option value="5">6</option>
-					                <option value="6">7</option>
-					                <option value="7">8</option>
-					                <option value="8">9</option>
-					                <option value="9">10</option>
-					            </select>
-					        </div>
-						</div>
-					</div>
-					<div class="bskt-main__cart-pay_total">
-						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
-							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
-							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
-							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
-						</div>
-						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
-							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
-							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
-							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
-						</div>
-					</div>
-					<div class="bskt-main__cart-delete">
-					</div>
-				</section>
-				<section class="bskt-main__cart">
-					<div class="bskt-main__cart-tire_pic">
-							
-							<a href="#" class="bskt-main__cart-tire_pic-link">
-								<svg class="bskt-main__cart-tire_pic-svg">
-									<use xlink:href="img/sprite.svg#season_winter"></use>
-								</svg>
-								<img src="basket/basket-main/img/bitmap.jpg" alt="" class="bskt-main__cart-tire_pic-link_img">
-							</a>
-					</div>
-					<div class="bskt-main__cart-tire_name">
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
-					</div>
-					<div class="bskt-main__cart-pay_price">
-						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
-							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
-							<span class="bskt-main__cart-pay_price-top_value
-							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
-							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
-						</div>
-						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
-							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
-							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
-							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
-						</div>
-					</div>
-					<div class="bskt-main__cart-pay_count">
-						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
-						<div class="bskt-main__cart-pay_count-choose js-input-all">
-					        <div class="bskt-main__cart-pay_count-choose_body js-dropdown js-dropdown-onclick">
-					            <select class="myselect_block js-select">
-					                <option value="0">1</option>
-					                <option value="1">2</option>
-					                <option value="2">3</option>
-					                <option value="3" selected>4</option>
-					                <option value="4">5</option>
-					                <option value="5">6</option>
-					                <option value="6">7</option>
-					                <option value="7">8</option>
-					                <option value="8">9</option>
-					                <option value="9">10</option>
-					            </select>
-					        </div>
-						</div>
-					</div>
-					<div class="bskt-main__cart-pay_total">
-						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
-							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
-							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
-							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
-						</div>
-						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
-							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
-							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
-							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
-						</div>
-					</div>
-					<div class="bskt-main__cart-delete">
-					</div>
-				</section>
-				<section class="bskt-main__cart">
-					<div class="bskt-main__cart-tire_pic">
-							
-							<a href="#" class="bskt-main__cart-tire_pic-link">
-								<svg class="bskt-main__cart-tire_pic-svg">
-									<use xlink:href="img/sprite.svg#season_winter"></use>
-								</svg>
-								<img src="basket/basket-main/img/bitmap.jpg" alt="" class="bskt-main__cart-tire_pic-link_img">
-							</a>
-					</div>
-					<div class="bskt-main__cart-tire_name">
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
-						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
-					</div>
-					<div class="bskt-main__cart-pay_price">
-						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
-							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
-							<span class="bskt-main__cart-pay_price-top_value
-							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
-							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
-						</div>
-						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
-							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
-							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
-							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
-						</div>
-					</div>
-					<div class="bskt-main__cart-pay_count">
-						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
-						<div class="bskt-main__cart-pay_count-choose js-input-all">
-					        <div class="bskt-main__cart-pay_count-choose_body js-dropdown js-dropdown-onclick">
-					            <select class="myselect_block js-select">
-					                <option value="0">1</option>
-					                <option value="1">2</option>
-					                <option value="2">3</option>
-					                <option value="3" selected>4</option>
-					                <option value="4">5</option>
-					                <option value="5">6</option>
-					                <option value="6">7</option>
-					                <option value="7">8</option>
-					                <option value="8">9</option>
-					                <option value="9">10</option>
-					            </select>
-					        </div>
-						</div>
-					</div>
-					<div class="bskt-main__cart-pay_total">
-						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
-							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
-							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
-							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
-						</div>
-						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
-							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
-							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
-							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
-						</div>
-					</div>
-					<div class="bskt-main__cart-delete">
-					</div>
-				</section>
-				
-			</div>
+			<section class="bskt-main__caption">
+				<span class="bskt-main__caption-text bskt-col_gr">Оформление заказа</span>
+			</section>
 		</div>
 	</section>
-	<section class="bskt-footer bskt-bgc-gr">
+	<section class="bskt-delivery-footer bskt-footer bskt-bgc-gr">
 		<div class="container-block">
 			<div class="bskt-footer-block clear">
 				<div class="bskt-footer-left">
-					<div class="bskt-footer-left__top clear">
-						<div class="bskt-footer-left__top-promo">
-							<input type="text" class="bskt-footer-left__top-input" value="весна18">
-							<button class="bskt-footer-left__top-delete">
-								<svg class="bskt-footer-left__top-delete_icon">
-									<use xlink:href="img/sprite.svg#close_cross_simple"></use>
-								</svg>
-							</button>
-						</div>
-						<div class="bskt-footer-left__top-label">
-							<span class="bskt-footer-left__top-label_text  bskt-label-active">Промокод применен</span>
-						</div>
-					</div>
 					<div class="bskt-footer-left__bottom">
 						<div class="bskt-footer-left__bottom-links clear">
 							<span class="bskt-footer-left__bottom-link bskt-col_bl">
@@ -299,9 +103,6 @@
 								</svg>
 								Бесплатная доставка
 							</span>
-						</div>
-						<div class="bskt-footer-left__bottom-back">
-							<a href="#" class="bskt-footer-left__bottom-back-link bskt-col_bl bskt-hover">Вернуться в каталог</a>
 						</div>	
 					</div>
 				</div>
@@ -309,8 +110,35 @@
 					<div class="bskt-footer-right_total">
 						<ul class="bskt-footer-right_total-list">
 							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Тип доставки:</span>
+								<span class="bskt-footer-right_total-list_item-right bskt-footer-right_total-list_item-right_witoutDot"><span class="bskt-footer-right_total-list_item-value bskt-col_bl">Самовывоз</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Адрес пункта самовывоза: </span>
+								<div class="bskt-footer-right_total-list_item-right bskt-footer-right_total-list_item-right_witoutDot"><span class="bskt-footer-right_total-list_item-value bskt-col_bl">
+								<svg class="bskt-pay-page__icon-question">
+									<use xlink:href="img/sprite.svg#question_circle"></use>
+								</svg>
+								г. Минск, ул. Радиальная,&nbsp40/2</span></div>
+								<div class="bskt-pay-page__block-for-icon-question">
+									<svg class="bskt-pay-page__block-for-icon-question_icon-close blockHidden">
+										<use xlink:href="img/sprite.svg#close_cross_simple"></use>
+									</svg>
+									<p class="bskt-pay-page__block-for-icon-question_text bskt-col_bl">Магазин/сервис «Автосеть»</p>
+									<p class="bskt-pay-page__block-for-icon-question_text bskt-col_bl bskt-weight_bold">Режим работы пункта самовывоза: </p>
+									<span class="bskt-pay-page__block-for-icon-question_time-work bskt-col_bl">пн-сб 8:00 - 21:00
+									</span>
+									<span class="bskt-pay-page__block-for-icon-question_time-work bskt-col_bl">вс: 8:00 - 18:00
+									</span>
+								</div>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
+								<span class="bskt-footer-right_total-list_item-left">Стоимость доставки:</span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value bskt-col_rd">Бесплатно</span></span>
+							</li>
+							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
 								<span class="bskt-footer-right_total-list_item-left">Промокод</span>
-								<span class="bskt-footer-right_total-list_item-right "><span class="bskt-footer-right_total-list_item-value bskt-col_rd">-2%</span></span>
+								<span class="bskt-footer-right_total-list_item-right"><span class="bskt-footer-right_total-list_item-value bskt-col_rd">-2%</span></span>
 							</li>
 							<li class="bskt-footer-right_total-list_item bskt-col_bl clear">
 								<span class="bskt-footer-right_total-list_item-left">Итого</span>
@@ -331,12 +159,21 @@
 						</ul>
 					</div>
 				</div>
+				<div class="bskt-footer-left__bottom-btn_back">
+					<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
+				</div>
 				<div class="bskt-footer-right_next">
 					<a href="#" class="bskt-footer-right_next-link bskt-bgc-rd bskt-col_wh">продолжить</a>
 				</div>
 				<div class="bskt-footer-left__bottom-back bskt-footer-right_back">
 					<a href="#" class="bskt-footer-left__bottom-back-link bskt-col_bl bskt-hover">Вернуться в каталог</a>
 				</div>	
+				<div class="bskt-footer-left__bottom-btn_back bskt-footer-left__bottom-btn_back-mobile">
+					<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
+				</div>
+				<div class="bskt-footer-fromCabinet">
+					<span class="bskt-footer-fromCabinet_text">Для заполнения данных из личного кабинета нажмите <a href="#" class="bskt-footer-fromCabinet_link bskt-col_gr bskt-link-dashed">здесь</a> или продолжите оформление.</span>
+				</div>
 				<div class="bskt-footer-left__bottom-links bskt-footer-left__bottom-links_mobile clear">
 							<span class="bskt-footer-left__bottom-link bskt-col_bl">
 								<svg class="bskt-footer-left__bottom-link_icon">
@@ -363,6 +200,126 @@
 								Бесплатная доставка
 							</span>
 				</div>
+			</div>
+		</div>
+	</section>
+	<section class="bskt-delivery-footer-after bskt-main">
+		<div class="container-block">
+			<div class="bskt-delivery-main__block bskt-main__block">
+				<section class="bskt-main__caption">
+					<span class="bskt-main__caption-text bskt-col_gr">Товары в корзине</span>
+				</section>
+				<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+					<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+					<section class="bskt-delivery-main__cart bskt-main__cart">
+					<div class="bskt-delivery-main__cart-tire_name bskt-main__cart-tire_name">
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-producer bskt-col_bl">Goodyear</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-description bskt-col_bl">UltraGrip Performance SUV Gen-1</span>
+						<span class="bskt-main__cart-tire_name-link bskt-main__cart-tire_name-size bskt-col_bl">195/55 R15 85H</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_price bskt-main__cart-pay_price">
+						<div class="bskt-main__cart-pay_price-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_price-top_caption bskt-main__cart-pay_price-withSale bskt-main__cart-pay_caption bskt-col_bl">Цена со скидкой:</span>
+							<span class="bskt-main__cart-pay_price-top_value
+							bskt-main__cart-pay_price-withSale_value bskt-col_bl">168.37 </span>
+							<span class="bskt-main__cart-pay_price-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_bl">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_price-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_price-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Цена:</span>
+							<span class="bskt-main__cart-pay_price-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">175.82 </span>
+							<span class="bskt-main__cart-pay_price-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_count bskt-main__cart-pay_count">
+						<span class="bskt-main__cart-pay_count-caption bskt-main__cart-pay_caption bskt-col_bl">Кол-во:</span>
+						<span class="bskt-main__cart-pay_count-caption_value">4 шт.</span>
+					</div>
+					<div class="bskt-delivery-main__cart-pay_total bskt-main__cart-pay_total">
+						<div class="bskt-main__cart-pay_total-top bskt-main__cart-pay_top">
+							<span class="bskt-main__cart-pay_total-top_caption bskt-main__cart-pay_caption bskt-col_rd">Стоимость со скидкой:</span>
+							<span class="bskt-main__cart-pay_total-top_value bskt-main__cart-pay_price-withSale_value bskt-col_rd">673.48 </span>
+							<span class="bskt-main__cart-pay_total-top_rub bskt-main__cart-pay_price-withSale_rub bskt-col_rd">р.</span>
+						</div>
+						<div class="bskt-main__cart-pay_total-bottom bskt-main__cart-pay_mt">
+							<span class="bskt-main__cart-pay_total-bottom_caption bskt-main__cart-pay_caption bskt-col_gr">Стоимость:</span>
+							<span class="bskt-main__cart-pay_total-bottom_value bskt-main__cart-pay_price-withOutSale_value bskt-col_gr">703.28 </span>
+							<span class="bskt-main__cart-pay_total-bottom_rub bskt-main__cart-pay_price-withOutSale_rub bskt-col_gr">р.</span>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div class="bskt-main__hidden">
+				<span class="bskt-main__hidden-btn bskt-btn-hidden bskt-col_gr bskt-link-dashed">Показать товары в корзине</span>
 			</div>
 		</div>
 	</section>
