@@ -1,6 +1,12 @@
 input{
   -webkit-appearance: none;
 }
+div, a, p, span, ul, li, input, svg, section, button, select{
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+}
 .overlay {
   display: none;
   top: 0;

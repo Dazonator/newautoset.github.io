@@ -73,6 +73,10 @@
   font-size: 16px;
   margin-left: 20px;
   position: relative;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__city-change_container {

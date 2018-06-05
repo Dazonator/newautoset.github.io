@@ -278,6 +278,9 @@
     letter-spacing: 3px;
     color: #999;
 }
+.bskt-footer-right_total-list_item-right_witoutDot:before{
+    display: none;
+}
 
 .bskt-footer-right_total-list_item-value
 {
