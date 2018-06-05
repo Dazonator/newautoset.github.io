@@ -479,14 +479,14 @@
 }
 
 .bskt-delivery-page__adress-city-your {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
   font-size: 16px;
   line-height: 20px;
 }
 
 .bskt-delivery-page__adress-city-value {
-  margin-left: 20px;
+  margin-left: 0px;
   font-size: 16px;
 }
 
