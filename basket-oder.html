@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<title>Basket-Pay</title>
+	<title>Basket-Oder</title>
 	<link rel="stylesheet" href="fonts/stylesheet.css">
 	<link rel="stylesheet" href="css/myselect.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -11,6 +11,8 @@
 	<link rel="stylesheet" href="basket/global-style/basket-header.css">
 	<link rel="stylesheet" href="basket/global-style/basket-footer.css">
 	<link rel="stylesheet" href="basket/global-style/basket-main.css">
+	<link rel="stylesheet" href="basket/basket-delivery/css/basket-delivery.css">
+	<link rel="stylesheet" href="basket/basket-pay/css/basket-pay.css">
 	<link rel="stylesheet" href="basket/basket-oder/css/basket-oder.css">
 	<script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
 	<script src="js/slick-slider.min.js"></script>
@@ -66,10 +68,75 @@
 			</div>
 		</div>
 	</section>
-	<section class="bskt-delivery-page">
+	<section class="bskt-oder-page">
 		<div class="container-block">
 			<section class="bskt-main__caption">
 				<span class="bskt-main__caption-text bskt-col_gr">Оформление заказа</span>
+			</section>
+			<section class="bskt-oder-page-block">
+				<div class="bskt-oder-page-block__organization">
+					<div class="bskt-oder-page-block__caption">
+						<span class="bskt-oder-page-block__caption-text bskt-col_bl">Сведения об организации:</span>
+					</div>
+					<div class="bskt-oder-page-block__field clear">
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">УНП:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="200030514">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">Наличие информации:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">Организация:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="Савушкин продукт">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">ФИО Руководителя:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="Савчиц А. В.">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">Юридический адрес:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="Ул. Я. Купалы, 118">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">На основании:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="Доверенности">
+						</div>
+					</div>
+				</div>
+				<div class="bskt-oder-page-block__person">
+					<div class="bskt-oder-page-block__caption">
+						<span class="bskt-oder-page-block__caption-text bskt-col_bl">Контактное лицо:</span>
+					</div>
+					<div class="bskt-oder-page-block__field clear">
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">Фамилия:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="Константинопольский">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">Телефон:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">Имя:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="Константин">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">E-mail
+							:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="konstantinopolsky@yandex.ru">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">Отчество:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="Константинович">
+						</div>
+						<div class="bskt-oder-page-block__field-item">
+							<span class="bskt-oder-page-block__field-item-caption bskt-col_bl">Комментарий:</span>
+							<input type="text" class="bskt-oder-page-block__field-item-input bskt-input-style" value="Доверенности">
+						</div>
+					</div>
+				</div>
 			</section>
 		</div>
 	</section>
