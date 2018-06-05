@@ -1,0 +1,201 @@
+.bskt-pay-page__total-price-item{
+  display: table;
+}
+.bskt-pay-page__longterm{
+  padding: 10px 20px;
+}
+
+.bskt-pay-page__longterm-block{
+  margin: 0 -19px;
+}
+.bskt-pay-page__longterm-item{
+  float: left;
+  width: 50%;
+  padding: 10px 19px;
+}
+.bskt-pay-page__longterm-item-period,
+.bskt-pay-page__longterm-item-first-pay{
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+}
+.bskt-pay-page__longterm-item-period_value,
+.bskt-pay-page__longterm-item-first-pay_value{
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 20px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.bskt-pay-page__longterm-item-period_slider,
+.bskt-pay-page__longterm-item-first-pay_slider{
+  display: block;
+  width: 100%;
+  height: 70px;
+  background-color: lightgray;
+}
+.bskt-pay-page__list-item-left{
+  width: 236px;
+}
+.bskt-pay-page__list-item-right{
+  width: 181px;
+}
+.bskt-pay-page__list-item-left,
+.bskt-pay-page__list-item-right-value{
+  background-color: #f9f9f9;
+}
+.bskt-pay-page__icon-question{
+  position: relative;
+  top: 3px;
+  left: -3px;
+  width: 16px;
+  height: 16px;
+  color: #999;
+  fill: #999;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+}
+.bskt-pay-page__icon-question:hover{
+  cursor: pointer;
+}
+.bskt-pay-page__block-for-icon-question{
+  position: absolute;
+  z-index: 100;
+  top: 52px;
+  right: 0px;
+  display: none;
+  width: 320px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.bskt-pay-page__block-for-icon-question.open{
+  display: block;
+}
+.bskt-pay-page__block-for-icon-question_icon-close{
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 14px;
+  height: 14px;
+  color: #999;
+  fill: #999;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
+}
+.bskt-pay-page__block-for-icon-question_icon-close:hover{
+  cursor: pointer;
+}
+.bskt-pay-page__block-for-icon-question_text,
+.bskt-pay-page__block-for-icon-question_time-work{
+  font-size: 16px;
+}
+.bskt-pay-page__block-for-icon-question_text + .bskt-pay-page__block-for-icon-question_text{
+  margin-top: 10px;
+}
+.bskt-pay-page__block-for-icon-question_text + .bskt-pay-page__block-for-icon-question_time-work{
+  margin-top: 10px;
+}
+.bskt-pay-page__block-for-icon-question_time-work{
+  display: block;
+}
+@media (max-width: 1440px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 959px) {
+  .bskt-pay-page__longterm-block {
+    margin: 0 -10px;
+  }
+  .bskt-pay-page__longterm-item {
+    padding: 10px 10px;
+  }
+  .bskt-pay-page__list-item-left {
+    width: 150px;
+  }
+  .bskt-pay-page__list-item-right {
+    width: 180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bskt-pay-page__list-item-right {
+    width: 115px;
+  }
+  .bskt-pay-page__block-for-icon-question {
+    width: 600px;
+  }
+}
+
+@media (max-width: 639px) {
+  .bskt-pay-page__longterm {
+    padding: 10px 10px;
+  }
+  .bskt-pay-page__longterm-block {
+    margin: 0px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    -ms-align-items: flex-start;
+    align-items: flex-start;
+  }
+  .bskt-pay-page__longterm-item {
+    width: 100%;
+    padding: 10px 0px;
+  }
+  .bskt-pay-page__longterm-item:nth-of-type(1){
+    order: 1;
+  }
+  .bskt-pay-page__longterm-item:nth-of-type(2){
+    order: 3;
+  }
+  .bskt-pay-page__longterm-item:nth-of-type(3){
+    order: 2;
+  }
+  .bskt-pay-page__longterm-item:nth-of-type(4){
+    order: 4;
+  }
+  .bskt-pay-page__longterm-item:nth-of-type(5){
+    order: 5;
+    padding-bottom: 0px;
+  }
+  .bskt-pay-page__longterm-item:nth-of-type(6){
+    order: 6;
+  }
+  .bskt-pay-page__list-item-left {
+    width: 59%;
+  }
+  .bskt-pay-page__list-item-right {
+    width: 39%;
+  }
+  .bskt-pay-page__block-for-icon-question {
+    width: 440px;
+  }
+  
+
+}
+
+@media (max-width: 479px) {
+  .bskt-pay-page__block-for-icon-question {
+    width: calc(100vw - 40px);
+  }
+}
+
+@media (max-width: 320px) {}
