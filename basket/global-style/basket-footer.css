@@ -435,6 +435,7 @@
     }
     .bskt-footer-right_back
     {
+        display: block;
         float: right;
         width: 50%;
 
@@ -480,6 +481,7 @@
         display: block;
 
         width: 100%;
+        padding: 0px;
     }
     .bskt-footer-left__bottom
     {
@@ -492,6 +494,8 @@
     .bskt-footer-left__bottom-links_mobile
     {
         display: block;
+        float: left;
+        width: 100%;
 
         margin-top: 40px;
     }
@@ -511,8 +515,19 @@
         display: block;
 
         width: 100%;
-        padding-top: 20px;
-        padding-left: 0;
+        padding: 20px 0px 0px 0px;
+    }
+    .bskt-footer-left,
+    .bskt-footer-right,
+    .bskt-footer-left__bottom-btn_back,
+    .bskt-footer-right_next {
+        width: 100%;
+    }
+    .bskt-footer-right_back {
+        width: 100%;
+    }
+    .bskt-footer-right_next {
+        padding: 20px 0px 0px 0px;
     }
     .bskt-footer-right_total-list_item-left
     {
