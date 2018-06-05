@@ -212,6 +212,10 @@
 
     border-radius: 3px;
     background-color: #e0e0e0;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 .bskt-footer-left__bottom-btn_back-link:hover
 {
@@ -355,6 +359,10 @@
 .bskt-footer-fromCabinet_link
 {
     position: relative;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 @media (max-width: 1440px)
 {
@@ -503,15 +511,13 @@
     }
     .bskt-footer-right_total-list_item-left
     {
-        float: left;
 
-        width: 30%;
+        width: 38%;
     }
     .bskt-footer-right_total-list_item-right
     {
-        float: left;
 
-        width: 70%;
+        width: 60%;
         padding-left: 10px;
     }
     .bskt-footer-left__bottom-btn_back

@@ -47,12 +47,6 @@
 .bskt-pay-page__list-item-right-value{
   background-color: #f9f9f9;
 }
-.bskt-footer-right_total-list_item:nth-of-type(1) .bskt-footer-right_total-list_item-right:before{
-  display: none;
-}
-.bskt-footer-right_total-list_item:nth-of-type(2) .bskt-footer-right_total-list_item-right:before{
-  display: none;
-}
 .bskt-pay-page__icon-question{
   position: relative;
   top: 3px;
@@ -61,6 +55,10 @@
   height: 16px;
   color: #999;
   fill: #999;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 .bskt-pay-page__icon-question:hover{
   cursor: pointer;
@@ -89,6 +87,10 @@
   height: 14px;
   color: #999;
   fill: #999;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 .bskt-pay-page__block-for-icon-question_icon-close:hover{
   cursor: pointer;

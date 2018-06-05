@@ -351,6 +351,10 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: bold;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__method-block_item-caption-text:hover {
@@ -426,6 +430,10 @@
   padding-left: 30px;
   position: relative;
   font-size: 16px;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__punkt-block_item-text:hover {
@@ -506,6 +514,10 @@
   border-radius: 3px;
   margin-top: 5px;
   -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__adress-inputs_adress {

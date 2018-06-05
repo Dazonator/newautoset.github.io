@@ -309,6 +309,10 @@
     line-height: 20px;
 
     position: relative;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 
 
