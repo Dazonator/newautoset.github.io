@@ -337,7 +337,7 @@
 
 .bskt-delivery-page__method-block_item-caption {
   float: left;
-  width: 45%;
+  width: 43%;
 }
 
 .bskt-delivery-page__method-block_item-caption-text {
@@ -367,12 +367,12 @@
 
 .bskt-delivery-page__method-block_item-money {
   float: left;
-  width: 25%;
+  width: 32%;
 }
 
 .bskt-delivery-page__method-block_item-description {
   float: left;
-  width: 30%;
+  width: 25%;
 }
 @keyframes dropdown{
   0%{
@@ -732,11 +732,18 @@
     box-shadow: none;
   }
   .bskt-delivery-page__method-block_item-caption {
-    width: 44%;
+      width: 100%;
   }
-  .bskt-delivery-page__method-block_item-money {
-    width: 27%;
+  .bskt-delivery-page__method-block_item-money,
+  .bskt-delivery-page__method-block_item-description {
+    width: 100%;
+    padding-left: 85px;
   }
+  
+
+
+
+
   .bskt-delivery-main__cart-tire_name {
     max-width: 100%;
     width: 100%;
@@ -775,11 +782,7 @@
   .bskt-delivery-page__method-block_item-caption {
     width: 100%;
   }
-  .bskt-delivery-page__method-block_item-money,
-  .bskt-delivery-page__method-block_item-description {
-    width: 100%;
-    padding-left: 85px;
-  }
+  
   .bskt-delivery-page__punkt-block_item-map-modal-header-text {
     max-width: 165px;
   }
