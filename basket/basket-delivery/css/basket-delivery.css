@@ -479,14 +479,14 @@
 }
 
 .bskt-delivery-page__adress-city-your {
-  display: block;
+  display: inline-block;
   vertical-align: middle;
   font-size: 16px;
   line-height: 20px;
 }
 
 .bskt-delivery-page__adress-city-value {
-  margin-left: 0px;
+  margin-left: 20px;
   font-size: 16px;
 }
 
@@ -755,11 +755,6 @@
     width: 100%;
     padding-left: 85px;
   }
-  
-
-
-
-
   .bskt-delivery-main__cart-tire_name {
     max-width: 100%;
     width: 100%;
@@ -801,6 +796,13 @@
   
   .bskt-delivery-page__punkt-block_item-map-modal-header-text {
     max-width: 165px;
+  }
+  .bskt-delivery-page__adress-city-your {
+    display: block;
+  }
+
+  .bskt-delivery-page__adress-city-value {
+    margin-left: 0px;
   }
 }
 
