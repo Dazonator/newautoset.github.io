@@ -40,4 +40,13 @@ $(document).ready(function () {
         $(".punkt-click").removeClass("active");
         $(this).addClass("active");
     })
+    $(".bskt-pay-page__icon-question").on("click", function(){
+        $(".bskt-pay-page__block-for-icon-question").addClass("open");
+        $(".allClose").addClass("open");
+    })
+    $(".blockHidden").on("click", function(){
+        $(".allClose").removeClass("open");
+        $(".bskt-pay-page__block-for-icon-question").removeClass("open");
+    });
+
 });
