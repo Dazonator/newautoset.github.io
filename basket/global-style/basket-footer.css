@@ -456,9 +456,6 @@
     left: 0px;
 
 }
-.bskt-footer-pablickContract-mobile{
-    display: none;
-}
 .bskt-footer-pablickContract_modal-main{
   text-align: left;
   padding: 20px;
@@ -638,6 +635,19 @@
 {   
     .bskt-footer-block {
          margin: 0px; 
+         display: -webkit-flex;
+         display: -moz-flex;
+         display: -ms-flex;
+         display: -o-flex;
+         display: flex;
+         -webkit-flex-wrap: wrap;
+         -moz-flex-wrap: wrap;
+         -ms-flex-wrap: wrap;
+         -o-flex-wrap: wrap;
+         flex-wrap: wrap;
+         justify-content: flex-start;
+         -ms-align-items: flex-start;
+         align-items: flex-start;
     }
     .bskt-footer-left
     {
@@ -661,6 +671,11 @@
         width: 100%;
 
         margin-top: 30px;
+        -webkit-order: 5;
+        -moz-order: 5;
+        -ms-order: 5;
+        -o-order: 5;
+        order: 5;
     }
     .bskt-footer-left__bottom-link
     {
@@ -678,7 +693,12 @@
         display: block;
 
         width: 100%;
-        padding: 20px 0px 0px 0px;
+        padding: 0px;
+        -webkit-order: 1;
+        -moz-order: 1;
+        -ms-order: 1;
+        -o-order: 1;
+        order: 1;
     }
     .bskt-footer-left,
     .bskt-footer-right,
@@ -691,6 +711,11 @@
     }
     .bskt-footer-right_next {
         padding: 20px 0px 0px 0px;
+        -webkit-order: 3;
+        -moz-order: 3;
+        -ms-order: 3;
+        -o-order: 3;
+        order: 3;
     }
     .bskt-footer-right_total-list_item-left
     {
@@ -711,10 +736,15 @@
     {
         display: block;
         padding: 20px 0px 0px 0px;
+        -webkit-order: 4;
+        -moz-order: 4;
+        -ms-order: 4;
+        -o-order: 4;
+        order: 4;
     }
     .bskt-footer-fromCabinet
     {
-        padding: 0 0;
+        padding: 0;
     }
     .bskt-footer-pay-page__block-for-icon-question {
         width: 440px;
@@ -722,18 +752,16 @@
     .bskt-footer-pablickContract_modal{
         width: 440px;
     }
-    .bskt-footer-pablickContract{
-        display: none;
-    }
-    .bskt-footer-pablickContract-mobile{
-        display: block;
-        float: left;
-        width: 100%;
-        text-align: center;
-        margin-top: 20px;
-    }
     .bskt-footer-pablickContract_modal-main-block{
         padding-right: 18px;
+    }
+    .bskt-footer-pablickContract {
+        width: 100%;
+        -webkit-order: 2;
+        -moz-order: 2;
+        -ms-order: 2;
+        -o-order: 2;
+        order: 2;
     }
 }
 
