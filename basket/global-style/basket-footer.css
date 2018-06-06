@@ -351,7 +351,7 @@
     float: left;
 
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 10px;
 
     text-align: center;
@@ -693,7 +693,7 @@
         display: block;
 
         width: 100%;
-        padding: 0px;
+        padding: 20px 0px 0px 0px;
         -webkit-order: 1;
         -moz-order: 1;
         -ms-order: 1;
@@ -708,6 +708,11 @@
     }
     .bskt-footer-right_back {
         width: 100%;
+        -webkit-order: 5;
+        -moz-order: 5;
+        -ms-order: 5;
+        -o-order: 5;
+        order: 5;
     }
     .bskt-footer-right_next {
         padding: 20px 0px 0px 0px;
@@ -745,6 +750,11 @@
     .bskt-footer-fromCabinet
     {
         padding: 0;
+        -webkit-order: 5;
+        -moz-order: 5;
+        -ms-order: 5;
+        -o-order: 5;
+        order: 5;
     }
     .bskt-footer-pay-page__block-for-icon-question {
         width: 440px;
