@@ -2984,13 +2984,12 @@ $('.search-result-title').click(function () {
     console.log('123');
 })
 
+
 $('.reset').click(function () {
     $('#search').val('');
     $('.select__city').val('main');
-    $('.select__Type').val('main');
     $('.select__cityRegion').val('main');
     $('.select__cityArea').val('main');
-    $('.select__villageCouncil').val('main');
 });
 
 

@@ -1304,15 +1304,15 @@ $.fn.search.settings = {
   },
 
   error : {
-    source          : 'Cannot search. No source used, and Semantic API module was not included',
-    noResults       : 'Your search returned no results',
-    logging         : 'Error in debug logging, exiting.',
-    noEndpoint      : 'No search endpoint was specified',
-    noTemplate      : 'A valid template name was not specified.',
-    oldSearchSyntax : 'searchFullText setting has been renamed fullTextSearch for consistency, please adjust your settings.',
-    serverError     : 'There was an issue querying the server.',
-    maxResults      : 'Results must be an array to use maxResults setting',
-    method          : 'The method you called is not defined.'
+    source          : 'Невозможно выполнить поиск. Источник не использовался, и модуль Semantic API не был включен',
+    noResults       : '',
+    logging         : 'Ошибка в регистрации отладки, выход.',
+    noEndpoint      : 'Конечная точка поиска не указана.',
+    noTemplate      : 'Правильное имя шаблона не указано.',
+    oldSearchSyntax : 'Поиск полнотекстовых настроек был переименована в Полнотекстовый Поиск для согласованности, пожалуйста, проверьте свои настройки.',
+    serverError     : 'Возникла проблема с запросом сервера.',
+    maxResults      : 'Результаты должны быть массивом для использования настройки maxResults',
+    method          : 'Метод, который вы назвали, не определен.'
   },
 
   metadata: {
@@ -1385,7 +1385,7 @@ $.fn.search.settings = {
         // message type
         if(type == 'empty') {
           html += ''
-            + '<div class="header">No Results</div class="header">'
+            + '<div class="header">Поиск не дал результатов...</div class="header">'
             + '<div class="description">' + message + '</div class="description">'
           ;
         }
