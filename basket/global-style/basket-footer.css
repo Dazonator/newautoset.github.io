@@ -510,7 +510,7 @@
     cursor: pointer;
 }
 .bskt-footer-pablickContract_modal-main_scroll-top.visible{
-  display: block;
+    display: block;
 }
 .bskt-footer-pablickContract_modal-main_scroll-bottom {
     padding-top: 20px;

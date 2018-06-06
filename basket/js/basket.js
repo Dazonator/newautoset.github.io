@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var pablickContractModalMainBlock = $(".bskt-footer-pablickContract_modal-main-block").height();
+    
     $(".modal-close-click").on("click", function(){
         $("body").removeClass("modal-open");
         $("body").removeClass("overlay-open");
@@ -49,13 +49,20 @@ $(document).ready(function () {
         $(".allClose").removeClass("open");
         $(".bskt-footer-pay-page__block-for-icon-question").removeClass("open");
     });
+
+
+
+
+
     $(".bskt-footer-pablickContract_modal-main_scroll-bottom").on("click", function(){
+        var pablickContractModalMainBlock = $(".bskt-footer-pablickContract_modal-main-block").height();
         var scroll_top = $(".bskt-footer-pablickContract_modal-main-block").scrollTop();
         var scrollValue = pablickContractModalMainBlock + scroll_top;
         $(".bskt-footer-pablickContract_modal-main_scroll-top").addClass("visible");
         $(".bskt-footer-pablickContract_modal-main-block").animate({scrollTop:scrollValue}, 200);
     })
     $(".bskt-footer-pablickContract_modal-main_scroll-top").on("click", function(){
+        var pablickContractModalMainBlock = $(".bskt-footer-pablickContract_modal-main-block").height();
         var scroll_top = $(".bskt-footer-pablickContract_modal-main-block").scrollTop();
         var scrollValue = scroll_top - pablickContractModalMainBlock;
         $(".bskt-footer-pablickContract_modal-main-block").animate({scrollTop:scrollValue}, 200);
@@ -73,13 +80,5 @@ $(document).ready(function () {
     })
 
 
-
-    // $(".header-mobile-modalmenu__modal-submenu-btnclick").on("click", function(){
-    //     var data = $(this).attr("data")
-    //     $("body").find("div [data='" + data +"-submenu']").css({
-    //         "left" : "0%"
-    //     })
-    //     $('body,html').animate({scrollTop:0}, 100);
-    // })
 
 });
