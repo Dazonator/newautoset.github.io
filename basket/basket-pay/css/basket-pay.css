@@ -35,7 +35,7 @@
   display: block;
   width: 100%;
   height: 70px;
-  background-color: red;
+  background-color: lightgray;
 }
 .bskt-pay-page__list-item-left{
   width: 236px;
@@ -47,70 +47,8 @@
 .bskt-pay-page__list-item-right-value{
   background-color: #f9f9f9;
 }
-.bskt-pay-page__icon-question{
-  position: relative;
-  top: 3px;
-  left: -3px;
-  width: 16px;
-  height: 16px;
-  color: #999;
-  fill: #999;
-  -webkit-tap-highlight-color: transparent;
-    -ms-tap-highlight-color: transparent;
-    -moz-tap-highlight-color: transparent;
-    -o-tap-highlight-color: transparent;
-}
-.bskt-pay-page__icon-question:hover{
-  cursor: pointer;
-}
-.bskt-pay-page__block-for-icon-question{
-  position: absolute;
-  z-index: 100;
-  top: 52px;
-  right: 0px;
-  display: none;
-  width: 320px;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.5);
-  text-align: center;
-}
-.bskt-pay-page__block-for-icon-question.open{
-  display: block;
-}
-.bskt-pay-page__block-for-icon-question_icon-close{
-  display: block;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  width: 14px;
-  height: 14px;
-  color: #999;
-  fill: #999;
-  -webkit-tap-highlight-color: transparent;
-    -ms-tap-highlight-color: transparent;
-    -moz-tap-highlight-color: transparent;
-    -o-tap-highlight-color: transparent;
-}
-.bskt-pay-page__block-for-icon-question_icon-close:hover{
-  cursor: pointer;
-}
-.bskt-pay-page__block-for-icon-question_text,
-.bskt-pay-page__block-for-icon-question_time-work{
-  font-size: 16px;
-}
-.bskt-pay-page__block-for-icon-question_text + .bskt-pay-page__block-for-icon-question_text{
-  margin-top: 10px;
-}
-.bskt-pay-page__block-for-icon-question_text + .bskt-pay-page__block-for-icon-question_time-work{
-  margin-top: 10px;
-}
-.bskt-pay-page__block-for-icon-question_time-work{
-  display: block;
-}
-.bskt-footer-left__bottom-btn_back {
-    margin-top: 254px;
-}
+
+
 @media (max-width: 1440px) {}
 
 @media (max-width: 1199px) {}
@@ -128,9 +66,6 @@
   .bskt-pay-page__list-item-right {
     width: 180px;
   }
-  .bskt-footer-left__bottom-btn_back {
-    margin-top: 189px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -139,9 +74,6 @@
   }
   .bskt-pay-page__block-for-icon-question {
     width: 600px;
-  }
-  .bskt-footer-left__bottom-btn_back {
-    margin-top: 218px;
   }
 }
 
@@ -196,9 +128,6 @@
   }
   .bskt-pay-page__block-for-icon-question {
     width: 440px;
-  }
-  .bskt-footer-left__bottom-btn_back {
-    margin-top: 20px;
   }
   
 

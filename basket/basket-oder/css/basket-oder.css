@@ -1,0 +1,40 @@
+.bskt-oder-page-block{
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+.bskt-oder-page-block__caption{
+  text-align: center;
+}
+.bskt-oder-page-block__caption-text{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+
+}
+.bskt-oder-page-block__field{
+  margin: 0 -10px;
+  margin-top: 10px;
+}
+.bskt-oder-page-block__field-item{
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.bskt-oder-page-block__field-item-caption{
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 14px;
+  position: relative;
+}
+.bskt-oder-page-block__field-item-caption:after{
+  content: "*";
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 14px;
+  color: #e2001a;
+}
+.bskt-oder-page-block__person{
+  margin-top: 10px;
+}

@@ -141,8 +141,8 @@
 	<section class="bskt-delivery-page">
 		<div class="container-block">
 			<section class="bskt-delivery-page__city bskt-delivery-page__block">
-				<div class="bskt-delivery-page__city-caption bskt-delivery-page__block-caption">
-					<span class="bskt-delivery-page__city-caption-text bskt-delivery-page__block-text bskt-col_gr">Город доставки</span>
+				<div class="bskt-main__caption">
+					<span class="bskt-main__caption-text bskt-col_gr">Город доставки</span>
 				</div>
 				<div class="bskt-delivery-page__city-change">
 					<span class="bskt-delivery-page__city-change_value .bskt-col_bl">г. Полоцк</span>
@@ -285,8 +285,8 @@
 				</div>
 			</section>
 			<section class="bskt-delivery-page__method bskt-delivery-page__block">
-				<div class="bskt-delivery-page__method-caption bskt-delivery-page__block-caption">
-					<span class="bskt-delivery-page__method-caption-text bskt-delivery-page__block-text bskt-col_gr">Способ доставки</span>
+				<div class="bskt-main__caption">
+					<span class="bskt-main__caption-text bskt-col_gr">Способ доставки</span>
 				</div>
 				<div class="bskt-delivery-page__method-block">
 					<div class="bskt-delivery-page__method-block_item clear">
@@ -376,8 +376,8 @@
 				</div>
 			</section>
 			<section class="bskt-delivery-page__punkt bskt-delivery-page__block">
-				<div class="bskt-delivery-page__punkt-caption bskt-delivery-page__block-caption">
-					<span class="bskt-delivery-page__punkt-caption-text bskt-delivery-page__block-text bskt-col_gr">Пункт самовывоза</span>
+				<div class="bskt-main__caption">
+					<span class="bskt-main__caption-text bskt-col_gr">Пункт самовывоза</span>
 				</div>
 				<div class="bskt-delivery-page__punkt-block">
 					<div class="bskt-delivery-page__punkt-block_item">
@@ -454,8 +454,8 @@
 				</div>
 			</section>
 			<section class="bskt-delivery-page__adress bskt-delivery-page__block">
-				<div class="bskt-delivery-page__adress-caption bskt-delivery-page__block-caption">
-					<span class="bskt-delivery-page__adress-caption-text bskt-delivery-page__block-text bskt-col_gr">Адрес доставки</span>
+				<div class="bskt-main__caption">
+					<span class="bskt-main__caption-text bskt-col_gr">Адрес доставки</span>
 				</div>
 				<div class="bskt-delivery-page__adress-block">
 					<div class="bskt-delivery-page__adress-city-change bskt-delivery-page__city-change">
@@ -615,19 +615,19 @@
 						</div>
 						<div class="bskt-delivery-page__adress-inputs_adress-name">
 							<span class="bskt-delivery-page__adress-label bskt-col_bl">Наименование:</span>
-							<input type="text" class="bskt-delivery-page__adress-inputs_field" value="Молодогвардейская">
+							<input type="text" class="bskt-input-style" value="Молодогвардейская">
 						</div>
 						<div class="bskt-delivery-page__adress-inputs_house">
 							<span class="bskt-delivery-page__adress-label bskt-col_bl">Дом:</span>
-							<input type="text" class="bskt-delivery-page__adress-inputs_field" value="15">
+							<input type="text" class="bskt-input-style" value="15">
 						</div>
 						<div class="bskt-delivery-page__adress-inputs_korpus">
 							<span class="bskt-delivery-page__adress-label bskt-col_bl">Корпус:</span>
-							<input type="text" class="bskt-delivery-page__adress-inputs_field">
+							<input type="text" class="bskt-input-style">
 						</div>
 						<div class="bskt-delivery-page__adress-inputs_flat">
 							<span class="bskt-delivery-page__adress-label bskt-col_bl">Офис / кв.:</span>
-							<input type="text" class="bskt-delivery-page__adress-inputs_field" value="45">
+							<input type="text" class="bskt-input-style" value="45">
 						</div>
 					</div>
 				</div>
@@ -635,6 +635,10 @@
 			</section>
 		</div>
 	</section>
+
+
+
+
 	<section class="bskt-delivery-footer bskt-footer bskt-bgc-gr">
 		<div class="container-block">
 			<div class="bskt-footer-block clear">
@@ -666,9 +670,6 @@
 								Бесплатная доставка
 							</span>
 						</div>
-						<div class="bskt-footer-left__bottom-btn_back">
-							<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
-						</div>	
 					</div>
 				</div>
 				<div class="bskt-footer-right">
@@ -696,16 +697,23 @@
 							</li>
 						</ul>
 					</div>
-					<div class="bskt-footer-right_next">
-						<a href="#" class="bskt-footer-right_next-link bskt-bgc-rd bskt-col_wh">продолжить</a>
-					</div>
-					<div class="bskt-footer-left__bottom-btn_back bskt-footer-left__bottom-btn_back-mobile">
-							<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
-					</div>
-					<div class="bskt-footer-left__bottom-back bskt-footer-right_back">
-						<a href="#" class="bskt-footer-left__bottom-back-link bskt-col_bl bskt-hover">Вернуться в каталог</a>
-					</div>	
-					<div class="bskt-footer-left__bottom-links bskt-footer-left__bottom-links_mobile clear">
+				</div>
+				<div class="bskt-footer-left__bottom-btn_back">
+					<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
+				</div>
+				<div class="bskt-footer-right_next">
+					<a href="#" class="bskt-footer-right_next-link bskt-bgc-rd bskt-col_wh">продолжить</a>
+				</div>
+				<div class="bskt-footer-left__bottom-back bskt-footer-right_back">
+					<a href="#" class="bskt-footer-left__bottom-back-link bskt-col_bl bskt-hover">Вернуться в каталог</a>
+				</div>	
+				<div class="bskt-footer-left__bottom-btn_back bskt-footer-left__bottom-btn_back-mobile">
+					<a href="#" class="bskt-footer-left__bottom-btn_back-link bskt-col_gr bskt-hover">назад</a>
+				</div>
+				<div class="bskt-footer-fromCabinet">
+					<span class="bskt-footer-fromCabinet_text">Для заполнения данных из личного кабинета нажмите <a href="#" class="bskt-footer-fromCabinet_link bskt-col_gr bskt-link-dashed">здесь</a> или продолжите оформление.</span>
+				</div>
+				<div class="bskt-footer-left__bottom-links bskt-footer-left__bottom-links_mobile clear">
 							<span class="bskt-footer-left__bottom-link bskt-col_bl">
 								<svg class="bskt-footer-left__bottom-link_icon">
 									<use xlink:href="img/sprite.svg#warranty_car_tires_2y"></use>
@@ -730,17 +738,17 @@
 								</svg>
 								Бесплатная доставка
 							</span>
-						</div>
-				</div>
-				<div class="bskt-footer-fromCabinet">
-					<span class="bskt-footer-fromCabinet_text">Для заполнения данных из личного кабинета нажмите <a href="#" class="bskt-footer-fromCabinet_link bskt-col_gr bskt-link-dashed">здесь</a> или продолжите оформление.</span>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
+
+
 	<section class="bskt-delivery-footer-after bskt-main">
 		<div class="container-block">
-			<div class="bskt-delivery-main__block open bskt-main__block">
+			<div class="bskt-delivery-main__block bskt-main__block">
 				<section class="bskt-main__caption">
 					<span class="bskt-main__caption-text bskt-col_gr">Товары в корзине</span>
 				</section>
@@ -854,7 +862,7 @@
 				</section>
 			</div>
 			<div class="bskt-main__hidden">
-				<span class="bskt-main__hidden-btn bskt-btn-hidden bskt-col_gr bskt-link-dashed">Скрыть товары в корзине</span>
+				<span class="bskt-main__hidden-btn bskt-btn-hidden bskt-col_gr bskt-link-dashed">Показать товары в корзине</span>
 			</div>
 		</div>
 	</section>
