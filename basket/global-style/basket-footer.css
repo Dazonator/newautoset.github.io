@@ -765,6 +765,8 @@
     }
     .bskt-footer-pablickContract_modal-main-block{
         padding-right: 18px;
+        height: 300px;
+        max-height: 300px;
     }
     .bskt-footer-pablickContract {
         width: 100%;
