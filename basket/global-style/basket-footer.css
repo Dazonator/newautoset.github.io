@@ -50,7 +50,7 @@
 .bskt-footer-left__top-delete
 {
     position: absolute;
-    top: 7px;
+    top: 11px;
     right: 17px;
 
     display: block;
@@ -64,6 +64,7 @@
 
 .bskt-footer-left__top-delete_icon
 {
+    display: block;
     width: inherit;
     height: inherit;
 

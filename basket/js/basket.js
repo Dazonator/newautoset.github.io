@@ -67,7 +67,6 @@ $(document).ready(function () {
     });
     $(".bskt-footer-pablickContract_modal-main-block").scroll(function(){
         var scroll_top = $(".bskt-footer-pablickContract_modal-main-block").scrollTop();
-        console.log(scroll_top);
         if(scroll_top > 0){
             $(".bskt-footer-pablickContract_modal-main_scroll-top").addClass("visible");
         }
