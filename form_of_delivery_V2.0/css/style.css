@@ -276,6 +276,9 @@ body {
       .select .reset,
       .select .choice {
         width: 100%; } }
+    .select .reset:focus,
+    .select .choice:focus {
+      outline: none; }
   .select .reset {
     display: inline-block;
     color: #000;
