@@ -2984,8 +2984,16 @@ $('.search-result-title').click(function () {
     console.log('123');
 })
 
-$('.reset').click(function (event) {
-    event.preventDefault();
+$('.reset').hover(function () {
+    // $('.reset:before').css('right', '0');
+    // $('.reset:before').css('width', '100%');
+    // $('.reset:before').css('left:', 'auto');
+    // $('.reset:before').css('background-color', 'white');
+    $(this).addClass('hover');
+}, function () {
+    $(this).removeClass('hover');
+});
+$('.reset').click(function () {
     $('#search').val('');
     $('.select__city').val('main');
     $('.select__cityRegion').val('main');

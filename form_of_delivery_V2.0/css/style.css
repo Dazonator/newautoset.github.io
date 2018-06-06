@@ -303,7 +303,7 @@ body {
       background-color: transparent;
       -webkit-border-radius: 7px;
       border-radius: 7px; }
-    .select .reset:hover:before {
+    .select .reset.hover:before {
       right: 0;
       width: 100%;
       left: auto;
