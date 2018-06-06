@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    
+    var pablickContractModalMainBlock = $(".bskt-footer-pablickContract_modal-main-block").height();
     $(".modal-close-click").on("click", function(){
         $("body").removeClass("modal-open");
         $("body").removeClass("overlay-open");
@@ -49,36 +49,27 @@ $(document).ready(function () {
         $(".allClose").removeClass("open");
         $(".bskt-footer-pay-page__block-for-icon-question").removeClass("open");
     });
-
-
-
-
-
     $(".bskt-footer-pablickContract_modal-main_scroll-bottom").on("click", function(){
-        var pablickContractModalMainBlock = $(".bskt-footer-pablickContract_modal-main-block").height();
         var scroll_top = $(".bskt-footer-pablickContract_modal-main-block").scrollTop();
         var scrollValue = pablickContractModalMainBlock + scroll_top;
         $(".bskt-footer-pablickContract_modal-main_scroll-top").addClass("visible");
         $(".bskt-footer-pablickContract_modal-main-block").animate({scrollTop:scrollValue}, 200);
-    })
+    });
     $(".bskt-footer-pablickContract_modal-main_scroll-top").on("click", function(){
-        var pablickContractModalMainBlock = $(".bskt-footer-pablickContract_modal-main-block").height();
         var scroll_top = $(".bskt-footer-pablickContract_modal-main-block").scrollTop();
         var scrollValue = scroll_top - pablickContractModalMainBlock;
         $(".bskt-footer-pablickContract_modal-main-block").animate({scrollTop:scrollValue}, 200);
         if(scrollValue < 0){
             $(".bskt-footer-pablickContract_modal-main_scroll-top").removeClass("visible");
         }
-    })
+    });
     $(".bskt-footer-pablickContract_modal-main-block").scroll(function(){
         if($(".bskt-footer-pablickContract_modal-main-block").scrollTop() > 0){
             $(".bskt-footer-pablickContract_modal-main_scroll-top").addClass("visible");
         }
         else{
-            $(".bskt-footer-pablickContract_modal-main_scroll-top").removeClass("visible");
+            $(".bskt-footer-pablickContract_modal-main_scroll-top").addClass("visible");
         }
-    })
-
-
+    });
 
 });
