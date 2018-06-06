@@ -2985,7 +2985,7 @@ $('.search-result-title').click(function () {
 })
 
 
-$('.reset').focus(function () {
+$('.reset').focusin(function () {
     $('#search').val('');
     $('.select__city').val('main');
     $('.select__cityRegion').val('main');
