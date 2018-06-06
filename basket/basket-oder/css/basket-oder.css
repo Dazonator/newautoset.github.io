@@ -19,6 +19,7 @@
   float: left;
   width: 50%;
   padding: 10px;
+  position: relative;
 }
 .bskt-oder-page-block__field-item-caption{
   display: inline-block;
@@ -26,7 +27,7 @@
   font-size: 14px;
   position: relative;
 }
-.bskt-oder-page-block__field-item-caption:after{
+.bskt-oder-page-withStar:after{
   content: "*";
   display: block;
   position: absolute;
@@ -38,3 +39,74 @@
 .bskt-oder-page-block__person{
   margin-top: 10px;
 }
+.bskt-oder-page-block__field-item-button{
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  height: 36px;
+  border: none;
+  border-radius: 3px;
+  background-color: #999;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+.bskt-oder-page-block__field-item-button:hover {
+    box-shadow: inset 0 0 0 1px #ccc;
+    background-color: #e0e0e0;
+    color: #000;
+}
+.bskt-oder-page-block__field-item-input-telprefix{
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: bold;
+}
+.bskt-oder-page-block__field-item-tel{
+  padding-left: 50px;
+  font-weight: bold;
+}
+.bskt-oder-page-block__field-item-textarea {
+  margin: 5px 0px 0px 0px;
+  padding: 5px 10px 0px 10px;
+  line-height: 20px;
+  min-height: 36px;
+  overflow: hidden;
+  resize:vertical;
+}
+
+@media (max-width: 1440px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 959px) {}
+
+@media (max-width: 767px) {
+  
+  .bskt-oder-page-block__person .bskt-oder-page-block__field-item {
+    width: 100%;;
+  }
+  .bskt-oder-page-block__field-item-input-telprefix {
+    left: 10px;
+  }
+  .bskt-oder-page-block__field-item-textarea {
+    min-height: 108px;
+    resize: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .bskt-oder-page-block__field {
+    margin: 10px 0px 0px 0px;
+  }
+  .bskt-oder-page-block__field-item {
+    width: 100%;
+    padding: 10px 0px;
+  }
+}
+
+@media (max-width: 479px) {}
+
+@media (max-width: 320px) {}

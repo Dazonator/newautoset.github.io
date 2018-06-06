@@ -28,13 +28,6 @@
   display: block;
 }
 
-.modal-open .bskt-delivery-page__city-change_container {
-  display: block;
-}
-
-.modal-open .bskt-delivery-page__city-change_modal.open {
-  display: block;
-}
 
 .bskt-delivery-page__block {
   padding: 20px 0px;
@@ -87,15 +80,6 @@
   top: 0;
 }
 
-.bskt-delivery-page__city-change_modal {
-  margin: 0 auto;
-  width: 920px;
-  display: none;
-  justify-content: flex-end;
-  background-color: #fff;
-  z-index: 100000;
-  position: relative;
-}
 
 .bskt-delivery-page__city-change_modal-header {
   background-color: #999;
@@ -231,31 +215,18 @@
 .bskt-delivery-page__city-change_modal-main_inputs-block_item {
   float: left;
   width: 25%;
-  height: 30px;
   padding: 0px 10px;
+}
+.bskt-delivery-page__city-change_modal-main_inputs-search-block{
+  margin-top: 0px;
 }
 
 .bskt-delivery-page__city-change_modal-main_inputs-search {
   position: relative;
 }
-
-.bskt-delivery-page__city-change_modal-main_inputs-search-block {
-  width: 100%;
-  height: 100%;
-  font-family: 'Roboto';
-  font-size: 16px;
-  line-height: 30px;
-  font-weight: bold;
-  padding: 0px 30px 0px 7px; 
-  border: none;
-  box-shadow: inset 0 0 0 1px #eee;
-  border-radius: 3px;
-  -webkit-appearance: none;
-}
-
 .bskt-delivery-page__city-change_modal-main_inputs-search-tool {
   position: absolute;
-  top: 7px;
+  top: 10px;
   right: 20px;
   display: block;
   width: 16px;
@@ -265,7 +236,7 @@
   width: 100%;
   height: 100%;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 36px;
   font-weight: bold;
 }
 
@@ -288,7 +259,6 @@
 .bskt-delivery-page__city-change_modal-main_confirm-item {
   float: right;
   width: 25%;
-  height: 30px;
   padding: 0 10px;
 }
 
@@ -297,7 +267,7 @@
   border-radius: 3px;
   background-color: #e0e0e0;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 36px;
 }
 
 .bskt-delivery-page__city-change_modal-main_confirm-cancel:hover {
@@ -310,7 +280,7 @@
   display: block;
   border-radius: 3px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 36px;
 }
 
 .bskt-delivery-page__city-change_modal-main_confirm-btn:hover {
@@ -508,9 +478,9 @@
 .bskt-delivery-page__adress-inputs_adress-select-block span.select-value {
   width: 100%;
   margin-top: 5px;
-  height: 30px;
+  height: 36px;
   font-size: 16px;
-  line-height: 30px;
+  line-height: 36px;
 }
 
 .bskt-delivery-page__adress-inputs_adress-select-block ul.select-list {
@@ -563,11 +533,10 @@
   }
   .bskt-delivery-page__city-change_modal-main_inputs-block_item {
     width: 50%;
-    height: 50px;
     padding: 10px 10px;
   }
   .bskt-delivery-page__city-change_modal-main_inputs-search-tool {
-    top: 16px;
+    top: 20px;
   }
   .bskt-delivery-page__city-change_modal-main_confirm-item {
     width: 50%;
