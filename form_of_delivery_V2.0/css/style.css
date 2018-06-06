@@ -125,9 +125,9 @@ body {
 .results {
   position: absolute;
   display: none;
-  top: 85px;
+  top: 82px;
   left: 35px;
-  max-height: 350px;
+  max-height: 145px;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-transform-origin: center top;
@@ -142,19 +142,15 @@ body {
   -webkit-box-shadow: 0 2px 4px 0 rgba(34, 36, 38, 0.12), 0 2px 10px 0 rgba(34, 36, 38, 0.15);
   box-shadow: 0 2px 4px 0 rgba(34, 36, 38, 0.12), 0 2px 10px 0 rgba(34, 36, 38, 0.15); }
   .results::-webkit-scrollbar {
-    width: 5px; }
+    width: 3px; }
   .results::-webkit-scrollbar-thumb {
     background-color: #565656; }
-  @media (max-width: 768px) {
-    .results {
-      max-height: 150px; } }
   @media (max-width: 550px) {
     .results {
       left: 30px;
-      top: 55px;
+      top: 52px;
       width: auto;
-      right: 30px;
-      max-height: 150px; } }
+      right: 30px; } }
   .results .message.empty {
     width: auto;
     padding: 5px 10px; }
@@ -194,12 +190,12 @@ body {
     overflow: hidden;
     font-size: 1em;
     color: rgba(0, 0, 0, 0.87);
-    line-height: 1.33;
+    line-height: 1.1;
     border-bottom: 1px solid rgba(34, 36, 38, 0.1);
     -webkit-transition: background .1s ease,border-color .1s ease;
     -o-transition: background .1s ease,border-color .1s ease;
     transition: background .1s ease,border-color .1s ease;
-    padding: .85714286em 1.14285714em; }
+    padding: 5px 10px; }
     .results .result:hover {
       background-color: #f9fafb; }
     @media (max-width: 550px) {
