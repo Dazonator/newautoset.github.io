@@ -145,6 +145,9 @@ body {
     width: 5px; }
   .results::-webkit-scrollbar-thumb {
     background-color: #565656; }
+  @media (max-width: 768px) {
+    .results {
+      max-height: 150px; } }
   @media (max-width: 550px) {
     .results {
       left: 30px;
