@@ -214,6 +214,9 @@
 
     text-align: center;
 }
+.bskt-main__cart-pay_count-choose_body span.select-value{
+    margin-top: 4px;
+}
 .bskt-main__cart-pay_count-caption_value
 {
     font-size: 18px;

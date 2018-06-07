@@ -421,10 +421,10 @@
 .bskt-footer-pay-page__block-for-icon-question_time-work{
   font-size: 16px;
 }
-.bskt-footer-pay-page__block-for-icon-question_text + .bskt-pay-page__block-for-icon-question_text{
+.bskt-footer-pay-page__block-for-icon-question_text + .bskt-footer-pay-page__block-for-icon-question_text{
   margin-top: 10px;
 }
-.bskt-footer-pay-page__block-for-icon-question_text + .bskt-pay-page__block-for-icon-question_time-work{
+.bskt-footer-pay-page__block-for-icon-question_text + .bskt-footer-pay-page__block-for-icon-question_time-work{
   margin-top: 10px;
 }
 .bskt-footer-pay-page__block-for-icon-question_time-work{
@@ -456,7 +456,7 @@
 }
 .bskt-footer-pablickContract_modal-main{
   text-align: left;
-  padding: 20px;
+  padding: 0px 20px;
   background-color: #fff;
   font-size: 12px;
   overflow: hidden; 
@@ -500,7 +500,7 @@
   transform: rotate(180deg);
 }
 .bskt-footer-pablickContract_modal-main_scroll-top {
-    padding-bottom: 20px;
+    padding: 20px 0px 20px 0px;
     display: none;
     cursor: pointer;
 }
@@ -508,7 +508,7 @@
     display: block;
 }
 .bskt-footer-pablickContract_modal-main_scroll-bottom {
-    padding-top: 20px;
+    padding: 20px 0px 20px 0px;
     cursor: pointer;
 }
 @media (max-width: 1440px)
