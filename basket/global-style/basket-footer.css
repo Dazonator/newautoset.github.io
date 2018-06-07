@@ -49,10 +49,11 @@
 .bskt-footer-left__top-delete
 {
     position: absolute;
-    top: 11px;
+    top: 50%;
     right: 17px;
 
     display: block;
+    margin-top: -7px;
 
     width: 14px;
     height: 14px;
