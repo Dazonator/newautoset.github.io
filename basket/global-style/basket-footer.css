@@ -16,7 +16,6 @@
     padding-bottom: 20px;
 
     box-shadow: inset 0 -2px 0 0 #fff;
-    margin: 0 -10px;
 }
 
 .bskt-footer-left__top-promo
@@ -24,14 +23,14 @@
     position: relative;
     float: left;
     width: 50%;
-    padding: 0 10px;
+    padding-right: 10px;
 }
 
 .bskt-footer-left__top-input
 {
     font-size: 14px;
 
-    width: 270px;
+    width: 100%;
     height: 36px;
     padding: 0 25px 0 15px;
 
@@ -82,7 +81,7 @@
 {
     float: left;
     width: 50%;
-    padding: 0 10px;
+    padding-left: 10px;
 }
 
 .bskt-footer-left__top-label_text
@@ -525,15 +524,16 @@
     .bskt-footer-left__top-promo
     {
         width: 100%;
+        padding-right: 0px;
     }
-    .bskt-footer-left__top-input
-    {
-        width: 100%;
+    .bskt-footer-left__top-delete {
+        right: 7px;
     }
     .bskt-footer-left__top-label
     {
         width: 100%;
         margin-top: 20px;
+        padding-left: 0px;
     }
     .bskt-footer-left__bottom-link
     {
