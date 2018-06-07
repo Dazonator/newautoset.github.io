@@ -268,9 +268,7 @@
     text-align: right;
     vertical-align: bottom;
 }
-.bskt-footer-right_total-list_item-right_witoutDot:before{
-    display: none;
-}
+
 .bskt-footer-right_total-list_item-right_verticTop{
     vertical-align: top;
 }
@@ -297,6 +295,9 @@
     content: '.........................................................................................................................................';
     letter-spacing: 3px;
     color: #999;
+}
+.bskt-footer-right_total-list_item-value_withoutDot:before{
+    display: none;
 }
 
 .bskt-footer-right_total-list_item-value_big-text
@@ -509,6 +510,12 @@
 .bskt-footer-pablickContract_modal-main_scroll-bottom {
     padding: 20px 0px 20px 0px;
     cursor: pointer;
+}
+.bskt-footer-right_total-list_item-left-thanks-page{
+    width: 49%
+}
+.bskt-footer-right_total-list_item-left-thanks-page{
+    width: 49%
 }
 @media (max-width: 1440px)
 {

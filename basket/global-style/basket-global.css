@@ -97,7 +97,19 @@ input{
 .bskt-lh-28 {
   line-height: 28px;
 }
+.bskt-main__caption
+{
+    text-align: center;
+}
 
+.bskt-main__caption-text
+{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 40px;
+
+    display: block;
+}
 .bskt-icon_active {
   color: #e2001a !important;
   fill: #e2001a !important;
