@@ -43,10 +43,6 @@
 .bskt-pay-page__list-item-right{
   width: 181px;
 }
-.bskt-pay-page__list-item-left,
-.bskt-pay-page__list-item-right-value{
-  background-color: #f9f9f9;
-}
 
 
 @media (max-width: 1440px) {}
