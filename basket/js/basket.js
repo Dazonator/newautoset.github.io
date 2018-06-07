@@ -1,6 +1,6 @@
 $(document).ready(function () {
     
-    $(".modal-close-click").on("click", function(){
+    $(".js-close-modal").on("click", function(){
         $("body").removeClass("modal-open");
         $("body").removeClass("overlay-open");
         $(".modal").removeClass("open");
