@@ -268,6 +268,10 @@
   background-color: #e0e0e0;
   font-size: 16px;
   line-height: 36px;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__city-change_modal-main_confirm-cancel:hover {
@@ -281,6 +285,10 @@
   border-radius: 3px;
   font-size: 16px;
   line-height: 36px;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
 }
 
 .bskt-delivery-page__city-change_modal-main_confirm-btn:hover {
