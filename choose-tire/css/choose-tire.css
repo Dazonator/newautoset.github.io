@@ -935,9 +935,7 @@ a.tirecart-link-withTriangle:before {
 .tirecart-marketing-block-list__item{
   width: 25%;
 }
-.tirecart-marketing-block-list__icon{
-  background-color: red;
-}
+
 @media (max-width: 1440px) {
   .tirecart-body-left {
     width: 44%;
