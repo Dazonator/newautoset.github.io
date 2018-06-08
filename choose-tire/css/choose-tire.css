@@ -935,6 +935,85 @@ a.tirecart-link-withTriangle:before {
 .tirecart-marketing-block-list__item{
   width: 25%;
 }
+.tirecart-filter-field{
+  background-color: #666;
+  padding: 10px 0px;
+}
+.tirecart-filter-block{
+  display: table;
+  width: 100%;
+}
+.tirecart-filter-block__left{
+  text-align: left;
+  display: table-cell;
+  vertical-align: middle;
+}
+.tirecart-filter-block__tire-type{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+.tirecart-filter-block__search{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  margin-left: 55px;
+  position: relative;
+  color: #b2b2b2;
+}
+.tirecart-filter-block__search:before{
+  content: "";
+  display: block;
+  width: 1px;
+  height: 30px;
+  background-color: #fff;
+  position: absolute;
+  left: -27px;
+  top: -6px;
+}
+.tirecart-filter-block__search-value,
+.tirecart-filter-block__search-size{
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.tirecart-filter-block__right{
+  text-align: right;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.tirecart-filter-block__cheaper,
+.tirecart-filter-block__expensive{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  width: 154px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #b2b2b2;
+}
+.tirecart-filter-block__cheaper:hover,
+.tirecart-filter-block__expensive:hover{
+  color: #fff;
+  background-color: #7f7f7f;
+  cursor: pointer;
+}
+.tirecart-filter-active{
+  background-color: #dddddd;
+  color: #000;
+}
+.tirecart-filter-active:hover{
+  cursor: default;
+  background-color: #dddddd;
+  color: #000;
+}
 
 @media (max-width: 1440px) {
   .tirecart-body-left {
@@ -959,6 +1038,9 @@ a.tirecart-link-withTriangle:before {
   .tirecart-body-right-options__icon {
     width: 35px;
     margin-right: 3px;
+  }
+  .tirecart-filter-block {
+    padding: 0px 10px;
   }
 }
 
@@ -1212,6 +1294,18 @@ a.tirecart-link-withTriangle:before {
   }
   .tirecart-body-left-caption__tire-size_index-hover {
     top: 30px;
+  }
+  .tirecart-filter-block__left {
+    display: table-row;
+    text-align: center;
+  }
+  .tirecart-filter-block__right {
+    display: table-row;
+    text-align: center;
+  }
+  .tirecart-filter-block__cheaper,
+  .tirecart-filter-block__expensive {
+    margin-top: 5px;
   }
 }
 
@@ -1549,6 +1643,27 @@ a.tirecart-link-withTriangle:before {
   }
   .tirecart-body-left-pic__montag-free {
     left: 0px;
+  }
+  .tirecart-filter-block {
+    padding: 0px;
+  }
+  .tirecart-filter-block__tire-type {
+    display: block;
+  }
+  .tirecart-filter-block__search {
+    display: block;
+    max-width: 250px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .tirecart-filter-block__search:before {
+    display: none;
+  }
+  .tirecart-filter-block__cheaper,
+  .tirecart-filter-block__expensive {
+    margin-top: 20px;
+    margin-left: 0px;
   }
 }
 
