@@ -707,7 +707,7 @@ a.tirecart-link-withTriangle:before {
   box-shadow: inset 0 0 0 1px #ccc;
   border-radius: 3px;
   position: relative;
-  z-index: 1;
+  /*z-index: 1;*/
   padding-left: 10px;
   padding-right: 30px;
 }
@@ -721,14 +721,14 @@ a.tirecart-link-withTriangle:before {
   content: '';
   top: 50%;
   right: 8px;
-  margin-top: -4px;
+  margin-top: -5px;
   transition: 0.3s;
   background-image: url(../img/arrow_666666_down.svg);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
   width: 18px;
-  height: 10px;
+  height: 11px;
 }
 
 .tirecart-body-middle-countTire__select ul.select-list {
@@ -867,27 +867,25 @@ a.tirecart-link-withTriangle:before {
   position: relative;
 }
 
-.tirecart-body-right-desc__item:before {
-  content: '........................................................................................................................................................';
-  display: block;
-  position: absolute;
-  z-index: 0;
-  top: -4px;
-  left: 0px;
-  font-weight: 100;
-  letter-spacing: 1.8px;
-  color: #999;
-}
 
 .tirecart-body-right-desc__item-left {
   float: left;
   font-size: 12px;
   display: block;
-  background-color: #fff;
   position: relative;
-  z-index: 1;
   padding-right: 3px;
 }
+.tirecart-body-right-desc__item-left:before {
+  content: '........................................................................................................................................................';
+  display: block;
+  position: absolute;
+  bottom: 0px;
+  left: 100%;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: #999;
+}
+
 
 .tirecart-body-right-desc__item-right {
   float: right;
@@ -896,7 +894,6 @@ a.tirecart-link-withTriangle:before {
   display: block;
   background-color: #fff;
   position: relative;
-  z-index: 1;
   padding-left: 3px;
 }
 
