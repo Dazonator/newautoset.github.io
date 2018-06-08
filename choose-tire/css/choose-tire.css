@@ -707,7 +707,6 @@ a.tirecart-link-withTriangle:before {
   box-shadow: inset 0 0 0 1px #ccc;
   border-radius: 3px;
   position: relative;
-  /*z-index: 1;*/
   padding-left: 10px;
   padding-right: 30px;
 }
@@ -925,7 +924,20 @@ a.tirecart-link-withTriangle:before {
   text-decoration: none;
   color: #000;
 }
-
+.tirecart-marketing-block{
+  display: none;
+}
+.tirecart-marketing-block-list{
+  margin: 0px;
+  background-color: #fff;
+  padding: 0px 10px;
+}
+.tirecart-marketing-block-list__item{
+  width: 25%;
+}
+.tirecart-marketing-block-list__icon{
+  background-color: red;
+}
 @media (max-width: 1440px) {
   .tirecart-body-left {
     width: 44%;
@@ -1147,6 +1159,9 @@ a.tirecart-link-withTriangle:before {
     bottom: 68px;
     left: 90px;
   }
+  .tirecart-marketing-block{
+    display: block;
+  }
 }
 
 @media (max-width: 959px) {
@@ -1356,6 +1371,26 @@ a.tirecart-link-withTriangle:before {
   }
   .tirecart-body-left-dopinfo__es-hover {
     top: -60px;
+  }
+  .tirecart-marketing-block-list__item {
+    padding: 5px;
+  }
+  .tirecart-marketing-block-list__text {
+    position: relative;
+    padding-left: 40px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+    min-height: 30px;
+  }
+  .tirecart-marketing-block-list__icon {
+    position: absolute;
+    left: 0px;
+    margin-right: 0px;
   }
 }
 
@@ -1581,5 +1616,16 @@ a.tirecart-link-withTriangle:before {
   }
   .tirecart-body-middle-countTire__select-block span.select-value {
     width: 100%;
+  }
+  .tirecart-marketing-block-list__item {
+    padding: 5px 0px;
+    width: 50%;
+  }
+  .tirecart-marketing-block-list__text {
+    padding-left: 36px;
+  }
+  .tirecart-marketing-block-list__icon {
+    width: 33px;
+    height: 28px;
   }
 }
