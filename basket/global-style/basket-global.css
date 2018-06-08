@@ -159,24 +159,7 @@ input{
   border-radius: 50%;
   background-color: #e2001a;
 }
-.radio-choose:before{
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 10px;
-  height: 10px;
-  border: 5px solid #fff;
-  border-radius: 50%;;
-  box-shadow: 0px 0px 0px 1px #ddd;
-}
-.radio-choose.active:before{
-  background-color: #000;
-}
-.radio-choose.disabled:before{
-  background-color: #999;
-}
+
 .bskt-input-style{
   display: block;
   width: 100%;
@@ -195,6 +178,24 @@ input{
   -ms-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
   -o-tap-highlight-color: transparent;
+}
+.radio-choose:before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 5px solid #fff;
+  border-radius: 50%;;
+  box-shadow: 0px 0px 0px 1px #ddd;
+}
+.bskt-delivery-page__radio-input:checked + .radio-choose:before{
+  background-color: #000;
+}
+.bskt-delivery-page__radio-input:disabled + .radio-choose:before{
+  background-color: #999;
 }
 @media (max-width: 1440px) {}
 

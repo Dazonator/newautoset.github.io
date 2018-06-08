@@ -304,16 +304,34 @@
 .bskt-delivery-page__method-block {
   margin-top: 22px;
 }
+.bskt-delivery-page__method-block_item{
+    position: relative;
+    padding-bottom: 15px;
+}
+.bskt-delivery-page__method-block_item:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #eee;
+    position: absolute;
+    bottom: 0px;
+}
+.bskt-delivery-page__method-block_item:last-of-type:before{
+    display: none;
+}
 
 .bskt-delivery-page__method-block_item + .bskt-delivery-page__method-block_item {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 .bskt-delivery-page__method-block_item-caption {
   float: left;
   width: 43%;
 }
-
+.bskt-delivery-page__radio-input{
+  display: none;
+}
 .bskt-delivery-page__method-block_item-caption-text {
   display: inline-block;
   padding-left: 85px;

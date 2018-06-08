@@ -55,7 +55,7 @@
 {
     display: block;
 
-    width: 147px;
+    width: 170px;
 }
 
 .bskt-main__cart-tire_name
@@ -76,7 +76,6 @@
 
 .bskt-main__cart-tire_name-link
 {
-    line-height: 24px;
 
     display: table;
 }
@@ -164,7 +163,8 @@
     display: table;
 }
 
-.bskt-main__cart-pay_price-bottom_value
+.bskt-main__cart-pay_price-bottom_value,
+.bskt-main__cart-pay_total-bottom_value
 {
     line-height: 20px;
 
@@ -233,10 +233,6 @@
     display: table;
 }
 
-.bskt-main__cart-pay_total-bottom_value
-{
-    display: inline-block;
-}
 
 .bskt-main__cart-pay_total-bottom_rub
 {

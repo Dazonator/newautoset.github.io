@@ -33,13 +33,7 @@ $(document).ready(function () {
     })
     $(".method-click").on("click", function(){
         $(".bskt-delivery-page__method-block").find(".method-dropdown").removeClass('open');
-        $(".bskt-delivery-page__method-block").find(".method-click").removeClass('active');
-        $(this).addClass("active");
         $(this).parent().next().next().next().addClass("open");
-    })
-    $(".punkt-click").on("click",function(){
-        $(".punkt-click").removeClass("active");
-        $(this).addClass("active");
     })
     $(".bskt-footer-pay-page__icon-question").on("click", function(){
         $(".bskt-footer-pay-page__block-for-icon-question").addClass("open");
