@@ -4,7 +4,7 @@
 }
 .bskt-thanks-block__info-item{
   display: block;
-  border-top: 2px dashed #000;
+  border-top: 1px dashed #000;
 }
 .bskt-thanks-block__info-table{
   display: table;
@@ -54,7 +54,6 @@
   line-height: 16px;
 }
 .bskt-thanks-block__text{
-
   display: block;
 }
 .bskt-thanks-block__text-small{
@@ -90,5 +89,209 @@
 }
 .bskt-thanks-block__dop-info{
   padding-top: 20px;
-  border-top: 2px dashed #000;
+  border-top: 1px dashed #000;
 }
+.bskt-thanks-block__dop-info-block{
+  padding: 20px 0px 0px 0px;
+  text-align: center;
+}
+.bskt-thanks-block__text-p{
+  padding: 0px 225px;
+}
+.bskt-thanks-block__a{
+  display: inline-block;
+  vertical-align: middle;
+}
+.bskt-thanks-block__a-hover:hover{
+  cursor: pointer;
+  color: #ff2c2c;
+}
+.bskt-thanks-block__icon{
+  display: inline-block;
+  vertical-align: middle;
+  width: 24px;
+  height: 24px;
+}
+.bskt-thanks-block__icon +.bskt-thanks-block__icon{
+  margin-left: 5px;
+}
+.bskt-thanks-block__icon:last-of-type{
+  margin-right: 15px;
+}
+.bskt-thanks-block__btn{
+  width: 280px;
+  height: 50px;
+  line-height: 50px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.bskt-thanks-block__btn:hover{
+  cursor: pointer;
+  background-color: #ff2c2c;
+}
+.bskt-thanks-block__list{
+
+}
+.bskt-thanks-block__list-item + .bskt-thanks-block__list-item{
+  margin-top: 10px;
+}
+.bskt-thanks-block__list-item-left{
+  display: inline-block;
+  vertical-align: bottom;
+  width: 59%;
+}
+.bskt-thanks-block__list-item-right{
+  display: inline-block;
+  vertical-align: bottom;
+  width: 39%;
+  overflow: hidden; 
+}
+.bskt-thanks-block__list-item-right-value{
+  position: relative;
+}
+.bskt-thanks-block__list-item-right-value:before{
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  position: absolute;
+  right: 100%;
+  bottom: 2px;
+  content: '.........................................................................................................................................';
+  letter-spacing: 3px;
+  color: #999;
+}
+.bskt-thanks-block__list-item-left-tar{
+  width: 49%;
+  text-align: right;
+  vertical-align: top;
+  padding-right: 20px;
+}
+.bskt-thanks-block__list-item-right-tal{
+  width: 49%;
+  text-align: left;
+  vertical-align: top;
+  padding-left: 20px;
+}
+.bskt-thanks-block__list-item-right-value-withOutDot:before{
+  display: none;
+}
+@media (max-width: 1440px) {}
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 959px) {
+  .bskt-thanks-block__text-p {
+    padding: 0px 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bskt-thanks-block__info-item-left-nopl{
+    padding: 20px 20px 20px 0px;
+  }
+  .bskt-thanks-block__info-item-right-nopr{
+    padding: 20px 0px 20px 20px;
+  }
+  .bskt-thanks-block__list-item-left {
+    width: 39%;
+  }
+  .bskt-thanks-block__list-item-right {
+    width: 59%;
+  }
+  .bskt-thanks-block__text-p {
+    padding: 0px 65px;
+  }
+  .bskt-thanks-block__list-item-left-tar{
+    width: 49%;
+  }
+  .bskt-thanks-block__list-item-right-tal{
+    width: 49%;
+  }
+}
+
+@media (max-width: 639px) {
+  .bskt-thanks-block__info-item-left {
+    text-align: left;
+  }
+  .bskt-thanks-block__info-item-left,
+  .bskt-thanks-block__info-item-right {
+    float: left;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .bskt-thanks-block__info-item:nth-of-type(3) .bskt-thanks-block__info-item-left,
+  .bskt-thanks-block__info-item:nth-of-type(3) .bskt-thanks-block__info-item-right{
+    padding: 0;
+  }
+  .bskt-thanks-block__info-item:nth-of-type(3) .bskt-thanks-block__info-item-left{
+    width: 30%;
+  }
+  .bskt-thanks-block__info-item-full {
+    padding: 20px 0px;
+  }
+  .bskt-thanks-block__list-item-right {
+    width: 59%;
+    text-align: right;
+  }
+  .bskt-thanks-block__list-item-left{
+    text-align: right;
+  }
+  .bskt-thanks-block__list-item-left-tar{
+    width: 39%;
+  }
+  .bskt-thanks-block__list-item-right-tal{
+    padding-left: 0px;
+  }
+  .bskt-thanks-block__list-item-right-value {
+    display: block;
+    padding-left: 20px;
+  }
+  .bskt-thanks-block__list-item-left {
+    padding-right: 0px;
+  }
+  .bskt-thanks-block__info-item:nth-of-type(5) .bskt-thanks-block__info-item-right{
+    border-top: 1px dashed #000;
+    text-align: right;
+  }
+  .bskt-thanks-block__info-table {
+    padding-bottom: 20px;
+  }
+  .bskt-thanks-block__info-table-row {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .bskt-thanks-block__info-table-cell {
+    display: block;
+    width: 100%;
+    padding: 10px 0px 0px 0px;
+  }
+  .bskt-thanks-block__info-table-cell .bskt-delivery-main__cart {
+    padding: 0px;
+    max-width: 100%;
+  }
+  .bskt-thanks-block__info-table-cell .bskt-delivery-main__cart-tire_name{
+    margin-bottom: 0px;
+  }
+  .bskt-thanks-block__info-table-cell + .bskt-thanks-block__info-table-cell {
+    padding-top: 0px;
+    text-align: right;
+  }
+  .bskt-thanks-block__text-p {
+    padding: 0px;
+  }
+  
+}
+
+@media (max-width: 479px) {}
+
+@media (max-width: 320px) {}

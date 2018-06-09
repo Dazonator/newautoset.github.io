@@ -278,7 +278,6 @@
     font-weight: bold;
 
     position: relative;
-    z-index: 2;
 
 }
 .bskt-footer-right_total-list_item-value:before
@@ -288,7 +287,6 @@
     line-height: 12px;
 
     position: absolute;
-    z-index: 0;
     right: 100%;
     bottom: 2px;
 

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="0" height="0" style="position:absolute">
+	<symbol id="life-quad" viewBox="0 0 24 24">
+		<title>FAFB0F8B-1514-48B8-AF9B-4DA2EC8543FC</title><g transform="matrix(1 0 0 -1 0 24)" fill-rule="nonzero" fill="none"><path d="M24 2.4A2.39 2.39 0 0 0 21.6 0H2.4A2.4 2.4 0 0 0 0 2.4v19.2A2.4 2.4 0 0 0 2.4 24h19.2a2.4 2.4 0 0 0 2.4-2.4V2.4z" fill="#CCC"></path><path d="M.85 2.683v18.634c0 1 .817 1.833 1.833 1.833h18.634c1 0 1.833-.817 1.833-1.833V2.683A1.828 1.828 0 0 0 21.317.85H2.683A1.839 1.839 0 0 0 .85 2.683z" fill="#FFF"></path><g transform="translate(7.667 3)" fill="#DC323D"><path d="M1.8 14.217a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5zM1.8 7.183a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5zM5.433.033l-1.366.95C5.733 3.533 6.167 7.1 6.167 9c0 1.917-.434 5.483-2.1 8.017l1.366.95c.65-.984 3.184-3.917 3.184-8.967 0-5.05-2.517-7.983-3.184-8.967z"></path></g></g>
+	</symbol>
+	<symbol id="mts-quad" viewBox="0 0 24 24">
+		<title>E7246A9B-5C24-4E18-A595-A824206D2780</title><g fill-rule="nonzero" transform="matrix(1 0 0 -1 0 24)" fill="none"><path d="M24 2.4A2.39 2.39 0 0 0 21.6 0H2.4A2.4 2.4 0 0 0 0 2.4v19.2A2.4 2.4 0 0 0 2.4 24h19.2a2.4 2.4 0 0 0 2.4-2.4V2.4z" fill="#ED1D24"></path><path d="M12 3.1c-4.483 0-6.5 3.583-6.5 7.117 0 4.983 3.467 10.666 6.483 10.666 3.034 0 6.5-5.683 6.5-10.666C18.5 6.683 16.483 3.1 12 3.1z" fill="#FFF"></path></g>
+	</symbol>
+	<symbol id="velcom-quad" viewBox="0 0 24 24">
+		<title>2E8245DA-88CB-4C5D-9D09-BB925B7C7182</title><g transform="matrix(1 0 0 -1 0 24)" fill-rule="nonzero" fill="none"><path d="M24 2.4A2.39 2.39 0 0 0 21.6 0H2.4A2.4 2.4 0 0 0 0 2.4v19.2A2.4 2.4 0 0 0 2.4 24h19.2a2.4 2.4 0 0 0 2.4-2.4V2.4z" fill="#000"></path><g transform="translate(2 4.5)"><path fill="#E0D900" d="M10 9.967l4.933-4.934L10 .1 5.067 5.033z"></path><path fill="#FFF500" d="M14.933 14.9l4.934-4.933-4.934-4.934L10 9.967z"></path><path fill="#FFF74C" d="M5.067 14.9L.15 9.967l4.933-4.934L10 9.967z"></path></g></g>
+	</symbol>
+</svg>
