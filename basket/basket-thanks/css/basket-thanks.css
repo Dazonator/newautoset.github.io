@@ -212,6 +212,13 @@
 }
 
 @media (max-width: 639px) {
+  .bskt-thanks-block__info-item:nth-of-type(2) {
+    padding: 10px 0px;
+  }
+  .bskt-thanks-block__info-item:nth-of-type(2) .bskt-thanks-block__info-item-left,
+  .bskt-thanks-block__info-item:nth-of-type(2) .bskt-thanks-block__info-item-right{
+    padding: 10px 0px;
+  }
   .bskt-thanks-block__info-item-left {
     text-align: left;
   }

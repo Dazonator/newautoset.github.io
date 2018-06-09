@@ -74,6 +74,7 @@
 .bskt-oder-page-block__field-item-textarea {
   margin: 5px 0px 0px 0px;
   padding: 8px 10px 0px 10px;
+  font-weight: normal;
   line-height: 20px;
   min-height: 36px;
   overflow: hidden;
