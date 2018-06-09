@@ -55,6 +55,11 @@
 }
 .bskt-thanks-block__text{
   display: block;
+  -webkit-appearance: none;
+   -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 .bskt-thanks-block__text-small{
   display: block;
