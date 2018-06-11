@@ -3,10 +3,14 @@
     padding: 20px 0;
     margin: 0 -10px;
 }
-
+.bskt-footer-block-table {
+    display: table;
+    width: 100%;
+}
 .bskt-footer-left
 {
-    float: left;
+    display: table-cell;
+    vertical-align: top;
     width: 62%;
     padding: 0px 10px;
 }
@@ -226,7 +230,8 @@
 
 .bskt-footer-right
 {
-    float: left;
+    display: table-cell;
+    vertical-align: top;
     width: 38%;
     padding: 0px 10px;
 }
@@ -308,9 +313,8 @@
 .bskt-footer-right_next
 {
     margin-top: 0px;
-    float: left;
-    width: 38%;
-    padding: 20px 10px 0px 10px;
+    width: 100%;
+    padding: 20px 0px 0px 0px;
 }
 
 .bskt-footer-right_next-link
@@ -563,9 +567,7 @@
         margin-bottom: 10px;
     }
     .bskt-footer-left,
-    .bskt-footer-right,
-    .bskt-footer-left__bottom-btn_back,
-    .bskt-footer-right_next{
+    .bskt-footer-right{
         width: 50%;
     }
     .bskt-footer-right_total-list_item-right {
@@ -585,8 +587,6 @@
     .bskt-footer-right_back
     {
         display: block;
-        float: right;
-        width: 50%;
 
         margin-top: 20px;
     }
