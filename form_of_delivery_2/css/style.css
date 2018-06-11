@@ -2,6 +2,8 @@
 .results {
   position: absolute;
   display: none;
+  top: -webkit-calc(100% - 5px);
+  top: -moz-calc(100% - 5px);
   top: calc(100% - 5px);
   left: 10px;
   max-height: 145px;
@@ -13,6 +15,8 @@
   white-space: normal;
   background: #fff;
   margin-top: .5em;
+  width: -webkit-calc(100% - 20px);
+  width: -moz-calc(100% - 20px);
   width: calc(50% - 20px);
   border: 2px solid #d4d4d5;
   z-index: 999;
@@ -95,6 +99,8 @@
 
 @media (max-width: 640px){
   .results{
+    width: -webkit-calc(100% - 20px);
+    width: -moz-calc(100% - 20px);
     width: calc(100% - 20px);
   }
 }
