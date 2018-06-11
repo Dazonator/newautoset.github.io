@@ -3,7 +3,7 @@ body {
   height: 2000px
 }
 
-body.touch select.cartitem-body-middle-countitem__select-block {
+body.touch select.tirecart-body-middle-countTire__select-block {
   top: 0;
   bottom: 0;
   width: 100%;
@@ -17,7 +17,7 @@ body.touch select.cartitem-body-middle-countitem__select-block {
   padding: 0px;
 }
 
-.cartitem-text-bold {
+.tirecart-text-bold {
   font-weight: bold;
 }
 .allClose{
@@ -36,19 +36,19 @@ body.touch select.cartitem-body-middle-countitem__select-block {
     display: block;
 }
 
-a.cartitem-link:hover {
+a.tirecart-link:hover {
   color: #666;
   cursor: pointer;
 }
-.cartitem-item-disabled{
+.tirecart-item-disabled{
   pointer-events: none;
   cursor: default;
 }
-.cartitem-item-disabled .cartitem-body-left-dopinfo__text{
+.tirecart-item-disabled .tirecart-body-left-dopinfo__text{
   color: #999;
 }
 
-a.cartitem-link-withTriangle {
+a.tirecart-link-withTriangle {
   display: inline-block;
   font-size: 12px;
   color: #000;
@@ -58,7 +58,7 @@ a.cartitem-link-withTriangle {
   margin-top: 10px;
 }
 
-a.cartitem-link-withTriangle:before {
+a.tirecart-link-withTriangle:before {
   content: '';
   display: block;
   border: 4px solid transparent;
@@ -67,88 +67,88 @@ a.cartitem-link-withTriangle:before {
   top: 3px;
   left: 0px;
 }
-.cartitem-body-left-dopinfo__class-hover_left-smallpic{
+.tirecart-body-left-dopinfo__class-hover_left-smallpic{
   left: 246px;
 }
-.itemclass-smallpic-APP {
+.tireclass-smallpic-APP {
   top: 66px;
 }
 
-.itemclass-smallpic-AP {
+.tireclass-smallpic-AP {
   top: 92px;
 }
 
-.itemclass-smallpic-A {
+.tireclass-smallpic-A {
   top: 119px;
 }
 
-.itemclass-smallpic-BP {
+.tireclass-smallpic-BP {
   top: 146px;
 }
 
-.itemclass-smallpic-B {
+.tireclass-smallpic-B {
   top: 173px;
 }
 
-.itemclass-smallpic-CP {
+.tireclass-smallpic-CP {
   bottom: 93px;
 }
 
-.itemclass-smallpic-C {
+.tireclass-smallpic-C {
   bottom: 66px;
 }
 
-.itemclass-smallpic-D {
+.tireclass-smallpic-D {
   bottom: 39px;
 }
 
-.cartitem-body-left-dopinfo__es-class {
+.tirecart-body-left-dopinfo__es-class {
   position: absolute;
   display: block;
   width: 45px;
   left: 93px;
 }
 
-.cartitem-body-left-dopinfo__es-class_rainColumn {
+.tirecart-body-left-dopinfo__es-class_rainColumn {
   left: 182px;
 }
 
-.cartitem-body-left-dopinfo__es-classA_leftColumn,
-.cartitem-body-left-dopinfo__es-classA_rightColumn {
+.tirecart-body-left-dopinfo__es-classA_leftColumn,
+.tirecart-body-left-dopinfo__es-classA_rightColumn {
   top: 130px;
 }
 
-.cartitem-body-left-dopinfo__es-classB_leftColumn,
-.cartitem-body-left-dopinfo__es-classB_rightColumn {
+.tirecart-body-left-dopinfo__es-classB_leftColumn,
+.tirecart-body-left-dopinfo__es-classB_rightColumn {
   top: 147px;
 }
 
-.cartitem-body-left-dopinfo__es-classC_leftColumn,
-.cartitem-body-left-dopinfo__es-classC_rightColumn {
+.tirecart-body-left-dopinfo__es-classC_leftColumn,
+.tirecart-body-left-dopinfo__es-classC_rightColumn {
   top: 164px;
 }
 
-.cartitem-body-left-dopinfo__es-classD_leftColumn,
-.cartitem-body-left-dopinfo__es-classD_rightColumn {
+.tirecart-body-left-dopinfo__es-classD_leftColumn,
+.tirecart-body-left-dopinfo__es-classD_rightColumn {
   top: 181px;
 }
 
-.cartitem-body-left-dopinfo__es-classE_leftColumn,
-.cartitem-body-left-dopinfo__es-classE_rightColumn {
+.tirecart-body-left-dopinfo__es-classE_leftColumn,
+.tirecart-body-left-dopinfo__es-classE_rightColumn {
   top: 198px;
 }
 
-.cartitem-body-left-dopinfo__es-classF_leftColumn,
-.cartitem-body-left-dopinfo__es-classF_rightColumn {
+.tirecart-body-left-dopinfo__es-classF_leftColumn,
+.tirecart-body-left-dopinfo__es-classF_rightColumn {
   top: 215px;
 }
 
-.cartitem-body-left-dopinfo__es-classG_leftColumn,
-.cartitem-body-left-dopinfo__es-classG_rightColumn {
+.tirecart-body-left-dopinfo__es-classG_leftColumn,
+.tirecart-body-left-dopinfo__es-classG_rightColumn {
   top: 232px;
 }
 
-.cartitem-hover-body{
+.tirecart-hover-body{
   position: absolute;
   display: none;
   padding: 10px 20px;
@@ -158,11 +158,11 @@ a.cartitem-link-withTriangle:before {
   z-index: 100;
   text-align: left;
 }
-.cartitem-hover-body-icon-gray{
+.tirecart-hover-body-icon-gray{
   display: none !important;
 }
 
-.cartitem-hover-body_close{
+.tirecart-hover-body_close{
   background: none;
   border: none;
   position: absolute;
@@ -172,7 +172,7 @@ a.cartitem-link-withTriangle:before {
   width: 15px;
   height: 15px;
  }
-.cartitem-hover-body_close-icon{
+.tirecart-hover-body_close-icon{
   width: inherit;
   height: inherit;
   display: block;
@@ -180,32 +180,32 @@ a.cartitem-link-withTriangle:before {
   fill: #666;
 }
 
-.cartitem-hover-body_text {
+.tirecart-hover-body_text {
   display: block;
   font-size: 12px;
   color: #000;
 }
 
-.cartitem-hover-body_text + .cartitem-hover-body_text {
+.tirecart-hover-body_text + .tirecart-hover-body_text {
   margin-top: 5px;
 }
 
-.cartitem {
+.tirecart {
   padding: 10px 0px;
 }
 
-.cartitem-body {
+.tirecart-body {
   padding: 15px 10px 0px 10px;
   background-color: #fff;
 }
 
-.cartitem-body-left {
+.tirecart-body-left {
   float: left;
   width: 41%;
   position: relative;
 }
 
-.cartitem-body-left-caption__producer-name {
+.tirecart-body-left-caption__producer-name {
   font-size: 32px;
   line-height: 24px;
   font-weight: bold;
@@ -214,7 +214,7 @@ a.cartitem-link-withTriangle:before {
   text-decoration: none;
 }
 
-.cartitem-body-left-caption__producer-sertif {
+.tirecart-body-left-caption__producer-sertif {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
@@ -227,11 +227,11 @@ a.cartitem-link-withTriangle:before {
   margin-top: 7px;
 }
 
-.cartitem-body-left-caption__producer-sertif:hover {
+.tirecart-body-left-caption__producer-sertif:hover {
   cursor: default;
 }
 
-.cartitem-body-left-caption__producer-sertif-icon {
+.tirecart-body-left-caption__producer-sertif-icon {
   position: absolute;
   top: 0px;
   left: 7px;
@@ -240,24 +240,24 @@ a.cartitem-link-withTriangle:before {
   height: 23px;
 }
 
-.cartitem-body-left-caption__item-type {
+.tirecart-body-left-caption__tire-type {
   display: block;
   max-width: 335px;
   margin-top: 5px;
 }
 
-.cartitem-body-left-caption__item-type_name {
+.tirecart-body-left-caption__tire-type_name {
   font-size: 22px;
   color: #000;
   text-decoration: none;
 }
 
-.cartitem-body-left-caption__item-size {
+.tirecart-body-left-caption__tire-size {
   display: block;
   margin-top: 5px;
 }
 
-.cartitem-body-left-caption__item-size_value {
+.tirecart-body-left-caption__tire-size_value {
   display: inline-block;
   vertical-align: middle;
   font-size: 26px;
@@ -266,7 +266,7 @@ a.cartitem-link-withTriangle:before {
   text-decoration: none;
 }
 
-.cartitem-body-left-caption__item-size_index {
+.tirecart-body-left-caption__tire-size_index {
   display: inline-block;
   vertical-align: middle;
   border-radius: 5px;
@@ -279,22 +279,22 @@ a.cartitem-link-withTriangle:before {
   position: relative;
 }
 
-.cartitem-body-left-caption__item-size_index-hover {
+.tirecart-body-left-caption__tire-size_index-hover {
   top: 40px;
   left: 0px;
   padding: 10px 20px;
   width: 230px;
 }
 
-.cartitem-body-left-caption__item-size_index:hover {
+.tirecart-body-left-caption__tire-size_index:hover {
   cursor: pointer;
 }
 
-.cartitem-body-left-caption__item-size_index:hover .cartitem-body-left-caption__item-size_index-hover {
+.tirecart-body-left-caption__tire-size_index:hover .tirecart-body-left-caption__tire-size_index-hover {
   display: block;
 }
 
-.cartitem-body-left-pic {
+.tirecart-body-left-pic {
   display: block;
   padding-left: 60px;
   margin-top: 15px;
@@ -302,36 +302,36 @@ a.cartitem-link-withTriangle:before {
   min-height: 140px;
 }
 
-.cartitem-body-left-pic__block-seasson {
+.tirecart-body-left-pic__block-seasson {
   display: block;
   position: absolute;
   top: -10px;
   left: 3px;
 }
 
-.cartitem-body-left-pic__block-seasson-hover {
+.tirecart-body-left-pic__block-seasson-hover {
   width: 110px;
   top: 0px;
   left: 50px;
 }
 
-.cartitem-body-left-pic__block-seasson:hover {
+.tirecart-body-left-pic__block-seasson:hover {
   cursor: pointer;
 }
 
-.cartitem-body-left-pic__block-seasson:hover .cartitem-body-left-pic__block-seasson-hover {
+.tirecart-body-left-pic__block-seasson:hover .tirecart-body-left-pic__block-seasson-hover {
   display: block;
 }
 
-.cartitem-body-left-pic__icon-seasson {
+.tirecart-body-left-pic__icon-seasson {
   width: 35px;
 }
 
-.cartitem-body-left-pic__icon-thornes {
+.tirecart-body-left-pic__icon-thornes {
   width: 40px;
 }
 
-.cartitem-body-left-pic__block-thornes {
+.tirecart-body-left-pic__block-thornes {
   display: block;
   position: absolute;
   top: 45px;
@@ -340,21 +340,21 @@ a.cartitem-link-withTriangle:before {
   height: 37px;
 }
 
-.cartitem-body-left-pic__block-thornes-hover {
+.tirecart-body-left-pic__block-thornes-hover {
   width: 135px;
   top: 0px;
   left: 50px;
 }
 
-.cartitem-body-left-pic__block-thornes:hover {
+.tirecart-body-left-pic__block-thornes:hover {
   cursor: pointer;
 }
 
-.cartitem-body-left-pic__block-thornes:hover .cartitem-body-left-pic__block-thornes-hover {
+.tirecart-body-left-pic__block-thornes:hover .tirecart-body-left-pic__block-thornes-hover {
   display: block;
 }
 
-.cartitem-body-left-pic__montag-free {
+.tirecart-body-left-pic__montag-free {
   display: block;
   position: absolute;
   bottom: 15px;
@@ -367,50 +367,50 @@ a.cartitem-link-withTriangle:before {
   background-color: #E2001A;
 }
 
-.cartitem-body-left-pic__montag-free:hover {
+.tirecart-body-left-pic__montag-free:hover {
   cursor: default;
 }
 
-.cartitem-body-left-pic__img-photo {
+.tirecart-body-left-pic__img-photo {
   width: 247px;
   display: block;
 }
 
-.cartitem-body-left-pic__link {
+.tirecart-body-left-pic__link {
   display: block;
 }
 
-.cartitem-body-left-dopinfo {
+.tirecart-body-left-dopinfo {
   position: absolute;
   right: 20px;
   bottom: 20px;
 }
 
-.cartitem-body-left-dopinfo__item {
+.tirecart-body-left-dopinfo__item {
   list-style-type: none;
 }
 
-.cartitem-body-left-dopinfo__item:hover {
+.tirecart-body-left-dopinfo__item:hover {
   cursor: pointer;
 }
 
-.cartitem-body-left-dopinfo__item + .cartitem-body-left-dopinfo__item {
+.tirecart-body-left-dopinfo__item + .tirecart-body-left-dopinfo__item {
   margin-top: 10px;
 }
 
-.cartitem-body-left-dopinfo__link {
+.tirecart-body-left-dopinfo__link {
   display: block;
   text-decoration: none;
 }
 
-.cartitem-body-left-dopinfo__icon {
+.tirecart-body-left-dopinfo__icon {
   display: inline-block;
   vertical-align: middle;
   width: 41px;
   height: 41px;
 }
 
-.cartitem-body-left-dopinfo__text {
+.tirecart-body-left-dopinfo__text {
   display: inline-block;
   vertical-align: middle;
   font-size: 14px;
@@ -418,11 +418,11 @@ a.cartitem-link-withTriangle:before {
   margin-left: 10px;
 }
 
-.cartitem-body-left-dopinfo__class {
+.tirecart-body-left-dopinfo__class {
   position: relative;
 }
 
-.cartitem-body-left-dopinfo__class-hover {
+.tirecart-body-left-dopinfo__class-hover {
   display: none;
   position: absolute;
   top: 0px;
@@ -430,69 +430,69 @@ a.cartitem-link-withTriangle:before {
   width: 760px;
 }
 
-.cartitem-body-left-dopinfo__class-hover_left {
+.tirecart-body-left-dopinfo__class-hover_left {
   float: left;
   padding: 10px;
   width: 42%;
 }
 
-.cartitem-body-left-dopinfo__class-hover_left-pic {
+.tirecart-body-left-dopinfo__class-hover_left-pic {
   display: block;
   width: 285px;
   box-shadow: 0px 0px 0px 1px #ddd;
 }
 
-.cartitem-body-left-dopinfo__class-hover_left-smallpic {
+.tirecart-body-left-dopinfo__class-hover_left-smallpic {
   position: absolute;
   width: 55px;
   height: 25px;
 }
 
-.cartitem-body-left-dopinfo__class-hover_left-link-mobile {
+.tirecart-body-left-dopinfo__class-hover_left-link-mobile {
   display: none !important;
 }
 
-.cartitem-body-left-dopinfo__class-hover_right {
+.tirecart-body-left-dopinfo__class-hover_right {
   padding-left: 20px;
   float: left;
   width: 58%;
 }
 
-.cartitem-body-left-dopinfo__class-hover_right-text {
+.tirecart-body-left-dopinfo__class-hover_right-text {
   font-size: 14px;
   color: #000;
 }
 
-.cartitem-body-left-dopinfo__class-hover_right-text:first-of-type {
+.tirecart-body-left-dopinfo__class-hover_right-text:first-of-type {
   font-weight: 700;
   font-size: 20px;
 }
 
-.cartitem-body-left-dopinfo__class-hover_right-text + .cartitem-body-left-dopinfo__class-hover_right-text {
+.tirecart-body-left-dopinfo__class-hover_right-text + .tirecart-body-left-dopinfo__class-hover_right-text {
   margin-top: 20px;
 }
 
-.cartitem-body-left-dopinfo__class:hover .cartitem-body-left-dopinfo__class-hover {
+.tirecart-body-left-dopinfo__class:hover .tirecart-body-left-dopinfo__class-hover {
   display: block;
 }
 
-.cartitem-body-left-dopinfo__es {
+.tirecart-body-left-dopinfo__es {
   position: relative;
 }
 
-.cartitem-body-left-dopinfo__es-hover {
+.tirecart-body-left-dopinfo__es-hover {
   display: none;
   top: -75px;
   left: 45px;
 }
 
-.cartitem-body-left-dopinfo__es-hover_caption {
+.tirecart-body-left-dopinfo__es-hover_caption {
   font-weight: 700;
   font-size: 20px;
   display: block;
 }
 
-.cartitem-body-left-dopinfo__es-hover_pic {
+.tirecart-body-left-dopinfo__es-hover_pic {
   width: 220px;
   max-width: 220px;
   box-shadow: 0px 0px 0px 1px #ddd;
@@ -500,11 +500,11 @@ a.cartitem-link-withTriangle:before {
   display: block;
 }
 
-.cartitem-body-left-dopinfo__es:hover .cartitem-body-left-dopinfo__es-hover {
+.tirecart-body-left-dopinfo__es:hover .tirecart-body-left-dopinfo__es-hover {
   display: block;
 }
 
-.cartitem-body-left-dopinfo__es-noise {
+.tirecart-body-left-dopinfo__es-noise {
   position: absolute;
   display: block;
   width: 28px;
@@ -512,7 +512,7 @@ a.cartitem-link-withTriangle:before {
   left: 115px;
 }
 
-.cartitem-body-left-dopinfo__es-noise_value {
+.tirecart-body-left-dopinfo__es-noise_value {
   position: absolute;
   bottom: 85px;
   right: 40px;
@@ -521,35 +521,35 @@ a.cartitem-link-withTriangle:before {
   color: #fff;
 }
 
-.cartitem-body-left-dopinfo__es-noise_value-db {
+.tirecart-body-left-dopinfo__es-noise_value-db {
   font-size: 16px;
 }
 
-.cartitem-body-left-dopinfo__longterm {
+.tirecart-body-left-dopinfo__longterm {
   position: relative;
 }
 
-.cartitem-body-left-dopinfo__longterm:hover .cartitem-body-left-dopinfo__longterm-hover {
+.tirecart-body-left-dopinfo__longterm:hover .tirecart-body-left-dopinfo__longterm-hover {
   display: block;
 }
 
-.cartitem-body-left-dopinfo__longterm-hover {
+.tirecart-body-left-dopinfo__longterm-hover {
   width: 260px;
   top: 40px;
 }
 
-.cartitem-body-middle {
+.tirecart-body-middle {
   float: left;
   width: 29%;
   padding-right: 30px;
   padding-left: 20px;
 }
 
-.cartitem-body-middle-priceitem {
+.tirecart-body-middle-priceTire {
   margin-top: 0px;
 }
 
-.cartitem-body-middle-priceitem__caption {
+.tirecart-body-middle-priceTire__caption {
   font-size: 13px;
   display: inline-block;
   position: relative;
@@ -557,7 +557,7 @@ a.cartitem-link-withTriangle:before {
   vertical-align: bottom;
 }
 
-.cartitem-body-middle-priceitem__caption-icon {
+.tirecart-body-middle-priceTire__caption-icon {
   position: absolute;
   display: inline-block;
   vertical-align: bottom;
@@ -567,38 +567,38 @@ a.cartitem-link-withTriangle:before {
   right: 0px;
 }
 
-.cartitem-body-middle-priceitem__value {
+.tirecart-body-middle-priceTire__value {
   display: block;
   font-family: 'Anton', sans-serif;
 }
 
-.cartitem-body-middle-priceitem__coins {
+.tirecart-body-middle-priceTire__coins {
   display: inline-block;
   vertical-align: top;
 }
 
-.cartitem-body-middle-priceitem__rub {
+.tirecart-body-middle-priceTire__rub {
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
   margin-left: 3px;
 }
 
-.cartitem-body-middle-priceitem__mouseIn:hover {
+.tirecart-body-middle-priceTire__mouseIn:hover {
   cursor: pointer;
 }
 
-.cartitem-body-middle-priceitem__mouseIn:hover .cartitem-body-middle-priceitem-hover {
+.tirecart-body-middle-priceTire__mouseIn:hover .tirecart-body-middle-priceTire-hover {
   display: block;
 }
 
-.cartitem-body-middle-priceitem-hover {
+.tirecart-body-middle-priceTire-hover {
   width: 280px;
   top: 25px;
   left: -100px;
 }
 
-.cartitem-body-middle-priceitem-hover-caption {
+.tirecart-body-middle-priceTire-hover-caption {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -606,12 +606,12 @@ a.cartitem-link-withTriangle:before {
   display: block;
 }
 
-.cartitem-body-middle-priceitem-hover-link {
+.tirecart-body-middle-priceTire-hover-link {
   margin-top: 5px;
   text-align: right;
 }
 
-.cartitem-body-middle-priceitem__priceWithoutSale {
+.tirecart-body-middle-priceTire__priceWithoutSale {
     float: left;
     width: 42%;
     text-align: right;
@@ -619,7 +619,7 @@ a.cartitem-link-withTriangle:before {
     padding-right: 20px;
 }
 
-.cartitem-body-middle-priceitem__priceWithoutSale-value {
+.tirecart-body-middle-priceTire__priceWithoutSale-value {
   vertical-align: top;
   font-size: 46px;
   line-height: 44px;
@@ -629,20 +629,20 @@ a.cartitem-link-withTriangle:before {
   text-align: left;
 }
 
-.cartitem-body-middle-priceitem__priceWithoutSale-value_coins {
+.tirecart-body-middle-priceTire__priceWithoutSale-value_coins {
   font-size: 28px;
   line-height: 28px;
   margin-left: 3px;
 }
 
-.cartitem-body-middle-priceitem__priceWithSale {
+.tirecart-body-middle-priceTire__priceWithSale {
     text-align: right;
     float: left;
     width: 58%;
     padding-left: 36px;
 }
 
-.cartitem-body-middle-priceitem__priceWithSale-value {
+.tirecart-body-middle-priceTire__priceWithSale-value {
   vertical-align: top;
   font-size: 62px;
   line-height: 58px;
@@ -652,26 +652,26 @@ a.cartitem-link-withTriangle:before {
   text-align: left;
 }
 
-.cartitem-body-middle-priceitem__priceWithSale-value_coins {
+.tirecart-body-middle-priceTire__priceWithSale-value_coins {
   font-size: 38px;
   line-height: 36px;
   margin-left: 3px;
 }
 
-.cartitem-body-middle-countitem {
+.tirecart-body-middle-countTire {
   margin-top: 15px;
 }
 
-.cartitem-body-middle-countitem:hover {
+.tirecart-body-middle-countTire:hover {
   cursor: default;
 }
 
-.cartitem-body-middle-countitem__value {
+.tirecart-body-middle-countTire__value {
   display: inline-block;
   vertical-align: top;
 }
 
-.cartitem-body-middle-countitem__caption {
+.tirecart-body-middle-countTire__caption {
   display: block;
   color: #999;
   font-weight: 700;
@@ -679,23 +679,23 @@ a.cartitem-link-withTriangle:before {
   text-align: right;
 }
 
-.cartitem-body-middle-countitem__select {
+.tirecart-body-middle-countTire__select {
   width: 113px;
   height: 55px;
   display: table;
   margin-top: 10px;
 }
 
-.cartitem-body-middle-countitem__select .js-select-visual {
+.tirecart-body-middle-countTire__select .js-select-visual {
   position: relative;
 }
 
-.cartitem-body-middle-countitem__select-block select.cartitem-body-middle-countitem__select-block {
+.tirecart-body-middle-countTire__select-block select.tirecart-body-middle-countTire__select-block {
   position: relative;
   display: none;
 }
 
-.cartitem-body-middle-countitem__select-block span.select-value {
+.tirecart-body-middle-countTire__select-block span.select-value {
   width: 113px;
   height: 55px;
   font-size: 22px;
@@ -712,11 +712,11 @@ a.cartitem-link-withTriangle:before {
   padding-right: 30px;
 }
 
-.cartitem-body-middle-countitem__select-block span.select-value:hover {
+.tirecart-body-middle-countTire__select-block span.select-value:hover {
   cursor: pointer;
 }
 
-.cartitem-body-middle-countitem__select-block span.select-value:after {
+.tirecart-body-middle-countTire__select-block span.select-value:after {
   position: absolute;
   content: '';
   top: 50%;
@@ -731,7 +731,7 @@ a.cartitem-link-withTriangle:before {
   height: 11px;
 }
 
-.cartitem-body-middle-countitem__select ul.select-list {
+.tirecart-body-middle-countTire__select ul.select-list {
   right: 0;
   left: 0;
   position: absolute;
@@ -744,45 +744,45 @@ a.cartitem-link-withTriangle:before {
   padding: 5px 0px;
 }
 
-.cartitem-body-middle-countitem__select ul.select-list li {
+.tirecart-body-middle-countTire__select ul.select-list li {
   padding: 0 20px;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
 }
 
-.cartitem-body-middle-countitem__select ul.select-list li:hover {
+.tirecart-body-middle-countTire__select ul.select-list li:hover {
   color: #fff;
   background-color: red;
   cursor: pointer;
 }
 
-.cartitem-body-middle-countitem__select ul.select-list li.active {
+.tirecart-body-middle-countTire__select ul.select-list li.active {
   background-color: red;
   color: #fff;
 }
 
-.cartitem-body-middle-countitem__select .js-select-visual.open .select-list {
+.tirecart-body-middle-countTire__select .js-select-visual.open .select-list {
   display: block;
 }
 
-.cartitem-body-middle-countitem__select-block.open .select-value:after {
+.tirecart-body-middle-countTire__select-block.open .select-value:after {
   -webkit-transform: rotate(-180deg);
   transform: rotate(-180deg);
 }
 
-.cartitem-body-middle-countitem__btn {
+.tirecart-body-middle-countTire__btn {
   display: inline-block;
   vertical-align: top;
   text-align: right;
   margin-left: 8px;
 }
 
-.cartitem-body-middle-countitem__btn-caption-bold {
+.tirecart-body-middle-countTire__btn-caption-bold {
   color: #000;
 }
 
-.cartitem-body-middle-countitem__btn-buy {
+.tirecart-body-middle-countTire__btn-buy {
   display: block;
   border: none;
   height: 55px;
@@ -797,24 +797,24 @@ a.cartitem-link-withTriangle:before {
   margin-top: 10px;
 }
 
-.cartitem-body-middle-countitem__btn-buy:hover {
+.tirecart-body-middle-countTire__btn-buy:hover {
   cursor: pointer;
   background-color: #d20018;
 }
 
-.cartitem-body-middle-countitem__total {
+.tirecart-body-middle-countTire__total {
   text-align: right;
   margin-top: 15px;
 }
 
-.cartitem-body-middle-countitem__total-text {
+.tirecart-body-middle-countTire__total-text {
   display: inline-block;
   vertical-align: bottom;
   font-size: 14px;
   color: #999;
 }
 
-.cartitem-body-middle-countitem__total-price {
+.tirecart-body-middle-countTire__total-price {
   display: inline-block;
   vertical-align: bottom;
   margin-top: 0;
@@ -823,59 +823,59 @@ a.cartitem-link-withTriangle:before {
   color: #999;
 }
 
-.cartitem-body-middle-countitem__total-coins {
+.tirecart-body-middle-countTire__total-coins {
   font-size: 16px;
   line-height: 16px;
 }
 
-.cartitem-body-middle-countitem__total-rub {
+.tirecart-body-middle-countTire__total-rub {
   font-size: 14px;
   line-height: 14px;
 }
 
-.cartitem-body-right {
+.tirecart-body-right {
   float: left;
   width: 30%;
 }
 
-.cartitem-body-right:hover {
+.tirecart-body-right:hover {
   cursor: default;
 }
 
-.cartitem-body-right-desc {
+.tirecart-body-right-desc {
   overflow: hidden;
 }
 
-.cartitem-body-right-desc_mobile {
+.tirecart-body-right-desc_mobile {
   display: none;
 }
 
-.cartitem-body-right-desc__caption {
+.tirecart-body-right-desc__caption {
   text-transform: uppercase;
   display: block;
   text-align: center;
   font-size: 13px;
 }
 
-.cartitem-body-right-desc__body {
+.tirecart-body-right-desc__body {
   margin-top: 15px;
 }
 
-.cartitem-body-right-desc__item {
+.tirecart-body-right-desc__item {
   list-style-type: none;
   display: block;
   position: relative;
 }
 
 
-.cartitem-body-right-desc__item-left {
+.tirecart-body-right-desc__item-left {
   float: left;
   font-size: 12px;
   display: block;
   position: relative;
   padding-right: 3px;
 }
-.cartitem-body-right-desc__item-left:before {
+.tirecart-body-right-desc__item-left:before {
   content: '........................................................................................................................................................';
   display: block;
   position: absolute;
@@ -887,7 +887,7 @@ a.cartitem-link-withTriangle:before {
 }
 
 
-.cartitem-body-right-desc__item-right {
+.tirecart-body-right-desc__item-right {
   float: right;
   font-size: 12px;
   font-weight: bold;
@@ -897,18 +897,18 @@ a.cartitem-link-withTriangle:before {
   padding-left: 3px;
 }
 
-.cartitem-body-right-options__body {
+.tirecart-body-right-options__body {
   margin-top: 10px;
 }
 
-.cartitem-body-right-options__item {
+.tirecart-body-right-options__item {
   float: left;
   width: 50%;
   padding: 5px 0px;
   list-style-type: none;
 }
 
-.cartitem-body-right-options__icon {
+.tirecart-body-right-options__icon {
   display: inline-block;
   vertical-align: middle;
   width: 40px;
@@ -918,38 +918,38 @@ a.cartitem-link-withTriangle:before {
   margin-right: 3px;
 }
 
-.cartitem-body-right-options__link {
+.tirecart-body-right-options__link {
   display: block;
   vertical-align: middle;
   font-size: 12px;
   text-decoration: none;
   color: #000;
 }
-.cartitem-marketing-block{
+.tirecart-marketing-block{
   display: none;
 }
-.cartitem-marketing-block-list{
+.tirecart-marketing-block-list{
   margin: 0px;
   background-color: #fff;
   padding: 0px 10px;
 }
-.cartitem-marketing-block-list__item{
+.tirecart-marketing-block-list__item{
   width: 25%;
 }
-.cartitem-filter-field{
+.tirecart-filter-field{
   background-color: #666;
   padding: 10px 0px;
 }
-.cartitem-filter-block{
+.tirecart-filter-block{
   display: table;
   width: 100%;
 }
-.cartitem-filter-block__left{
+.tirecart-filter-block__left{
   text-align: left;
   display: table-cell;
   vertical-align: middle;
 }
-.cartitem-filter-block__item-type{
+.tirecart-filter-block__tire-type{
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
@@ -957,7 +957,7 @@ a.cartitem-link-withTriangle:before {
   color: #fff;
   text-transform: uppercase;
 }
-.cartitem-filter-block__search{
+.tirecart-filter-block__search{
   display: inline-block;
   vertical-align: middle;
   font-size: 16px;
@@ -965,7 +965,7 @@ a.cartitem-link-withTriangle:before {
   position: relative;
   color: #b2b2b2;
 }
-.cartitem-filter-block__search:before{
+.tirecart-filter-block__search:before{
   content: "";
   display: block;
   width: 1px;
@@ -975,20 +975,20 @@ a.cartitem-link-withTriangle:before {
   left: -27px;
   top: -6px;
 }
-.cartitem-filter-block__search-value,
-.cartitem-filter-block__search-size{
+.tirecart-filter-block__search-value,
+.tirecart-filter-block__search-size{
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
 }
-.cartitem-filter-block__right{
+.tirecart-filter-block__right{
   text-align: right;
   display: table-cell;
   vertical-align: middle;
 }
 
-.cartitem-filter-block__cheaper,
-.cartitem-filter-block__expensive{
+.tirecart-filter-block__cheaper,
+.tirecart-filter-block__expensive{
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
@@ -1000,287 +1000,287 @@ a.cartitem-link-withTriangle:before {
   font-size: 14px;
   color: #b2b2b2;
 }
-.cartitem-filter-block__cheaper:hover,
-.cartitem-filter-block__expensive:hover{
+.tirecart-filter-block__cheaper:hover,
+.tirecart-filter-block__expensive:hover{
   color: #fff;
   background-color: #7f7f7f;
   cursor: pointer;
 }
-.cartitem-filter-active{
+.tirecart-filter-active{
   background-color: #dddddd;
   color: #000;
 }
-.cartitem-filter-active:hover{
+.tirecart-filter-active:hover{
   cursor: default;
   background-color: #dddddd;
   color: #000;
 }
 
 @media (max-width: 1440px) {
-  .cartitem-body-left {
+  .tirecart-body-left {
     width: 44%;
   }
-  .cartitem-body-left-dopinfo {
+  .tirecart-body-left-dopinfo {
     right: 0px;
   }
-  .cartitem-body-middle {
+  .tirecart-body-middle {
     padding-right: 15px;
     padding-left: 15px;
   }
-  .cartitem-body-middle-countitem__btn-buy {
+  .tirecart-body-middle-countTire__btn-buy {
     width: 175px;
   }
-  .cartitem-body-right {
+  .tirecart-body-right {
     width: 27%;
   }
-  .cartitem-body-right-options__link {
+  .tirecart-body-right-options__link {
     font-size: 11px;
   }
-  .cartitem-body-right-options__icon {
+  .tirecart-body-right-options__icon {
     width: 35px;
     margin-right: 3px;
   }
-  .cartitem-filter-block {
+  .tirecart-filter-block {
     padding: 0px 10px;
   }
 }
 
 @media (max-width: 1199px) {
-  .cartitem-hover-body {
+  .tirecart-hover-body {
     padding: 10px;
   }
-  .item-hover-off:hover .cartitem-hover-body{
+  .tire-hover-off:hover .tirecart-hover-body{
     display: none;
   }
-  .cartitem-body-left-dopinfo {
+  .tirecart-body-left-dopinfo {
     right: 55px;
   }
-  .cartitem-body-left-dopinfo__text {
+  .tirecart-body-left-dopinfo__text {
     font-size: 11px;
   }
-  .cartitem-body-left {
+  .tirecart-body-left {
     width: 65%;
   }
-  .cartitem-body-middle {
+  .tirecart-body-middle {
     width: 35%;
   }
-  .cartitem-body-right {
+  .tirecart-body-right {
     display: none;
   }
-  .cartitem-body-right-desc_mobile {
+  .tirecart-body-right-desc_mobile {
     display: block;
     width: 100%;
   }
-  .cartitem-body-right-desc_mobile .cartitem-body-right-desc__body {
+  .tirecart-body-right-desc_mobile .tirecart-body-right-desc__body {
     margin-top: 0;
   }
-  .cartitem-body-middle-priceitem {
+  .tirecart-body-middle-priceTire {
     margin-top: 20px;
   }
-  .cartitem-body-middle {
+  .tirecart-body-middle {
     padding-right: 0px;
     padding-left: 0px;
   }
-  .cartitem-body-middle-priceitem__priceWithoutSale-value {
+  .tirecart-body-middle-priceTire__priceWithoutSale-value {
     font-size: 36px;
     line-height: 36px;
     margin-top: 15px;
     text-align: right;
   }
-  .cartitem-body-middle-priceitem__priceWithoutSale-value_coins {
+  .tirecart-body-middle-priceTire__priceWithoutSale-value_coins {
     font-size: 22px;
     line-height: 24px;
   }
-  .cartitem-body-middle-priceitem__priceWithSale-value {
+  .tirecart-body-middle-priceTire__priceWithSale-value {
     font-size: 46px;
     line-height: 46px;
     margin-top: 5px;
     text-align: right;
   }
-  .cartitem-body-middle-priceitem__priceWithSale-value_coins {
+  .tirecart-body-middle-priceTire__priceWithSale-value_coins {
     font-size: 28px;
     line-height: 28px;
   }
-  .cartitem-body-middle-priceitem__rub {
+  .tirecart-body-middle-priceTire__rub {
     font-size: 16px;
     line-height: 16px;
   }
-  .cartitem-body-middle-countitem {
+  .tirecart-body-middle-countTire {
     margin-top: 5px;
   }
-  .cartitem-body-middle-countitem__total {
+  .tirecart-body-middle-countTire__total {
     margin-top: 5px;
   }
-  .cartitem-body-middle-countitem__total-text {
+  .tirecart-body-middle-countTire__total-text {
     font-size: 12px;
   }
-  .cartitem-body-middle-countitem__total-price {
+  .tirecart-body-middle-countTire__total-price {
     font-size: 16px;
     line-height: 16px;
     margin-top: 0px;
   }
-  .cartitem-body-middle-countitem__total-coins {
+  .tirecart-body-middle-countTire__total-coins {
     font-size: 10px;
     line-height: 10px;
   }
-  .cartitem-body-middle-countitem__total-rub {
+  .tirecart-body-middle-countTire__total-rub {
     font-size: 12px;
     line-height: 12px;
   }
-  .cartitem-body-middle-countitem__select {
+  .tirecart-body-middle-countTire__select {
     margin-top: 2px;
     height: 41px;
   }
-  .cartitem-body-middle-countitem__select-block span.select-value {
+  .tirecart-body-middle-countTire__select-block span.select-value {
     height: 41px;
     line-height: 41px;
   }
-  .cartitem-body-middle-countitem__btn-buy {
+  .tirecart-body-middle-countTire__btn-buy {
     line-height: 41px;
     height: 41px;
     margin-top: 2px;
     width: 189px;
   }
-  .cartitem-body-middle-countitem__btn {
+  .tirecart-body-middle-countTire__btn {
     margin-left: 23px;
   }
-  .cartitem-body-left-dopinfo__class-hover {
+  .tirecart-body-left-dopinfo__class-hover {
     width: auto;
   }
-  .cartitem-body-left-dopinfo__class-hover_right {
+  .tirecart-body-left-dopinfo__class-hover_right {
     display: none;
   }
-  .cartitem-body-left-dopinfo__class-hover_left {
+  .tirecart-body-left-dopinfo__class-hover_left {
     width: 100%;
     padding: 0px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-link-mobile {
+  .tirecart-body-left-dopinfo__class-hover_left-link-mobile {
     display: inline-block !important;
   }
-  .cartitem-body-middle-priceitem-hover {
+  .tirecart-body-middle-priceTire-hover {
     top: 20px;
     left: -160px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-pic {
+  .tirecart-body-left-dopinfo__class-hover_left-pic {
     width: 250px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-smallpic {
+  .tirecart-body-left-dopinfo__class-hover_left-smallpic {
     width: 50px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-smallpic {
+  .tirecart-body-left-dopinfo__class-hover_left-smallpic {
     left: 200px;
   }
-  .itemclass-smallpic-APP {
+  .tireclass-smallpic-APP {
     top: 48px;
   } 
-  .itemclass-smallpic-AP {
+  .tireclass-smallpic-AP {
     top: 71px;
   }
-  .itemclass-smallpic-A {
+  .tireclass-smallpic-A {
     top: 95px;
   }
-  .itemclass-smallpic-BP {
+  .tireclass-smallpic-BP {
     top: 118px;
   }
-  .itemclass-smallpic-B {
+  .tireclass-smallpic-B {
     top: 142px;
   }
-  .itemclass-smallpic-CP {
+  .tireclass-smallpic-CP {
     top: 166px;
   }
-  .itemclass-smallpic-C {
+  .tireclass-smallpic-C {
     top: 189px;
   }
-  .itemclass-smallpic-D {
+  .tireclass-smallpic-D {
     top: 213px;
   }
-  .cartitem-body-left-dopinfo__es-hover_pic {
+  .tirecart-body-left-dopinfo__es-hover_pic {
     width: 180px;
   }
-  .cartitem-body-left-dopinfo__es-class {
+  .tirecart-body-left-dopinfo__es-class {
     width: 30px;
   }
-  .cartitem-body-left-dopinfo__es-class {
+  .tirecart-body-left-dopinfo__es-class {
     left: 77px;
   }
-  .cartitem-body-left-dopinfo__es-class_rainColumn {
+  .tirecart-body-left-dopinfo__es-class_rainColumn {
     left: 150px;
   }
-  .cartitem-body-left-dopinfo__es-classA_leftColumn, .cartitem-body-left-dopinfo__es-classA_rightColumn {
+  .tirecart-body-left-dopinfo__es-classA_leftColumn, .tirecart-body-left-dopinfo__es-classA_rightColumn {
     top: 116px;
   }
-  .cartitem-body-left-dopinfo__es-classB_leftColumn, .cartitem-body-left-dopinfo__es-classB_rightColumn {
+  .tirecart-body-left-dopinfo__es-classB_leftColumn, .tirecart-body-left-dopinfo__es-classB_rightColumn {
     top: 130px;
   }
-  .cartitem-body-left-dopinfo__es-classC_leftColumn, .cartitem-body-left-dopinfo__es-classC_rightColumn {
+  .tirecart-body-left-dopinfo__es-classC_leftColumn, .tirecart-body-left-dopinfo__es-classC_rightColumn {
     top: 143px;
   }
-  .cartitem-body-left-dopinfo__es-classD_leftColumn, .cartitem-body-left-dopinfo__es-classD_rightColumn {
+  .tirecart-body-left-dopinfo__es-classD_leftColumn, .tirecart-body-left-dopinfo__es-classD_rightColumn {
     top: 157px;
   }
-  .cartitem-body-left-dopinfo__es-classE_leftColumn, .cartitem-body-left-dopinfo__es-classE_rightColumn {
+  .tirecart-body-left-dopinfo__es-classE_leftColumn, .tirecart-body-left-dopinfo__es-classE_rightColumn {
     top: 171px;
   }
-  .cartitem-body-left-dopinfo__es-classF_leftColumn, .cartitem-body-left-dopinfo__es-classF_rightColumn {
+  .tirecart-body-left-dopinfo__es-classF_leftColumn, .tirecart-body-left-dopinfo__es-classF_rightColumn {
     top: 185px;
   }
-  .cartitem-body-left-dopinfo__es-classG_leftColumn, .cartitem-body-left-dopinfo__es-classG_rightColumn {
+  .tirecart-body-left-dopinfo__es-classG_leftColumn, .tirecart-body-left-dopinfo__es-classG_rightColumn {
     top: 199px;
   }
-  .cartitem-body-left-dopinfo__es-noise_value {
+  .tirecart-body-left-dopinfo__es-noise_value {
     bottom: 74px;
     right: 24px;
     font-size: 18px;
   }
-  .cartitem-body-left-dopinfo__es-noise_value-db {
+  .tirecart-body-left-dopinfo__es-noise_value-db {
     font-size: 14px;
   }
-  .cartitem-body-left-dopinfo__es-noise {
+  .tirecart-body-left-dopinfo__es-noise {
     width: 20px;
     bottom: 68px;
     left: 90px;
   }
-  .cartitem-marketing-block{
+  .tirecart-marketing-block{
     display: block;
   }
 }
 
 @media (max-width: 959px) {
-  .cartitem-body-left {
+  .tirecart-body-left {
     width: 55%;
   }
-  .cartitem-body-middle {
+  .tirecart-body-middle {
     width: 45%;
   }
-  .cartitem-body-left-pic {
+  .tirecart-body-left-pic {
     padding-left: 45px;
   }
-  .cartitem-body-left-caption__producer-name {
+  .tirecart-body-left-caption__producer-name {
     font-size: 20px;
     line-height: 20px;
   }
-  .cartitem-body-left-caption__item-type_name {
+  .tirecart-body-left-caption__tire-type_name {
     font-size: 14px;
   }
-  .cartitem-body-left-caption__item-size_value {
+  .tirecart-body-left-caption__tire-size_value {
     font-size: 16px;
   }
-  .cartitem-body-left-caption__item-size_index {
+  .tirecart-body-left-caption__tire-size_index {
     font-size: 16px;
   }
-  .cartitem-body-left-dopinfo__text {
+  .tirecart-body-left-dopinfo__text {
     display: none;
   }
-  .cartitem-body-left-caption__producer-sertif {
+  .tirecart-body-left-caption__producer-sertif {
     font-size: 12px;
     width: 190px;
     margin-top: 0;
   }
-  .cartitem-body-left-wrapper {
+  .tirecart-body-left-wrapper {
     display: inline-block;
     vertical-align: top;
   }
-  .cartitem-body-left-dopinfo {
+  .tirecart-body-left-dopinfo {
     position: relative;
     right: 0px;
     top: 0px;
@@ -1290,22 +1290,22 @@ a.cartitem-link-withTriangle:before {
     vertical-align: top;
     margin-left: 30px;
   }
-  .cartitem-body-middle-countitem__caption {
+  .tirecart-body-middle-countTire__caption {
     font-size: 12px;
   }
-  .cartitem-body-left-caption__item-size_index-hover {
+  .tirecart-body-left-caption__tire-size_index-hover {
     top: 30px;
   }
-  .cartitem-filter-block__left {
+  .tirecart-filter-block__left {
     display: table-row;
     text-align: center;
   }
-  .cartitem-filter-block__right {
+  .tirecart-filter-block__right {
     display: table-row;
     text-align: center;
   }
-  .cartitem-filter-block__cheaper,
-  .cartitem-filter-block__expensive {
+  .tirecart-filter-block__cheaper,
+  .tirecart-filter-block__expensive {
     margin-top: 5px;
   }
 }
@@ -1314,161 +1314,161 @@ a.cartitem-link-withTriangle:before {
   .container-block {
     width: 100%;
   }
-  .cartitem-body-left {
+  .tirecart-body-left {
     width: 55%;
   }
-  .cartitem-body-middle {
+  .tirecart-body-middle {
     width: 45%;
   }
-  .cartitem-body-left-pic__montag-free {
+  .tirecart-body-left-pic__montag-free {
     bottom: 10px;
     font-size: 12px;
   }
-  .cartitem-body-left-caption__producer-sertif {
+  .tirecart-body-left-caption__producer-sertif {
     font-size: 10px;
     letter-spacing: normal;
     width: 150px;
   }
-  .cartitem-body-left-pic__img-photo {
+  .tirecart-body-left-pic__img-photo {
     width: 215px;
   }
-  .cartitem-body-left-dopinfo {
+  .tirecart-body-left-dopinfo {
     margin-left: 0px;
   }
-  .cartitem-body-left-dopinfo__icon {
+  .tirecart-body-left-dopinfo__icon {
     width: 39px;
     height: 39px;
   }
-  .cartitem-body-left-caption__item-type {
+  .tirecart-body-left-caption__tire-type {
     max-width: 210px;
   }
  
-  .cartitem-body-middle-priceitem__caption {
+  .tirecart-body-middle-priceTire__caption {
     font-size: 11px;
   }
-  .cartitem-body-middle-countitem__select {
+  .tirecart-body-middle-countTire__select {
     width: 100%;
     height: 36px;
   }
-  .cartitem-body-middle-countitem__select-block span.select-value {
+  .tirecart-body-middle-countTire__select-block span.select-value {
     width: 100%;
     height: 36px;
     line-height: 36px;
     padding-right: 20px;
     font-size: 20px;
   }
-  .cartitem-body-middle-countitem__btn {
+  .tirecart-body-middle-countTire__btn {
     margin-left: 0px;
     float: left;
     width: 58%;
   }
-  .cartitem-body-middle-countitem__value {
+  .tirecart-body-middle-countTire__value {
     float: left;
     width: 42%;
     padding-right: 20px;
   }
-  .cartitem-body-middle-countitem__btn-buy {
+  .tirecart-body-middle-countTire__btn-buy {
     width: 100%;
     line-height: 36px;
     height: 36px;
     font-size: 20px;
   }
-  .cartitem-body-middle-priceitem__priceWithSale-value {
+  .tirecart-body-middle-priceTire__priceWithSale-value {
     font-size: 40px;
     line-height: 40px;
   }
-  .cartitem-body-middle-priceitem__priceWithoutSale-value_coins {
+  .tirecart-body-middle-priceTire__priceWithoutSale-value_coins {
     font-size: 20px;
     line-height: 22px;
   }
-  .cartitem-body-middle-priceitem__priceWithoutSale-value {
+  .tirecart-body-middle-priceTire__priceWithoutSale-value {
     font-size: 32px;
     line-height: 32px;
   }
-  .cartitem-body-middle-priceitem__priceWithSale-value_coins {
+  .tirecart-body-middle-priceTire__priceWithSale-value_coins {
     font-size: 24px;
     line-height: 26px;
   }
-  .cartitem-body-middle-countitem__total-price {
+  .tirecart-body-middle-countTire__total-price {
     font-size: 16px;
     line-height: 16px;
   }
-  .cartitem-body-middle-countitem__select-block span.select-value:after {
+  .tirecart-body-middle-countTire__select-block span.select-value:after {
     top: 50%;
     right: 7px;
     width: 16px;
     height: 9px;
   }
-  .cartitem-body-middle-priceitem {
+  .tirecart-body-middle-priceTire {
     margin-top: 10px;
   }
-  .cartitem-body-left-pic__block-seasson {
+  .tirecart-body-left-pic__block-seasson {
     left: 5px;
   }
-  .cartitem-body-left-pic__icon-seasson {
+  .tirecart-body-left-pic__icon-seasson {
     width: 30px;
   }
-  .cartitem-body-left-pic__block-thornes {
+  .tirecart-body-left-pic__block-thornes {
     top: 40px;
     left: 3px;
   }
-  .cartitem-body-left-pic__icon-thornes {
+  .tirecart-body-left-pic__icon-thornes {
     width: 35px;
   }
   
-  .cartitem-body-left-dopinfo__class-hover {
+  .tirecart-body-left-dopinfo__class-hover {
     width: 280px;
     left: 45px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-pic {
+  .tirecart-body-left-dopinfo__class-hover_left-pic {
     width: 100%;
   }
-  .cartitem-body-left-dopinfo__class-hover_left {
+  .tirecart-body-left-dopinfo__class-hover_left {
     padding: 0px;
   }
-  .cartitem-hover-body {
+  .tirecart-hover-body {
     padding: 10px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-smallpic {
+  .tirecart-body-left-dopinfo__class-hover_left-smallpic {
     width: 53px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-smallpic {
+  .tirecart-body-left-dopinfo__class-hover_left-smallpic {
     left: 204px;
   }
-  .itemclass-smallpic-APP {
+  .tireclass-smallpic-APP {
     top: 50px;
   }
-  .itemclass-smallpic-AP {
+  .tireclass-smallpic-AP {
     top: 75px;
   }
-  .itemclass-smallpic-A {
+  .tireclass-smallpic-A {
     top: 100px;
   }
-  .itemclass-smallpic-BP {
+  .tireclass-smallpic-BP {
     top: 124px;
   }
-  .itemclass-smallpic-B {
+  .tireclass-smallpic-B {
     top: 149px;
   }
-  .itemclass-smallpic-CP {
+  .tireclass-smallpic-CP {
     top: 173px;
   }
-  .itemclass-smallpic-C {
+  .tireclass-smallpic-C {
     top: 198px;
   }
-  .itemclass-smallpic-D {
+  .tireclass-smallpic-D {
     top: 222px;
   }
-  .cartitem-body-left-caption__item-size_index-hover {
+  .tirecart-body-left-caption__tire-size_index-hover {
     top: 30px;
   }
-  .cartitem-body-left-dopinfo__es-hover {
+  .tirecart-body-left-dopinfo__es-hover {
     top: -60px;
   }
-  .cartitem-marketing-block-list__item {
+  .tirecart-marketing-block-list__item {
     padding: 5px;
   }
-  .cartitem-marketing-block-list__text {
+  .tirecart-marketing-block-list__text {
     position: relative;
     padding-left: 40px;
     display: -webkit-flex;
@@ -1480,7 +1480,7 @@ a.cartitem-link-withTriangle:before {
     align-items: center;
     min-height: 30px;
   }
-  .cartitem-marketing-block-list__icon {
+  .tirecart-marketing-block-list__icon {
     position: absolute;
     left: 0px;
     margin-right: 0px;
@@ -1491,7 +1491,7 @@ a.cartitem-link-withTriangle:before {
 }
 
 @media (max-width: 639px) {
-  .cartitem-body-left-caption__producer {
+  .tirecart-body-left-caption__producer {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -1505,243 +1505,243 @@ a.cartitem-link-withTriangle:before {
     -o-flex-wrap: nowrap;
     flex-wrap: nowrap;
   }
-  .cartitem-body-left-caption__producer-sertif {
+  .tirecart-body-left-caption__producer-sertif {
     width: auto;
     padding-right: 5px;
   }
-  a.cartitem-link-withTriangle {
+  a.tirecart-link-withTriangle {
     margin-top: 5px;
   }
   .container-block {
     width: 100%;
   }
-  .cartitem-body {
+  .tirecart-body {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
   }
-  .cartitem-body-left {
+  .tirecart-body-left {
     width: auto;
     flex-grow: 1;
     display: flex;
     justify-content: space-between;
   }
-  .cartitem-body-middle {
+  .tirecart-body-middle {
     width: auto;
     flex-grow: 1;
     margin-top: 10px;
   }
-  .cartitem-body-left-wrapper {
+  .tirecart-body-left-wrapper {
     flex-grow: 1;
   }
-  .cartitem-body-left-pic {
+  .tirecart-body-left-pic {
     padding-left: 35px;
   }
-  .cartitem-body-left-pic__img-photo {
+  .tirecart-body-left-pic__img-photo {
     width: 100%;
   }
-  .cartitem-body-middle-priceitem {
+  .tirecart-body-middle-priceTire {
     text-align: center;
   }
-  .cartitem-body-middle-countitem {
+  .tirecart-body-middle-countTire {
     text-align: center;
   }
-  .cartitem-body-left-pic__img {
+  .tirecart-body-left-pic__img {
     height: 150px;
     overflow: hidden;
   }
-  .cartitem-body-middle-priceitem__caption-icon {
+  .tirecart-body-middle-priceTire__caption-icon {
     width: 15px;
     height: 15px;
     top: -2px;
   }
-  .cartitem-body-left-dopinfo__longterm-hover {
+  .tirecart-body-left-dopinfo__longterm-hover {
     width: auto;
     top: -10px;
     left: -245px;
   }
-  .cartitem-hover-body {
+  .tirecart-hover-body {
     padding:10px;
   }
-  .cartitem-body-left-caption__item-size_index-hover {
+  .tirecart-body-left-caption__tire-size_index-hover {
     width: 210px;
   }
-  .cartitem-body-left-dopinfo__class-hover {
+  .tirecart-body-left-dopinfo__class-hover {
     width: 250px;
     left: -255px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-smallpic {
+  .tirecart-body-left-dopinfo__class-hover_left-smallpic {
     width: 46px;
   }
-  .cartitem-body-left-dopinfo__class-hover_left-smallpic{
+  .tirecart-body-left-dopinfo__class-hover_left-smallpic{
     left: 182px;
   }
-  .itemclass-smallpic-APP {
+  .tireclass-smallpic-APP {
     top: 44px;
   }
-  .itemclass-smallpic-AP {
+  .tireclass-smallpic-AP {
     top: 66px;
   }
-  .itemclass-smallpic-A {
+  .tireclass-smallpic-A {
     top: 88px;
   }
-  .itemclass-smallpic-BP {
+  .tireclass-smallpic-BP {
     top: 109px;
   }
-  .itemclass-smallpic-B {
+  .tireclass-smallpic-B {
     top: 131px;
   }
-  .itemclass-smallpic-CP {
+  .tireclass-smallpic-CP {
     top: 153px;
   }
-  .itemclass-smallpic-C {
+  .tireclass-smallpic-C {
     top: 175px;
   }
-  .itemclass-smallpic-D{
+  .tireclass-smallpic-D{
     top: 196px;
   }
-  .cartitem-body-left-dopinfo__es-hover {
+  .tirecart-body-left-dopinfo__es-hover {
     top: -50px;
     left: -205px;
   }
-  .cartitem-body-left-dopinfo__es-noise {
+  .tirecart-body-left-dopinfo__es-noise {
     bottom: 63px;
   }
-  .cartitem-body-left-dopinfo__es-noise_value {
+  .tirecart-body-left-dopinfo__es-noise_value {
     bottom: 69px;
   }
-  .cartitem-body-middle-priceitem-hover-caption {
+  .tirecart-body-middle-priceTire-hover-caption {
     font-size: 12px;
   }
-  .cartitem-body-middle-priceitem-hover{
+  .tirecart-body-middle-priceTire-hover{
     width: 250px;
   }
-  .cartitem-body-middle-priceitem-hover__withSale {
+  .tirecart-body-middle-priceTire-hover__withSale {
     top: 20px;
     left: -140px;
   } 
-  .cartitem-body-middle-priceitem-hover__withoutSale{
+  .tirecart-body-middle-priceTire-hover__withoutSale{
     top: 20px;
     left: -20px;
   }
-  .cartitem-body-middle-priceitem__priceWithoutSale {
+  .tirecart-body-middle-priceTire__priceWithoutSale {
     width: 50%;
   }
-  .cartitem-body-middle-priceitem__priceWithSale {
+  .tirecart-body-middle-priceTire__priceWithSale {
     width: 50%;
   }
-  .cartitem-body-middle-countitem__value {
+  .tirecart-body-middle-countTire__value {
     width: 50%;
   }
-  .cartitem-body-middle-countitem__btn {
+  .tirecart-body-middle-countTire__btn {
     width: 50%;
   }
-  .cartitem-body-left-pic__block-seasson-hover {
+  .tirecart-body-left-pic__block-seasson-hover {
     width: 95px;
   }
-  .cartitem-body-left-pic__block-thornes-hover {
+  .tirecart-body-left-pic__block-thornes-hover {
     width: 115px;
   }
-  .cartitem-body-left-dopinfo__es-hover_caption {
+  .tirecart-body-left-dopinfo__es-hover_caption {
     font-size: 18px;
   }
-  .cartitem-body-left-pic__montag-free {
+  .tirecart-body-left-pic__montag-free {
     left: 0px;
   }
-  .cartitem-filter-block {
+  .tirecart-filter-block {
     padding: 0px;
   }
-  .cartitem-filter-block__item-type {
+  .tirecart-filter-block__tire-type {
     display: block;
   }
-  .cartitem-filter-block__search {
+  .tirecart-filter-block__search {
     display: block;
     max-width: 250px;
     font-size: 16px;
     margin: 0 auto;
     margin-top: 10px;
   }
-  .cartitem-filter-block__search:before {
+  .tirecart-filter-block__search:before {
     display: none;
   }
-  .cartitem-filter-block__cheaper,
-  .cartitem-filter-block__expensive {
+  .tirecart-filter-block__cheaper,
+  .tirecart-filter-block__expensive {
     margin-top: 20px;
     margin-left: 0px;
   }
 }
 
 @media (max-width: 479px) {
-  .cartitem-hover-body_close{
+  .tirecart-hover-body_close{
     display: block;
   }
-  .cartitem-body-left-caption__item-size_index-hover {
+  .tirecart-body-left-caption__tire-size_index-hover {
     top: 30px;
     left: -80px;
   }
-  .cartitem-body-left-pic__img {
+  .tirecart-body-left-pic__img {
     height: auto;
   }
-  .cartitem-body-left-pic__montag-free {
+  .tirecart-body-left-pic__montag-free {
     bottom: 10px;
   }
-  .cartitem-body-left-pic__block-seasson {
+  .tirecart-body-left-pic__block-seasson {
     left: 3px;
   }
-  .cartitem-body-left-pic__block-seasson-hover {
+  .tirecart-body-left-pic__block-seasson-hover {
     left: 35px;
   }
-  img.cartitem-body-left-pic__icon-seasson {
+  img.tirecart-body-left-pic__icon-seasson {
     width: 25px;
   }
-  .cartitem-body-left-pic__block-thornes {
+  .tirecart-body-left-pic__block-thornes {
     top: 30px;
   }
-  .cartitem-body-left-pic__block-thornes-hover {
+  .tirecart-body-left-pic__block-thornes-hover {
     top: -15px;
     left: 35px;
   }
-  img.cartitem-body-left-pic__icon-thornes {
+  img.tirecart-body-left-pic__icon-thornes {
     width: 30px;
   }
-  .cartitem-body-middle-countitem__value {
+  .tirecart-body-middle-countTire__value {
     float: left;
     width: 42%;
     padding-right: 20px;
   }
-  .cartitem-body-middle-countitem__btn {
+  .tirecart-body-middle-countTire__btn {
     margin-left: 0px;
     float: left;
     width: 58%;
   }
-  .cartitem-body-middle-countitem__btn-buy {
+  .tirecart-body-middle-countTire__btn-buy {
     width: 100%;
   }
-    .cartitem-body-middle-priceitem__priceWithoutSale {
+    .tirecart-body-middle-priceTire__priceWithoutSale {
     width: 42%;
     max-width: 42%;
     float: left;
   }
-  .cartitem-body-middle-priceitem__priceWithSale {
+  .tirecart-body-middle-priceTire__priceWithSale {
     width: 58%;
     max-width: 58%;
     float: left;
     padding-left: 0px;
   }
-  .cartitem-body-middle-countitem__select {
+  .tirecart-body-middle-countTire__select {
     width: 100%;
   }
-  .cartitem-body-middle-countitem__select-block span.select-value {
+  .tirecart-body-middle-countTire__select-block span.select-value {
     width: 100%;
   }
-  .cartitem-marketing-block-list__item {
+  .tirecart-marketing-block-list__item {
     padding: 5px 0px;
     width: 50%;
   }
-  .cartitem-marketing-block-list__text {
+  .tirecart-marketing-block-list__text {
     padding-left: 36px;
   }
-  .cartitem-marketing-block-list__icon {
+  .tirecart-marketing-block-list__icon {
     width: 33px;
     height: 28px;
   }
