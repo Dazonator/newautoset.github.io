@@ -61,10 +61,11 @@
     -moz-tap-highlight-color: transparent;
     -o-tap-highlight-color: transparent;
 }
-/*.bskt-thanks-block__text-UNP{
-  color: #000 !important;
+.bskt-thanks-block__text-UNP{
+  color: #000;
   -webkit-appearance: none;
-}*/
+  pointer-events: none;
+}
 .bskt-thanks-block__customer,
 .bskt-thanks-block__person{}
 .bskt-thanks-block__text-small{
