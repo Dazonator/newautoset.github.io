@@ -62,7 +62,8 @@
     -o-tap-highlight-color: transparent;
 }
 .bskt-thanks-block__text-UNP{
-  color: #000 !important;
+  /*color: #000 !important;*/
+  -webkit-appearance: none;
 }
 .bskt-thanks-block__customer,
 .bskt-thanks-block__person{}
