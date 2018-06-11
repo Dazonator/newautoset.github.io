@@ -14,14 +14,14 @@
     box-shadow: inset 0 1px 0 0 #eee;
 }
 
-.bskt-main__cart-tire_pic
+.bskt-main__cart-item_pic
 {
     display: inline-block;
 
     vertical-align: top;
 }
 
-.bskt-main__cart-tire_pic-link
+.bskt-main__cart-item_pic-link
 {
     position: relative;
     z-index: 1;
@@ -36,7 +36,7 @@
          -o-tap-highlight-color: transparent;
 }
 
-.bskt-main__cart-tire_pic-svg
+.bskt-main__cart-item_pic-svg
 {
     position: absolute;
     z-index: inherit;
@@ -51,14 +51,14 @@
     fill: #00b0ff;
 }
 
-.bskt-main__cart-tire_pic-link_img
+.bskt-main__cart-item_pic-link_img
 {
     display: block;
 
     width: 170px;
 }
 
-.bskt-main__cart-tire_name
+.bskt-main__cart-item_name
 {
     display: inline-block;
 
@@ -69,18 +69,18 @@
     vertical-align: top;
 }
 
-.bskt-main__cart-tire_name-mobile
+.bskt-main__cart-item_name-mobile
 {
     display: none;
 }
 
-.bskt-main__cart-tire_name-link
+.bskt-main__cart-item_name-link
 {
 
     display: table;
 }
 
-.bskt-main__cart-tire_name-producer
+.bskt-main__cart-item_name-producer
 {
     font-size: 22px;
     font-weight: bold;
@@ -91,8 +91,8 @@
          -o-tap-highlight-color: transparent;
 }
 
-.bskt-main__cart-tire_name-description,
-.bskt-main__cart-tire_name-size
+.bskt-main__cart-item_name-description,
+.bskt-main__cart-item_name-size
 {
     font-size: 16px;
 
@@ -287,40 +287,40 @@
 
 @media (max-width:959px)
 {
-    .bskt-main__cart-tire_pic-svg
+    .bskt-main__cart-item_pic-svg
     {
         width: 18px;
         height: 20px;
     }
 
-    .bskt-main__cart-tire_pic-link
+    .bskt-main__cart-item_pic-link
     {
         padding-left: 20px;
     }
 
-    .bskt-main__cart-tire_pic-link_img
+    .bskt-main__cart-item_pic-link_img
     {
         width: 140px;
     }
 
-    .bskt-main__cart-tire_name
+    .bskt-main__cart-item_name
     {
         max-width: 220px;
         padding-left: 7px;
     }
 
-    .bskt-main__cart-tire_name-producer
+    .bskt-main__cart-item_name-producer
     {
         font-size: 18px;
     }
 
-    .bskt-main__cart-tire_name-link
+    .bskt-main__cart-item_name-link
     {
         line-height: normal;
     }
 
-    .bskt-main__cart-tire_name-description,
-    .bskt-main__cart-tire_name-size
+    .bskt-main__cart-item_name-description,
+    .bskt-main__cart-item_name-size
     {
         font-size: 14px;
     }
@@ -361,7 +361,7 @@
                 flex-wrap: wrap;
     }
 
-    .bskt-main__cart-tire_name
+    .bskt-main__cart-item_name
     {
         width: 100%;
         max-width: 100%;
@@ -372,23 +372,23 @@
         order: -1;
     }
 
-    .bskt-main__cart-tire_name-producer
+    .bskt-main__cart-item_name-producer
     {
         font-size: 22px;
     }
 
-    .bskt-main__cart-tire_name-description,
-    .bskt-main__cart-tire_name-size
+    .bskt-main__cart-item_name-description,
+    .bskt-main__cart-item_name-size
     {
         font-size: 16px;
     }
 
-    .bskt-main__cart-tire_pic-link
+    .bskt-main__cart-item_pic-link
     {
         padding-left: 35px;
     }
 
-    .bskt-main__cart-tire_pic-svg
+    .bskt-main__cart-item_pic-svg
     {
         width: 24px;
         height: 28px;
@@ -417,7 +417,7 @@
         padding: 20px 0 20px 0;
     }
 
-    .bskt-main__cart-tire_pic
+    .bskt-main__cart-item_pic
     {
         display: -webkit-flex;
         display:    -moz-flex;
@@ -431,13 +431,13 @@
         justify-content: center;
     }
 
-    .bskt-main__cart-tire_pic-link
+    .bskt-main__cart-item_pic-link
     {
         padding-left: 25px;
         padding-right: 25px;
     }
 
-    .bskt-main__cart-tire_pic-link_img
+    .bskt-main__cart-item_pic-link_img
     {
         width: 100%;
     }
@@ -480,7 +480,7 @@
 
 @media (max-width:479px)
 {
-    .bskt-main__cart-tire_name
+    .bskt-main__cart-item_name
     {
         margin-bottom: 5px;
     }

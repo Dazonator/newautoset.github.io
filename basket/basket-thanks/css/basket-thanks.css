@@ -85,7 +85,7 @@
   max-width: 245px;
   margin: 0 auto;
 }
-.bskt-thanks-block__info-table-cell .bskt-delivery-main__cart .bskt-delivery-main__cart-tire_name{
+.bskt-thanks-block__info-table-cell .bskt-delivery-main__cart .bskt-delivery-main__cart-item_name{
   padding: 0px;
   max-width: 100%;
 }
@@ -298,7 +298,7 @@
     padding: 0px;
     max-width: 100%;
   }
-  .bskt-thanks-block__info-table-cell .bskt-delivery-main__cart-tire_name{
+  .bskt-thanks-block__info-table-cell .bskt-delivery-main__cart-item_name{
     margin-bottom: 0px;
   }
   .bskt-thanks-block__info-table-cell + .bskt-thanks-block__info-table-cell {
