@@ -61,6 +61,11 @@
     -moz-tap-highlight-color: transparent;
     -o-tap-highlight-color: transparent;
 }
+.bskt-thanks-block__text-UNP{
+  color: #000 !important;
+}
+.bskt-thanks-block__customer,
+.bskt-thanks-block__person{}
 .bskt-thanks-block__text-small{
   display: block;
   font-size: 14px;
@@ -300,6 +305,10 @@
   }
   .bskt-thanks-block__text-p {
     padding: 0px;
+  }
+  .bskt-thanks-block__customer,
+  .bskt-thanks-block__person{
+    font-size: 22px;
   }
   
 }
