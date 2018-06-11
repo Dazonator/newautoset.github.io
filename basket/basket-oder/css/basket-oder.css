@@ -1,6 +1,12 @@
 input.bskt-oder-page-block__field-item-input::-webkit-input-placeholder {
     color: #000;
 }
+input.bskt-oder-page-block__field-item-input::-moz-input-placeholder {
+    color: #000;
+}
+input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
+    color: #000;
+}
 .bskt-oder-page__wrapper{
   padding-top: 20px;
 }
