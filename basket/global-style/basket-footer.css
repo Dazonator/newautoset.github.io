@@ -7,6 +7,9 @@
     display: table;
     width: 100%;
 }
+.bskt-footer-block-table-row{
+    display: table-row;
+}
 .bskt-footer-left
 {
     display: table-cell;
