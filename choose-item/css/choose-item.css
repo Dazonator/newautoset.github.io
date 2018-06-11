@@ -299,6 +299,7 @@ a.cartitem-link-withTriangle:before {
   padding-left: 60px;
   margin-top: 15px;
   position: relative;
+  min-height: 140px;
 }
 
 .cartitem-body-left-pic__block-seasson {
@@ -1483,6 +1484,9 @@ a.cartitem-link-withTriangle:before {
     position: absolute;
     left: 0px;
     margin-right: 0px;
+  }
+  .cartitem-body-left-pic {
+    min-height: 120px;
   }
 }
 
