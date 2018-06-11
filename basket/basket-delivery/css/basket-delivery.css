@@ -711,11 +711,11 @@
     order: -10;
   }
   .bskt-delivery-page__city-change_modal-main_smallcity-item:nth-of-type(5){
-    -webkit-order: -3;
-    -moz-order: -3;
-    -ms-order: -3;
-    -o-order: -3;
-    order: -3;
+    -webkit-order: -2;
+    -moz-order: -2;
+    -ms-order: -2;
+    -o-order: -2;
+    order: -2;
   }
   .bskt-delivery-page__city-change_modal-main_smallcity-item:nth-of-type(6){
     -webkit-order: -5;
