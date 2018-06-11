@@ -2987,6 +2987,13 @@ $('.reset').click(function () {
     $('.select__cityArea').val('main');
 });
 
+$('.results .result').click(function () {
+    // var content = $(this).children('.title').text();
+    // console.log(content);
+    // $('.select__city').val('main');
+    // $('.select__cityRegion').val('main');
+    // $('.select__cityArea').val('main');
+});
 
 
 

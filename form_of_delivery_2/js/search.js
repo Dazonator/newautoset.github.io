@@ -233,6 +233,42 @@ $.fn.search = function(parameters) {
                 }
               }
               module.hideResults();
+              $prompt.val(title);
+              $('.select__city .select-list .li')
+              for (var i = 0; i < city.length; i++) {
+                if(title == city[i].title){
+                  $('.select__city').val(city[i].title);
+                  $('.select__cityRegion').val(city[i].category);
+                  $('.select__cityArea').val(city[i].cityArea);
+
+                  $('.select__city .select-list li').each(function () {
+                    $(this).removeClass('active');
+                    if ($(this).text() == city[i].title) {
+                      $(this).addClass('active');
+                      console.log('123');
+                      $('.select__city-block .js-select-value').html(city[i].title);
+                    }
+                  });
+                  $('.select__cityRegion .select-list li').each(function () {
+                    $(this).removeClass('active');
+                    if ($(this).text() == city[i].category) {
+                      $(this).addClass('active');
+                      console.log('123');
+                      $('.select__cityRegion-block .js-select-value').html(city[i].category);
+                    }
+                  });
+                  $('.select__cityArea .select-list li').each(function () {
+                    $(this).removeClass('active');
+                    if ($(this).text() == city[i].cityArea) {
+                      $(this).addClass('active');
+                      console.log('123');
+                      $('.select__cityArea-block .js-select-value').html(city[i].cityArea);
+                    }
+                  });
+                }
+              }
+              $('#search').val(''); 
+              
               if(value) {
                 module.set.value(value);
               }
@@ -477,18 +513,7 @@ $.fn.search = function(parameters) {
             $module.addClass(className.loading);
           },
           value: function(value) {
-            module.verbose('Setting search input value', value);
-            $prompt.val('');//вывод при клике
-            for (var i = 0; i < city.length; i++) {
-              if(value.toLowerCase() == city[i].title.toLowerCase()){
-                $('.select__city').val(city[i].title);
-                $('.select__cityRegion').val(city[i].category);
-                $('.select__cityArea').val(city[i].cityArea);
-                // console.log(city[i].fullTitle);
-              }
-              
-            }
-            
+            module.verbose('Setting search input value', value);            
           },
           type: function(type) {
             type = type || settings.type;
