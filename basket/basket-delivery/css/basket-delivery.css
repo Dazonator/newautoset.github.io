@@ -360,7 +360,8 @@
 .bskt-disabled .bskt-delivery-page__punkt-block_item-map {
   pointer-events: none;
 }
-.bskt-disabled .bskt-delivery-page__method-block_item-caption-icon {
+.bskt-disabled .bskt-delivery-page__method-block_item-caption-icon,
+.bskt-disabled .bskt-delivery-page__punkt-block_item-map_icon{
   color: #999 !important;
   fill: #999 !important;
 }
