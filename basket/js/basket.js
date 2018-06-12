@@ -1,6 +1,5 @@
 $(document).ready(function () {
     if($("div").hasClass("bskt-disabled")){
-        alert("dddddd");
         $(".bskt-disabled").find(".radio-choose").removeClass("method-click");
     }
     else{
