@@ -82,12 +82,15 @@ input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
 }
 .bskt-oder-page-block__field-item-textarea {
   margin: 5px 0px 0px 0px;
-  padding: 8px 10px 0px 10px;
+  padding: 8px 10px 8px 10px;
   font-weight: normal;
   line-height: 20px;
-  min-height: 36px;
+  min-height: 56px;
   overflow: hidden;
-  resize:vertical;
+  resize:none;
+}
+.bskt-oder-page-block__field-person .bskt-oder-page-block__field-item:nth-of-type(6) {
+  width: 100%;
 }
 
 @media (max-width: 1440px) {}
@@ -96,15 +99,7 @@ input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
 
 @media (max-width: 959px) {}
 
-@media (max-width: 767px) {
-  .bskt-oder-page-block__field-item-textarea {
-    min-height: 74px;
-    resize: none;
-  }
-  .bskt-oder-page-block__field-person .bskt-oder-page-block__field-item:nth-of-type(6) {
-    width: 100%;
-  }
-}
+@media (max-width: 767px) {}
 
 @media (max-width: 639px) {
   .bskt-oder-page-block__field-item-input-telprefix {

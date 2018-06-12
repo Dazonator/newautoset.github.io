@@ -350,7 +350,7 @@
 }
 
 .bskt-disabled > *,
-.bskt-disabled .bskt-pay-page__total-price-item{
+.bskt-disabled .bskt-pay-page__total-price-item_red{
   color: #999 !important;
   cursor: default;
 }
