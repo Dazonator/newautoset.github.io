@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Basket-Empty</title>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/myselect.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="basket/global-style/basket-global.css">
+	<link rel="stylesheet" href="basket/global-style/basket-header.css">
+	<link rel="stylesheet" href="basket/basket-empty/css/basket-empty.css">
+	<script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+	<script src="js/slick-slider.min.js"></script>
+	<script src="js/browser-plugin.min.js"></script>
+	<script src="js/inputmask.min.js"></script>
+	<script src="basket/js/basket.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+      if (/MSIE|Trident/.test(navigator.userAgent)) {
+          var iEobject;
+          iEobject = document.createElement('script');
+          iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+          iEobject.onload = function () {
+              svg4everybody();
+          };
+          document.getElementsByTagName('head')[0].appendChild(iEobject);
+      }
+
+  </script>
+</head>
+<body>
+	<section class="bskt-header bskt-bgc-lightgr">
+		<div class="container-block">
+			<div class="bskt-header__block clear">
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg bskt-icon_active">
+						<use xlink:href="img/sprite.svg#cart-red"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Корзина</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#delivery-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Доставка</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#payment-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Оплата</span>
+				</section>
+				<section class="bskt-header__item">
+					<svg class="bskt-header__item-svg">
+						<use xlink:href="img/sprite.svg#checkout-gray"></use>
+					</svg>
+					<span class="bskt-header__item-text bskt-col_bl">Оформление</span>
+				</section>
+			</div>
+		</div>
+	</section>
+	<section class="bskt-empty">
+	
+
+	</section>
+</body>
+</html>

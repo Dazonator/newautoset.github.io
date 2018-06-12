@@ -310,8 +310,9 @@
   padding-left: 10px;
 }
 
-.bskt-delivery-page__method-block {
+.bskt-delivery-page__method-block{
   margin-top: 22px;
+  color: #000;
 }
 .bskt-delivery-page__method-block_item{
     position: relative;
@@ -340,6 +341,25 @@
 }
 .bskt-delivery-page__radio-input{
   display: none;
+}
+.bskt-delivery-page__method-block_item-money_red{
+  color: #e2001a;
+}
+.bskt-delivery-page__method-block_item-description{
+  color: #999;
+}
+
+.bskt-disabled > *,
+.bskt-disabled .bskt-pay-page__total-price-item{
+  color: #999 !important;
+  cursor: default;
+}
+.bskt-disabled .radio-choose:hover{
+  cursor: default;
+  pointer-events: none;
+}
+.bskt-disabled .bskt-delivery-page__punkt-block_item-map {
+    pointer-events: none;
 }
 .bskt-delivery-page__method-block_item-caption-text {
   display: inline-block;
@@ -416,8 +436,11 @@
 
 .bskt-delivery-page__punkt-block {
   margin-top: 20px;
+  color: #000;
 }
-
+.bskt-delivery-page__punkt-block_item-text-region{
+  color: #999;
+}
 .bskt-delivery-page__punkt-block_item + .bskt-delivery-page__punkt-block_item {
   margin-top: 20px;
 }

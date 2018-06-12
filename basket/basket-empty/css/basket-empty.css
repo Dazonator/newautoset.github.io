@@ -1,0 +1,12 @@
+.bskt-empty{}
+.bskt-empty__wrapper{
+	position: relative;
+	height: 100vw;
+}
+.bskt-empty__block{
+	position: absolute;
+	width: 100%;
+	height: 200px;
+	top: 50%;
+	margin-top: -100px;
+}
