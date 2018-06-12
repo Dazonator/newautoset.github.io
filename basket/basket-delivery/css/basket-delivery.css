@@ -359,7 +359,11 @@
   pointer-events: none;
 }
 .bskt-disabled .bskt-delivery-page__punkt-block_item-map {
-    pointer-events: none;
+  pointer-events: none;
+}
+.bskt-disabled .bskt-delivery-page__method-block_item-caption-icon {
+  color: #999 !important;
+  fill: #999 !important;
 }
 .bskt-delivery-page__method-block_item-caption-text {
   display: inline-block;
