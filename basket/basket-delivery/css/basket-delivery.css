@@ -202,7 +202,7 @@
 .bskt-delivery-page__city-change_modal-main_inputs-caption {
   display: block;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
 }
 
@@ -346,7 +346,7 @@
   color: #e2001a;
 }
 .bskt-delivery-page__method-block_item-description{
-  color: #999;
+  color: #000;
 }
 
 .bskt-disabled > *,
@@ -416,8 +416,8 @@
   float: left;
   width: 100%;
   margin-top: 25px;
-  padding: 20px;
-  background-color: #f9f9f9;
+  padding: 20px 20px 20px 45px;
+  background-color: #f3f3f3;
   -webkit-animation: dropdown 1.5s;
   -o-animation: dropdown 1.5s;
   animation: dropdown 1.5s;
@@ -853,6 +853,9 @@
 }
 
 @media (max-width: 639px) {
+  .bskt-delivery-page__punkt-store {
+      display: block;
+  }
   .bskt-delivery-page__city-change_btn {
     display: block;
     max-width: 80px;

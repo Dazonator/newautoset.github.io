@@ -111,7 +111,7 @@
   padding: 0px 225px;
 }
 .bskt-thanks-block__a{
-  display: inline-block;
+  display: block;
   vertical-align: middle;
 }
 .bskt-thanks-block__a-hover:hover{
@@ -121,8 +121,8 @@
 .bskt-thanks-block__icon{
   display: inline-block;
   vertical-align: middle;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 }
 .bskt-thanks-block__icon +.bskt-thanks-block__icon{
   margin-left: 5px;

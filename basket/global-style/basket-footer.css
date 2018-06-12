@@ -695,6 +695,10 @@
          align-items: flex-start;
     }
     .bskt-footer-left {
+        display: block;
+        padding: 0px;
+    }
+    .bskt-footer-left__bottom {
         display: none;
     }
    

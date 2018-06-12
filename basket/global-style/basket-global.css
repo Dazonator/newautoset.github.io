@@ -146,7 +146,7 @@ input{
 }
 .bskt-text-with-dot{
   position: relative;
-  padding-left: 10px;
+  padding-left: 15px;
 }
 .bskt-text-with-dot:before{
   content: '';
