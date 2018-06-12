@@ -356,7 +356,6 @@
 }
 .bskt-disabled .radio-choose:hover{
   cursor: default;
-  pointer-events: none;
 }
 .bskt-disabled .bskt-delivery-page__punkt-block_item-map {
   pointer-events: none;

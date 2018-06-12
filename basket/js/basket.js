@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    if($("div").hasClass("bskt-disabled")){
+        alert("dddddd");
+        $(".bskt-disabled").find(".radio-choose").removeClass("method-click");
+    }
+    else{
+        $(".radio-choose").addClass("method-click");
+    }
     
     $(".modal-close-click").on("click", function(){
         $("body").removeClass("modal-open");
