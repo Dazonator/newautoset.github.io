@@ -423,9 +423,9 @@
   animation: dropdown 1.5s;
 }
 
-.bskt-delivery-page__method-block_dropdown.open {
+/*.bskt-delivery-page__method-block_dropdown.open {
   display: block;
-}
+}*/
 
 
 .bskt-delivery-page__method-block_dropdown p {

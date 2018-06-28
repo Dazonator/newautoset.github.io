@@ -197,6 +197,7 @@
 .bskt-footer-left__bottom-btn_back
 {
     display: table-cell;
+    vertical-align: bottom;
     text-align: right;
     width: 62%;
     padding: 20px 10px 0px 10px;
