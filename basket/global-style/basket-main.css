@@ -507,7 +507,7 @@
     }
 }
 @supports (-webkit-overflow-scrolling: touch) {
-  .bskt-main__cart-pay_count-caption_value {
-        margin-top: 5px;
+    .bskt-main__cart-pay_count-caption_value {
+        margin-top: 10px;
     }
 }
