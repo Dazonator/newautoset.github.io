@@ -38,9 +38,10 @@ $(document).ready(function () {
     	}
     })
     $(".method-click").on("click", function(){
-        $(".bskt-delivery-page__method-block").find(".method-dropdown").stop().slideUp(600);
-        $(this).parent().next().next().next().stop().slideDown(600);
-        // $(this).parent().next().next().next().addClass("open");
+        $(".bskt-delivery-page__method-block").find(".method-dropdown").stop().slideUp("easeInQuad");
+        $(".bskt-delivery-page__method-block").find(".method-dropdown").removeClass("open");
+        $(this).parent().next().next().next().addClass("open");
+        $(this).parent().next().next().next().stop().slideDown("easeInQuad");
     })
     $(".bskt-footer-pay-page__icon-question").on("click", function(){
         $(".bskt-footer-pay-page__block-for-icon-question").addClass("open");
