@@ -129,7 +129,8 @@
   text-align: left;
   width: 100%;
   height: 130px;
-  columns: 6;
+  -webkit-columns: 6;
+   columns: 6;
    box-shadow: inset 0px 2px 0px 0px #ddd;
    padding: 20px 0px 20px 0px;
 
@@ -552,6 +553,7 @@
   }
   .bskt-delivery-page__city-change_modal-main_bigcity {
     height: 200px;
+    -webkit-columns: 4;
     columns: 4;
   }
  
@@ -679,6 +681,7 @@
   }
   .bskt-delivery-page__city-change_modal-main_bigcity {
     height: 340px;
+    -webkit-columns: 2;
     columns: 2;
   }
   
