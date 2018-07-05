@@ -199,6 +199,10 @@
 
     text-align: center;
 }
+.bskt-main__cart-pay_count-choose {
+    width: 55px;
+    height: 36px;
+}
 .bskt-main__cart-pay_count-choose_body span.select-value{
     margin-top: 4px;
 }
