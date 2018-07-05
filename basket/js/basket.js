@@ -6,11 +6,7 @@ $(document).ready(function () {
         $(".radio-choose").addClass("method-click");
     }
     
-    $(".modal-close-click").on("click", function(){
-        $("body").removeClass("modal-open");
-        $("body").removeClass("overlay-open");
-        $(".modal").removeClass("open");
-    }) 
+    
     $(".bskt-btn-hidden").on("click", function(){
     	if($(".bskt-delivery-main__block").hasClass("open")){
     		$(".bskt-delivery-main__block").removeClass("open");
@@ -24,18 +20,18 @@ $(document).ready(function () {
     $(".city-click").on("click", function(){
     	var city = $(this).text();
     	$(".bskt-delivery-page__city-change_value").text("г. " + city);
-    	$(".bskt-delivery-page__city-change_modal").removeClass("open");
-    	$("body").removeClass("modal-open");
-    	$("body").removeClass("overlay-open");
     })
     $(".confirm-click").on("click", function(){
-    	$(".bskt-delivery-page__city-change_modal").removeClass("open");
-    	$("body").removeClass("modal-open");
-    	$("body").removeClass("overlay-open");
     	if ($(".input-data").val() != 0){
     		var chooseCity = $(".input-data").val();
     		$(".bskt-delivery-page__city-change_value").text("г. " + chooseCity)
     	}
+    })
+    $(".modal-remove").on("click", function(){
+        $("body").removeClass("modal-open");
+        $("body").removeClass("overlay-open");
+        $(".modal").removeClass("open");
+        $(".input-data").val("");
     })
     $(".method-click").on("click", function(){
         $(".bskt-delivery-page__method-block").find(".method-dropdown").stop().slideUp("easeInQuad");
