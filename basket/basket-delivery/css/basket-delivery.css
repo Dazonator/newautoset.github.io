@@ -131,6 +131,9 @@
   font-weight: bold;
   padding-right: 40px;
 }
+.city-minsk__text:hover{
+  cursor: pointer;
+}
 .bskt-delivery-page__city-change_modal-main_bigcity {
   list-style-type: none;
   text-align: left;
