@@ -104,7 +104,7 @@
 .bskt-delivery-page__city-change_modal-main_city-choose-city{
   display: block;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 20px;
 }
 
 .city-minsk{
@@ -132,7 +132,7 @@
   -webkit-columns: 6;
    columns: 6;
    box-shadow: inset 0px 2px 0px 0px #ddd;
-   padding: 20px 0px 20px 0px;
+   padding: 10px 0px 10px 0px;
 
 }
 .bskt-delivery-page__city-change_modal-main_bigcity-item{
@@ -160,11 +160,12 @@
 
 .bskt-delivery-page__city-change_modal-main_bigcity-item_icon {
   position: absolute;
-  top: 0px;
+  top: 10px;
   right: 0px;
   width: 24px;
 }
 .city-minsk__icon{
+  top: 0px;
   width: 27px;
 }
 
