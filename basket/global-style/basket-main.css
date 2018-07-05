@@ -504,8 +504,3 @@
         max-width: 100px;
     }
 }
-@supports (-webkit-overflow-scrolling: touch) {
-    .bskt-main__cart-pay_count-caption_value {
-        margin-top: 6px;
-    }
-}
