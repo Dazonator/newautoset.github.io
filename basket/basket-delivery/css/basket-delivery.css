@@ -72,13 +72,6 @@
     -o-tap-highlight-color: transparent;
 }
 
-.bskt-delivery-page__city-change_container {
-  width: 100%;
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 
 .bskt-delivery-page__city-change_modal-header {
@@ -251,6 +244,8 @@
   background-color: #e0e0e0;
   font-size: 16px;
   line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
   -webkit-tap-highlight-color: transparent;
   -ms-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
@@ -268,6 +263,8 @@
   border-radius: 3px;
   font-size: 16px;
   line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
   -webkit-tap-highlight-color: transparent;
   -ms-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;

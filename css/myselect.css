@@ -138,6 +138,32 @@ body.touch select.myselect_block
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
+.modal-close-btn
+{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.modal-close-btn:hover
+{
+    cursor: pointer;
+}
+
+.modal-close-btn_icon
+{
+    display: block;
+
+    width: inherit;
+    height: inherit;
+
+    color: #fff;
+
+    fill: #fff;
+}
 .modal-open .modal-container
 {
     display: block;
@@ -215,31 +241,4 @@ body.touch select.myselect_block
     display: inline-block;
 }
 
-.modal-close-click
-{
-    position: absolute;
-    top: 12px;
-    right: 12px;
 
-    display: block;
-
-    width: 20px;
-    height: 20px;
-}
-
-.modal-close-click:hover
-{
-    cursor: pointer;
-}
-
-.modal-close-click_icon
-{
-    display: block;
-
-    width: inherit;
-    height: inherit;
-
-    color: #fff;
-
-    fill: #fff;
-}

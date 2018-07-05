@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>Button-city-change</title>
+	<link rel="stylesheet" href="fonts/stylesheet.css">
+	<link rel="stylesheet" href="css/myselect.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="button_city_change/css/button_city-_change.css">
+	<script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+	<script src="js/slick-slider.min.js"></script>
+	<script src="js/browser-plugin.min.js"></script>
+	<script src="js/inputmask.min.js"></script>
+	<script src="button_city_change/js/button_city_change.js"></script>
+	<script src="js/script.js"></script>
+	
+	<script>
+      if (/MSIE|Trident/.test(navigator.userAgent)) {
+          var iEobject;
+          iEobject = document.createElement('script');
+          iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+          iEobject.onload = function () {
+              svg4everybody();
+          };
+          document.getElementsByTagName('head')[0].appendChild(iEobject);
+      }
+
+	</script>
+	
+</head>
+<body>
+	<div class="overlay modal-remove js-overlay"></div>
+	<div class="container-block">
+		<section class="city-change">
+			<div class="city-change__block">
+
+				<span class="city-change__value">г. Полоцк</span>
+				<a href="#city-change" class="city-change__link js-open-modal">Изменить</a>
+
+
+				<div class="city-change__container modal-container js-modal-container">
+				    <div class="city-change__modal modal" id="city-change">
+
+				    	<div class="city-change__modal-header">
+				    		<span class="city-change__modal-header-text">Выбор города доставки</span>
+				    		<span class="city-change__modal-header-close js-close-modal modal-close-btn modal-remove">
+					    		<svg class="modal-close-btn_icon">
+					    			<use xlink:href="img/sprite.svg#close_cross_simple"></use>
+					    		</svg>
+				    		</span>
+				    	</div>
+				    	<div class="city-change__modal-main">
+				    		<div class="city-change__modal-main-city">
+				    			<span class="city-change__modal-main-caption">Выберите, пожалуйста, город</span>
+				    			<div class="city-minsk">
+					    			<span class="city-minsk__text city-click modal-remove">Минск
+			    						<img src="basket/basket-delivery/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon city-minsk__icon">
+			    					</span>
+		    					</div>
+				    			<ul class="city-change__modal-main-list">
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Барановичи</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Бобруйск
+											<img src="basket/basket-delivery/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Борисов</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Брест
+				    						<img src="basket/basket-delivery/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Витебск
+				    						<img src="basket/basket-delivery/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Гомель
+				    						<img src="basket/basket-delivery/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Гродно
+				    						<img src="basket/basket-delivery/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Лида</span>
+				    				</li>
+				    				
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Могилёв
+				    						<img src="basket/basket-delivery/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Мозырь</span>
+				    				</li>
+
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Молодечно</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Новополоцк</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Орша</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Пинск</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Полоцк</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Светлогорск</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Слуцк</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Солигорск</span>
+				    				</li>
+				    			</ul>
+				    		</div>
+				    		<div class="city-change__modal-main-inputs">
+				    				<span class="city-change__modal-main-caption">Поиск и выбор населённого пункта:
+				    				</span>
+				    				<form action="" method="" name="choose-your-city" class="city-change__modal-main-inputs-block clear">
+				    					<div class="city-change__modal-main-inputs-block_item city-change__modal-main-inputs-search">
+				    						<input type="text" class="city-change__modal-main-inputs-search-block input-data city-change__input-style">
+				    						<img src="basket/basket-delivery/img/search-tool.png" alt="" class="city-change__modal-main-inputs-search-tool">
+				    					</div>
+				    					<div class="city-change__modal-main-inputs-block_item js-input-all">
+				    					    <div class="js-dropdown js-dropdown-onclick">
+				    					        <select class="city-change__modal-main-inputs_select myselect_block js-select">
+				    					            <option value="0" selected>Выберите область</option>
+				    					            <option value="1">Выберите область2</option>
+				    					            <option value="2">Выберите область3</option>
+				    					            <option value="3">Выберете область4</option>
+				    					            <option value="4">Выберите область5</option>
+				    					            <option value="5">Выберите область6</option>
+				    					            <option value="6">Выберите область7</option>
+				    					            <option value="7">Выберите область8</option>
+				    					        </select>
+				    					    </div>
+				    					</div>
+				    					<div class="city-change__modal-main-inputs-block_item js-input-all">
+				    					    <div class="js-dropdown js-dropdown-onclick">
+				    					        <select class="city-change__modal-main-inputs_select myselect_block js-select">
+				    					            <option value="0" selected>Выберите район</option>
+				    					            <option value="1">Выберите район2</option>
+				    					            <option value="2">Выберите район3</option>
+				    					            <option value="3">Выберите район4</option>
+				    					            <option value="4">Выберите район5</option>
+				    					            <option value="5">Выберите район6</option>
+				    					            <option value="6">Выберите район7</option>
+				    					            <option value="7">Выберите район8</option>
+				    					        </select>
+				    					    </div>
+				    					</div>
+				    					<div class="city-change__modal-main-inputs-block_item js-input-all">
+				    					    <div class="js-dropdown js-dropdown-onclick">
+				    					        <select class="city-change__modal-main-inputs_select myselect_block js-select">
+				    					            <option value="0" selected>Выберирте город</option>
+				    					            <option value="1">Выберирте город2</option>
+				    					            <option value="2">Выберирте город3</option>
+				    					            <option value="3">Выберирте город4</option>
+				    					            <option value="4">Выберирте город5</option>
+				    					            <option value="5">Выберирте город6</option>
+				    					            <option value="6">Выберирте город7</option>
+				    					            <option value="7">Выберирте город8</option>
+				    					        </select>
+				    					    </div>
+				    					</div>
+				    				</form>
+			    			</div>
+			    			<div class="city-change__modal-main-inputs_confirm clear">
+			    				<div class="city-change__modal-main-inputs_confirm-item">
+			    					<span class="city-change__btn city-change__modal-main-inputs_confirm-cancel js-close-modal">Отменить</span>
+			    				</div>
+			    				<div class="city-change__modal-main-inputs_confirm-item">
+			    					<span class="city-change__btn city-change__modal-main-inputs_confirm-btn confirm-click modal-remove">Выбрать</span>
+			    				</div>
+			    				
+			    			</div>
+				    	</div>
+				    </div>
+			  	</div>
+			</div>
+			
+		</section>
+	</div>
+	
+</body>
+</html>
