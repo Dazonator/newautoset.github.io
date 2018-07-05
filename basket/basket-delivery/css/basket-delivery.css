@@ -120,6 +120,10 @@
   line-height: 20px;
   font-weight: bold;
   padding-right: 40px;
+   -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-tap-highlight-color: transparent;
+    -o-tap-highlight-color: transparent;
 }
 .city-minsk__text:hover{
   cursor: pointer;
@@ -132,7 +136,7 @@
   -webkit-columns: 6;
    columns: 6;
    box-shadow: inset 0px 2px 0px 0px #ddd;
-   padding: 10px 0px 10px 0px;
+   padding: 13px 0px 13px 0px;
 
 }
 .bskt-delivery-page__city-change_modal-main_bigcity-item{
