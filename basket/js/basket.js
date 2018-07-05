@@ -17,6 +17,9 @@ $(document).ready(function () {
     		$(this).text("Скрыть товары в корзине")
     	}
     })
+    $(".bskt-delivery-page__city-change_btn").on("click", function(){
+        $("body").find(".myselect_block").removeClass("open");
+    });
     $(".city-click").on("click", function(){
     	var city = $(this).text();
     	$(".bskt-delivery-page__city-change_value").text("г. " + city);
