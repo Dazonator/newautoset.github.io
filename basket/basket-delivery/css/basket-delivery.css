@@ -87,16 +87,6 @@
   font-weight: bold;
   line-height: 20px;
 }
-
-.bskt-delivery-page__city-change_modal-close {
-  display: block;
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  width: 20px;
-  height: 20px;
-}
-
 .bskt-delivery-page__city-change_modal-close:hover {
   cursor: pointer;
 }
