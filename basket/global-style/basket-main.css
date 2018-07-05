@@ -449,13 +449,7 @@
 
     .bskt-main__cart-pay_count-choose.js-input-all
     {
-        display: -webkit-flex;
-        display:    -moz-flex;
-        display:     -ms-flex;
-        display:      -o-flex;
-        display:         flex;
-
-        justify-content: center;
+        margin: 0 auto;
     }
 
     .bskt-main__cart-pay_price
