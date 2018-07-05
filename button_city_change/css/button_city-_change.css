@@ -73,6 +73,7 @@
 	cursor: pointer;
 }
 .city-minsk__icon {
+    top: 0px;
     width: 27px;
 }
 .city-change__modal-main-list {
@@ -82,16 +83,13 @@
     height: 130px;
     columns: 6;
     box-shadow: inset 0px 2px 0px 0px #ddd;
-    padding: 20px 0px 20px 0px;
-}
-.city-change__modal-main-list-item + .city-change__modal-main-list-item {
-    margin-top: 15px;
+    padding: 10px 0px 10px 0px;
 }
 .city-change__modal-main-list-item_text {
     display: table;
     position: relative;
     font-size: 14px;
-    line-height: 20px;
+    line-height: 35px;
     padding-right: 35px;
 }
 .city-change__modal-main-list-item_text:hover {
@@ -99,7 +97,7 @@
 }
 .city-change__modal-main-city-icon {
     position: absolute;
-    top: 0px;
+    top: 10px;
     right: 0px;
     width: 24px;
 }
