@@ -7,12 +7,11 @@ $('.page-tests__test-year_seasons').each(function () {
 		father.children('li').removeClass('active');
 		$(this).addClass('active');
 		tabs_tests($(this).index());
-		// father.eq(point).addClass('active');
 	});
 	function tabs_tests(point) {
-		console.log(point);
 		father.parent().children('.page-tests__test-year_seasons-blocks').removeClass('active');
 		father.parent().children('.page-tests__test-year_seasons-blocks').eq(point).addClass('active');
+
 	}
 });
 
