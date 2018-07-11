@@ -226,3 +226,63 @@
         .test2 .page-tests__newest-tests .information-block__description table td {
           border-bottom: dashed 1px #dddddd;
           padding: 10px 0; }
+
+@media (max-width: 1199px) {
+  .test2 .page-tests__newest-tests .information-block {
+    width: 49%; } }
+
+@media (max-width: 959px) {
+  .test1 .page-tests__newest-tests .information-block__img {
+    width: 100%;
+    height: 150px; }
+  .test1 .page-tests__newest-tests .information-block__img_logos {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    overflow: none; }
+    .test1 .page-tests__newest-tests .information-block__img_logos img {
+      width: 23%; }
+  .test1 .page-tests__newest-tests .information-block__description {
+    width: 100%; }
+  .test1 .page-tests__newest-tests .information-block__description table {
+    width: 48%;
+    margin-right: 2%;
+    float: left; }
+  .test1 .page-tests__newest-tests .information-block__description p {
+    margin-top: 10px; } }
+
+@media (max-width: 767px) {
+  .test2 .page-tests__newest-tests {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .test2 .page-tests__newest-tests .information-block {
+    width: 75%; } }
+
+@media (max-width: 639px) {
+  .test1 .page-tests__newest-tests .information-block__description table {
+    width: 100%;
+    float: none; }
+  .test2 .page-tests__newest-tests .information-block {
+    width: 100%; } }
+
+@media (max-width: 479px) {
+  .test2 .page-tests__newest-tests .description {
+    font-size: 16px; }
+  .test2 .page-tests__newest-tests .information-block__description table tr td:first-child,
+  .test2 .page-tests__newest-tests .information-block__description table tr td:last-child,
+  .test2 .page-tests__newest-tests .information-block p {
+    font-size: 14px; }
+  .test1 .page-tests__newest-tests .description {
+    font-size: 16px; }
+  .test1 .page-tests__newest-tests .information-block__description table tr td:first-child,
+  .test1 .page-tests__newest-tests .information-block__description table tr td:last-child,
+  .test1 .page-tests__newest-tests .information-block p {
+    font-size: 14px; } }
