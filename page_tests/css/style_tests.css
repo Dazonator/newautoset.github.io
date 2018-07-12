@@ -219,14 +219,14 @@ span.checkbox-text {
 
 .page-tests__newest-tests {
   margin-bottom: 30px; }
-  .page-tests__newest-tests .title {
+  .page-tests__newest-tests__title {
     font-family: Roboto;
     font-size: 24px;
     font-weight: bold;
     color: #000000;
     text-transform: uppercase;
     margin: 16px 0; }
-  .page-tests__newest-tests .description {
+  .page-tests__newest-tests__description {
     font-family: Roboto;
     font-size: 20px;
     font-weight: bold;
