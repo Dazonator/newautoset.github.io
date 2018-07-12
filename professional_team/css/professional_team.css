@@ -1,0 +1,494 @@
+.container-fluid {
+  width: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.what-are-you-interested__title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px; }
+
+.what-are-you-interested__blocks {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.what-are-you-interested__block {
+  margin-bottom: 30px;
+  width: 33.33%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .what-are-you-interested__block img {
+    width: 38px;
+    height: 38px;
+    margin-right: 20px; }
+  .what-are-you-interested__block span {
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000; }
+
+.selection-and-consultation__title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px; }
+
+.selection-and-consultation__phone-numbers {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .selection-and-consultation__phone-numbers__block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .selection-and-consultation__phone-numbers__block p {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: bold;
+      text-align: center;
+      color: #808080;
+      padding-bottom: 20px; }
+    .selection-and-consultation__phone-numbers__block a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000; }
+      .selection-and-consultation__phone-numbers__block a img {
+        width: 32px;
+        height: 32px;
+        margin-right: 10px; }
+  .selection-and-consultation__phone-numbers__button {
+    display: inline-block;
+    background-color: #666666;
+    width: 290px;
+    height: 74px;
+    -webkit-align-self: flex-end;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    border: 2px solid #666666; }
+    .selection-and-consultation__phone-numbers__button:before, .selection-and-consultation__phone-numbers__button:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #666;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s;
+      z-index: -1; }
+    .selection-and-consultation__phone-numbers__button:before {
+      left: 0; }
+    .selection-and-consultation__phone-numbers__button:after {
+      right: 0; }
+    .selection-and-consultation__phone-numbers__button:hover {
+      background-color: transparent;
+      color: #666; }
+      .selection-and-consultation__phone-numbers__button:hover:before, .selection-and-consultation__phone-numbers__button:hover:after {
+        width: 3px; }
+      .selection-and-consultation__phone-numbers__button:hover img {
+        -webkit-filter: invert(80%) opacity(80%);
+        filter: invert(80%) opacity(80%); }
+    .selection-and-consultation__phone-numbers__button img {
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
+
+.selection-and-consultation__team {
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch; }
+  .selection-and-consultation__team__block {
+    width: 12.5%;
+    text-align: center;
+    padding: 10px; }
+    .selection-and-consultation__team__block img {
+      width: 100%;
+      height: auto; }
+    .selection-and-consultation__team__block span {
+      font-family: Roboto;
+      font-size: 16px;
+      color: #000000; }
+
+.selection-and-consultation__links {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding-top: 20px; }
+  .selection-and-consultation__links a {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 33.3%;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: bold;
+    color: #224f93;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .selection-and-consultation__links a:hover {
+      text-decoration: underline; }
+
+.special-contacts {
+  margin-top: 40px; }
+  .special-contacts__title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    padding-bottom: 20px; }
+  .special-contacts__block {
+    margin-bottom: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .special-contacts__block__img {
+      width: 14%;
+      margin-right: 20px; }
+      .special-contacts__block__img img {
+        width: 100%; }
+    .special-contacts__block__information {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around; }
+      .special-contacts__block__information_name {
+        font-family: Roboto;
+        font-size: 28px;
+        color: #000000;
+        margin-bottom: 10px; }
+      .special-contacts__block__information_position {
+        font-family: Roboto;
+        font-size: 22px;
+        color: #808080;
+        margin-bottom: 10px; }
+      .special-contacts__block__information_phone {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: bold;
+        color: #000000;
+        margin-bottom: 10px; }
+        .special-contacts__block__information_phone img {
+          width: 32px;
+          height: 32px;
+          margin-right: 10px; }
+      .special-contacts__block__information_mail {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: Roboto;
+        font-size: 20px;
+        color: #000000; }
+        .special-contacts__block__information_mail img {
+          width: 24px;
+          height: auto;
+          margin-right: 10px; }
+
+.management-personnel {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
+  .management-personnel__title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    width: 100%;
+    padding-bottom: 20px; }
+  .management-personnel__block {
+    width: 33.33%;
+    text-align: center;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .management-personnel__block > img {
+      width: 40%;
+      margin-bottom: 15px; }
+    .management-personnel__block p {
+      font-family: Roboto;
+      font-size: 20px;
+      color: #000000;
+      margin-bottom: 10px; }
+    .management-personnel__block span {
+      font-family: Roboto;
+      font-size: 14px;
+      color: #808080;
+      margin-bottom: 10px; }
+    .management-personnel__block a {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      font-family: Roboto;
+      font-size: 14px;
+      color: #000000; }
+      .management-personnel__block a img {
+        width: 24px;
+        height: auto;
+        margin-right: 10px; }
+
+.big-photo-team {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .big-photo-team__block {
+    margin-bottom: 50px; }
+    .big-photo-team__block h4 {
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+      color: #000000;
+      padding-bottom: 20px; }
+    .big-photo-team__block img {
+      width: 100%; }
+
+.professional-team-contacts {
+  text-align: center;
+  margin-bottom: 40px; }
+  .professional-team-contacts h5 {
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 10px; }
+  .professional-team-contacts p {
+    margin-bottom: 10px;
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    color: #000000; }
+  .professional-team-contacts a {
+    margin-bottom: 10px;
+    display: block;
+    font-family: Roboto;
+    font-size: 20px;
+    text-align: center;
+    color: #000000; }
+  .professional-team-contacts a.professional-team-contacts__mail {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 20px; }
+    .professional-team-contacts a.professional-team-contacts__mail img {
+      width: 24px;
+      height: auto;
+      margin-right: 10px; }
+
+.selection-and-consultation__links__bottom {
+  margin-bottom: 80px; }
+
+@media (max-width: 1199px) {
+  .selection-and-consultation__team__block {
+    width: 16.66%; }
+  .special-contacts__block__img {
+    width: 15%; } }
+
+@media (max-width: 959px) {
+  .what-are-you-interested__block {
+    width: 50%; }
+  .selection-and-consultation__phone-numbers {
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+  .selection-and-consultation__phone-numbers__button {
+    margin-top: 10px; }
+  .selection-and-consultation__team__block {
+    width: 20%; }
+  .special-contacts__block__information_name {
+    font-size: 24px; }
+  .special-contacts__block__information_position,
+  .special-contacts__block__information_mail {
+    font-size: 18px; }
+  .special-contacts__block__information_phone {
+    font-size: 22px; }
+  .special-contacts__block__img {
+    width: 17%; }
+  .management-personnel__block > img {
+    width: 60%; } }
+
+@media (max-width: 767px) {
+  .selection-and-consultation__team__block {
+    width: 25%; }
+  .special-contacts__block__img {
+    width: 20%; }
+  .management-personnel__block {
+    width: 50%; }
+  .management-personnel__block > img {
+    width: 50%; } }
+
+@media (max-width: 639px) {
+  .selection-and-consultation__team__block {
+    width: 33.33%; }
+  .what-are-you-interested__block {
+    width: 75%; }
+  .what-are-you-interested__blocks {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .selection-and-consultation__links a {
+    width: 50%; }
+  .special-contacts__block__img {
+    width: 100%;
+    text-align: center;
+    margin-right: 0; }
+    .special-contacts__block__img img {
+      width: 40%; }
+  .special-contacts__block__information {
+    width: 100%;
+    text-align: center; }
+    .special-contacts__block__information a {
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+  .management-personnel__block {
+    width: 100%; }
+  .management-personnel__block > img {
+    width: 40%; } }
+
+@media (max-width: 479px) {
+  .selection-and-consultation__team__block {
+    width: 50%; }
+  .what-are-you-interested__block {
+    width: 100%; }
+  .selection-and-consultation__links a {
+    width: 100%; } }

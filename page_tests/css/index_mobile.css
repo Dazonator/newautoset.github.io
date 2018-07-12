@@ -1,0 +1,243 @@
+@media (max-width: 767px) {
+  .hidden-xs {
+    display: none !important; }
+  .visible-xs {
+    display: block !important; }
+  .visible-xs_tb {
+    display: table !important; }
+  .text-guide .columns_2 {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1; }
+  .menu-table {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+  .section-container_color_xs {
+    background: 0 0; }
+  .section-container_color_xs .col-xs-12 {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    background: #eee; }
+  .container__title {
+    font-size: 32px;
+    line-height: 34px;
+    margin-bottom: 12px; }
+  .container__subtitle {
+    font-size: 26px;
+    line-height: 34px; }
+  .text_large {
+    font-size: 32px; }
+  .main-menu {
+    display: none; }
+  .main-header {
+    margin-top: 20px; }
+  .page-content-image {
+    height: 480px;
+    background-image: url(/local/images/markup-images/background/main_back_mobile.jpg);
+    -webkit-background-size: auto auto;
+    background-size: auto;
+    margin-top: 0; }
+  .tabs-block {
+    position: static;
+    left: 0;
+    right: 0; }
+  .tabs-block__footer {
+    display: block; }
+  .tabs-footer-cell {
+    display: block;
+    width: 50%;
+    float: left; }
+  .tabs-body-table {
+    display: block;
+    padding: 0 20px; }
+  .tabs-table-cell, .tabs-table-cell:last-child {
+    padding-right: 0;
+    padding-left: 0; }
+  .main-submenu__item:first-child {
+    display: none; }
+  .main-submenu__item {
+    width: 50%; }
+  .tabs-table-cell {
+    display: block;
+    width: auto; }
+  .cart-btn__txt, .dropdown-panel-container {
+    display: none; }
+  .cart-btn__icon {
+    margin-left: 0; }
+  .top-row__item_table {
+    table-layout: fixed; }
+  .top-item-cell {
+    position: relative; }
+  .top-item-cell:first-child, .top-item-cell:last-child {
+    width: auto; }
+  .mobile-logo {
+    padding: 0; }
+  .top-item-cell .dropdown__body {
+    left: 0;
+    right: auto;
+    max-width: 290px; }
+  .sidebar {
+    padding: 0 60px 70px 20px; }
+  .sidebar-close {
+    position: absolute;
+    right: 20px;
+    width: 40px; }
+  .modal {
+    max-width: -webkit-calc(100vw - 30px);
+    max-width: calc(100vw - 30px); }
+  .modal-inner-block {
+    padding: 0;
+    margin: 0 -20px; }
+  .relative-block-inner:first-child {
+    padding-left: 140px;
+    min-height: 292px;
+    background-image: url(/local/images/markup-images/mini/1493_m.png);
+    background-position: 0 0;
+    background-repeat: no-repeat; }
+  .relative-block-inner:last-child {
+    padding: 0 0 0 15px; }
+  .relative-block__item {
+    margin-bottom: 20px; }
+  .relative-block-inner:first-child .relative-block__item {
+    width: 100%;
+    max-width: none; }
+  .filter-header_table {
+    display: block; }
+  .filter-header__cell {
+    display: inline-block;
+    width: auto;
+    margin-top: 10px;
+    padding-left: 0; }
+  .filter-header__cell:first-child {
+    padding-right: 0; }
+  .filter-header__cell:last-child {
+    width: auto; }
+  .filter-list_columns {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2; }
+  .pseudo-select_min .pseudo-select__body {
+    max-width: none;
+    right: 0; }
+  .consult-container {
+    background-position: 56% 0;
+    min-height: inherit; }
+  .consult-container__inner {
+    padding-left: 0;
+    margin-top: 40px;
+    margin-bottom: 20px; }
+  .input_decor, .input_decor:focus {
+    margin-bottom: 10px;
+    font-size: 24px;
+    width: 282px;
+    max-width: 100%; }
+  .marketing-col {
+    margin-bottom: 30px; }
+  .section-info {
+    padding: 40px 0 30px; }
+  .question-block, .question-block__body, .question-block__footer {
+    display: block; }
+  .question-block__footer {
+    max-width: 320px; }
+  .warranty-container {
+    text-align: center; }
+  .warranty-col {
+    display: table;
+    max-width: 320px;
+    width: 100%;
+    text-align: left;
+    clear: left;
+    margin: 0 auto 30px; }
+  .warranty-col__content, .warranty-col__image {
+    display: table-cell;
+    vertical-align: top; }
+  .warranty-col__image {
+    width: 80px;
+    padding-right: 15px;
+    padding-top: 10px; }
+  .warranty-col__title {
+    font-size: 22px;
+    line-height: 30px; }
+  .warranty-container .container__title {
+    margin-bottom: 20px; }
+  .warranty-col__image .svg-icon {
+    margin-bottom: 0;
+    height: 60px; } }
+
+@media (max-width: 460px) {
+  .hidden-460 {
+    display: none !important; }
+  .visible-460 {
+    display: block; }
+  .page-footer-row {
+    display: none; }
+  .table-content-title {
+    font-size: 12px;
+    line-height: 18px; }
+  .tabs-body-table {
+    padding-bottom: 15px; }
+  .modal, .tabs-table-cell {
+    padding-bottom: 0; }
+  .modal {
+    padding-top: 0; }
+  .block-item-title {
+    line-height: 22px;
+    margin-bottom: 2px; }
+  .inner-block__title {
+    padding: 0 40px;
+    text-align: center; }
+  .modal__text-block {
+    margin-bottom: 0; }
+  .social-list__item {
+    margin: 0 4px 12px; }
+  .row-triple {
+    display: block; }
+  .row-triple__item {
+    display: table;
+    width: 100%;
+    float: none;
+    margin-top: 10px;
+    padding: 0; }
+  .row-triple__item .form__input, .row-triple__item .form__label {
+    display: table-cell;
+    vertical-align: middle; }
+  .row-triple__item .form__label {
+    width: 40%;
+    padding-right: 10px; }
+  .tabs-block .form__row {
+    margin: 10px 0; }
+  .tabs-block .form__row:first-child {
+    margin-top: 0; }
+  .tabs-block .form__row:last-child {
+    margin-bottom: 0; }
+  .tabs-block .row-half {
+    margin: 12px -10px; }
+  .filter-header__cell_count {
+    display: none; }
+  .filter-list_columns {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0; }
+  .news-table {
+    display: block;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto; }
+  .news-table__main {
+    display: block;
+    width: auto;
+    padding-right: 0; }
+  .news-table__content {
+    display: block;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: justify;
+    line-height: 18px; }
+  .news-image img {
+    min-width: 100%; }
+  .marketing-col {
+    width: 100%; } }

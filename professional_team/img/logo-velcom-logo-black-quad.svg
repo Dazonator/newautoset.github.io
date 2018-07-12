@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>B481E935-18D4-49AB-9BFE-BC746CB0DCD1</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="logo/velcom_logo_black_quad" fill-rule="nonzero">
+            <g id="velcom_logo_black_quad">
+                <path d="M32,3.17881379 C32,1.41329655 30.5777778,0.000882758621 28.8,0.000882758621 L3.2,0.000882758621 C1.42222222,0.000882758621 0,1.43536552 0,3.17881379 L0,28.6022621 C0,30.3457103 1.42222222,31.7801931 3.2,31.7801931 L28.8,31.7801931 C30.5555556,31.7801931 32,30.3677793 32,28.6022621 L32,3.17881379 Z" id="Shape" fill="#000000" transform="translate(16.000000, 15.890538) scale(-1, 1) rotate(-180.000000) translate(-16.000000, -15.890538) "></path>
+                <polygon id="Shape" fill="#E0D900" transform="translate(16.000000, 19.156745) scale(-1, 1) rotate(-180.000000) translate(-16.000000, -19.156745) " points="16 25.6891586 22.5777778 19.1567448 16 12.624331 9.42222222 19.1567448"></polygon>
+                <polygon id="Shape" fill="#FFF500" transform="translate(22.577778, 12.624331) scale(-1, 1) rotate(-180.000000) translate(-22.577778, -12.624331) " points="22.5777778 19.1567448 29.1555556 12.624331 22.5777778 6.09191724 16 12.624331"></polygon>
+                <polygon id="Shape" fill="#FFF74C" transform="translate(9.433333, 12.624331) scale(-1, 1) rotate(-180.000000) translate(-9.433333, -12.624331) " points="9.42222222 19.1567448 2.86666667 12.624331 9.44444444 6.09191724 16 12.624331"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

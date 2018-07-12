@@ -1,0 +1,567 @@
+.container-fluid {
+  width: 100%; }
+
+.page-tests__tire-tests__title {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0; }
+
+.page-tests__search {
+  background-color: #dddddd;
+  padding-top: 20px; }
+
+.page-tests__search_title {
+  color: #999;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  white-space: nowrap;
+  max-width: 100%;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  display: inline-block; }
+
+.btn.btn_sm.btn_red {
+  height: 36px;
+  width: 240px;
+  font-weight: 700;
+  max-width: 100%;
+  line-height: 32px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #e2001a;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  white-space: nowrap;
+  max-width: 100%;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  margin-left: 20px; }
+
+.pseudo-select__btn {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000;
+  line-height: 30px;
+  position: relative;
+  display: block;
+  max-width: 100%;
+  width: 280px;
+  display: inline-block;
+  height: 36px;
+  padding: 0 30px 0 10px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  margin: 0 0 20px; }
+  .pseudo-select__btn > span {
+    display: block;
+    overflow: hidden;
+    max-width: 100%; }
+  .pseudo-select__btn:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    right: 8px;
+    width: 12px;
+    height: 8px;
+    margin-top: -4px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    background: url(https://autoset.by//bitrix/templates/source/svg/arrow_down.svg) center/contain no-repeat; }
+  .pseudo-select__btn:after {
+    position: absolute;
+    content: '';
+    z-index: 101;
+    top: 100%;
+    left: 50%;
+    display: none;
+    width: 0;
+    height: 0;
+    margin-left: -20px;
+    border: 15px solid transparent;
+    border-top: none;
+    border-bottom-color: #ddd;
+    -webkit-filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, 0.05));
+    filter: drop-shadow(0 -2px 1px rgba(0, 0, 0, 0.05)); }
+  .pseudo-select__btn.open:after {
+    display: block; }
+  .pseudo-select__btn.open:before {
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg); }
+
+.pseudo-select_full {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.pseudo-select__body.js-dropdown__body {
+  position: absolute;
+  z-index: 99;
+  top: 85%;
+  right: 20px;
+  left: 20px;
+  display: none;
+  overflow: auto;
+  max-height: 80vh;
+  margin-top: 0px;
+  padding: 3px 18px 15px;
+  background: #ddd;
+  -webkit-box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.25);
+  -webkit-overflow-scrolling: touch; }
+  .pseudo-select__body.js-dropdown__body.open {
+    display: block; }
+
+.filter-header__cell {
+  padding: 15px 0;
+  border-bottom: 2px solid #b2b2b2;
+  margin-bottom: 15px; }
+
+.checkbox {
+  display: none; }
+
+.checkbox-label {
+  position: relative;
+  display: inline-block;
+  padding: 3px 0 3px 28px;
+  vertical-align: middle; }
+
+.checkbox-visual, .radio-visual {
+  position: absolute;
+  top: 4px;
+  left: 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+  -webkit-transform: translate3D(0, 0, 0);
+  -ms-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0);
+  border: 1px solid rgba(164, 165, 165, 0.5);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff; }
+
+span.checkbox-text {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.filter-list_columns {
+  -webkit-columns: 4;
+  -moz-columns: 4;
+  columns: 4; }
+
+.checkbox:checked ~ .checkbox-text:before {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: -5px;
+  bottom: 0;
+  left: -5px;
+  content: '';
+  -webkit-border-radius: 4px;
+  border-radius: 4px; }
+
+.checkbox-visual::after, .radio-visual::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+  -webkit-transform: rotate(-45deg) translate3D(0, 0, 0) scale(0);
+  -ms-transform: rotate(-45deg) translate3D(0, 0, 0) scale(0);
+  transform: rotate(-45deg) translate3D(0, 0, 0) scale(0);
+  opacity: 0; }
+
+.checkbox-visual::after {
+  width: 10px;
+  height: 6px;
+  margin-top: -6px;
+  margin-left: -6px;
+  border-bottom: 2px solid #fff;
+  border-left: 2px solid #fff; }
+
+.checkbox:checked ~ .checkbox-visual::after, .checkbox:checked ~ .radio-visual::after {
+  -webkit-transform: rotate(-45deg) translate3D(0, 0, 0) scale(1);
+  -ms-transform: rotate(-45deg) translate3D(0, 0, 0) scale(1);
+  transform: rotate(-45deg) translate3D(0, 0, 0) scale(1);
+  opacity: 1; }
+
+.checkbox-label.decor .checkbox-visual::after {
+  width: 0;
+  height: 0;
+  margin-left: -4px;
+  margin-top: -4px;
+  -webkit-transform: rotate(0) translate3D(0, 0, 0) scale(1);
+  -ms-transform: rotate(0) translate3D(0, 0, 0) scale(1);
+  transform: rotate(0) translate3D(0, 0, 0) scale(1);
+  opacity: 1;
+  border: 4px solid #e2001a; }
+
+.checkbox:checked ~ .checkbox-visual {
+  border-color: #e2001a;
+  background: #e2001a; }
+
+.filter-footer.filter-footer_border.text_right {
+  display: none; }
+
+.page-tests__newest-tests {
+  margin-bottom: 30px; }
+  .page-tests__newest-tests__title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: uppercase;
+    margin: 16px 0; }
+  .page-tests__newest-tests__description {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 16px; }
+  .page-tests__newest-tests .information-block {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+    .page-tests__newest-tests .information-block__img {
+      width: 60%;
+      background-position: 50% 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      position: relative; }
+      .page-tests__newest-tests .information-block__img_logos {
+        width: 36%;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        overflow: auto; }
+        .page-tests__newest-tests .information-block__img_logos img {
+          max-width: 80%;
+          margin: 5px;
+          display: inline-block; }
+    .page-tests__newest-tests .information-block__description {
+      width: 40%;
+      padding: 0 20px; }
+      .page-tests__newest-tests .information-block__description table {
+        border-spacing: 0;
+        width: 100%; }
+        .page-tests__newest-tests .information-block__description table tr td {
+          -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+        .page-tests__newest-tests .information-block__description table tr td:first-child {
+          font-family: Roboto;
+          font-size: 18px;
+          color: #808080; }
+        .page-tests__newest-tests .information-block__description table tr td:last-child {
+          font-family: Roboto;
+          font-size: 18px;
+          font-weight: bold;
+          color: #000000; }
+        .page-tests__newest-tests .information-block__description table tr:last-child td {
+          border-bottom: none; }
+        .page-tests__newest-tests .information-block__description table td {
+          border-bottom: dashed 1px #dddddd;
+          padding: 10px 0; }
+      .page-tests__newest-tests .information-block__description p {
+        margin-top: 20px;
+        font-family: Roboto;
+        font-size: 16px;
+        color: #000000; }
+      .page-tests__newest-tests .information-block__description a {
+        display: inline-block;
+        position: relative;
+        padding-left: 18px;
+        font-family: Roboto;
+        font-size: 16px;
+        color: #808080;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        .page-tests__newest-tests .information-block__description a:hover {
+          color: #000; }
+        .page-tests__newest-tests .information-block__description a:before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 6px;
+          margin-right: 5px;
+          border: 5px solid transparent;
+          border-right: none;
+          border-left-color: #e2001a; }
+
+.input-group__item {
+  cursor: pointer; }
+  .input-group__item span {
+    cursor: pointer; }
+
+.page-tests__test-year {
+  margin-bottom: 20px; }
+  .page-tests__test-year_title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    padding: 20px 0;
+    border-top: solid 2px #dddddd; }
+  .page-tests__test-year_seasons {
+    width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    border-bottom: solid 2px #dddddd; }
+    .page-tests__test-year_seasons li {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: bold;
+      color: #000000;
+      padding: 20px;
+      cursor: pointer;
+      position: relative; }
+      .page-tests__test-year_seasons li.active:before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 0;
+        border: 10px solid transparent;
+        border-top: none;
+        border-bottom-color: #ddd;
+        bottom: 0;
+        left: 50%;
+        margin-left: -10px; }
+      .page-tests__test-year_seasons li:before {
+        content: none; }
+    .page-tests__test-year_seasons img {
+      width: 25px;
+      height: auto;
+      margin-right: 5px; }
+  .page-tests__test-year_seasons-blocks {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    opacity: 0;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    height: 0;
+    overflow: hidden; }
+    .page-tests__test-year_seasons-blocks.active {
+      opacity: 1;
+      height: auto;
+      overflow: auto;
+      padding-top: 20px; }
+    .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      width: 33.33%;
+      margin-bottom: 20px;
+      padding-right: 2%; }
+      .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-caption {
+        width: 100%;
+        padding-bottom: 10px; }
+        .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-caption h4 {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: bold;
+          color: #000000; }
+      .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-img {
+        width: 48%; }
+        .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-img img {
+          width: 100%; }
+      .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-date {
+        width: 48%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; }
+        .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-date p {
+          font-family: Roboto;
+          font-size: 16px;
+          color: #808080; }
+          .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-date p span {
+            font-weight: bold;
+            color: #000; }
+      .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-link {
+        font-family: Roboto;
+        font-size: 16px;
+        color: #808080;
+        display: inline-block;
+        position: relative;
+        padding-left: 13px;
+        margin-bottom: 5px;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
+        .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-link:before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          left: 0;
+          top: 6px;
+          margin-right: 5px;
+          border: 5px solid transparent;
+          border-right: none;
+          border-left-color: #e2001a; }
+        .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-link:hover {
+          color: #000; }
+
+.input-group__item_others span.checkbox-text {
+  text-transform: inherit; }
+
+@media (max-width: 959px) {
+  .page-tests__newest-tests .information-block__img {
+    width: 100%;
+    min-height: 150px; }
+  .page-tests__newest-tests .information-block__description {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 20px; }
+    .page-tests__newest-tests .information-block__description table {
+      width: 50%;
+      margin-right: 20px;
+      float: left; }
+    .page-tests__newest-tests .information-block__description p {
+      margin-top: 0; }
+  .page-tests__newest-tests .information-block__img_logos {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .page-tests__newest-tests .information-block__img_logos img {
+      max-width: 23%; }
+  .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block {
+    width: 50%;
+    padding-right: 5%; } }
+
+@media (max-width: 767px) {
+  .page-tests__newest-tests .title,
+  .page-tests__title {
+    font-size: 22px; }
+  .page-tests__newest-tests .description {
+    font-size: 18px; }
+  .page-tests__newest-tests .information-block__description table tr td:first-child,
+  .page-tests__newest-tests .information-block__description table tr td:last-child {
+    font-size: 16px; }
+  .page-tests__newest-tests .information-block__description p {
+    font-size: 14px; }
+  .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-caption h4,
+  .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block-date p {
+    font-size: 14px; } }
+
+@media (max-width: 639px) {
+  .page-tests__newest-tests .information-block__description table {
+    float: none;
+    padding-bottom: 20px;
+    width: 100%; }
+  .page-tests__test-year_seasons li span {
+    display: none; }
+  .page-tests__test-year_seasons-blocks {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block {
+    width: 90%; }
+  .filter-list_columns {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2; }
+  .btn.btn_sm.btn_red.btn_red_in-top {
+    width: 140px; } }
+
+@media (max-width: 479px) {
+  .btn.btn_sm.btn_red {
+    display: none; }
+  .page-tests__test-year_seasons-blocks .page-tests__test-year_seasons-block {
+    width: 100%; }
+  .btn_red_in-top {
+    display: none; }
+  .filter-list_columns {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1; }
+  .pseudo-select__btn {
+    width: 100%; }
+  .pseudo-select__body.js-dropdown__body {
+    left: 0;
+    right: 0; }
+  .filter-footer.filter-footer_border.text_right {
+    display: block; }
+    .filter-footer.filter-footer_border.text_right .btn.btn_sm.btn_red {
+      display: block;
+      margin-left: 0;
+      margin-top: 20px; } }
