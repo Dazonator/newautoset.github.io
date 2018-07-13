@@ -59,10 +59,9 @@
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between; }
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around; }
   .selection-and-consultation__phone-numbers__block {
     display: -webkit-box;
     display: -webkit-flex;
@@ -179,27 +178,31 @@
     width: 12.5%;
     text-align: center;
     padding: 10px; }
+    .selection-and-consultation__team__block:hover img {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
     .selection-and-consultation__team__block img {
       width: 100%;
-      height: auto; }
+      height: auto;
+      margin-bottom: 5px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
     .selection-and-consultation__team__block span {
       font-family: Roboto;
-      font-size: 16px;
+      font-size: 14px;
       color: #000000; }
 
 .selection-and-consultation__links {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  padding-top: 20px; }
+  padding-top: 20px;
+  -webkit-columns: 3;
+  -moz-columns: 3;
+  columns: 3; }
   .selection-and-consultation__links a {
-    text-align: center;
+    display: block;
+    width: auto;
     margin-bottom: 20px;
-    width: 33.3%;
     font-family: Roboto;
     font-size: 16px;
     line-height: 22px;
@@ -250,12 +253,12 @@
       justify-content: space-around; }
       .special-contacts__block__information_name {
         font-family: Roboto;
-        font-size: 28px;
+        font-size: 20px;
         color: #000000;
         margin-bottom: 10px; }
       .special-contacts__block__information_position {
         font-family: Roboto;
-        font-size: 22px;
+        font-size: 14px;
         color: #808080;
         margin-bottom: 10px; }
       .special-contacts__block__information_phone {
@@ -268,7 +271,7 @@
         -ms-flex-align: center;
         align-items: center;
         font-family: Roboto;
-        font-size: 28px;
+        font-size: 24px;
         font-weight: bold;
         color: #000000;
         margin-bottom: 10px; }
@@ -286,7 +289,7 @@
         -ms-flex-align: center;
         align-items: center;
         font-family: Roboto;
-        font-size: 20px;
+        font-size: 14px;
         color: #000000; }
         .special-contacts__block__information_mail img {
           width: 24px;
@@ -333,19 +336,28 @@
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 30px; }
+    .management-personnel__block:hover > img {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05); }
     .management-personnel__block > img {
       width: 40%;
-      margin-bottom: 15px; }
+      margin-bottom: 15px;
+      -webkit-transition: all 0.5s;
+      -o-transition: all 0.5s;
+      transition: all 0.5s; }
     .management-personnel__block p {
       font-family: Roboto;
       font-size: 20px;
       color: #000000;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      width: 80%; }
     .management-personnel__block span {
       font-family: Roboto;
       font-size: 14px;
       color: #808080;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      width: 80%; }
     .management-personnel__block a {
       display: -webkit-box;
       display: -webkit-flex;
@@ -379,7 +391,7 @@
   margin-bottom: 40px; }
   .professional-team-contacts h5 {
     font-family: Roboto;
-    font-size: 22px;
+    font-size: 16px;
     font-weight: bold;
     text-align: center;
     color: #000000;
@@ -387,14 +399,14 @@
   .professional-team-contacts p {
     margin-bottom: 10px;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     color: #000000; }
   .professional-team-contacts a {
     margin-bottom: 10px;
     display: block;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     color: #000000; }
   .professional-team-contacts a.professional-team-contacts__mail {
@@ -419,7 +431,9 @@
   .selection-and-consultation__team__block {
     width: 16.66%; }
   .special-contacts__block__img {
-    width: 15%; } }
+    width: 15%; }
+  .what-are-you-interested__block {
+    width: 50%; } }
 
 @media (max-width: 959px) {
   .what-are-you-interested__block {
@@ -464,8 +478,10 @@
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .selection-and-consultation__links a {
-    width: 50%; }
+  .selection-and-consultation__links {
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    columns: 2; }
   .special-contacts__block__img {
     width: 100%;
     text-align: center;
@@ -490,5 +506,7 @@
     width: 50%; }
   .what-are-you-interested__block {
     width: 100%; }
-  .selection-and-consultation__links a {
-    width: 100%; } }
+  .selection-and-consultation__links {
+    -webkit-columns: 1;
+    -moz-columns: 1;
+    columns: 1; } }
