@@ -114,7 +114,6 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    position: relative;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
@@ -122,29 +121,9 @@
     padding-top: 16px;
     padding-bottom: 16px;
     text-align: center; }
-    .selection-and-consultation__phone-numbers__button:before, .selection-and-consultation__phone-numbers__button:after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: #666;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s;
-      z-index: -1; }
-    .selection-and-consultation__phone-numbers__button:before {
-      left: 0; }
-    .selection-and-consultation__phone-numbers__button:after {
-      right: 0; }
     .selection-and-consultation__phone-numbers__button:hover {
-      background-color: transparent;
-      color: #666; }
-      .selection-and-consultation__phone-numbers__button:hover:before, .selection-and-consultation__phone-numbers__button:hover:after {
-        width: 3px; }
-      .selection-and-consultation__phone-numbers__button:hover img {
-        -webkit-filter: invert(80%) opacity(80%);
-        filter: invert(80%) opacity(80%); }
+      background-color: #777;
+      border-color: #777; }
     .selection-and-consultation__phone-numbers__button img {
       width: 38px;
       height: 38px;
@@ -278,6 +257,8 @@
         color: #224f93;
         margin-bottom: 20px;
         display: block; }
+        .special-contacts__block__links a:hover {
+          text-decoration: underline; }
 
 .management-personnel__title {
   font-family: Roboto;
@@ -415,6 +396,9 @@
     width: 33.33%; } }
 
 @media (max-width: 479px) {
+  .selection-and-consultation__team {
+    padding-left: 20px;
+    padding-right: 20px; }
   .selection-and-consultation__title {
     text-align: left; }
   .selection-and-consultation__team__block {

@@ -15,6 +15,15 @@ $('.page-tests__test-year_seasons').each(function () {
 	}
 });
 
+$(".what-are-you-interested__blocks").on("click","a", function (event) {
+	event.preventDefault();
+	var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		top = top-20;
+	
+	$('body,html').animate({scrollTop: top}, 1000);
+});
+
 
 
 
