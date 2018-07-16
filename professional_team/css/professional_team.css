@@ -12,7 +12,7 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
-  padding: 20px; }
+  padding: 20px 0; }
 
 .what-are-you-interested__blocks {
   display: -webkit-box;
@@ -100,12 +100,12 @@
       .selection-and-consultation__phone-numbers__block a img {
         width: 32px;
         height: 32px;
-        margin-right: 10px; }
+        margin-right: 10px;
+        margin-top: -5px; }
   .selection-and-consultation__phone-numbers__button {
     display: inline-block;
     background-color: #666666;
     width: 290px;
-    height: 74px;
     -webkit-align-self: flex-end;
     -ms-flex-item-align: end;
     align-self: flex-end;
@@ -114,23 +114,14 @@
     font-size: 16px;
     font-weight: bold;
     color: #fff;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     position: relative;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
-    border: 2px solid #666666; }
+    border: 2px solid #666666;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center; }
     .selection-and-consultation__phone-numbers__button:before, .selection-and-consultation__phone-numbers__button:after {
       content: '';
       position: absolute;
@@ -163,6 +154,8 @@
       transition: all 0.5s; }
 
 .selection-and-consultation__team {
+  padding-left: 10px;
+  padding-right: 10px;
   padding-top: 30px;
   display: -webkit-box;
   display: -webkit-flex;
@@ -178,17 +171,12 @@
     width: 12.5%;
     text-align: center;
     padding: 10px; }
-    .selection-and-consultation__team__block:hover img {
-      -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      transform: scale(1.05); }
     .selection-and-consultation__team__block img {
-      width: 100%;
-      height: auto;
-      margin-bottom: 5px;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s; }
+      height: 150px;
+      width: 130px;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 5px; }
     .selection-and-consultation__team__block span {
       font-family: Roboto;
       font-size: 14px;
@@ -226,31 +214,16 @@
     padding-bottom: 20px; }
   .special-contacts__block {
     margin-bottom: 50px;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    float: left;
+    width: 100%; }
     .special-contacts__block__img {
-      width: 14%;
-      margin-right: 20px; }
+      margin-right: 20px;
+      float: left; }
       .special-contacts__block__img img {
-        width: 100%; }
+        width: 130px;
+        height: 150px; }
     .special-contacts__block__information {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-      -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-      justify-content: space-around; }
+      float: left; }
       .special-contacts__block__information_name {
         font-family: Roboto;
         font-size: 20px;
@@ -295,81 +268,59 @@
           width: 24px;
           height: auto;
           margin-right: 10px; }
+    .special-contacts__block__links {
+      float: right;
+      width: 30%; }
+      .special-contacts__block__links a {
+        font-family: Roboto;
+        font-size: 16px;
+        font-weight: bold;
+        color: #224f93;
+        margin-bottom: 20px;
+        display: block; }
 
-.management-personnel {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-justify-content: space-around;
-  -ms-flex-pack: distribute;
-  justify-content: space-around; }
-  .management-personnel__title {
+.management-personnel__title {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+  padding-bottom: 20px; }
+
+.management-personnel__block {
+  float: left;
+  width: 50%;
+  margin-bottom: 30px; }
+  .management-personnel__block > img {
+    width: 130px;
+    height: 150px;
+    margin-right: 20px;
+    float: left;
+    margin-bottom: 15px; }
+  .management-personnel__block_name {
     font-family: Roboto;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 20px;
     color: #000000;
-    width: 100%;
-    padding-bottom: 20px; }
-  .management-personnel__block {
-    width: 33.33%;
-    text-align: center;
+    margin-bottom: 10px; }
+  .management-personnel__block_span {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: #808080;
+    margin-bottom: 10px; }
+  .management-personnel__block_link {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    margin-bottom: 30px; }
-    .management-personnel__block:hover > img {
-      -webkit-transform: scale(1.05);
-      -ms-transform: scale(1.05);
-      transform: scale(1.05); }
-    .management-personnel__block > img {
-      width: 40%;
-      margin-bottom: 15px;
-      -webkit-transition: all 0.5s;
-      -o-transition: all 0.5s;
-      transition: all 0.5s; }
-    .management-personnel__block p {
-      font-family: Roboto;
-      font-size: 20px;
-      color: #000000;
-      margin-bottom: 10px;
-      width: 80%; }
-    .management-personnel__block span {
-      font-family: Roboto;
-      font-size: 14px;
-      color: #808080;
-      margin-bottom: 10px;
-      width: 80%; }
-    .management-personnel__block a {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      font-family: Roboto;
-      font-size: 14px;
-      color: #000000; }
-      .management-personnel__block a img {
-        width: 24px;
-        height: auto;
-        margin-right: 10px; }
+    font-family: Roboto;
+    font-size: 14px;
+    color: #000000; }
+    .management-personnel__block_link img {
+      width: 24px;
+      height: auto;
+      margin-right: 5px; }
 
 .big-photo-team {
   padding-top: 20px;
@@ -410,14 +361,6 @@
     text-align: center;
     color: #000000; }
   .professional-team-contacts a.professional-team-contacts__mail {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
     margin-top: 20px; }
     .professional-team-contacts a.professional-team-contacts__mail img {
       width: 24px;
@@ -425,13 +368,16 @@
       margin-right: 10px; }
 
 .selection-and-consultation__links__bottom {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  text-align: center; }
+
+@media (max-width: 1440px) {
+  .selection-and-consultation__team__block {
+    width: 14.28%; } }
 
 @media (max-width: 1199px) {
   .selection-and-consultation__team__block {
     width: 16.66%; }
-  .special-contacts__block__img {
-    width: 15%; }
   .what-are-you-interested__block {
     width: 50%; } }
 
@@ -443,65 +389,34 @@
     -ms-flex-pack: distribute;
     justify-content: space-around; }
   .selection-and-consultation__phone-numbers__button {
-    margin-top: 10px; }
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; }
   .selection-and-consultation__team__block {
     width: 20%; }
-  .special-contacts__block__information_name {
-    font-size: 24px; }
-  .special-contacts__block__information_position,
-  .special-contacts__block__information_mail {
-    font-size: 18px; }
-  .special-contacts__block__information_phone {
-    font-size: 22px; }
-  .special-contacts__block__img {
-    width: 17%; }
-  .management-personnel__block > img {
-    width: 60%; } }
+  .special-contacts__block__links {
+    width: auto;
+    clear: both;
+    float: none;
+    padding-top: 30px; }
+  .management-personnel__block {
+    clear: both; } }
 
 @media (max-width: 767px) {
   .selection-and-consultation__team__block {
     width: 25%; }
-  .special-contacts__block__img {
-    width: 20%; }
   .management-personnel__block {
-    width: 50%; }
-  .management-personnel__block > img {
-    width: 50%; } }
+    width: 100%; }
+  .what-are-you-interested__block {
+    width: 100%; } }
 
 @media (max-width: 639px) {
   .selection-and-consultation__team__block {
-    width: 33.33%; }
-  .what-are-you-interested__block {
-    width: 75%; }
-  .what-are-you-interested__blocks {
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center; }
-  .selection-and-consultation__links {
-    -webkit-columns: 2;
-    -moz-columns: 2;
-    columns: 2; }
-  .special-contacts__block__img {
-    width: 100%;
-    text-align: center;
-    margin-right: 0; }
-    .special-contacts__block__img img {
-      width: 40%; }
-  .special-contacts__block__information {
-    width: 100%;
-    text-align: center; }
-    .special-contacts__block__information a {
-      -webkit-box-pack: center;
-      -webkit-justify-content: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-  .management-personnel__block {
-    width: 100%; }
-  .management-personnel__block > img {
-    width: 40%; } }
+    width: 33.33%; } }
 
 @media (max-width: 479px) {
+  .selection-and-consultation__title {
+    text-align: left; }
   .selection-and-consultation__team__block {
     width: 50%; }
   .what-are-you-interested__block {
@@ -509,4 +424,21 @@
   .selection-and-consultation__links {
     -webkit-columns: 1;
     -moz-columns: 1;
-    columns: 1; } }
+    columns: 1;
+    text-align: left; }
+  .special-contacts__title {
+    text-align: left; }
+  .management-personnel__block > img {
+    float: none; }
+  .management-personnel__block br {
+    display: none; }
+  .big-photo-team__block h4 {
+    text-align: left; }
+  .professional-team-contacts {
+    text-align: left; }
+    .professional-team-contacts h5 {
+      text-align: left; }
+    .professional-team-contacts p {
+      text-align: left; }
+    .professional-team-contacts a {
+      text-align: left; } }
