@@ -176,6 +176,8 @@ input{
   border: 5px solid #fff;
   border-radius: 50%;;
   box-shadow: 0px 0px 0px 1px #ddd;
+  box-sizing: content-box;
+
 }
 .bskt-delivery-page__radio-input:checked + .radio-choose:before{
   background-color: #000;
