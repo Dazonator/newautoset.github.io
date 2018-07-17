@@ -137,6 +137,8 @@
         -ms-tap-highlight-color: transparent;
        -moz-tap-highlight-color: transparent;
          -o-tap-highlight-color: transparent;
+         
+    line-height: 16px;
 }
 
 .bskt-footer-left__bottom-link + .bskt-footer-left__bottom-link
