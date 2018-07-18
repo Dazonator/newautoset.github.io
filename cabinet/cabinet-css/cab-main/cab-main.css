@@ -147,12 +147,18 @@
 }
 
 @media (max-width: 767px) {
+  .cabinet__block {
+    margin: 0 -10px;
+  }
   
   .cabinet-main__left-wrapper {
     width: 100%;
     margin: 0px;
     padding: 0px;
     padding-top: 10px;
+  }
+  .cabinet__nav-mobile {
+    margin: 0 10px;
   }
 }
 
@@ -162,9 +168,17 @@
     height: auto;
     padding: 10px 0px;
   }
+   .cabinet__block {
+    margin: 0px;
+  }
+  .cabinet__nav-mobile {
+    margin: 0px;
+  }
  
 }
 
 @media (max-width: 479px) {
-  
+  .cabinet__nav-mobile {
+    margin: 0 -20px;
+  }
 }
