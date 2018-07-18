@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CabinetMyExibitions</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_mobile.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_tablet.css">
+    <link rel="stylesheet" href="my_select/css/myselect.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="button_city_change/css/button_city_change.css">
+    <link rel="stylesheet" href="cabinet-css/global/cab-global.css">
+    <link rel="stylesheet" href="cabinet-css/cab-myexibitions/cab-myexibitions.css">
+    <script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/slick-slider.min.js"></script>
+    <script src="js/browser-plugin.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="button_city_change/js/button_city_change.js"></script>
+    <script src="cabinet-js/cabinet.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    if (/MSIE|Trident/.test(navigator.userAgent)) {
+        var iEobject;
+        iEobject = document.createElement('script');
+        iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+        iEobject.onload = function() {
+            svg4everybody();
+        };
+        document.getElementsByTagName('head')[0].appendChild(iEobject);
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHssWQHBUTLG-wvgSDunjCMufNwApAI4s&callback=initMap"></script>
+
+    <script type="text/javascript">
+        // Определяем переменную map
+        var map;
+        var map2;
+
+        // Функция initMap которая отрисует карту на странице
+        function initMap() {
+
+            // В переменной map создаем объект карты GoogleMaps и вешаем эту переменную на <div id="map"></div>
+            map = new google.maps.Map(document.getElementById('minsk1'), {
+                // При создании объекта карты необходимо указать его свойства
+                // center - определяем точку на которой карта будет центрироваться
+                center: {lat: 53.892851, lng: 27.647610},
+                // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+                zoom: 16,
+            });
+            map2 = new google.maps.Map(document.getElementById('minsk2'), {
+                // При создании объекта карты необходимо указать его свойства
+                // center - определяем точку на которой карта будет центрироваться
+                center: {lat: 53.873989, lng: 27.499356},
+                // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+                zoom: 16,
+            });
+            map3 = new google.maps.Map(document.getElementById('minsk3'), {
+                // При создании объекта карты необходимо указать его свойства
+                // center - определяем точку на которой карта будет центрироваться
+                center: {lat: 53.851934, lng: 27.676483},
+                // zoom - определяет масштаб. 0 - видно всю платнеу. 18 - видно дома и улицы города.
+                zoom: 16,
+            });
+            // Создаем маркер на карте
+            var marker = new google.maps.Marker({
+
+                // Определяем позицию маркера
+                position: {lat: 53.892842, lng: 27.647620},
+
+                // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+                map: map,
+
+                // Пишем название маркера - появится если навести на него курсор и немного подождать
+                // title: 'Наш маркер: Большой театр',
+                // Укажем свою иконку для маркера
+                icon: 'img/map-pointer-red.png'
+            });
+            var marker2 = new google.maps.Marker({
+
+                // Определяем позицию маркера
+                position: {lat: 53.873989, lng: 27.499356},
+
+                // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+                map: map2,
+
+                // Пишем название маркера - появится если навести на него курсор и немного подождать
+                // title: 'Наш маркер: Большой театр',
+                // Укажем свою иконку для маркера
+                icon: 'img/map-pointer-red.png'
+            });
+            var marker3 = new google.maps.Marker({
+
+                // Определяем позицию маркера
+                position: {lat: 53.851934, lng: 27.676483},
+
+                // Указываем на какой карте он должен появится. (На странице ведь может быть больше одной карты)
+                map: map3,
+
+                // Пишем название маркера - появится если навести на него курсор и немного подождать
+                // title: 'Наш маркер: Большой театр',
+                // Укажем свою иконку для маркера
+                icon: 'img/map-pointer-red.png'
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="delete"></div>
+    <div class="overlay modal-remove js-overlay"></div>
+    <div class="allClose"></div>
+    <section class="cabinet">
+        <div class="container-block">
+            <div class="cabinet__caption">
+                <span class="cabinet__caption-text">Личный кабинет</span>
+            </div>
+            <section class="cabinet__block clear">
+                <section class="cabinet__nav">
+                    <ul class="cabinet__nav-list">
+                        <li class="cabinet__nav-item">
+                            <a href="cab-main.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-account-main-lightgray"></use>
+                            </svg>
+                            Главная</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mydata.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-personal-info-darkgray"></use>
+                            </svg>
+                            Личный данные</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myadress.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-adress-darkgray"></use>
+                            </svg>
+                            Мой адрес</a>
+                        </li>
+                        <li class="cabinet__nav-item  cabinet__nav-item-active">
+                            <a href="cab-myexibitions.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-stores-darkgray"></use>
+                            </svg>
+                            Мой пункт выдачи</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mycars.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-cars-darkgray"></use>
+                            </svg>
+                            Мои автомобили</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myfavorite.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-favorites-darkgray"></use>
+                            </svg>
+                            Избранное</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myorders.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-orders-darkgray"></use>
+                            </svg>
+                            Мои заказы</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mysubscriptions.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-subscriptions-darkgray"></use>
+                            </svg>
+                            Мои подписки</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mydiscount.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-promo-discounts-darkgray"></use>
+                            </svg>
+                            Моя скидка</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-feedback.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-feedback-darkgray"></use>
+                            </svg>
+                            Обратная связь</a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- -------------MOBILE-------------------- -->
+                <!-- -------------MOBILE-------------------- -->
+                <section class="cabinet__nav-mobile">
+                    <div class="cabinet__nav-mobile-dropdown-wrapper">
+                        <div class="cabinet__nav-mobile-btn-wrapper">
+                            <span class="cabinet__nav-mobile-btn onclick cabinet__nav-link js-mob-menu-btn">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-stores-darkgray"></use>
+                                </svg>
+                                Мой пункт выдачи
+                                <svg class="cabinet__nav-mobile-btn-arrow">
+                                    <use xlink:href="img/sprite-mono.svg#arrow-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="cabinet__nav-mobile-list-wrapper js-mob-menu-block">
+                            <ul class="cabinet__nav-mobile-list">
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-main.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-account-main-lightgray"></use>
+                                    </svg>
+                                    Главная</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mydata.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-personal-info-darkgray"></use>
+                                    </svg>
+                                    Личный данные</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myadress.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-adress-darkgray"></use>
+                                    </svg>
+                                    Мой адрес</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myexibitions.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-stores-darkgray"></use>
+                                    </svg>
+                                    Мой пункт выдачи</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mycars.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-cars-darkgray"></use>
+                                    </svg>
+                                    Мои автомобили</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myfavorite.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-favorites-darkgray"></use>
+                                    </svg>
+                                    Избранное</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myorders.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-orders-darkgray"></use>
+                                    </svg>
+                                    Мои заказы</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mysubscriptions.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-subscriptions-darkgray"></use>
+                                    </svg>
+                                    Мои подписки</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mydiscount.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-promo-discounts-darkgray"></use>
+                                    </svg>
+                                    Моя скидка</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-feedback.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-feedback-darkgray"></use>
+                                    </svg>
+                                    Обратная связь</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </section>
+                <!-- -------------MOBILE-END-------------------- -->
+                <!-- -------------MOBILE-END-------------------- -->
+                <section class="cabinet__left-wrapper clear">
+                    <div class="cabinet__left">
+                        <div class="cabinet-myexibition">
+                        	<div class="cabinet-myexibition__items-wrapper">
+		                        <div class="cabinet-myexibition__item hidden">
+		                            <div class="cabinet-myexibition__item-value">
+		                                <span class="cabinet-myexibition__item-value-city">г. Минск</span>
+		                                <p class="cabinet-myexibition__item-value-street">ул. Радиальная&nbsp40/2 <br>
+                                        (магазин/сервис «Автосеть»)</p>
+                                        <a href="#exibition1" class="cabinet-myexibition__item-value-see-map cabinet-myexibition__see-map js-open-modal">Смотреть на карте
+                                            <svg class="cabinet-myexibition__see-map-icon">
+                                                <use xlink:href="img/sprite-mono.svg#icons-map-pointer-red"></use>
+                                            </svg>
+                                        </a>
+		                            </div>
+		                            <div class="cabinet-myexibition__item-buttons clear">
+		                                <div class="cabinet-myexibition__item-buttons-wrapper">
+                                            <span class="cabinet-myexibition__item-buttons-item cabinet__btn-icon-left cabinet-myexibition__item-buttons-change cab-link-hover js-myexibition-change">
+                                                <svg class="cabinet__from-input-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-edit"></use>
+                                                </svg>
+                                                Изменить
+                                            </span>
+                                            <span class="cabinet-myexibition__item-buttons-item cabinet__btn-icon-left cabinet-myexibition__item-buttons-delete cab-link-hover">
+                                                <svg class="cabinet__from-input-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-delete"></use>
+                                                </svg>
+                                                Удалить
+                                            </span>
+                                        </div>
+		                            </div>
+		                        </div>
+                            </div>
+                            <div class="cabinet-myexibition__add-myexibition-block js-add-block">
+                            	<div class="cabinet-myexibition__add-myexibition-block-wrapper">
+	                            	<section class="cabinet-myexibition__city-change city-change">
+										<div class="cabinet-myexibition__city-change-block city-change__block">
+											<span class="cabinet-myexibition__city-change-text">Ваш город:</span>
+											<span class="cabinet-myexibition__city-change-value city-change__value">г. Минск</span>
+											<a href="#city-change" class="cabinet-myexibition__city-change-btn city-change__link cab-link-hover js-open-modal">Изменить</a>
+										</div>
+									</section>
+									<form class="cabinet-myexibition__add-myexibition-block-form cabinet__form-wrapper">
+                                        <span class="cabinet-myexibition__add-myexibition-block-form-caption">Пункт самовывоза</span>
+                                        <div class="cabinet-myexibition__add-myexibition-block-form-item">
+                                            <input type="radio" name="main-myexibition" id="main-myexibition1" class="cabinet-myexibition__item-buttons-radio" checked>
+                                            <label for="main-myexibition1" class="cabinet-myexibition__label-exibition cabinet__btn-icon-left cabinet__label-before">г. Минск, ул. Радиальная,&nbsp40/2 <br> (магазин/сервис «Автосеть»)</label>
+                                            <a href="#exibition1" class="cabinet-myexibition__see-map js-open-modal">Смотреть на карте
+                                                <svg class="cabinet-myexibition__see-map-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-map-pointer-red"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="cabinet-myexibition__add-myexibition-block-form-item">
+                                            <input type="radio" name="main-myexibition" id="main-myexibition2" class="cabinet-myexibition__item-buttons-radio">
+                                            <label for="main-myexibition2" class="cabinet-myexibition__label-exibition cabinet__btn-icon-left cabinet__label-before">г. Минск, ул. Уманская,&nbsp54/1 <br> (магазин/сервис «Автосеть»)</label>
+                                            <a href="#exibition2" class="cabinet-myexibition__see-map js-open-modal">Смотреть на карте
+                                                <svg class="cabinet-myexibition__see-map-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-map-pointer-red"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="cabinet-myexibition__add-myexibition-block-form-item">
+                                            <input type="radio" name="main-myexibition" id="main-myexibition3" class="cabinet-myexibition__item-buttons-radio">
+                                            <label for="main-myexibition3" class="cabinet-myexibition__label-exibition cabinet__btn-icon-left cabinet__label-before">г. Минск, ул. Промышленная,&nbsp54/1 <br> (магазин/сервис «Автосеть»)</label>
+                                            <a href="#exibition3" class="cabinet-myexibition__see-map js-open-modal">Смотреть на карте
+                                                <svg class="cabinet-myexibition__see-map-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-map-pointer-red"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                        <div class="cabinet-myexibition__add-myexibition-block-save">
+                                            <span class="cabinet__btn js-cabinet-myexibition-save">Сохранить</span>     
+                                        </div>
+									</form>
+									
+								</div>
+                            </div>
+                            <div class="cabinet-myexibition__add-myexibition">
+                            	<span class="cabinet__btn-icon-left cab-link-hover js-add">
+									<svg class="cabinet__from-input-icon">
+										<use xlink:href="img/sprite-mono.svg#icons-plus-gray"></use>
+									</svg>
+                                	Добавить пункт выдачи
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <div class="cabinet__mymodals">
+	            <div class="city-change__container modal-container js-modal-container">
+				    <div class="city-change__modal modal" id="city-change">
+				    	<div class="city-change__modal-header modal-header">
+				    		<span class="city-change__modal-header-text modal-header-text">Месторасположение пункта выдачи</span>
+				    		<span class="city-change__modal-header-close js-close-modal modal-close-btn modal-remove">
+					    		<svg class="modal-close-btn_icon">
+					    			<use xlink:href="my_select/img/sprite.svg#close_cross_simple"></use>
+					    		</svg>
+				    		</span>
+				    	</div>
+				    	<div class="city-change__modal-main modal-main">
+				    		<div class="city-change__modal-main-city">
+				    			<span class="city-change__modal-main-caption">Выберите, пожалуйста, город</span>
+				    			<div class="city-minsk">
+					    			<span class="city-minsk__text city-click modal-remove">Минск
+			    						<img src="button_city_change/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon city-minsk__icon">
+			    					</span>
+		    					</div>
+				    			<ul class="cabinet-myexibition__city-change__modal-main-list city-change__modal-main-list">
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Барановичи</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Бобруйск
+											<img src="button_city_change/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Борисов</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Брест
+				    						<img src="button_city_change/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Витебск
+				    						<img src="button_city_change/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Гомель
+				    						<img src="button_city_change/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Гродно
+				    						<img src="button_city_change/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Лида</span>
+				    				</li>
+				    				
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Могилёв
+				    						<img src="button_city_change/img/cc-as-pointer-flag.png" alt="" class="city-change__modal-main-city-icon">
+				    					</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Мозырь</span>
+				    				</li>
+
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Молодечно</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Новополоцк</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Орша</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Пинск</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Полоцк</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Светлогорск</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Слуцк</span>
+				    				</li>
+				    				<li class="city-change__modal-main-list-item">
+				    					<span class="city-change__modal-main-list-item_text city-click modal-remove">Солигорск</span>
+				    				</li>
+				    			</ul>
+				    		</div>
+				    	</div>
+				    </div>
+			  	</div>
+                <div class="cabinet-myexibition__modal-container modal-container js-modal-container">
+                    <div class="cabinet-myexibition__modal modal" id="exibition1">
+                        <div class="cabinet-myexibition__modal-header modal-header">
+                            <span class="modal-header-text">Расположение пункта самовывоза</span>
+                            <span class="modal-close-btn js-close-modal">
+                                <svg class="modal-close-btn_icon">
+                                    <use xlink:href="my_select/img/sprite.svg#close_cross_simple"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    <div class="cabinet-myexibition__modal-main modal-main" id="minsk1">
+                    </div>
+                    </div>
+                </div>
+                <div class="cabinet-myexibition__modal-container modal-container js-modal-container">
+                    <div class="cabinet-myexibition__modal modal" id="exibition2">
+                        <div class="cabinet-myexibition__modal-header modal-header">
+                            <span class="modal-header-text">Расположение пункта самовывоза</span>
+                            <span class="modal-close-btn js-close-modal">
+                                <svg class="modal-close-btn_icon">
+                                    <use xlink:href="my_select/img/sprite.svg#close_cross_simple"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    <div class="cabinet-myexibition__modal-main modal-main" id="minsk2">
+                    </div>
+                    </div>
+                </div>
+                <div class="cabinet-myexibition__modal-container modal-container js-modal-container">
+                    <div class="cabinet-myexibition__modal modal" id="exibition3">
+                        <div class="cabinet-myexibition__modal-header modal-header">
+                            <span class="modal-header-text">Расположение пункта самовывоза</span>
+                            <span class="modal-close-btn js-close-modal">
+                                <svg class="modal-close-btn_icon">
+                                    <use xlink:href="my_select/img/sprite.svg#close_cross_simple"></use>
+                                </svg>
+                            </span>
+                        </div>
+                    <div class="cabinet-myexibition__modal-main modal-main" id="minsk3">
+                    </div>
+                    </div>
+                </div>
+		  	</div>
+        </div>
+    </section>
+</body>
+
+</html>

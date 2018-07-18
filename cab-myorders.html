@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CabinetMyOrders</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_mobile.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_tablet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="cabinet-css/global/cab-global.css">
+    <link rel="stylesheet" href="cabinet-css/cab-myorders/cab-myorders.css">
+    <script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/slick-slider.min.js"></script>
+    <script src="js/browser-plugin.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="cabinet-js/cabinet.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    if (/MSIE|Trident/.test(navigator.userAgent)) {
+        var iEobject;
+        iEobject = document.createElement('script');
+        iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+        iEobject.onload = function() {
+            svg4everybody();
+        };
+        document.getElementsByTagName('head')[0].appendChild(iEobject);
+    }
+    </script>
+</head>
+
+<body>
+    <div class="delete"></div>
+    <div class="overlay modal-remove js-overlay"></div>
+    <div class="allClose"></div>
+    <section class="cabinet">
+        <div class="container-block">
+            <div class="cabinet__caption">
+                <span class="cabinet__caption-text">Личный кабинет</span>
+            </div>
+            <section class="cabinet__block clear">
+                
+                <section class="cabinet__nav">
+                    <ul class="cabinet__nav-list">
+                        <li class="cabinet__nav-item">
+                            <a href="cab-main.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-account-main-lightgray"></use>
+                            </svg>
+                            Главная</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mydata.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-personal-info-darkgray"></use>
+                            </svg>
+                            Личный данные</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myadress.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-adress-darkgray"></use>
+                            </svg>
+                            Мой адрес</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myexibitions.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-stores-darkgray"></use>
+                            </svg>
+                            Мой пункт выдачи</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mycars.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-cars-darkgray"></use>
+                            </svg>
+                            Мои автомобили</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myfavorite.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-favorites-darkgray"></use>
+                            </svg>
+                            Избранное</a>
+                        </li>
+                        <li class="cabinet__nav-item cabinet__nav-item-active">
+                            <a href="cab-myorders.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-orders-darkgray"></use>
+                            </svg>
+                            Мои заказы</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mysubscriptions.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-subscriptions-darkgray"></use>
+                            </svg>
+                            Мои подписки</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mydiscount.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-promo-discounts-darkgray"></use>
+                            </svg>
+                            Моя скидка</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-feedback.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-feedback-darkgray"></use>
+                            </svg>
+                            Обратная связь</a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- -------------MOBILE-------------------- -->
+                <!-- -------------MOBILE-------------------- -->
+                <section class="cabinet__nav-mobile">
+                    <div class="cabinet__nav-mobile-dropdown-wrapper">
+                        <div class="cabinet__nav-mobile-btn-wrapper">
+                            <span class="cabinet__nav-mobile-btn onclick cabinet__nav-link js-mob-menu-btn">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-orders-darkgray"></use>
+                                </svg>
+                                Мои заказы
+                                <svg class="cabinet__nav-mobile-btn-arrow">
+                                    <use xlink:href="img/sprite-mono.svg#arrow-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="cabinet__nav-mobile-list-wrapper js-mob-menu-block">
+                            <ul class="cabinet__nav-mobile-list">
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-main.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-account-main-lightgray"></use>
+                                    </svg>
+                                    Главная</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mydata.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-personal-info-darkgray"></use>
+                                    </svg>
+                                    Личный данные</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myadress.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-adress-darkgray"></use>
+                                    </svg>
+                                    Мой адрес</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myexibitions.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-stores-darkgray"></use>
+                                    </svg>
+                                    Мой пункт выдачи</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mycars.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-cars-darkgray"></use>
+                                    </svg>
+                                    Мои автомобили</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myfavorite.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-favorites-darkgray"></use>
+                                    </svg>
+                                    Избранное</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myorders.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-orders-darkgray"></use>
+                                    </svg>
+                                    Мои заказы</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mysubscriptions.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-subscriptions-darkgray"></use>
+                                    </svg>
+                                    Мои подписки</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mydiscount.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-promo-discounts-darkgray"></use>
+                                    </svg>
+                                    Моя скидка</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-feedback.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-feedback-darkgray"></use>
+                                    </svg>
+                                    Обратная связь</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </section>
+                <!-- -------------MOBILE-END-------------------- -->
+                <!-- -------------MOBILE-END-------------------- -->
+                <section class="cabinet__left-wrapper clear">
+                    <div class="cabinet__left">
+                        <div class="cabinet-myorders">
+                            <span class="cabinet-myorders__empty hidden">У вас пока нет заказов</span>
+                            <section class="cabinet-myorders__block">
+                                <section class="cabinet-myorders__block-going">
+                                    <span class="cabinet-myorders__block-caption">Текущий заказ:</span>
+                                    <div class="cabinet-myorders__block-going-item cabinet-myorders__block-item">
+                                        <div class="cabinet-myorders__block-order clear">
+                                            <span class="cabinet-myorders__block-order-num">№345565</span>
+                                            <span class="cabinet-myorders__block-order-date">10.06.2018 </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-desc">
+                                            <span class="cabinet-myorders__block-desc-producer">Continental</span>
+                                            <span class="cabinet-myorders__block-desc-name">Contipremiumcontact 5</span>
+                                            <span class="cabinet-myorders__block-desc-size">235/45 R18 91T</span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-going-item-count clear">
+                                            <div class="cabinet-myorders__block-going-item-count-block">
+                                                <span class="cabinet-myorders__block-going-item-count-name">Цена:</span>
+                                                <span class="cabinet-myorders__block-going-item-count-value">200.10 р.</span>
+                                            </div>
+                                            <div class="cabinet-myorders__block-going-item-count-block">
+                                                <span class="cabinet-myorders__block-going-item-count-name">Кол-во:</span>
+                                                <span class="cabinet-myorders__block-going-item-count-value">4 шт.</span>
+                                            </div>
+                                            <div class="cabinet-myorders__block-going-item-count-block">
+                                                <span class="cabinet-myorders__block-going-item-count-name">Стоимость:</span>
+                                                <span class="cabinet-myorders__block-going-item-count-value">800.40 р.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-myorders__block-going-item cabinet-myorders__block-item">
+                                        <div class="cabinet-myorders__block-order clear">
+                                            <span class="cabinet-myorders__block-order-num">№340065</span>
+                                            <span class="cabinet-myorders__block-order-date">25.03.2018 </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-desc">
+                                            <span class="cabinet-myorders__block-desc-producer">Continental</span>
+                                            <span class="cabinet-myorders__block-desc-name">Contipremiumcontact 5</span>
+                                            <span class="cabinet-myorders__block-desc-size">235/45 R18 91T</span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-going-item-count clear">
+                                            <div class="cabinet-myorders__block-going-item-count-block">
+                                                <span class="cabinet-myorders__block-going-item-count-name">Цена:</span>
+                                                <span class="cabinet-myorders__block-going-item-count-value">100.10 р.</span>
+                                            </div>
+                                            <div class="cabinet-myorders__block-going-item-count-block">
+                                                <span class="cabinet-myorders__block-going-item-count-name">Кол-во:</span>
+                                                <span class="cabinet-myorders__block-going-item-count-value">4 шт.</span>
+                                            </div>
+                                            <div class="cabinet-myorders__block-going-item-count-block">
+                                                <span class="cabinet-myorders__block-going-item-count-name">Стоимость:</span>
+                                                <span class="cabinet-myorders__block-going-item-count-value">400.40 р.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section class="cabinet-myorders__block-done">
+                                    <span class="cabinet-myorders__block-caption">История заказов:</span>
+                                    <div class="cabinet-myorders__block-done-item cabinet-myorders__block-item">
+                                        <div class="cabinet-myorders__block-order clear">
+                                            <span class="cabinet-myorders__block-order-num">№345549</span>
+                                            <span class="cabinet-myorders__block-order-date">20.06.2018 </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-desc">
+                                            <span class="cabinet-myorders__block-desc-type">Шины</span>
+                                            <span class="cabinet-myorders__block-desc-producer">Continental</span>
+                                            <span class="cabinet-myorders__block-desc-name">Contipremiumcontact 5</span>
+                                            <span class="cabinet-myorders__block-desc-size clear">
+                                                235/45 R18 91T
+                                                <span class="cabinet-myorders__block-desc-count">4 шт.</span>
+                                            </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-status clear">
+                                            <span class="cabinet-myorders__block-status-ok">выполнен</span>
+                                            <a href="#" class="cabinet-myorders__block-status-review cabinet__btn-icon-left cab-link-hover">
+                                                <svg class="cabinet__from-input-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-my-comment"></use>
+                                                </svg>
+                                                оставить отзыв
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-myorders__block-done-item cabinet-myorders__block-item">
+                                        <div class="cabinet-myorders__block-order clear">
+                                            <span class="cabinet-myorders__block-order-num">№345565</span>
+                                            <span class="cabinet-myorders__block-order-date">17.06.2018 </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-desc">
+                                            <span class="cabinet-myorders__block-desc-type">Шины</span>
+                                            <span class="cabinet-myorders__block-desc-producer">Continental</span>
+                                            <span class="cabinet-myorders__block-desc-name">Contipremiumcontact 5</span>
+                                            <span class="cabinet-myorders__block-desc-size clear">
+                                                235/45 R18 91T
+                                                <span class="cabinet-myorders__block-desc-count">4 шт.</span>
+                                            </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-status clear">
+                                            <span class="cabinet-myorders__block-status-ok">выполнен</span>
+                                            <a href="#" class="cabinet-myorders__block-status-review cabinet__btn-icon-left cab-link-hover">
+                                                <svg class="cabinet__from-input-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-my-comment"></use>
+                                                </svg>
+                                                оставить отзыв
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-myorders__block-done-item cabinet-myorders__block-item">
+                                        <div class="cabinet-myorders__block-order clear">
+                                            <span class="cabinet-myorders__block-order-num">№345587</span>
+                                            <span class="cabinet-myorders__block-order-date">05.06.2018 </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-desc">
+                                            <span class="cabinet-myorders__block-desc-type">Шины</span>
+                                            <span class="cabinet-myorders__block-desc-producer">Continental</span>
+                                            <span class="cabinet-myorders__block-desc-name">Contipremiumcontact 5</span>
+                                            <span class="cabinet-myorders__block-desc-size clear">
+                                                235/45 R18 91T
+                                                <span class="cabinet-myorders__block-desc-count">4 шт.</span>
+                                            </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-status clear">
+                                            <span class="cabinet-myorders__block-status-ok">выполнен</span>
+                                            <a href="#" class="cabinet-myorders__block-status-review cabinet__btn-icon-left cab-link-hover">
+                                                <svg class="cabinet__from-input-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-my-comment"></use>
+                                                </svg>
+                                                оставить отзыв
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-myorders__block-done-item cabinet-myorders__block-item">
+                                        <div class="cabinet-myorders__block-order clear">
+                                            <span class="cabinet-myorders__block-order-num">№345934</span>
+                                            <span class="cabinet-myorders__block-order-date">29.04.2018 </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-desc">
+                                            <span class="cabinet-myorders__block-desc-type">Шины</span>
+                                            <span class="cabinet-myorders__block-desc-producer">Continental</span>
+                                            <span class="cabinet-myorders__block-desc-name">Contipremiumcontact 5</span>
+                                            <span class="cabinet-myorders__block-desc-size clear">
+                                                235/45 R18 91T
+                                                <span class="cabinet-myorders__block-desc-count">4 шт.</span>
+                                            </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-status clear">
+                                            <span class="cabinet-myorders__block-status-сфтсуд">отменён</span>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-myorders__block-done-item cabinet-myorders__block-item">
+                                        <div class="cabinet-myorders__block-order clear">
+                                            <span class="cabinet-myorders__block-order-num">№345510</span>
+                                            <span class="cabinet-myorders__block-order-date">21.04.2018 </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-desc">
+                                            <span class="cabinet-myorders__block-desc-type">Шины</span>
+                                            <span class="cabinet-myorders__block-desc-producer">Continental</span>
+                                            <span class="cabinet-myorders__block-desc-name">Contipremiumcontact 5</span>
+                                            <span class="cabinet-myorders__block-desc-size clear">
+                                                235/45 R18 91T
+                                                <span class="cabinet-myorders__block-desc-count">4 шт.</span>
+                                            </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-status clear">
+                                            <span class="cabinet-myorders__block-status-ok">выполнен</span>
+                                            <a href="#" class="cabinet-myorders__block-status-review cabinet__btn-icon-left cab-link-hover">
+                                                <svg class="cabinet__from-input-icon">
+                                                    <use xlink:href="img/sprite-mono.svg#icons-my-comment"></use>
+                                                </svg>
+                                                оставить отзыв
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cabinet-myorders__block-done-item cabinet-myorders__block-item">
+                                        <div class="cabinet-myorders__block-order clear">
+                                            <span class="cabinet-myorders__block-order-num">№345538</span>
+                                            <span class="cabinet-myorders__block-order-date">15.03.2018 </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-desc">
+                                            <span class="cabinet-myorders__block-desc-type">Шины</span>
+                                            <span class="cabinet-myorders__block-desc-producer">Continental</span>
+                                            <span class="cabinet-myorders__block-desc-name">Contipremiumcontact 5</span>
+                                            <span class="cabinet-myorders__block-desc-size clear">
+                                                235/45 R18 91T
+                                                <span class="cabinet-myorders__block-desc-count">4 шт.</span>
+                                            </span>
+                                        </div>
+                                        <div class="cabinet-myorders__block-status clear">
+                                            <span class="cabinet-myorders__block-status-cancel">отменён</span>
+                                        </div>
+                                    </div>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </section>
+    </section>
+</body>
+
+</html>

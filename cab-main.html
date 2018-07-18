@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>CabinetMain</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_mobile.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_tablet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="cabinet-css/global/cab-global.css">
+    <link rel="stylesheet" href="cabinet-css/cab-main/cab-main.css">
+    <script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/slick-slider.min.js"></script>
+    <script src="js/browser-plugin.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="cabinet-js/cabinet.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    if (/MSIE|Trident/.test(navigator.userAgent)) {
+        var iEobject;
+        iEobject = document.createElement('script');
+        iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+        iEobject.onload = function() {
+            svg4everybody();
+        };
+        document.getElementsByTagName('head')[0].appendChild(iEobject);
+    }
+    </script>
+</head>
+
+<body>
+    <div class="delete"></div>
+    <div class="overlay modal-remove js-overlay"></div>
+    <div class="allClose"></div>
+    <section class="cabinet">
+        <div class="container-block">
+            <div class="cabinet__caption">
+                <span class="cabinet__caption-text">Личный кабинет</span>
+            </div>
+            <section class="cabinet__block clear">
+                <section class="cabinet__nav">
+                    <ul class="cabinet__nav-list">
+                        <li class="cabinet__nav-item cabinet__nav-item-active">
+                            <a href="cab-main.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-account-main-lightgray"></use>
+                            </svg>
+                            Главная</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mydata.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-personal-info-darkgray"></use>
+                            </svg>
+                            Личный данные</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myadress.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-adress-darkgray"></use>
+                            </svg>
+                            Мой адрес</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myexibitions.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-stores-darkgray"></use>
+                            </svg>
+                            Мой пункт выдачи</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mycars.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-cars-darkgray"></use>
+                            </svg>
+                            Мои автомобили</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myfavorite.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-favorites-darkgray"></use>
+                            </svg>
+                            Избранное</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-myorders.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-orders-darkgray"></use>
+                            </svg>
+                            Мои заказы</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mysubscriptions.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-subscriptions-darkgray"></use>
+                            </svg>
+                            Мои подписки</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-mydiscount.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-promo-discounts-darkgray"></use>
+                            </svg>
+                            Моя скидка</a>
+                        </li>
+                        <li class="cabinet__nav-item">
+                            <a href="cab-feedback.html" class="cabinet__nav-link">
+                            <svg class="cabinet__nav-icon">
+                                <use xlink:href="img/sprite-mono.svg#account-menu-my-feedback-darkgray"></use>
+                            </svg>
+                            Обратная связь</a>
+                        </li>
+                    </ul>
+                </section>
+                <!-- -------------MOBILE-------------------- -->
+                <!-- -------------MOBILE-------------------- -->
+                <section class="cabinet__nav-mobile">
+                    <div class="cabinet__nav-mobile-dropdown-wrapper">
+                        <div class="cabinet__nav-mobile-btn-wrapper">
+                            <span class="cabinet__nav-mobile-btn onclick cabinet__nav-link js-mob-menu-btn">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-account-main-lightgray"></use>
+                                </svg>
+                                Главная
+                                <svg class="cabinet__nav-mobile-btn-arrow">
+                                    <use xlink:href="img/sprite-mono.svg#arrow-down"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="cabinet__nav-mobile-list-wrapper js-mob-menu-block">
+                            <ul class="cabinet__nav-mobile-list">
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-main.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-account-main-lightgray"></use>
+                                    </svg>
+                                    Главная</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mydata.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-personal-info-darkgray"></use>
+                                    </svg>
+                                    Личный данные</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myadress.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-adress-darkgray"></use>
+                                    </svg>
+                                    Мой адрес</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myexibitions.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-stores-darkgray"></use>
+                                    </svg>
+                                    Мой пункт выдачи</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mycars.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-cars-darkgray"></use>
+                                    </svg>
+                                    Мои автомобили</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myfavorite.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-favorites-darkgray"></use>
+                                    </svg>
+                                    Избранное</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-myorders.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-orders-darkgray"></use>
+                                    </svg>
+                                    Мои заказы</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mysubscriptions.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-subscriptions-darkgray"></use>
+                                    </svg>
+                                    Мои подписки</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-mydiscount.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-promo-discounts-darkgray"></use>
+                                    </svg>
+                                    Моя скидка</a>
+                                </li>
+                                <li class="cabinet__nav-item">
+                                    <a href="cab-feedback.html" class="cabinet__nav-link">
+                                    <svg class="cabinet__nav-icon">
+                                        <use xlink:href="img/sprite-mono.svg#account-menu-my-feedback-darkgray"></use>
+                                    </svg>
+                                    Обратная связь</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </section>
+                <!-- -------------MOBILE-END-------------------- -->
+                <!-- -------------MOBILE-END-------------------- -->
+                <section class="cabinet__left-wrapper cabinet-main__left-wrapper clear">
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-personal-info-darkgray"></use>
+                                </svg>    
+                                Личные данные
+                            </a>
+                            <span class="cab-mt20">ОАО Савушкин продукт</span>
+                            <p class="cab-mt20">
+                                Константинопольский<br>
+                                Константин<br>
+                                Константинович
+                            </p>
+                            
+                            <div class="cabinet-main__item-personal-data-email clear">
+                                <svg class="cabinet-main__item-personal-data-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-account-element-email-gray"></use>
+                                </svg>
+                                <span class="cabinet-main__item-personal-data-email-name">konstantinopolsky@</span>
+                                <span class="cabinet-main__item-personal-data-email-url">savushkin.by</span>
+                            </div>
+                            
+                            <span class="cabinet-main__item-personal-data-phone cab-mt10">
+                                <svg class="cabinet-main__item-personal-data-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-account-element-phone-gray"></use>
+                                </svg>
+                                +375 (44) 709-88-51
+                            </span>
+                            <a href="#" class="cabinet-main__item-link_bottom cab-link-hover">
+                                <svg class="cabinet-main__item-link_bottom-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-full-view"></use>
+                                </svg>
+                                Показать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-adress-darkgray"></use>
+                                </svg>    
+                                Мой адрес
+                            </a>
+                            <span class="cab-mt20">г. Брест</span>
+                            <p class="cab-mt20">
+                                ул. Героев обороны Брестской
+                                крепости, д.&nbsp10, корп.&nbsp2, кв.&nbsp/&nbspофис&nbsp25
+                            </p>
+                            <p class="cabinet-main__item-empty-text hidden">Вы пока не добавляли адрес</p>
+                            <a href="#" class="cabinet-main__item-link_bottom cab-link-hover">
+                                <svg class="cabinet-main__item-link_bottom-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-full-view"></use>
+                                </svg>
+                                Показать полностью
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-stores-darkgray"></use>
+                                </svg>    
+                                Мой пункт выдачи
+                            </a>
+                            <span class="cab-mt20">г. Минск</span>
+                            <p class="cab-mt20">
+                                ул. Радиальная 40/2 <br>   
+                                (магазин/сервис «Автосеть»)
+                            </p>
+                            <p class="cabinet-main__item-empty-text hidden">Вы пока не добавили пункт выдачи</p>
+                            <a href="#" class="cabinet-main__item-link_bottom cab-link-hover">
+                                <svg class="cabinet-main__item-link_bottom-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-full-view"></use>
+                                </svg>
+                                Показать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-cars-darkgray"></use>
+                                </svg>    
+                                Мои автомобили
+                            </a>
+                            <span class="cab-mt20">Chrysler Grand Voyager V (RT)</span>
+                            <ul class="cabinet-main__item-list cab-mt20">
+                                <li class="cabinet-main__item-list_item clear">
+                                    <span class="cabinet-main__item-list_item-left">Год выпуска:</span><span class="cabinet-main__item-list_item-right">2012</span>
+                                </li>
+                                <li class="cabinet-main__item-list_item clear">
+                                    <span class="cabinet-main__item-list_item-left">Объём двигателя:</span><span class="cabinet-main__item-list_item-right">2.7 л</span>
+                                </li>
+                                <li class="cabinet-main__item-list_item clear">
+                                    <span class="cabinet-main__item-list_item-left">Тип топлива:</span><span class="cabinet-main__item-list_item-right">Бензин-гибрид</span>
+                                </li>
+                                <li class="cabinet-main__item-list_item clear">
+                                    <span class="cabinet-main__item-list_item-left">Рег. номер:</span><span class="cabinet-main__item-list_item-right">4851IK-4</span>
+                                </li>
+                            </ul>
+                            <p class="cabinet-main__item-empty-text hidden">Вы пока не добавляли автомобили</p>
+                            <a href="#" class="cabinet-main__item-link_bottom cab-link-hover">
+                                <svg class="cabinet-main__item-link_bottom-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-full-view"></use>
+                                </svg>
+                                Показать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-favorites-darkgray"></use>
+                                </svg>    
+                                Избранное
+                            </a>
+                            <span class="cab-mt20">7 товаров в избранном </span>
+                            <p class="cabinet-main__item-empty-text hidden">Вы пока не добавляли товары</p>
+                            <a href="#" class="cabinet-main__item-link_bottom cab-link-hover">
+                                <svg class="cabinet-main__item-link_bottom-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-full-view"></use>
+                                </svg>
+                                Показать полностью
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-orders-darkgray"></use>
+                                </svg>    
+                                Мои заказы
+                            </a>
+                            <div class="cabinet-main__item-order-info clear">
+                                <span class="cabinet-main__item-order-num clear">№345565</span>
+                                <span class="cabinet-main__item-order-date clear">10.06.2018 </span>
+                            </div>
+                            <p class="cab-mt10">
+                                Continental <br> 
+                                Contipremiumcontact 5 <br>
+                                235/45 R18 91T
+                            </p>
+                            <ul class="cabinet-main__item-list cab-mt10">
+                                <li class="cabinet-main__item-list_item clear">
+                                    <span class="cabinet-main__item-list_item-left">Цена:</span><span class="cabinet-main__item-list_item-right">200.10 р.</span>
+                                </li>
+                                <li class="cabinet-main__item-list_item clear">
+                                    <span class="cabinet-main__item-list_item-left">Кол-во:</span><span class="cabinet-main__item-list_item-right">4 шт.</span>
+                                </li>
+                                <li class="cabinet-main__item-list_item clear">
+                                    <span class="cabinet-main__item-list_item-left">Стоимость:</span><span class="cabinet-main__item-list_item-right">800.40 р.</span>
+                                </li>
+                            </ul>
+                            <p class="cabinet-main__item-empty-text hidden">У вас пока нет заказов</p>
+                            <a href="#" class="cabinet-main__item-link_bottom cab-link-hover">
+                                <svg class="cabinet-main__item-link_bottom-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-my-order-history"></use>
+                                </svg>
+                                История заказов
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-subscriptions-darkgray"></use>
+                                </svg>    
+                                Мои подписки
+                            </a>
+                            <span class="cabinet-main__item-mysubscription cab-mt20">
+                                Акции и скидки
+                                <svg class="cabinet-main__item-mysubscription-icon">
+                                    <use xlink:href="img/sprite-color.svg#icons-checkbox-bullit"></use>
+                                </svg>
+                            </span>
+                            <span class="cabinet-main__item-mysubscription cab-mt20">
+                                Тесты шин
+                                <svg class="cabinet-main__item-mysubscription-icon">
+                                    <use xlink:href="img/sprite-color.svg#icons-checkbox-bullit"></use>
+                                </svg>
+                            </span>
+                            <span class="cabinet-main__item-mysubscription cab-mt20">
+                                Рекомендации
+                                <svg class="cabinet-main__item-mysubscription-icon">
+                                    <use xlink:href="img/sprite-color.svg#icons-checkbox-bullit"></use>
+                                </svg>
+                            </span>
+                            <a href="#" class="cabinet-main__item-link_bottom cab-link-hover">
+                                <svg class="cabinet-main__item-link_bottom-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-edit"></use>
+                                </svg>
+                                Изменить
+                            </a>
+                        </div>
+                    </div>
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-promo-discounts-darkgray"></use>
+                                </svg>    
+                                Моя скидка
+                            </a>
+                            <div class="cabinet-main__item-mypromo">
+                                <span class="cabinet__mydiscount">1%</span>
+                            </div>
+                             <a href="#" class="cabinet-main__item-link_bottom cab-link-hover">
+                                <svg class="cabinet-main__item-link_bottom-icon">
+                                    <use xlink:href="img/sprite-mono.svg#icons-my-data-further-info"></use>
+                                </svg>
+                                Подробнее о скидке
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="cabinet-main__item">
+                        <div class="cabinet-main__item-block">
+                            <a href="#" class="cabinet__nav-link cabinet-main__item-caption cab-link-hover">
+                                <svg class="cabinet__nav-icon">
+                                    <use xlink:href="img/sprite-mono.svg#account-menu-my-feedback-darkgray"></use>
+                                </svg>    
+                                Обратная связь
+                            </a>
+                            <span class="cab-mt20">Вопросы специалистам</span>
+                            <span class="cab-mt10">Качество обслуживания</span>
+                            <span class="cab-mt10">Вопрос по товару</span>
+                            <span class="cab-mt10">Мои отзывы</span>
+                            <p class="cabinet-main__item-empty-text hidden">У вас пока нет отзывов и обращений</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </div>
+    </section>
+</body>
+
+</html>

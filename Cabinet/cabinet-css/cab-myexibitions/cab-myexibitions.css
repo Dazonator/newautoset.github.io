@@ -1,0 +1,129 @@
+.cabinet-myexibition__item {
+  font-size: 16px;
+  color: #000;
+}
+
+.cabinet-myexibition__item-value-street {
+  margin-top: 10px;
+}
+
+.cabinet-myexibition__item-value-see-map {
+  padding-left: 0px !important;
+  margin-top: 10px;
+}
+
+.cabinet-myexibition__item-buttons {
+  text-align: right;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cabinet-myexibition__item-buttons-item + .cabinet-myexibition__item-buttons-item {
+  margin-left: 30px;
+}
+
+.cabinet-myexibition__city-change__modal-main-list {
+  padding-bottom: 0px;
+  height: 115px;
+}
+
+.cabinet-myexibition__modal-main {
+  height: 400px;
+}
+
+.cabinet-myexibition__see-map {
+  display: inline-block;
+  padding-left: 29px;
+  font-size: 16px;
+  text-decoration: underline;
+  color: #519a00;
+  position: relative;
+  padding-right: 20px;
+  margin-top: 10px;
+}
+
+.cabinet-myexibition__see-map-icon {
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 12px;
+  height: 17px;
+  color: #e2001a;
+  fill: #e2001a;
+}
+
+.cabinet-myexibition__label-exibition {
+  font-size: 16px;
+  color: #000;
+}
+
+.cabinet-myexibition__label-exibition:before {
+  top: 0px;
+  margin-top: 0px;
+}
+
+.cabinet-myexibition__add-myexibition {
+  text-align: center;
+}
+
+.cabinet-myexibition__add-myexibition-block {
+  display: none;
+}
+
+.cabinet-myexibition__add-myexibition-block-form-item + .cabinet-myexibition__add-myexibition-block-form-item {
+  margin-top: 30px;
+}
+
+.cabinet-myexibition__add-myexibition-block-form-caption {
+  display: block;
+  font-size: 16px;
+  color: #000;
+  text-align: center;
+  margin: 20px 0px 15px 0px;
+}
+
+.cabinet-myexibition__add-myexibition-block-save {
+  margin-top: 20px;
+}
+
+.cabinet-myexibition__city-change-value {
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.cabinet-myexibition__city-change-btn {
+  margin-left: 20px;
+}
+
+.cabinet-myexibition__city-change-block {
+  font-size: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #adadad;
+}
+
+@media (max-width: 959px) {
+  .cabinet-myexibition__city-change__modal-main-list {
+    height: 185px;
+  }
+}
+
+@media (max-width: 639px) {
+  .cabinet-myexibition__city-change__modal-main-list {
+    height: 325px;
+  }
+  .cabinet-myexibition__item-buttons {
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .cabinet-myexibition__city-change-text {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .cabinet-myexibition__city-change-value {
+    margin-left: 0px;
+  }
+}
+

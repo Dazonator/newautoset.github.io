@@ -1,0 +1,173 @@
+.cabinet-mycars__item {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #adadad;
+  margin-bottom: 20px;
+}
+
+.cabinet-mycars__item-value-list {
+  margin-top: 20px;
+}
+
+.cabinet-mycars__item-value-list-item {
+  float: left;
+}
+
+.cabinet-mycars__item-value-list-item:nth-of-type(1) {
+  width: 25%;
+}
+
+.cabinet-mycars__item-value-list-item:nth-of-type(2) {
+  width: 31%;
+}
+
+.cabinet-mycars__item-value-list-item:nth-of-type(3) {
+  width: 31%;
+}
+
+.cabinet-mycars__item-value-list-item:nth-of-type(4) {
+  width: 13%;
+}
+
+.cabinet-mycars__item-value-list-name {
+  display: table;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808080;
+}
+
+.cabinet-mycars__item-buttons {
+  margin-top: 20px;
+}
+
+.cabinet-mycars__item-buttons-wrapper {
+  float: right;
+}
+
+.cabinet-mycars__item-buttons-item + .cabinet-mycars__item-buttons-item {
+  margin-left: 30px;
+}
+
+.cabinet-mycars__add-cars {
+  display: none;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #adadad;
+}
+
+.cabinet-mycars__add-cars-form .myselect_wrapper {
+  margin-top: 4px;
+  width: 100%;
+}
+
+.cabinet-mycars__add-cars-form .myselect_wrapper + .cabinet__label {
+  margin-top: 20px;
+}
+
+.cabinet-mycars__add-cars-form input {
+  margin-top: 4px;
+}
+
+.cabinet-mycars__add-cars-form-block {
+  margin: 0 -10px;
+  margin-top: 20px;
+}
+
+.cabinet-mycars__add-cars-form-block-item {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+
+.cabinet-mycars__add-cars-form-block-item:nth-of-type(3), .cabinet-mycars__add-cars-form-block-item:nth-of-type(4) {
+  margin-top: 20px;
+}
+
+.cabinet-mycars__add-cars-save {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cabinet-mycars__add-cars-btn {
+  text-align: center;
+}
+
+@media (max-width: 959px) {
+  .cabinet-mycars__item-value-list-item:nth-of-type(1) {
+    width: 26%;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(2) {
+    width: 28%;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(3) {
+    width: 28%;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(4) {
+    width: 18%;
+  }
+}
+
+@media (max-width: 767px) {
+  .cabinet-mycars__item-value-list-item:nth-of-type(1) {
+    width: 27%;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(2) {
+    width: 29%;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(3) {
+    width: 29%;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(4) {
+    width: 15%;
+  }
+}
+
+@media (max-width: 639px) {
+  .cabinet-mycars__item-value-list {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(1),
+  .cabinet-mycars__item-value-list-item:nth-of-type(2),
+  .cabinet-mycars__item-value-list-item:nth-of-type(3),
+  .cabinet-mycars__item-value-list-item:nth-of-type(4) {
+    display: block;
+    width: 50%;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(1) {
+    order: -3;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(2) {
+    order: -1;
+    margin-top: 15px;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(3) {
+    order: -2;
+    text-align: right;
+  }
+  .cabinet-mycars__item-value-list-item:nth-of-type(4) {
+    text-align: right;
+    margin-top: 15px;
+  }
+  .cabinet-mycars__item-value-list-name {
+    display: block;
+  }
+  .cabinet-mycars__item-buttons label {
+    float: none;
+    display: table;
+    margin: 0 auto;
+  }
+  .cabinet-mycars__item-buttons-wrapper {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
