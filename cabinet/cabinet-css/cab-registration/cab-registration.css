@@ -92,7 +92,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  border-top: 2px dotted #adadad;
+  border-top: 1px dashed #adadad;
 }
 
 .cabinet-logIn__tab-entry_inputs label {
@@ -151,7 +151,7 @@
   position: absolute;
   top: 0px;
   left: 0px;
-  border-top: 2px dotted #adadad;
+  border-top: 1px dashed #adadad;
 }
 .cabinet-logIn__tab-entry_button span {
   position: relative;
@@ -261,8 +261,8 @@
   text-align: left;
   padding: 0px 20px;
   background-color: #fff;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: 14px;
+  line-height: 20px;
   overflow: hidden;
 }
 
@@ -280,15 +280,16 @@
   margin-top: 20px;
   text-align: center;
   font-size: 22px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: bold;
 }
 
 .cabinet-logIn__tab-registration .cab-reg-modal-main-description {
+  margin-top: 4px;
   display: block;
   text-align: center;
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .cabinet-logIn__tab-registration .cab-reg-modal-main_scroll-top,
