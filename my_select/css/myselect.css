@@ -250,6 +250,18 @@ body.touch select.myselect_block
 }
 
 @media (max-width: 320px) {}
-
-
+/*---------Edge----------------------*/
+@supports (-ms-ime-align:auto) {
+    .myselect_block span.select-value:after {
+        width: 15px;
+        height: 9px;
+    } 
+}
+/*---------------------IE-----------------*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .myselect_block span.select-value:after {
+        width: 15px;
+        height: 9px;
+    } 
+}
 

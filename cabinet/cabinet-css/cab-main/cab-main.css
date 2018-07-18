@@ -84,6 +84,8 @@
 .cabinet-main__item-personal-data-phone {
   position: relative;
   padding-left: 28px;
+  pointer-events: none;
+  color: #000;
 }
 
 .cabinet-main__item-list {

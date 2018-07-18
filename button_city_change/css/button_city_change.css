@@ -3,7 +3,7 @@
 /*-------------------------------------------*/
 .city-change__value {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: bottom;
     font-size: 22px;
     font-weight: bold;
     
