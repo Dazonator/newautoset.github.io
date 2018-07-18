@@ -209,7 +209,7 @@ input[type="radio"]:checked + .cabinet__label-before:before{
   width: 18px;
   height: 18px;
   border: 5px solid #fff;
-  box-shadow: 0px 0px 0px 5px #000, 0px 0px 0px 1px #ddd;
+  box-shadow: inset 0px 0px 0px 5px #000, 0px 0px 0px 1px #ddd;
 }
 
 .cabinet__nav {

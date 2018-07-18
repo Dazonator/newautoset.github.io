@@ -82,6 +82,7 @@
 }
 
 .cabinet-main__item-personal-data-phone {
+  display: block;
   position: relative;
   padding-left: 28px;
   pointer-events: none;
