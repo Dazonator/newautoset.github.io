@@ -113,6 +113,9 @@ input::placeholder {
   -moz-tap-highlight-color: transparent;
   -o-tap-highlight-color: transparent;
 }
+.cabinet__input-tel{
+  padding-left: 50px;
+}
 .cabinet__btn{
   display: block;
   width: 100%;
@@ -190,6 +193,16 @@ input::placeholder {
   font-size: 14px;
   line-height: 16px;
   color: #808080;
+}
+.cabinet__label-pref{
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: bold;
+  color: #000;
+  bottom: -35px;
+  left: 10px;
 }
 .cabinet__label-before:hover{
   cursor: pointer;
