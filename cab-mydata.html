@@ -245,10 +245,12 @@
                                     <use xlink:href="cabinet/img/sprite-mono.svg#icons-my-data-edit"></use>
                                 </svg>
                             </div>
-                            <label class="cabinet__label">Телефон:</label>
-                            <input type="tel" class="cabinet__input js-cabinet-input" placeholder="Телефон">
+                            <label class="cabinet__label">Телефон:
+                                <span class="cabinet__label-pref cabinet-mydata__label-pref">+375</span>
+                            </label>
+                            <input type="tel" class="cabinet__input js-cabinet-input js-mask-input--phone cabinet__input-tel" name="#" placeholder="(__) ___-__-__">
                             <div class="cabinet__from-input-block hidden">
-                                <span class="cabinet__from-input-text"></span>
+                                <span class="cabinet__from-input-text cabinet__from-input-tel"></span>
                                 <svg class="cabinet__from-input-icon js-cabinet__from-input-icon">
                                     <use xlink:href="cabinet/img/sprite-mono.svg#icons-my-data-edit"></use>
                                 </svg>
