@@ -39,15 +39,6 @@ input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
   font-size: 14px;
   position: relative;
 }
-.bskt-oder-page-withStar:after{
-  content: "*";
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  font-size: 14px;
-  color: #e2001a;
-}
 .bskt-oder-page-block__person{
   margin-top: 10px;
 }
