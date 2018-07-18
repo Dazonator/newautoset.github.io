@@ -1,0 +1,82 @@
+.cabinet-mydata label + input {
+  margin-top: 4px;
+}
+
+.cabinet-mydata label {
+  margin-top: 20px;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
+.cabinet-mydata label:first-of-type {
+  margin-top: 0px;
+}
+
+.cabinet-mydata input::-webkit-input-placeholder {
+  color: #cfcfcf;
+}
+
+.cabinet-mydata input::-moz-placeholder {
+  color: #cfcfcf;
+}
+
+.cabinet-mydata input {
+  width: 280px;
+}
+
+.cabinet-mydata__data {
+  display: table;
+  font-size: 16px;
+  line-height: 36px;
+  margin-top: 4px;
+  color: #000;
+}
+
+.cabinet-mydata__entity {
+  margin-top: 20px;
+}
+.cabinet-mydata__entity label{
+  margin-top: 0px;
+  padding-left: 25px;
+}
+
+.cabinet-mydata__entity-block {
+  display: none;
+  margin-top: 20px;
+}
+
+.cabinet-mydata__entity-text {
+  display: inline-block;
+  line-height: 16px;
+  margin-right: 10px;
+}
+
+.cabinet-mydata__entity-label-after {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808080;
+}
+
+.cabinet-mydata__entity-label:last-of-type {
+  margin-top: 0px;
+}
+
+@media (max-width: 767px) {
+  .cabinet-mydata {
+    width: 360px;
+    margin: 0 auto;
+  }
+  .cabinet-mydata input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .cabinet-mydata {
+    width: 100%;
+  }
+}

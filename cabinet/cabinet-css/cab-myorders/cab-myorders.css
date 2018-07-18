@@ -1,0 +1,86 @@
+.cabinet-myorders__block-caption {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808080;
+  margin-bottom: 20px;
+}
+
+.cabinet-myorders__block-item {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #adadad;
+  margin-bottom: 20px;
+}
+
+.cabinet-myorders__block-order-num {
+  float: left;
+}
+
+.cabinet-myorders__block-order-date {
+  float: right;
+}
+
+.cabinet-myorders__block-desc {
+  margin-top: 10px;
+}
+
+.cabinet-myorders__block-desc span {
+  display: block;
+}
+
+.cabinet-myorders__block-desc-count {
+  float: right;
+}
+
+.cabinet-myorders__block-status {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.cabinet-myorders__block-status-ok {
+  float: left;
+  color: #73cf31;
+}
+
+.cabinet-myorders__block-status-cancel {
+  float: left;
+  color: #e2001a;
+}
+
+.cabinet-myorders__block-status-review {
+  float: right;
+  color: #808080;
+}
+
+.cabinet-myorders__block-going-item-count {
+  margin-top: 10px;
+}
+
+.cabinet-myorders__block-going-item-count-block {
+  float: left;
+  width: 33.33333333%;
+  text-align: center;
+}
+
+.cabinet-myorders__block-going-item-count-block:first-of-type {
+  text-align: left;
+}
+
+.cabinet-myorders__block-going-item-count-block:last-of-type {
+  text-align: right;
+}
+
+.cabinet-myorders__block-going-item-count-name {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808080;
+}
+
+.cabinet-myorders__block-done-item:last-of-type {
+  padding-bottom: 0px;
+  border-bottom: none;
+  margin-bottom: 0px;
+}

@@ -1,0 +1,32 @@
+.cabinet-myfavorite__block-item {
+  position: relative;
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #adadad;
+  margin-bottom: 20px;
+}
+
+.cabinet-myfavorite__block-item span {
+  display: block;
+}
+
+.cabinet-myfavorite__block-item-delete {
+  top: 0px;
+  right: 0px;
+  margin-top: 0px;
+}
+
+.cabinet-myfavorite__block-item:last-of-type {
+  padding-bottom: 0px;
+  border-bottom: none;
+  margin-bottom: 0px;
+}
+
+.cabinet-myfavorite__block-item-dont-have {
+  color: #adadad;
+}
+
+.cabinet-myfavorite__block-item-dont-have-text {
+  float: right;
+  font-size: 14px;
+  line-height: 16px;
+}

@@ -1,0 +1,7 @@
+.cabinet-feedback a {
+  display: table;
+}
+
+.cabinet-feedback a + a {
+  margin-top: 10px;
+}

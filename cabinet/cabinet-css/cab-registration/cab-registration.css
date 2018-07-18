@@ -1,0 +1,437 @@
+.cabinet-logIn__right {
+  float: left;
+  width: 354px;
+}
+
+.cabinet-logIn__tab-wrapper {
+  float: left;
+  width: 50%;
+  height: 46px;
+}
+
+.cabinet-logIn__tab-wrapper:hover {
+  cursor: pointer;
+}
+
+.cabinet-logIn__tab-wrapper.active {
+  background-color: #f5f5f5;
+}
+
+.cabinet-logIn__tab-wrapper.active .cabinet-logIn__tab-block {
+  background: none;
+  color: #000;
+}
+
+.cabinet-logIn__tab-block {
+  margin-top: 6px;
+  background-color: #adadad;
+  color: #fff;
+}
+
+.cabinet-logIn__tab-block:hover {
+  background-color: #969696;
+}
+
+.cabinet-logIn__tab-text {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.cabinet-logIn__block-wrapper {
+  float: left;
+  width: 100%;
+  padding: 30px 20px;
+  background-color: #f5f5f5;
+}
+
+.cabinet-logIn__tab-entry_hello {
+  padding-bottom: 20px;
+}
+
+.cabinet-logIn__tab-entry_hello span {
+  display: block;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.cabinet-logIn__tab-entry_hello a {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.cabinet-logIn__tab-entry_hello p {
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+
+.cabinet-logIn__tab-entry_hello p + p {
+  margin-top: 20px;
+}
+
+.cabinet-logIn__tab-entry_inputs {
+  position: relative;
+  padding: 20px 0px;
+}
+
+.cabinet-logIn__tab-entry_inputs:before {
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: 2px dotted #adadad;
+}
+
+.cabinet-logIn__tab-entry_inputs label {
+  position: relative;
+  display: table;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808080;
+  margin-top: 20px;
+}
+
+.cabinet-logIn__tab-entry_inputs label + label {
+  margin-top: 0px;
+}
+
+.cabinet-logIn__tab-entry_inputs label:first-of-type {
+  margin-top: 0px;
+}
+
+.cabinet-logIn__tab-entry_inputs label.mustDo:after {
+  content: '*';
+  display: block;
+  position: absolute;
+  top: 0px;
+  right: -10px;
+  font-size: 14px;
+  color: #e2001a;
+}
+
+.cabinet-logIn__tab-entry_inputs input {
+  margin-top: 6px;
+  width: 100%;
+  font-weight: bold;
+}
+
+.cabinet-logIn__tab-entry_inputs input.wrong-password {
+  color: #e2001a;
+}
+
+.cabinet-logIn__tab-entry_inputs p.wrong-password_text {
+  margin-top: 4px;
+  font-size: 14px;
+  color: #e2001a;
+}
+
+.cabinet-logIn__tab-entry_button {
+  position: relative;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.cabinet-logIn__tab-entry_button:before {
+  content: '';
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-top: 2px dotted #adadad;
+}
+.cabinet-logIn__tab-entry_button span {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  padding-left: 27px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #808080;
+  text-decoration: underline;
+}
+
+.cabinet-logIn__tab-entry_button span:hover {
+  color: #666;
+  cursor: pointer;
+}
+
+.cabinet-logIn__tab-entry_button span .forgotpassword__icon {
+  position: absolute;
+  top: -2px;
+  left: 0px;
+  display: block;
+  width: 17px;
+  height: 17px;
+  color: #808080;
+  fill: #808080;
+}
+
+.cabinet-logIn__tab-entry_button p {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  color: #000;
+}
+
+.cabinet-logIn__tab-entry_button p + input {
+  margin-top: 20px;
+}
+
+.cabinet-logIn__tab-entry_wrong span, .cabinet-logIn__tab-entry_wrong p {
+  color: #e2001a;
+}
+
+.cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox {
+  position: relative;
+  color: #000;
+  padding-left: 30px;
+}
+
+.cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox:hover {
+  cursor: pointer;
+}
+
+.cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 19px;
+  height: 19px;
+  background-image: url(../../img/cb_unchecked.svg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox svg {
+  position: absolute;
+  display: none;
+  width: 16px;
+  height: 12px;
+  top: 2px;
+  left: 4px;
+  color: #fff;
+  fill: #fff;
+}
+
+.cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox a {
+  text-decoration: underline;
+  color: #808080;
+}
+
+.cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox a:hover {
+  color: #666;
+}
+
+.cabinet-logIn__tab-registration_checkbox {
+  display: none;
+}
+
+.cabinet-logIn__tab-registration_checkbox:checked + label:before {
+  background-image: url(../../img/cb_checked_all.svg);
+}
+
+.cabinet-logIn__tab-registration_checkbox:checked + label svg {
+  display: block;
+}
+
+.cabinet-logIn__tab-registration .cab-momal-list-caption {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.cabinet-logIn__tab-registration .cab-reg-modal-main {
+  text-align: left;
+  padding: 0px 20px;
+  background-color: #fff;
+  font-size: 12px;
+  line-height: 14px;
+  overflow: hidden;
+}
+
+.cabinet-logIn__tab-registration .cab-reg-modal-main-block {
+  display: block;
+  overflow-y: scroll;
+  max-height: 350px;
+  height: 350px;
+  padding-right: 25px;
+  width: 105%;
+}
+
+.cabinet-logIn__tab-registration .cab-reg-modal-main-caption {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 22px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+.cabinet-logIn__tab-registration .cab-reg-modal-main-description {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.cabinet-logIn__tab-registration .cab-reg-modal-main_scroll-top,
+.cabinet-logIn__tab-registration .cab-reg-modal-main_scroll-bottom {
+  display: block;
+  padding: 20px 0px 20px 0px;
+  cursor: pointer;
+}
+
+.cabinet-logIn__tab-registration .cab-reg-modal-main_scroll-top svg {
+  transform: rotate(180deg);
+}
+
+.cabinet-logIn__tab-registration .cab-reg-modal-main_scroll-icon {
+  display: block;
+  width: 20px;
+  height: 10px;
+  color: #d6d6d6;
+  fill: #d6d6d6;
+  margin: 0 auto;
+}
+
+.cabinet-logIn__left {
+  float: left;
+  padding-left: 20px;
+  width: 566px;
+  min-height: auto;
+}
+.cabinet-logIn__left-advantages{
+  position: relative;
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: 100%;
+}
+.cabinet-logIn__left-advantages_caption {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.cabinet-logIn__left-advantages .autoset__list_item {
+  font-size: 14px;
+  color: #000;
+}
+
+.cabinet-logIn__left-phone {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.cabinet-logIn__left-phone p {
+  display: block;
+  font-size: 16px;
+  color: #000;
+}
+
+.cabinet-logIn__left-phone a {
+  display: table;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: bold;
+  padding-left: 42px;
+  color: #000;
+}
+
+.cabinet-logIn__left-phone a:hover {
+  color: #666;
+  cursor: pointer;
+}
+
+.cabinet-logIn__left-phone a + a {
+  margin-top: 10px;
+}
+
+.cabinet-logIn__left-phone a svg {
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  top: 0px;
+  left: 0px;
+}
+
+@media (max-width: 959px) {
+  .cabinet-logIn__left {
+    width: 374px;
+  }
+  .cab-reg-modal {
+    width: 728px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cabinet-logIn__right {
+    width: 100%;
+  }
+  .cabinet-logIn__tab-entry {
+    width: 360px;
+    margin: 0 auto;
+  }
+  .cabinet-logIn__left {
+    width: 100%;
+    padding-left: 0px;
+    margin-top: 20px;
+  }
+  .cab-reg-modal {
+    width: 600px;
+  }
+}
+
+@media (max-width: 639px) {
+  .cab-reg-modal {
+    width: 440px;
+  }
+  .cabinet-logIn__tab-registration .cab-reg-modal-main-block {
+    padding-right: 18px;
+    height: 300px;
+    max-height: 300px;
+  }
+}
+
+@media (max-width: 479px) {
+  .cabinet-logIn {
+    margin: 0 -20px;
+  }
+  .cabinet-logIn__tab-entry {
+    width: 280px;
+  }
+  .cabinet-logIn__left {
+    padding: 0 20px;
+  }
+  .cabinet-logIn__left-advantages_caption {
+    padding: 0px 40px;
+  }
+  .cabinet-logIn__left-phone p {
+    padding: 0px 20px;
+  }
+  .cab-reg-modal {
+    width: calc(100vw - 40px);
+  }
+}
