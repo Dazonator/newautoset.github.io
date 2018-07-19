@@ -214,9 +214,11 @@
     });
     $(".cabinet__input-tel").focusin(function(){
         $(this).prev(".cabinet__label").removeClass("focusout");
+        $(this).prev(".cabinet__label").addClass("focusin");
         $(this).next().find(".cabinet__from-input-tel").removeClass("focusout");
     });
     $(".cabinet__input-tel").focusout(function(){
+        $(this).prev(".cabinet__label").removeClass("focusin");
         if($(this).val() !== ""){
             $(this).prev(".cabinet__label").addClass("focusout");
             $(this).next().addClass("focusout");

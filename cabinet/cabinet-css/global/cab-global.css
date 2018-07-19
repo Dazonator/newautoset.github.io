@@ -186,6 +186,9 @@ input::placeholder {
 .cabinet__label.focusout span{
   color: #000;
 }
+.cabinet__label.focusin span{
+  color: #000;
+}
 .cabinet__label-pref{
   position: absolute;
   display: block;
