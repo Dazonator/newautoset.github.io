@@ -129,3 +129,9 @@ button{
     width: 100%;
   }
 }
+@supports (-webkit-overflow-scrolling: touch) {
+  .input-style {
+    padding: 9px 0px 7px 0px;
+    border-radius: 10px;
+  }
+}
