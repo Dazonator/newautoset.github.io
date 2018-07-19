@@ -92,6 +92,9 @@ button{
   -moz-tap-highlight-color: transparent;
   -o-tap-highlight-color: transparent;
 }
+.input-style.empty-field {
+  border: 1px solid #e2001a;
+}
 
 
 @media (max-width: 1440px) {

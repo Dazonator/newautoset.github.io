@@ -29,12 +29,10 @@
     $('.js-login').on('click', function() {
         if( $(".login-email").val() == ''){
             $(".login-email").addClass('empty-field');
-            $(".login-email").addClass('wrong-password');
             $(".wrong-password_text").removeClass("hidden");
         }
         else{
             $(".login-email").removeClass('empty-field');
-            $(".login-email").removeClass('wrong-password');
             $(".wrong-password_text").addClass("hidden");
         };
         if( $(".login-password").val() == ''){
@@ -57,7 +55,6 @@
     $(".js-forgotpassword").on("click",function(){
         $(this).addClass("hidden");
         $(".login-email").removeClass('empty-field');
-        $(".login-email").removeClass('wrong-password');
         $(".login-email").val('');
         $(".wrong-password_text").addClass("hidden");
         $(".cabinet__entry-btn").addClass("hidden");

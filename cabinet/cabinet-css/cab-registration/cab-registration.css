@@ -118,9 +118,6 @@
   width: 100%;
 }
 
-.cabinet-logIn__tab-entry_inputs input.wrong-password {
-  color: #e2001a;
-}
 
 .cabinet-logIn__tab-entry_inputs p.wrong-password_text {
   margin-top: 4px;
