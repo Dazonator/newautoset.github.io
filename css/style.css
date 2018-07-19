@@ -83,6 +83,10 @@ button{
   background-color: #fff;
   box-shadow: inset 0px 0px 0px 1px #eee;
   border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
   -webkit-tap-highlight-color: transparent;
   -ms-tap-highlight-color: transparent;
   -moz-tap-highlight-color: transparent;
