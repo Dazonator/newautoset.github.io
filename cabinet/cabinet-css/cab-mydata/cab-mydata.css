@@ -88,3 +88,11 @@ label.focusout .cabinet-mydata__label-pref{
     width: 100%;
   }
 }
+/*----------------CSS for Mozilla----------*/
+/*----------------CSS for Mozilla----------*/
+/*----------------CSS for Mozilla----------*/
+@-moz-document url-prefix() {
+  .cabinet-mydata__label-pref {
+    bottom: -32px;
+  }
+}

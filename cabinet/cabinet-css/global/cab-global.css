@@ -149,8 +149,8 @@ input::placeholder {
 .cabinet__from-input-text{
   display: block;
   font-size: 16px;
-  line-height: 22px;
-  padding: 8px 0px;
+  line-height: 20px;
+  padding: 9px 0px 7px 0px;
   color: #000;
   height: 36px;
   padding-right: 40px;
@@ -462,6 +462,19 @@ input[type="radio"]:checked + .cabinet__label-before:before{
     width: 100%;
   }
 }
+/*----------------CSS for Mozilla----------*/
+/*----------------CSS for Mozilla----------*/
+/*----------------CSS for Mozilla----------*/
+@-moz-document url-prefix() {
+  .cabinet__from-input-text{
+    padding: 8px 0px;
+    padding-right: 40px;
+  }
+  .cabinet__label-pref {
+      bottom: -34px;
+  }
+}
+
 
 
 
