@@ -173,9 +173,7 @@ input::placeholder {
 .cabinet__from-input-icon:hover{
   cursor: pointer;
 }
-.cabinet__input.empty-field {
-  border: 1px solid #e2001a;
-}
+
 .cabinet__label{
   position: relative;
   display: table;
@@ -475,6 +473,14 @@ input[type="radio"]:checked + .cabinet__label-before:before{
   }
   .cabinet__label-pref {
       bottom: -34px;
+  }
+}
+/*----------------CSS for iOS----------*/
+/*----------------CSS for iOS----------*/
+/*----------------CSS for iOS----------*/
+@supports (-webkit-overflow-scrolling: touch) {
+  .input-style {
+    padding: 9px 10px 7px 10px;
   }
 }
 
