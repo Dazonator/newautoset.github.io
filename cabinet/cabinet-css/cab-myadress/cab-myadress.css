@@ -84,6 +84,9 @@
   padding: 0px 10px;
   width: 33.3333333333333%;
 }
+.cabinet-myadress__add-adress-home-item label{
+  margin-top: 0px;
+}
 
 .cabinet-myadress__add-adress-save {
   margin-top: 20px;

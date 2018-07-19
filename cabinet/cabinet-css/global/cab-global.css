@@ -59,7 +59,7 @@ input::placeholder {
 .cab-link-hover:hover svg{
   fill: #a9a9a9;
   color: #a9a9a9;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 .cabinet__mydiscount{
   display: block;
@@ -96,23 +96,6 @@ input::placeholder {
   color: #000;
 }
 
-.cabinet__input {
-  font: inherit;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000;
-  height: 36px;
-  width: 100%;
-  padding: 8px 10px;
-  border-radius: 3px;
-  background-color: #fff;
-  box-shadow: inset 0px 0px 0px 1px #eee;
-  border: none;
-  -webkit-tap-highlight-color: transparent;
-  -ms-tap-highlight-color: transparent;
-  -moz-tap-highlight-color: transparent;
-  -o-tap-highlight-color: transparent;
-}
 .cabinet__input-tel{
   padding-left: 50px;
 }

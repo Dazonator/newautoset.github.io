@@ -112,15 +112,6 @@
   margin-top: 0px;
 }
 
-.cabinet-logIn__tab-entry_inputs label.mustDo:after {
-  content: '*';
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: -10px;
-  font-size: 14px;
-  color: #e2001a;
-}
 
 .cabinet-logIn__tab-entry_inputs input {
   margin-top: 6px;

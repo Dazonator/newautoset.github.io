@@ -193,12 +193,6 @@
   border: 5px solid #fff;
   box-shadow: inset 0px 0px 0px 5px #999, 0px 0px 0px 1px #ddd;
 }
-.bskt-label-withstar{
-  display: inline-block;
-  vertical-align: top;
-  font-size: 14px;
-  color: #e2001a;
-}
 @media (max-width: 1440px) {}
 
 @media (max-width: 1199px) {}

@@ -81,11 +81,11 @@
                             </div>
                             <form class="cabinet-logIn__tab-entry_inputs">
                                 <label class="cabinet__label">E-mail:</label>
-                                <input class="cabinet__input login-email" type="email">
+                                <input class="input-style login-email" type="email">
                                 <p class="wrong-password_text hidden">Проверьте, пожалуйста, правильность ввода</p>
                                 <!-- Если верный пароль то у input удалить class="wrong-password" и удалить p class="wrong-password_text" -->
                                 <label class="cabinet__label">Пароль:</label>
-                                <input class="cabinet__input login-password" type="password">
+                                <input class="input-style login-password" type="password">
                             </form>
                             <div class="cabinet-logIn__tab-entry_button">
                                 <input class="cabinet__btn cabinet__entry-btn js-login" type="submit" value="Войти">
@@ -121,18 +121,24 @@
                                 </p>
                             </div>
                             <form class="cabinet-logIn__tab-entry_inputs cabinet-logIn__tab-registration_inputs">
-                                <label class="cabinet__label mustDo">Фамилия:</label>
-                                <input class="cabinet__input js-control1" type="text">
-                                <label class="cabinet__label mustDo">Имя:</label>
-                                <input class="cabinet__input js-control2" type="text">
+                                <label class="cabinet__label">Фамилия:
+                                    <span class="star-forlabel">*</span>
+                                </label>
+                                <input class="input-style js-control1" type="text">
+                                <label class="cabinet__label">Имя:
+                                    <span class="star-forlabel">*</span>
+                                </label>
+                                <input class="input-style js-control2" type="text">
                                 <label class="cabinet__label">Отчество:</label>
-                                <input class="cabinet__input" type="text">
-                                <label class="cabinet__label mustDo">E-mail:</label>
-                                <input class="cabinet__input js-control3" type="email">
+                                <input class="input-style" type="text">
+                                <label class="cabinet__label">E-mail:
+                                    <span class="star-forlabel">*</span>
+                                </label>
+                                <input class="input-style js-control3" type="email">
                                 <label class="cabinet__label">Телефон:
                                     <span class="cabinet__label-pref">+375</span>
                                 </label>
-                                <input class="cabinet__input js-mask-input--phone cabinet__input-tel" type="tel" name="#" placeholder="(__) ___-__-__">
+                                <input class="input-style js-mask-input--phone cabinet__input-tel" type="tel" name="#" placeholder="(__) ___-__-__">
                                 <input type="checkbox" class="cabinet-logIn__tab-registration_checkbox" id="i-agree1">
                                 <label class="cabinet-logIn__tab-registration_label-forcheckbox" for="i-agree1">
                                     Я принимаю условия <a href="#public-contract" class="js-open-modal">публичного договора.</a>
@@ -143,7 +149,7 @@
                                     об акциях и скидках.       
                                 </label>
                                 <label class="cab-reg-ready_password hidden">Пароль:</label>
-                                <input class="cabinet__input cab-reg-ready_password hidden" type="password">
+                                <input class="input-style cab-reg-ready_password hidden" type="password">
                             </form>
                             <div class="modal-container js-modal-container">
                                     <div class="cab-reg-modal modal" id="public-contract">
