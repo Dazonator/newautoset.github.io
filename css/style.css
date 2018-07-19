@@ -64,13 +64,11 @@ button{
   cursor: pointer;
   color: #ff2c2c;
   fill: #ff2c2c;
-  transition: all 0.3s;
 }
 .hover-red-text:hover svg{  /*тег с классом hover-red-text, а внутри svg*/
   cursor: pointer;
   color: #ff2c2c;
   fill: #ff2c2c;
-  transition: all 0.2s;
 }
 .input-style{
   display: block;

@@ -95,7 +95,7 @@ input::placeholder {
 }
 
 .cabinet__input-tel{
-  padding-left: 50px;
+  padding-left: 55px;
 }
 .cabinet__btn{
   display: block;
@@ -144,7 +144,7 @@ input::placeholder {
   margin-top: 4px;
 }
 .cabinet__from-input-block.focusout .cabinet__from-input-tel{
-  padding-left: 40px;
+  padding-left: 45px;
 }
 .cabinet__from-input-text{
   display: block;
@@ -189,11 +189,11 @@ input::placeholder {
 .cabinet__label-pref{
   position: absolute;
   display: block;
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 34px;
   font-weight: bold;
   color: #cfcfcf;
-  bottom: -34px;
+  bottom: -41px;
   left: 10px;
 }
 .cabinet__label-before:hover{
