@@ -479,7 +479,7 @@ input[type="radio"]:checked + .cabinet__label-before:before{
 /*----------------CSS for iOS----------*/
 /*----------------CSS for iOS----------*/
 @supports (-webkit-overflow-scrolling: touch) {
-  .input-style {
+  .cabinet__input-tel {
     padding: 9px 10px 7px 50px;
   }
 }
