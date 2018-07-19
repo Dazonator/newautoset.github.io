@@ -190,10 +190,10 @@ input::placeholder {
   position: absolute;
   display: block;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 18px;
   font-weight: bold;
   color: #cfcfcf;
-  bottom: -35px;
+  bottom: -34px;
   left: 10px;
 }
 .cabinet__label-before:hover{
