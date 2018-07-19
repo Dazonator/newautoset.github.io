@@ -116,7 +116,6 @@
 .cabinet-logIn__tab-entry_inputs input {
   margin-top: 6px;
   width: 100%;
-  font-weight: bold;
 }
 
 .cabinet-logIn__tab-entry_inputs input.wrong-password {
