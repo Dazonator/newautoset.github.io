@@ -54,12 +54,10 @@ input::placeholder {
   cursor: pointer;
   color: #a9a9a9;
   fill: #a9a9a9;
-  transition: all 0.3s;
 }
 .cab-link-hover:hover svg{
   fill: #a9a9a9;
   color: #a9a9a9;
-  transition: all 0.2s;
 }
 .cabinet__mydiscount{
   display: block;
@@ -145,8 +143,11 @@ input::placeholder {
   position: relative;
   margin-top: 4px;
 }
+.cabinet__from-input-block.focusout .cabinet__from-input-tel{
+  padding-left: 40px;
+}
 .cabinet__from-input-text{
-  display: table;
+  display: block;
   font-size: 16px;
   line-height: 22px;
   padding: 8px 0px;
@@ -157,6 +158,7 @@ input::placeholder {
 .cabinet__from-input-tel{
   padding-left: 50px;
 }
+
 .cabinet__from-input-icon{
   display: block;
   position: absolute;
@@ -181,7 +183,7 @@ input::placeholder {
   line-height: 16px;
   color: #808080;
 }
-.cabinet__label.focusin span{
+.cabinet__label.focusout span{
   color: #000;
 }
 .cabinet__label-pref{

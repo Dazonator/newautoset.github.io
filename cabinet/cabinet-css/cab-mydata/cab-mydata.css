@@ -65,10 +65,13 @@
   margin-top: 0px;
 }
 .cabinet-mydata__label-pref{
-    font-weight: normal;
-    bottom: -33px;
-    left: 10px;
+  font-weight: normal;
+  bottom: -33px;
+  left: 10px;
 }
+label.focusout .cabinet-mydata__label-pref{
+  left: 0px;
+} 
 
 @media (max-width: 767px) {
   .cabinet-mydata {

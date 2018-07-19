@@ -118,9 +118,6 @@
             $(".js-wellDone").removeClass("hidden");
         }
     })
-    $(".cabinet__input-tel").focusin(function(){
-        $(this).prev(".cabinet__label").addClass("focusin");
-    });
 
 
     // --------Модальное окно ПУБЛИЧНЫЙ ДОГОВОР кнопки прокрутки-------------------
@@ -215,6 +212,16 @@
           }
         }
     });
+    $(".cabinet__input-tel").focusin(function(){
+        $(this).prev(".cabinet__label").removeClass("focusout");
+        $(this).next().find(".cabinet__from-input-tel").removeClass("focusout");
+    });
+    $(".cabinet__input-tel").focusout(function(){
+        if($(this).val() !== ""){
+            $(this).prev(".cabinet__label").addClass("focusout");
+            $(this).next().addClass("focusout");
+        }
+    })
     
 
     // ------------------------ДОбавить адрес---------------
