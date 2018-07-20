@@ -196,6 +196,7 @@
 .bskt-disabled  label,
 .bskt-disabled  p,
 .bskt-disabled  a,
+.bskt-disabled  svg,
 .bskt-disabled  span{
   color: #999 !important;
   fill: #999 !important;
