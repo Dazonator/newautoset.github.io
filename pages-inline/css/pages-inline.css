@@ -9,7 +9,6 @@
 .pages-inline__body {
   position: relative;
   padding-right: 40px;
-  display: inline-block;
 }
 .pages-inline__body.maxheight{
   overflow: hidden;
