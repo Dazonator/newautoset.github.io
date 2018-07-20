@@ -193,6 +193,15 @@
   border: 5px solid #fff;
   box-shadow: inset 0px 0px 0px 5px #999, 0px 0px 0px 1px #ddd;
 }
+.bskt-disabled  label,
+.bskt-disabled  p,
+.bskt-disabled  a,
+.bskt-disabled  span{
+  color: #999 !important;
+  fill: #999 !important;
+  cursor: default;
+  pointer-events: none;
+}
 @media (max-width: 1440px) {}
 
 @media (max-width: 1199px) {}

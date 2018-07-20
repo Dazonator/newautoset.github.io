@@ -37,6 +37,7 @@ input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
   display: inline-block;
   padding-right: 10px;
   font-size: 14px;
+  line-height: 16px;
   position: relative;
 }
 .bskt-oder-page-block__person{

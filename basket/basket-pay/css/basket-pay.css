@@ -1,9 +1,6 @@
 .bskt-pay-page__total-price-item{
   display: table;
 }
-.bskt-pay-page__total-price-item_red{
-  color: #e2001a;
-}
 .bskt-pay-page__longterm{
   padding: 10px 20px;
 }

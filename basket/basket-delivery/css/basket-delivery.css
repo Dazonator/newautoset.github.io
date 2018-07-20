@@ -28,7 +28,10 @@
   display: block;
 }
 
-
+.bskt-delivery-page__form{
+  font-size: 16px;
+  line-height: 19px;
+}
 .bskt-delivery-page__block {
   padding: 20px 0px;
 }
@@ -284,7 +287,6 @@
 
 .bskt-delivery-page__method-block{
   margin-top: 22px;
-  color: #000;
 }
 .bskt-delivery-page__method-block_item{
     position: relative;
@@ -314,35 +316,13 @@
 .bskt-delivery-page__radio-input{
   display: none;
 }
-.bskt-delivery-page__method-block_item-money_red{
-  color: #e2001a;
-}
-.bskt-delivery-page__method-block_item-description{
-  color: #000;
-}
 
-.bskt-disabled > *,
-.bskt-disabled .bskt-pay-page__total-price-item_red{
-  color: #999 !important;
-  cursor: default;
-}
-.bskt-disabled .radio-choose:hover{
-  cursor: default;
-}
-.bskt-disabled .bskt-delivery-page__punkt-block_item-map {
-  pointer-events: none;
-}
-.bskt-disabled .bskt-delivery-page__method-block_item-caption-icon,
-.bskt-disabled .bskt-delivery-page__punkt-block_item-map_icon{
-  color: #999 !important;
-  fill: #999 !important;
-}
+
+
 .bskt-delivery-page__method-block_item-caption-text {
   display: inline-block;
   padding-left: 85px;
   position: relative;
-  font-size: 16px;
-  line-height: 20px;
   font-weight: bold;
   -webkit-tap-highlight-color: transparent;
   -ms-tap-highlight-color: transparent;
@@ -411,6 +391,7 @@
 
 .bskt-delivery-page__method-block_dropdown p {
   font-size: 14px;
+  line-height: 16px;
   position: relative;
   line-height: 20px;
   opacity: 0;
@@ -425,11 +406,8 @@
 
 .bskt-delivery-page__punkt-block {
   margin-top: 20px;
-  color: #000;
 }
-.bskt-delivery-page__punkt-block_item-text-region{
-  color: #999;
-}
+
 .bskt-delivery-page__punkt-block_item + .bskt-delivery-page__punkt-block_item {
   margin-top: 20px;
 }
@@ -438,7 +416,6 @@
   display: block;
   padding-left: 30px;
   position: relative;
-  font-size: 16px;
   -webkit-tap-highlight-color: transparent;
     -ms-tap-highlight-color: transparent;
     -moz-tap-highlight-color: transparent;
@@ -452,7 +429,6 @@
 .bskt-delivery-page__punkt-block_item-map {
   display: inline-block;
   padding-left: 30px;
-  font-size: 16px;
   text-decoration: underline;
   color: #519a00;
   position: relative;
@@ -490,13 +466,10 @@
 .bskt-delivery-page__adress-city-your {
   display: inline-block;
   vertical-align: middle;
-  font-size: 16px;
-  line-height: 20px;
 }
 
 .bskt-delivery-page__adress-city-value {
   margin-left: 20px;
-  font-size: 16px;
 }
 
 .bskt-delivery-page__adress-inputs {
