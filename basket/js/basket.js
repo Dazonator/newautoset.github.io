@@ -1,4 +1,18 @@
 $(document).ready(function () {
+	// $(function(){
+	// 	$(".method-dropdown.open").slideDown("easeInQuad");
+	// 	alert("dddddd")
+	// });
+	// $(document).load(function (){
+	// 	$(".method-dropdown.open").slideDown("easeInQuad");
+	// 	alert("dddddd")
+	// });
+
+	// if($(".method-dropdown").hasClass("open")){
+		$(".bskt-delivery-page__method-block_item").find(".open").stop().slideDown("easeInQuad");
+		// $(".method-dropdown.open").stop().slideUp("easeInQuad");
+	// }
+	
     if($("div").hasClass("bskt-disabled")){
         $(".bskt-disabled").find(".radio-choose").removeClass("method-click");
     }
