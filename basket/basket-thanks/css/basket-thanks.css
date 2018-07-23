@@ -72,10 +72,12 @@
 .bskt-thanks-block__text-small{
   display: block;
   font-size: 14px;
+  line-height: 17px;
 }
 .bskt-thanks-block__text-middle{
   display: block;
   font-size: 22px;
+  line-height: 25px;
 }
 .bskt-thanks-block__text-big{
   display: block;
@@ -263,11 +265,7 @@
     width: 39%;
   }
   .bskt-thanks-block__list-item-right-tal{
-    padding-left: 0px;
-  }
-  .bskt-thanks-block__list-item-right-value {
-    display: block;
-    padding-left: 20px;
+    padding-left: 40px;
   }
   .bskt-thanks-block__list-item-left {
     padding-right: 0px;
@@ -313,6 +311,7 @@
   .bskt-thanks-block__customer,
   .bskt-thanks-block__person{
     font-size: 22px;
+    line-height: 25px;
   }
   
 }
