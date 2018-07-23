@@ -58,6 +58,7 @@ button{
     display: inline-block;
     vertical-align: top;
     font-size: 14px;
+    line-height: 16px;
     color: #e2001a;
 }
 .hover-red-text:hover{
@@ -94,6 +95,35 @@ button{
 }
 .input-style.empty-field {
   border: 1px solid #e2001a;
+}
+.radio-label{
+  position: relative;
+}
+.radio-label:hover{
+  cursor: pointer;
+}
+.radio-label:before{ /*input + label!!!!!!!!!!!!!!!!!!*/
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 18px;
+  height: 18px;
+  margin-top: -10px;
+  box-shadow: 0px 0px 0px 1px #ddd;
+  border-radius: 50%;
+  background-color: #fff;
+}
+input[type="radio"]{
+  display: none;
+}
+input[type="radio"]:checked + .radio-label:before{
+  background-color: #fff;
+  width: 18px;
+  height: 18px;
+  border: 5px solid #fff;
+  box-shadow: inset 0px 0px 0px 5px #000, 0px 0px 0px 1px #ddd;
 }
 
 
