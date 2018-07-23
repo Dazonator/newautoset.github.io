@@ -80,6 +80,7 @@
 .bskt-thanks-block__text-big{
   display: block;
   font-size: 34px;
+  line-height: 39px;
 }
 .bskt-thanks-block__info-table-cell .bskt-delivery-main__cart{
   padding: 0px;
