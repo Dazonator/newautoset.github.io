@@ -269,9 +269,8 @@
     position: relative;
     display: inline-block;
     overflow: hidden;
-
     width: 183px;
-
+    padding-left: 20px;
     text-align: right;
     vertical-align: bottom;
 }
@@ -748,7 +747,7 @@
     {
 
         width: 60%;
-        padding-left: 20px;
+        padding-left: 80px;
     }
     .bskt-footer-left__bottom-btn_back
     {
@@ -801,7 +800,11 @@
     }
     .bskt-footer-pablickContract_modal-main-block {
         padding-right: 10px;
-      }
+    }
+    .bskt-footer-right_total-list_item-right  {
+        width: 60%;
+        padding-left: 40px;
+    }
 }
 
 @media (max-width: 320px)
