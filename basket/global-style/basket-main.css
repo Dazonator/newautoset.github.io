@@ -489,20 +489,13 @@
     {
         width: 95px;
         max-width: 95px;
-        min-height: 28px;
     }
 
-    .bskt-main__cart-pay_count-caption
-    {
-        height: 28px;
-        max-height: 28px;
-        min-height: 28px;
-    }
+   
 
     .bskt-main__cart-pay_total-top_caption
     {
         width: 100px;
         max-width: 100px;
-        min-height: 28px;
     }
 }

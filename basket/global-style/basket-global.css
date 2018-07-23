@@ -217,6 +217,9 @@
   .container-block {
     width: 640px;
   }
+   .pay-caption-height{
+    min-height: 28px;
+  }
 }
 
 @media (max-width: 639px) {
@@ -226,7 +229,8 @@
 }
 
 @media (max-width: 479px) {
-   .container-block {
+  .container-block {
     width: 100%;
   }
+
 }
