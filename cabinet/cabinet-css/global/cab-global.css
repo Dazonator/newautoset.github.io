@@ -196,32 +196,7 @@ input::placeholder {
   bottom: -35px;
   left: 10px;
 }
-.cabinet__label-before:hover{
-  cursor: pointer;
-}
-.cabinet__label-before:before{
-  content: '';
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 0px;
-  width: 18px;
-  height: 18px;
-  margin-top: -10px;
-  box-shadow: 0px 0px 0px 1px #ddd;
-  border-radius: 50%;
-  background-color: #fff;
-}
-input[type="radio"]{
-  display: none;
-}
-input[type="radio"]:checked + .cabinet__label-before:before{
-  background-color: #fff;
-  width: 18px;
-  height: 18px;
-  border: 5px solid #fff;
-  box-shadow: inset 0px 0px 0px 5px #000, 0px 0px 0px 1px #ddd;
-}
+
 
 .cabinet__nav {
   margin: 0 -20px;

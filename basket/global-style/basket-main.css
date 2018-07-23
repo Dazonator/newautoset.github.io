@@ -107,18 +107,16 @@
     font-size: 12px;
 }
 
-.bskt-main__cart-pay_mt
-{
-    margin-top: 7px;
-}
-
 .bskt-main__cart-pay_price
 {
     display: inline-block;
-
     padding-left: 20px;
-
     vertical-align: top;
+    min-width:118px;
+}
+.bskt-main__cart-pay_price div + div,
+.bskt-main__cart-pay_total div + div{
+    margin-top: 7px;
 }
 
 .bskt-main__cart-pay_price-withSale_value,
@@ -272,7 +270,6 @@
 {
     display: block;
 
-    margin-top: 20px;
 
     text-align: center;
 }
@@ -333,6 +330,7 @@
     .bskt-main__cart-pay_price
     {
         padding-left: 7px;
+        min-width: 105px;
     }
 
     .bskt-main__cart-pay_count,
@@ -402,6 +400,7 @@
     .bskt-main__cart-pay_price
     {
         padding-left: 40px;
+        min-width: 150px;
     }
 
     .bskt-main__cart-pay_count,
@@ -467,6 +466,7 @@
     .bskt-main__cart-pay_total
     {
         width: 36%;
+        min-width: auto;
     }
 
     .bskt-main__cart-pay_count
@@ -489,6 +489,7 @@
     {
         width: 95px;
         max-width: 95px;
+        min-height: 28px;
     }
 
     .bskt-main__cart-pay_count-caption
@@ -502,5 +503,6 @@
     {
         width: 100px;
         max-width: 100px;
+        min-height: 28px;
     }
 }

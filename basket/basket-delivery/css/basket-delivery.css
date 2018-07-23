@@ -10,6 +10,7 @@
 
 .bskt-delivery-main__cart-pay_price {
   padding-left: 25px;
+  min-width: 123px;
 }
 
 .bskt-delivery-main__cart-pay_count {
@@ -26,6 +27,7 @@
 
 .bskt-delivery-main__block.open {
   display: block;
+  padding: 0px;
 }
 
 .bskt-delivery-page__form{
@@ -521,6 +523,9 @@
 .bskt-footer-left__bottom {
   padding-top: 8px;
 }
+.bskt-delivery-footer-after{
+    padding: 20px 0px 20px 0px;
+}
 
 @media (max-width: 959px) {
   .bskt-delivery-page__city-change_modal {
@@ -571,6 +576,7 @@
   }
   .bskt-delivery-main__cart-pay_price {
     padding-left: 13px;
+    min-width: 111px;
   }
 }
 
@@ -615,6 +621,7 @@
     padding-left: 0px;
     margin-left: 35px;
     width: 100px;
+    min-width: 100px;
   }
   .bskt-main__cart-pay_count,
   .bskt-main__cart-pay_total {
@@ -626,9 +633,11 @@
   }
   .bskt-main__cart-pay_price-top_caption {
     max-width: 90px;
+    min-height: 28px;
   }
   .bskt-main__cart-pay_total-top_caption {
     max-width: 75px;
+    min-height: 28px;
   }
   .bskt-main__cart-pay_count-caption {
     height: 28px;
