@@ -54,6 +54,25 @@ button{
 
 /*---------------------------------------------------------*/
 /*---------------------------------------------------------*/
+input::-webkit-input-placeholder {
+    color: #cfcfcf;
+}
+input::-moz-input-placeholder {
+    color: #cfcfcf;
+}
+input::-ms-input-placeholder {
+    color: #cfcfcf;
+}
+input:-ms-input-placeholder {
+    color: #cfcfcf;
+}
+input::placeholder {
+    color: #cfcfcf;
+}
+input[type="radio"],
+input[type="checkbox"]{
+  display: none;
+}
 .star-forlabel { /*!!!тег span*/
     display: inline-block;
     vertical-align: top;
@@ -134,10 +153,6 @@ button{
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     background-size: cover;
-}
-input[type="radio"],
-input[type="checkbox"]{
-  display: none;
 }
 input[type="radio"]:checked + .radio-label:before{
   background-color: #fff;

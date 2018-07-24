@@ -12,15 +12,6 @@
 .cabinet-mydata label:first-of-type {
   margin-top: 0px;
 }
-
-.cabinet-mydata input::-webkit-input-placeholder {
-  color: #cfcfcf;
-}
-
-.cabinet-mydata input::-moz-placeholder {
-  color: #cfcfcf;
-}
-
 .cabinet-mydata input {
   width: 280px;
 }
