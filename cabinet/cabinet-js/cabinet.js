@@ -161,7 +161,7 @@
             $(this).next(".cabinet__from-input-block").find(".cabinet__from-input-text").text(data);
         }
         if((e.keyCode==13) && ($(".js-cabinet-input:password").val() !== '')){
-            var password_length = $(this).val().length;
+            var password_length = $(".js-cabinet-input:password").val().length;
             var password = "";
             for (i = 0; i < password_length; i++) {
                 var star = "*";
@@ -178,8 +178,8 @@
             $(this).next(".cabinet__from-input-block").find(".cabinet__from-input-text").text(data);
         }
     });
-     $(".js-cabinet-input:password").focusout(function(){
-            var password_length = $(this).val().length;
+    $(".js-cabinet-input:password").focusout(function(){
+            var password_length = $(".js-cabinet-input:password").val().length;
             var password = "";
             for (i = 0; i < password_length; i++) {
                 var star = "*";
@@ -221,6 +221,13 @@
             $(this).next().addClass("focusout");
         }
     })
+    $(".cabinet__input-tel").keypress(function(e){
+        if((e.keyCode==13) && ($(this).val() !== '')) {
+            $(this).prev(".cabinet__label").removeClass("focusin");
+            $(this).prev(".cabinet__label").addClass("focusout");
+            $(this).next().addClass("focusout");
+        }
+    });
     
 
     // ------------------------ДОбавить адрес---------------
