@@ -167,7 +167,7 @@
                 var star = "*";
                 password = password + star;
             }
-            $(this).next(".cabinet__from-input-block").find(".cabinet__from-input-text").text(password);
+            $(".js-cabinet-input:password").next(".cabinet__from-input-block").find(".cabinet__from-input-text").text(password);
         }
     });
     $(".js-cabinet-input").focusout(function(){
