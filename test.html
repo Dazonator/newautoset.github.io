@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>test</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_mobile.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_tablet.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="my_select/css/myselect.css">
+
+    <link rel="stylesheet" href="test/css/style.css">
+    <script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/slick-slider.min.js"></script>
+    <script src="js/browser-plugin.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    if (/MSIE|Trident/.test(navigator.userAgent)) {
+        var iEobject;
+        iEobject = document.createElement('script');
+        iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+        iEobject.onload = function() {
+            svg4everybody();
+        };
+        document.getElementsByTagName('head')[0].appendChild(iEobject);
+    }
+    </script>
+</head>
+
+<body>
+    <div class="container-block">
+        <input type="text" class="input-style">
+        <input type="checkbox" id="check1" name="check">
+        <label for="check1" class="chbox-label">hello</label>
+        <input type="radio" id="radio1" name="radio">
+        <label for="radio1" class="radio-label">hello</label>
+        <div class="myselect_wrapper">
+            <div class="js-input-all">
+                <div class="js-dropdown js-dropdown-onclick">
+                    <select class="myselect_block js-select">
+                            <option value="0">город1</option>
+                            <option value="1">город2</option>
+                            <option value="2">город3</option>
+                            <option value="3" selected>город4</option>
+                            <option value="4">город5</option>
+                            <option value="5">город6</option>
+                            <option value="6">город7</option>
+                            <option value="7">город8</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

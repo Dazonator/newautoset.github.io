@@ -195,33 +195,6 @@
 .cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox:hover {
   cursor: pointer;
 }
-
-.cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: -2px;
-  left: 0px;
-  width: 19px;
-  height: 19px;
-  background-image: url(../../img/cb_unchecked.svg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  background-size: cover;
-}
-
-.cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox svg {
-  position: absolute;
-  display: none;
-  width: 16px;
-  height: 12px;
-  top: 2px;
-  left: 4px;
-  color: #fff;
-  fill: #fff;
-}
-
 .cabinet-logIn__tab-registration .cabinet-logIn__tab-registration_label-forcheckbox a {
   text-decoration: underline;
   color: #808080;
@@ -234,15 +207,6 @@
 .cabinet-logIn__tab-registration_checkbox {
   display: none;
 }
-
-.cabinet-logIn__tab-registration_checkbox:checked + label:before {
-  background-image: url(../../img/cb_checked_all.svg);
-}
-
-.cabinet-logIn__tab-registration_checkbox:checked + label svg {
-  display: block;
-}
-
 .cabinet-logIn__tab-registration .cab-momal-list-caption {
   font-weight: bold;
   text-transform: uppercase;

@@ -1,8 +1,12 @@
+.cabinet-main__item span,
+.cabinet-main__item p {
+  display: block;
+  line-height: 19px;
+}
 .cabinet-main__left-wrapper {
   width: 752px;
   margin: -10px;
 }
-
 .cabinet-main__item {
   float: left;
   width: 50%;
@@ -23,15 +27,9 @@
   margin-top: 20px;
 }
 
-.cabinet-main__item-caption {
+span.cabinet-main__item-caption {
   line-height: 22px;
 }
-
-.cabinet-main__item span, .cabinet-main__item p {
-  display: block;
-  line-height: 19px;
-}
-
 .cabinet-main__item-link_bottom {
   position: absolute;
   text-align: center;
@@ -42,6 +40,9 @@
   line-height: 20px;
   color: #808080;
   text-decoration: underline;
+}
+.cabinet-main__item-link_bottom a{
+  display: inline-block;
 }
 
 .cabinet-main__item-link_bottom-icon {
