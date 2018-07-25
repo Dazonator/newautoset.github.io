@@ -6,12 +6,12 @@
 }
 
 .bskt-pay-page__longterm-block{
-  margin: 0 -19px;
+  margin: 0 -20px;
 }
 .bskt-pay-page__longterm-item{
   float: left;
   width: 50%;
-  padding: 10px 19px;
+  padding: 10px 20px;
 }
 .bskt-pay-page__longterm-item-period,
 .bskt-pay-page__longterm-item-first-pay{
@@ -41,7 +41,7 @@
   width: 236px;
 }
 .bskt-pay-page__list-item-right{
-  width: 181px;
+  width: 179px;
 }
 
 
@@ -51,10 +51,10 @@
 
 @media (max-width: 959px) {
   .bskt-pay-page__longterm-block {
-    margin: 0 -10px;
+    margin: 0 -15px;
   }
   .bskt-pay-page__longterm-item {
-    padding: 10px 10px;
+    padding: 10px 15px;
   }
   .bskt-pay-page__list-item-left {
     width: 150px;
@@ -74,9 +74,9 @@
 }
 
 @media (max-width: 639px) {
-  .bskt-pay-page__longterm {
+  /*.bskt-pay-page__longterm {
     padding: 10px 10px;
-  }
+  }*/
   .bskt-pay-page__longterm-block {
     margin: 0px;
     display: -webkit-flex;
