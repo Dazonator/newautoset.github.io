@@ -74,6 +74,9 @@
 }
 
 @media (max-width: 639px) {
+  .bskt-pay-page__longterm-block {
+    margin: 0px;
+  }
   .bskt-pay-page__longterm-item {
     width: 100%;
     padding: 10px 0px;
@@ -88,8 +91,6 @@
   .bskt-pay-page__block-for-icon-question {
     width: 440px;
   }
-  
-
 }
 
 @media (max-width: 479px) {
