@@ -18,6 +18,17 @@
             transform: rotate(360deg);
   }
 }
+
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 .preloader {
   display: block;
   width: 54px;
@@ -47,6 +58,9 @@
 
 .preloader1 {
   -webkit-animation: rotate 1s linear infinite;
+      -moz-animation: rotate 1s linear infinite;
+          -ms-animation: rotate 1s linear infinite;
+          -o-animation: rotate 1s linear infinite;
           animation: rotate 1s linear infinite;
   border-radius: 50%;
   box-shadow: inset 0px 0px 0px 5px #ababab;
@@ -54,6 +68,9 @@
 
 .preloader2 {
   -webkit-animation: rotate 1s linear infinite;
+          -moz-animation: rotate 1s linear infinite;
+          -ms-animation: rotate 1s linear infinite;
+          -o-animation: rotate 1s linear infinite;
           animation: rotate 1s linear infinite;
   border-radius: 50%;
   background: #a8a8a8;
