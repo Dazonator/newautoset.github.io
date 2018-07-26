@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  width: 960px;
+  height: 300px;
+  margin: 0 auto;
+}
+.container div + div{
+  margin-left: 50px;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.preloader {
+  display: block;
+  width: 54px;
+  height: 54px;
+  position: relative;
+}
+.preloader__wrapper {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  display: block;
+  width: 50px;
+  height: 4px;
+  overflow: hidden;
+  text-align: center;
+}
+.preloader__item {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px #fff;
+}
+
+.preloader1 {
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 5px #ababab;
+}
+
+.preloader2 {
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+  border-radius: 50%;
+  background: #a8a8a8;
+  background: linear-gradient(to bottom, #ababab 0%, #cccccc 20%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ababab', endColorstr='#cccccc',GradientType=0 );
+}
+.preloader2:after {
+  content: "";
+  display: block;
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+
