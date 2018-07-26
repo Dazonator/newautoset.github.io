@@ -41,6 +41,9 @@
 .bskt-thanks-block__info-item-right{
   text-align: left;
 }
+.bskt-thanks-block__info-item-right-top + .bskt-thanks-block__info-item-right-bottom{
+  margin-top: 20px;
+} 
 .bskt-thanks-block__info-item-left-center,
 .bskt-thanks-block__info-item-right-center{
   text-align: center;
