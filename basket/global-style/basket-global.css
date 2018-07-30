@@ -96,7 +96,7 @@
 
     display: block;
 }
-.bskt-icon_active {
+.bskt-header__item-active .bskt-header__item-svg{
   color: #e2001a !important;
   fill: #e2001a !important;
 }
