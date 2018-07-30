@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>Basket-Empty</title>
 	<link rel="stylesheet" href="fonts/stylesheet.css">
-	<link rel="stylesheet" href="css/myselect.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="basket/global-style/basket-global.css">
 	<link rel="stylesheet" href="basket/global-style/basket-header.css">
@@ -33,36 +32,39 @@
 	<section class="bskt-header bskt-bgc-lightgr">
 		<div class="container-block">
 			<div class="bskt-header__block clear">
-				<section class="bskt-header__item">
-					<svg class="bskt-header__item-svg bskt-icon_active">
-						<use xlink:href="img/sprite.svg#cart-red"></use>
-					</svg>
-					<span class="bskt-header__item-text bskt-col_bl">Корзина</span>
-				</section>
-				<section class="bskt-header__item">
-					<svg class="bskt-header__item-svg">
-						<use xlink:href="img/sprite.svg#delivery-gray"></use>
-					</svg>
-					<span class="bskt-header__item-text bskt-col_bl">Доставка</span>
-				</section>
-				<section class="bskt-header__item">
-					<svg class="bskt-header__item-svg">
-						<use xlink:href="img/sprite.svg#payment-gray"></use>
-					</svg>
-					<span class="bskt-header__item-text bskt-col_bl">Оплата</span>
-				</section>
-				<section class="bskt-header__item">
-					<svg class="bskt-header__item-svg">
-						<use xlink:href="img/sprite.svg#checkout-gray"></use>
-					</svg>
-					<span class="bskt-header__item-text bskt-col_bl">Оформление</span>
-				</section>
+				<span class="bskt-header__thanks">Ваша корзина пуста</span>
 			</div>
 		</div>
 	</section>
 	<section class="bskt-empty">
-	
-
+		<div class="container-block">
+			<div class="bskt-empty__icon">
+				<span class="bskt-empty__icon-block">
+					<svg class="bskt-empty__icon-caret">
+						<use xlink:href="img/sprite.svg#big_empty_cart"></use>
+					</svg>
+				</span>
+				<span class="bskt-empty__icon-text bskt-col_bl">В вашей корзине нет товаров.</span>
+			</div>
+			<div class="bskt-empty__info">
+				<p class=" bskt-empty__info-text bskt-col_bl"> Добавьте, пожалуйста, хотя бы один товар из каталога для оформления заказа. </p>
+			</div>
+			<div class="bskt-empty__catalog">
+				<span class="bskt-empty__catalog-text">Перейдите в желаемый раздел каталога:</span>
+				<div class="bskt-empty__catalog-links clear">
+					<div class="bskt-empty__catalog-item">
+						<a href="#" class="bskt-empty__catalog-link bskt-col_bl">Шины</a>
+					</div>
+					<div class="bskt-empty__catalog-item">
+						<a href="#" class="bskt-empty__catalog-link bskt-col_bl">Диски</a>
+					</div>
+					<div class="bskt-empty__catalog-item">
+						<a href="#" class="bskt-empty__catalog-link bskt-col_bl">Аккумуляторы</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
 	</section>
 </body>
 </html>

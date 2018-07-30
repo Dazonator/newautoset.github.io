@@ -1,5 +1,8 @@
 .bskt-header__block {
   padding: 20px 0px;
+  color: #000;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 .bskt-header__item {
@@ -45,15 +48,13 @@
   vertical-align: middle;
   line-height: inherit;
   margin-left: 10px;
-  font-size: 22px;
-  font-weight: bold;
 }
 .bskt-header__thanks{
   display: block;
   text-align: center;
   font-size: 24px;
   line-height: 30px;
-  font-weight: bold;
+  color: #999;
   padding: 10px 0px;
 }
 @media (max-width: 1440px) {}
