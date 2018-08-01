@@ -41,9 +41,12 @@
 .bskt-delivery-page__block-caption {
   text-align: center;
 }
-
-.bskt-delivery-page__block + .bskt-delivery-page__block {
-  box-shadow: inset 0px 1px 0px 0px #eee;
+.bskt-delivery-page__method{
+  padding: 20px 0px 5px 0px;
+}
+.bskt-delivery-page__method,
+.bskt-delivery-page__punkt{
+  box-shadow: inset 0px -1px 0px 0px #eee;
 }
 
 .bskt-delivery-page__block-text {
