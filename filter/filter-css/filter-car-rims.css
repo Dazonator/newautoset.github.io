@@ -1,0 +1,202 @@
+.filter-car-rims .filter-product__pic {
+  background-size: contain;
+}
+
+.filter-car-rims .filter__choose-car .filter-product__pic {
+  background-size: cover;
+}
+
+.filter-car-rims .filter__choose-goods .filter-product__pic {
+  background-size: cover;
+}
+
+.filter-car-rims .filter-product__fields-item-param {
+  width: 25%;
+}
+
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(1),
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(9),
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(10) {
+  width: 50%;
+}
+
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(4),
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(5),
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(6),
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(7),
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(8),
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(9),
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(10) {
+  margin-top: 10px;
+  display: block;
+}
+
+.filter-car-rims .filter-product__fields-item-param:nth-of-type(8) {
+  width: 100%;
+}
+
+.filter-car-rims .filter__color-item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filter-car-rims .filter__color-item + .filter__color-item {
+  margin-left: 30px;
+}
+
+.filter-car-rims .filter__color-item input[type="checkbox"]:checked + .chbox-label:before {
+  border: 2px solid #e2001a;
+}
+
+.filter-car-rims .filter__color-item .chbox-label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000;
+  padding-left: 43px;
+}
+
+.filter-car-rims .filter__color-item .chbox-label:before {
+  width: 36px;
+  height: 36px;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 0px 1px #eee;
+  top: 50%;
+  margin-top: -18px;
+}
+
+.filter-car-rims .filter__color-item:nth-of-type(1) .chbox-label:before {
+  background: #cecece;
+  background: -moz-linear-gradient(-45deg, #cecece 0%, white 50%, #b9b9b9 100%);
+  background: -webkit-linear-gradient(-45deg, #cecece 0%, white 50%, #b9b9b9 100%);
+  background: linear-gradient(135deg, #cecece 0%, white 50%, #b9b9b9 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cecece', endColorstr='#b9b9b9',GradientType=1 );
+}
+
+.filter-car-rims .filter__color-item:nth-of-type(2) .chbox-label:before {
+  background: #000;
+}
+
+.filter-car-rims .filter__color-item:nth-of-type(3) .chbox-label:before {
+  background: #7c7c7c;
+}
+
+.filter-car-rims .filter__color-item:nth-of-type(4) .chbox-label:before {
+  background: #ffffff;
+}
+
+.filter-car-rims .filter__color-item:nth-of-type(5) .chbox-label:before {
+  background: #002eff;
+  background: -moz-linear-gradient(-45deg, #002eff 0%, red 33%, yellow 66%, #00991e 100%);
+  background: -webkit-linear-gradient(-45deg, #002eff 0%, red 33%, yellow 66%, #00991e 100%);
+  background: linear-gradient(135deg, #002eff 0%, red 33%, yellow 66%, #00991e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#002eff', endColorstr='#00991e',GradientType=1 );
+}
+
+.filter-car-rims .filter-product__your-size-item:nth-of-type(1) {
+  padding: 20px 0px;
+}
+
+.filter-car-rims .filter-product__your-size-desc {
+  width: 100%;
+}
+
+.filter-car-rims .filter-product__your-size-desc li span.left {
+  width: 175px;
+}
+
+.filter-car-rims .filter-product__your-size-item {
+  padding: 20px 0px;
+}
+
+@media (max-width: 1199px) {
+  .filter-product__your-size-list {
+    columns: 3;
+  }
+}
+
+@media (max-width: 959px) {
+  .filter-car-rims .filter-product__fields-item-param {
+    width: 33%;
+  }
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(1) {
+    width: 100%;
+  }
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(2),
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(3) {
+    margin-top: 10px;
+  }
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(8) {
+    width: 100%;
+  }
+  .filter__color {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: -10px 0px;
+  }
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(8) .filter__label {
+    display: block;
+    width: 100%;
+  }
+  .filter-car-rims .filter__color-item {
+    padding: 10px 0px;
+    width: 30%;
+  }
+  .filter-car-rims .filter__color-item + .filter__color-item {
+    margin-left: 0px;
+  }
+  .filter-product__your-size-list {
+    columns: 2;
+  }
+}
+
+@media (max-width: 639px) {
+  .filter-product__fields {
+    margin: 0px -10px;
+  }
+  .filter-car-rims .filter-product__fields-item-param {
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+  }
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(3),
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(4),
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(6),
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(7) {
+    width: 50%;
+  }
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(9),
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(10) {
+    width: 100%;
+  }
+  .filter-car-rims .filter-product__fields-item-param:nth-of-type(10) {
+    margin-top: 20px;
+  }
+  .filter-car-rims .filter__color-item {
+    padding: 10px 20px 10px 0px;
+    width: auto;
+  }
+  .filter-car-rims .filter-product__your-size-list {
+    columns: 1;
+  }
+  .filter-car-rims .filter__label {
+    margin-bottom: 4px;
+    min-width: 120px;
+  }
+  .filter-car-rims .filter-product__fields-item-poauto .filter__label {
+    margin-bottom: 0px;
+  }
+  .filter-car-rims .filter__choose-car .filter-product__fields {
+    margin: 0px;
+  }
+}

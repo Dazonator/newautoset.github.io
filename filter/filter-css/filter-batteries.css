@@ -1,0 +1,248 @@
+.filter-batteries .filter-product__pic {
+  background-size: contain;
+}
+
+.filter-batteries .filter__choose-car .filter-product__pic,
+.filter-batteries .filter__choose-goods .filter-product__pic {
+  background-size: cover;
+}
+
+.filter-batteries .filter__choose-car .filter-product__btn {
+  display: table-cell;
+  padding-left: 10px;
+}
+
+.filter-batteries .filter-product__btn {
+  display: none;
+}
+
+.filter-batteries .filter__choose-goods .filter-product__btn {
+  display: table-cell;
+}
+
+.filter-batteries .filter-product__fields {
+  padding-left: 20px;
+  display: block;
+  margin: 0 -10px;
+}
+
+.filter-batteries .filter__radio-wrapper .radio-label {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 16px;
+  line-height: 36px;
+  font-weight: bold;
+  color: #000;
+  padding-left: 23px;
+}
+
+.filter-batteries .filter__radio-wrapper .radio-label:last-of-type {
+  margin-left: 15px;
+}
+
+.filter-batteries .filter__radio-wrapper .radio-label:before {
+  top: 50%;
+  margin-top: -10px;
+}
+
+.filter-batteries .filter-product__fields-item-param {
+  width: 33.33333333333%;
+}
+
+.filter-batteries .filter-product__fields-item-param:nth-of-type(6) {
+  display: block;
+}
+
+.filter-batteries .filter-product__fields-item-param:nth-of-type(4),
+.filter-batteries .filter-product__fields-item-param:nth-of-type(5),
+.filter-batteries .filter-product__fields-item-param:nth-of-type(6),
+.filter-batteries .filter-product__fields-item-param:nth-of-type(7),
+.filter-batteries .filter-product__fields-item-param:nth-of-type(8),
+.filter-batteries .filter-product__fields-item-param:nth-of-type(9),
+.filter-batteries .filter-product__fields-item-param:nth-of-type(10),
+.filter-batteries .filter-product__fields-item-param:nth-of-type(11) {
+  margin-top: 10px;
+}
+
+.filter-batteries .filter-product__fields-item-param:nth-of-type(11) .btn-style {
+  display: block;
+}
+
+.filter-batteries .filter-product__fields-item-param:nth-of-type(10) {
+  width: 66.666666666666%;
+}
+
+.filter-batteries .filter__choose-car .filter-product__fields,
+.filter-batteries .filter__choose-goods .filter-product__fields {
+  display: table-cell;
+  padding-left: 10px;
+  margin: 0px;
+}
+
+.filter-batteries .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(1) {
+  width: 100%;
+}
+
+.filter-batteries .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(2) {
+  display: none;
+}
+
+.filter-batteries .filter-product__your-size-item {
+  padding: 20px 0px;
+}
+.filter-truck-batteries .filter__tab {
+  width: 50%;
+}
+
+@media (max-width: 1199px) {
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(1),
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(2) {
+    width: 25%;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(3) {
+    width: 50%;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(10),
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(11) {
+    width: 50%;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(1) {
+    width: 100%;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields {
+    min-width: 362px;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__btn {
+    min-width: 342px;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__btn .btn-style {
+    width: 332px;
+  }
+}
+
+@media (max-width: 959px) {
+  .filter-batteries .filter-product__fields-item-param {
+    width: 50%;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(1),
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(2) {
+    width: 50%;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(3) {
+    margin-top: 10px;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(7),
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(8),
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(9) {
+    width: 33.3333333%;
+  }
+  .filter-batteries .filter__choose-car .filter-product__btn {
+    display: none;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields {
+    min-width: 290px;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__btn {
+    min-width: 270px;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__btn .btn-style {
+    width: 260px;
+  }
+  .filter-batteries .filter__choose-car .filter-product__fields {
+    display: block;
+    padding-left: 20px;
+    margin: 0px -10px;
+  }
+  .filter-truck-batteries .filter__tab-text {
+    padding: 18px 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .filter-batteries .filter-product__fields {
+    padding-left: 0px;
+  }
+  .filter-batteries .filter__choose-car .filter-product__fields {
+    padding-left: 0px;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__btn {
+    display: none;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields {
+    display: block;
+    min-width: 100%;
+    padding-left: 0px;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(1) {
+    width: 50%;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(2) {
+    display: block;
+    width: 50%;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(2) .btn-style {
+    width: 100%;
+  }
+}
+
+@media (max-width: 639px) {
+  .filter-batteries .filter-product__fields-item-param {
+    display: block;
+  }
+  .filter-batteries .filter-product__fields-item-param .filter__label {
+    margin-bottom: 4px;
+    min-width: auto;
+  }
+  .filter-batteries .filter-product__fields-item-param {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(1),
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(2) {
+    width: 50%;
+    margin-top: 0px;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(3) {
+    width: 100%;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(10),
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(11) {
+    width: 100%;
+  }
+  .filter-batteries .filter-product__fields-item-param:nth-of-type(11) {
+    margin-top: 20px;
+  }
+  .filter-batteries .filter__choose-car .filter-product__fields {
+    margin: 0px;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(1) {
+    width: 100%;
+  }
+  .filter-batteries .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(2) {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: 0px;
+    border-top: 2px solid #979797;
+    width: 100%;
+  }
+  .filter-truck-batteries .filter__tab {
+    width: 100%;
+  }
+}
+
+@media (max-width: 479px) {
+  .filter-batteries .filter-product__fields-item-param .filter__label {
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .filter-batteries .filter-product__fields-item-param .filter__label {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 379px) {
+  .filter-truck-batteries .filter__tab-helper {
+    right: 20px;
+  }
+}

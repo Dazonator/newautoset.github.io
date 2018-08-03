@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Filter-truck-rims</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_mobile.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_tablet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="my_select/css/myselect.css">
+    <link rel="stylesheet" href="filter/filter-css/filter-global.css">
+    <link rel="stylesheet" href="filter/filter-css/filter-traktor-tires.css">
+    <script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/slick-slider.min.js"></script>
+    <script src="js/browser-plugin.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="filter/filter-js/filter.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    if (/MSIE|Trident/.test(navigator.userAgent)) {
+        var iEobject;
+        iEobject = document.createElement('script');
+        iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+        iEobject.onload = function() {
+            svg4everybody();
+        };
+        document.getElementsByTagName('head')[0].appendChild(iEobject);
+    }
+    </script>
+</head>
+
+<body>
+    <section class="filter-product filter-traktor-tires">
+        <div class="container-block">
+            <section class="filter__tabs clear">
+                <div class="filter__tab">
+                    <span class="filter__tab-text js-dropdown-click">
+                        <span>
+                            <svg class="filter__tab-phone">
+                                <use xlink:href="filter/img/sprite.svg#consult_phone"></use>
+                            </svg>
+                            Бесплатная консультация
+                        </span>
+                    </span>
+                    <div class="dropdown__body">
+                        <form>
+                            <span class="dropdown__body-caption">Введите номер телефона</span>
+                            <div class="dropdown__body-mask">
+                                <span class="mask-decor">+375</span>
+                                <input class="input_decor js-mask-input--phone" id="input_back_call" type="tel" value="" placeholder="(__) ___-__-__">
+                            </div>
+                            <span class="dropdown__body-btn js-dropdown-order-call">
+                                Закажите звонок
+                            </span>
+                        </form>
+                    </div>
+                    <div class="show_message_ok hidden">
+                        <span>
+                            Ваша заявка принята.<br>Ожидайте звонка.
+                        </span>
+                    </div>
+                </div>
+                <div class="filter__tab active js-tab-click" data="params">
+                    <span class="filter__tab-text">
+                        Подбор по параметрам
+                    </span>
+                    <svg class="filter__tab-helper">
+                        <use xlink:href="filter/img/sprite.svg#29_question_circle"></use>
+                    </svg>
+                </div>
+            </section>
+            <section class="filter__blocks">
+                <div class="filter__block" data="params-block">
+                    <div class="filter-product__item filter-product__pic" style="background-image: url(filter/img/truck_rim.png)">
+                    </div>
+                    <div class=" filter-product__item filter-product__fields clear">
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Диаметр:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">18</option>
+                                                <option value="1">19</option>
+                                                <option value="2">22</option>
+                                                <option value="3" selected>22.5</option>
+                                                <option value="4">23</option>
+                                                <option value="5">24</option>
+                                                <option value="6">24.5</option>
+                                                <option value="7">25</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label"> Ширина:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">20</option>
+                                                <option value="1">30</option>
+                                                <option value="2">40</option>
+                                                <option value="3" selected>Все</option>
+                                                <option value="4">50</option>
+                                                <option value="5">60</option>
+                                                <option value="6">70</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Производитель:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">Заморский</option>
+                                                <option value="1">Отечественный</option>
+                                                <option value="2" selected>Все</option>
+                                                <option value="3">Не наш</option>
+                                                <option value="4">Инопланетный</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <button class="btn-style filter__btn">
+                                Подобрать
+                            </button>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <a href="tel:+375296113232" class="filter__order-call"> 
+                                <svg class="filter__tab-phone">
+                                    <use xlink:href="filter/img/sprite.svg#consult_phone"></use>
+                                </svg>
+                                Бесплатная консультация
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" filter-product__item filter-product__btn">
+                        <button class="btn-style filter__btn">Подобрать</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <section class="filter__find-block clear">
+                <div class="filter__find-block-left">
+                    <div class="filter__find-block-index">
+                        <div class="myselect_wrapper">
+                            <label class="filter__label">Индекс нагрузки:</label>
+                            <div class="js-input-all">
+                                <div class="js-dropdown js-dropdown-onclick">
+                                    <select class="myselect_block js-select">
+                                            <option value="0">город1</option>
+                                            <option value="1">город2</option>
+                                            <option value="2">город3</option>
+                                            <option value="3" selected>Все</option>
+                                            <option value="4">город5</option>
+                                            <option value="5">город6</option>
+                                            <option value="6">город7</option>
+                                            <option value="7">город8</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__find-block-info">
+                        <p>Найдено: <span class="filter__count">51</span> вариант <span class="fillter__size"> 225/45 R17</span></p>
+                    </div>
+                </div>
+                <div class="filter__find-block-right">
+                    <div class="filter__find-block-btns clear">
+                        <span class="filter__find-block-btn active">Сначала дешёвые</span>
+                        <span class="filter__find-block-btn">Сначала дорогие</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+</body>
+
+</html>

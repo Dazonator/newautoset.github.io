@@ -1,0 +1,65 @@
+.filter-trucks-tires .filter__tab {
+  width: 50%;
+}
+
+.filter-trucks-tires .filter-product__fields-item-param {
+  width: 50%;
+}
+.filter-trucks-tires .filter-product__fields-item-param:nth-of-type(5){
+  display: none;
+}
+.filter-trucks-tires .filter-product__fields-item-param:nth-of-type(5),
+.filter-trucks-tires .filter-product__fields-item-param:nth-of-type(6) {
+  margin-top: 0px;
+}
+
+.filter-trucks-tires .filter-product__fields-item-param:nth-of-type(3) {
+  margin-top: 10px;
+}
+
+@media (max-width: 959px) {
+  .filter__tab-text {
+    padding: 18px 20px;
+  }
+  .filter-trucks-tires .filter-product__fields-item-param {
+    width: 33.333333333%;
+  }
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(3) {
+    margin-top: 0px;
+  }
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(4),
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(5) {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(5){
+    display: block;
+  }
+}
+
+@media (max-width: 639px) {
+  .filter-trucks-tires .filter__tab {
+    width: 100%;
+  }
+  .filter-trucks-tires .filter-product__fields-item-param {
+    width: 100%;
+  }
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(3),
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(4),
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(5),
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(6) {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .filter-trucks-tires .filter-product__fields-item-param:nth-of-type(5) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 379px) {
+  .filter__tab-helper {
+    right: 20px;
+  }
+}
+
+

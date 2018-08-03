@@ -1,0 +1,60 @@
+.filter-traktor-tires .filter__tab {
+  width: 50%;
+}
+
+.filter-traktor-tires .filter-product__fields-item-param {
+  width: 50%;
+}
+.filter-traktor-tires .filter-product__fields-item-param:nth-of-type(4){
+  display: none;
+}
+.filter-traktor-tires .filter-product__fields-item-param:nth-of-type(3) {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.filter-traktor-tires .filter-product__fields-item-param:nth-of-type(4),
+.filter-traktor-tires .filter-product__fields-item-param:nth-of-type(5) {
+  margin-top: 0px;
+}
+
+@media (max-width: 959px) {
+  .filter-traktor-tires .filter-product__fields-item-param:nth-of-type(3),
+  .filter-traktor-tires .filter-product__fields-item-param:nth-of-type(4) {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .filter-traktor-tires .filter-product__pic {
+    width: 167px;
+  }
+  .filter-traktor-tires .filter__tab-text {
+    padding: 18px 20px;
+  }
+  .filter-traktor-tires .filter-product__fields-item-param:nth-of-type(4){
+    display: block;
+  }
+}
+
+@media (max-width: 639px) {
+  .filter-traktor-tires .filter__tab {
+    width: 100%;
+  }
+  .filter-traktor-tires .filter-product__fields-item-param {
+    width: 100%;
+  }
+  .filter-traktor-tires .filter-product__fields-item-param:nth-of-type(3),
+  .filter-traktor-tires .filter-product__fields-item-param:nth-of-type(4),
+  .filter-traktor-tires .filter-product__fields-item-param:nth-of-type(5) {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .filter-traktor-tires .filter-product__fields-item-param:nth-of-type(4) {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 379px) {
+  .filter-traktor-tires .filter__tab-helper {
+    right: 20px;
+  }
+}

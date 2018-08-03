@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Filter-truck-batteries</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_mobile.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_tablet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="my_select/css/myselect.css">
+    <link rel="stylesheet" href="filter/filter-css/filter-global.css">
+    <link rel="stylesheet" href="filter/filter-css/filter-batteries.css">
+    <script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/slick-slider.min.js"></script>
+    <script src="js/browser-plugin.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="filter/filter-js/filter.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    if (/MSIE|Trident/.test(navigator.userAgent)) {
+        var iEobject;
+        iEobject = document.createElement('script');
+        iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+        iEobject.onload = function() {
+            svg4everybody();
+        };
+        document.getElementsByTagName('head')[0].appendChild(iEobject);
+    }
+    </script>
+</head>
+
+<body>
+    <section class="filter-product filter-batteries filter-truck-batteries">
+        <div class="container-block">
+            <section class="filter__tabs clear">
+                <div class="filter__tab">
+                    <span class="filter__tab-text js-dropdown-click">
+                        <span>
+                            <svg class="filter__tab-phone">
+                                <use xlink:href="filter/img/sprite.svg#consult_phone"></use>
+                            </svg>
+                            Бесплатная консультация
+                        </span>
+                    </span>
+                    <div class="dropdown__body">
+                        <form>
+                            <span class="dropdown__body-caption">Введите номер телефона</span>
+                            <div class="dropdown__body-mask">
+                                <span class="mask-decor">+375</span>
+                                <input class="input_decor js-mask-input--phone" id="input_back_call" type="tel" value="" placeholder="(__) ___-__-__">
+                            </div>
+                            <span class="dropdown__body-btn js-dropdown-order-call">
+                                Закажите звонок
+                            </span>
+                        </form>
+                    </div>
+                    <div class="show_message_ok hidden">
+                        <span>
+                            Ваша заявка принята.<br>Ожидайте звонка.
+                        </span>
+                    </div>
+                </div>
+                <div class="filter__tab active js-tab-click" data="params">
+                    <span class="filter__tab-text">
+                        Подбор по параметрам
+                    </span>
+                    <svg class="filter__tab-helper">
+                        <use xlink:href="filter/img/sprite.svg#29_question_circle"></use>
+                    </svg>
+                </div>
+            </section>
+            <section class="filter__blocks">
+                <div class="filter__block" data="params-block">
+                    <div class="filter-product__item filter-product__pic" style="background-image: url(filter/img/truck_battery.png)">
+                    </div>
+                    <div class=" filter-product__item filter-product__fields clear">
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Ёмкость min (Ah):</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">10</option>
+                                                <option value="1">20</option>
+                                                <option value="2">30</option>
+                                                <option value="3" selected>Любая</option>
+                                                <option value="4">40</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Ёмкость max (Ah):</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">20</option>
+                                                <option value="1">30</option>
+                                                <option value="2">40</option>
+                                                <option value="3" selected>Любая</option>
+                                                <option value="4">50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Полярность:</label>
+                            <div class="filter__radio-wrapper">
+                                <input type="radio" id="polarity1" name="polarity">
+                                <label for="polarity1" class="radio-label">Обратная (+-)</label>
+                                <input type="radio" id="polarity2" name="polarity">
+                                <label for="polarity2" class="radio-label">Прямая (-+)</label>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Пусковой ток min (A):</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">100</option>
+                                                <option value="1">200</option>
+                                                <option value="2" selected>Любой</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Тип клемм:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">Прямой</option>
+                                                <option value="1">Косой</option>
+                                                <option value="2">Кривой</option>
+                                                <option value="3" selected>Любой</option>
+                                                <option value="4">Другой</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Расположение клемм:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">Позади</option>
+                                                <option value="1">Снизу</option>
+                                                <option value="2">Сверху</option>
+                                                <option value="3" selected>Любое</option>
+                                                <option value="4">Вдали</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Ширина max&nbsp(мм):</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">15</option>
+                                                <option value="1">20</option>
+                                                <option value="2">25</option>
+                                                <option value="3" selected>Все</option>
+                                                <option value="4">35</option>
+                                                <option value="5">40</option>
+                                                <option value="6">45</option>
+                                                <option value="7">50</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Глубина max&nbsp(мм):</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">10</option>
+                                                <option value="1">15</option>
+                                                <option value="2" selected>Все</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Высота max&nbsp(мм):</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">10</option>
+                                                <option value="1">15</option>
+                                                <option value="2">20</option>
+                                                <option value="3" selected>Все</option>
+                                                <option value="4">Continental</option>
+                                                <option value="5">Continental</option>
+                                                <option value="6">Continental</option>
+                                                <option value="7">Continental</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Производитель:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">Toy</option>
+                                                <option value="1">Kama</option>
+                                                <option value="2">Continental</option>
+                                                <option value="3" selected>Все</option>
+                                                <option value="4">Continental</option>
+                                                <option value="5">Continental</option>
+                                                <option value="6">Continental</option>
+                                                <option value="7">Continental</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <button class="btn-style filter__btn">
+                                Подобрать
+                            </button>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <a href="tel:+375296113232" class="filter__order-call"> 
+                                <svg class="filter__tab-phone">
+                                    <use xlink:href="filter/img/sprite.svg#consult_phone"></use>
+                                </svg>
+                                Бесплатная консультация
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="filter__find-block clear">
+                <div class="filter__find-block-left">
+                    <div class="filter__find-block-index">
+                        <div class="myselect_wrapper">
+                            <label class="filter__label">Индекс нагрузки:</label>
+                            <div class="js-input-all">
+                                <div class="js-dropdown js-dropdown-onclick">
+                                    <select class="myselect_block js-select">
+                                            <option value="0">город1</option>
+                                            <option value="1">город2</option>
+                                            <option value="2">город3</option>
+                                            <option value="3" selected>Все</option>
+                                            <option value="4">город5</option>
+                                            <option value="5">город6</option>
+                                            <option value="6">город7</option>
+                                            <option value="7">город8</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__find-block-info">
+                        <p>Найдено: <span class="filter__count">51</span> вариант <span class="fillter__size"> 225/45 R17</span></p>
+                    </div>
+                </div>
+                <div class="filter__find-block-right">
+                    <div class="filter__find-block-btns clear">
+                        <span class="filter__find-block-btn active">Сначала дешёвые</span>
+                        <span class="filter__find-block-btn">Сначала дорогие</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+</body>
+
+</html>

@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Filter-car-tire</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_mobile.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_tablet.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="my_select/css/myselect.css">
+    <link rel="stylesheet" href="filter/filter-css/filter-global.css">
+    <script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/slick-slider.min.js"></script>
+    <script src="js/browser-plugin.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="filter/filter-js/filter.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    if (/MSIE|Trident/.test(navigator.userAgent)) {
+        var iEobject;
+        iEobject = document.createElement('script');
+        iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+        iEobject.onload = function() {
+            svg4everybody();
+        };
+        document.getElementsByTagName('head')[0].appendChild(iEobject);
+    }
+    </script>
+</head>
+
+<body>
+    <section class="filter-product">
+        <div class="container-block">
+            <section class="filter__tabs clear">
+                <div class="filter__tab">
+                    <span class="filter__tab-text js-dropdown-click">
+                        <span>
+                            <svg class="filter__tab-phone">
+                                <use xlink:href="filter/img/sprite.svg#consult_phone"></use>
+                            </svg>
+                            Бесплатная консультация
+                        </span>
+                    </span>
+                    <div class="dropdown__body">
+                        <form>
+                            <span class="dropdown__body-caption">Введите номер телефона</span>
+                            <div class="dropdown__body-mask">
+                                <span class="mask-decor">+375</span>
+                                <input class="input_decor js-mask-input--phone" id="input_back_call" type="tel" value="" placeholder="(__) ___-__-__">
+                            </div>
+                            <span class="dropdown__body-btn js-dropdown-order-call">
+                                Закажите звонок
+                            </span>
+                        </form>
+                    </div>
+                    <div class="show_message_ok hidden">
+                        <span>
+                            Ваша заявка принята.<br>Ожидайте звонка.
+                        </span>
+                    </div>
+                </div>
+                <div class="filter__tab active js-tab-click" data="params">
+                    <span class="filter__tab-text">
+                        Подбор по параметрам
+                    </span>
+                    <svg class="filter__tab-helper">
+                        <use xlink:href="filter/img/sprite.svg#29_question_circle"></use>
+                    </svg>
+                </div>
+                <div class="filter__tab js-tab-click" data="poauto">
+                    <span class="filter__tab-text">
+                        Подбор по автомобилю
+                    </span>
+                </div>
+            </section>
+
+
+
+
+
+
+            <section class="filter__blocks">
+                <div class="filter__block" data="params-block">
+                    <div class="filter-product__item filter-product__pic" style="background-image: url(filter/img/car_tire.png)">
+                    </div>
+                    <div class=" filter-product__item filter-product__fields clear">
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Ширина:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">215</option>
+                                                <option value="1">220</option>
+                                                <option value="2">225</option>
+                                                <option value="3" selected>230</option>
+                                                <option value="4">235</option>
+                                                <option value="5">240</option>
+                                                <option value="6">245</option>
+                                                <option value="7">250</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Профиль:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">215</option>
+                                                <option value="1">220</option>
+                                                <option value="2">225</option>
+                                                <option value="3" selected>230</option>
+                                                <option value="4">235</option>
+                                                <option value="5">240</option>
+                                                <option value="6">245</option>
+                                                <option value="7">250</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Диаметр:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">215</option>
+                                                <option value="1">220</option>
+                                                <option value="2">225</option>
+                                                <option value="3" selected>230</option>
+                                                <option value="4">235</option>
+                                                <option value="5">240</option>
+                                                <option value="6">245</option>
+                                                <option value="7">250</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Сезон:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">Всесезонные</option>
+                                                <option value="1">Зимнее</option>
+                                                <option value="2" selected>Летние</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <label class="filter__label">Производитель:</label>
+                            <div class="myselect_wrapper">
+                                <div class="js-input-all">
+                                    <div class="js-dropdown js-dropdown-onclick">
+                                        <select class="myselect_block js-select">
+                                                <option value="0">Toy</option>
+                                                <option value="1">Kama</option>
+                                                <option value="2">Continental</option>
+                                                <option value="3" selected>Все</option>
+                                                <option value="4">Continental</option>
+                                                <option value="5">Continental</option>
+                                                <option value="6">Continental</option>
+                                                <option value="7">Continental</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <button class="btn-style filter__btn">
+                                Подобрать
+                            </button>
+                        </div>
+                        <div class="filter-product__fields-item-param">
+                            <a href="tel:+375296113232" class="filter__order-call"> 
+                                <svg class="filter__tab-phone">
+                                    <use xlink:href="filter/img/sprite.svg#consult_phone"></use>
+                                </svg>
+                                Бесплатная консультация
+                            </a>
+                        </div>
+                    </div>
+                    <div class=" filter-product__item filter-product__btn">
+                        <span class="filter-product__btn-text">Автосеть рекомендует:</span>
+                        <p class="filter-product__btn-bold">
+                            Регулярно проверяйте давление в шинах
+                            <span class="filter-product__btn-span">
+                                - это не только совет по безопасности
+                            </span>
+                        </p>
+                        <button class="btn-style filter__btn">Подобрать</button>
+                    </div>
+                </div>
+                <div class="filter__block hidden" data="poauto-block">
+                    <div class="filter__choose-car">
+                        <div class="filter-product__item filter-product__pic" style="background-image: url(filter/img/car_tire.png)">
+                        </div>
+                        <div class=" filter-product__item filter-product__fields clear">
+                            <div class="filter-product__fields-item-poauto">
+                                <label class="filter__label">Марка:</label>
+                                <div class="myselect_wrapper">
+                                    <div class="js-input-all">
+                                        <div class="js-dropdown js-dropdown-onclick">
+                                            <select class="myselect_block js-select">
+                                                    <option value="0">Scoda</option>
+                                                    <option value="1">Renault</option>
+                                                    <option value="2">Mercedes</option>
+                                                    <option value="3" selected>BMW</option>
+                                                    <option value="4">Volvo</option>
+                                                    <option value="5">Lada</option>
+                                                    <option value="6">Sedan</option>
+                                                    <option value="7">Baklagan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-product__fields-item-poauto">
+                                <label class="filter__label">Модель:</label>
+                                <div class="myselect_wrapper">
+                                    <div class="js-input-all">
+                                        <div class="js-dropdown js-dropdown-onclick">
+                                            <select class="myselect_block js-select">
+                                                    <option value="0">215 (E35)</option>
+                                                    <option value="1">225 (E36)</option>
+                                                    <option value="2">225 (E37)</option>
+                                                    <option value="3" selected>5 (E39)</option>
+                                                    <option value="4">235 (E40)</option>
+                                                    <option value="5">245 (E41)</option>
+                                                    <option value="6">245 (E42)</option>
+                                                    <option value="7">255 (E43)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-product__fields-item-poauto">
+                                <label class="filter__label">Модификация:</label>
+                                <div class="myselect_wrapper">
+                                    <div class="js-input-all">
+                                        <div class="js-dropdown js-dropdown-onclick">
+                                            <select class="myselect_block js-select">
+                                                    <option value="0">460</option>
+                                                    <option value="1">480</option>
+                                                    <option value="2">510</option>
+                                                    <option value="3" selected>520i</option>
+                                                    <option value="4">525</option>
+                                                    <option value="5">530</option>
+                                                    <option value="6">535</option>
+                                                    <option value="7">540</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-product__fields-item-poauto">
+                                <label class="filter__label">Год выпуска:</label>
+                                <div class="myselect_wrapper">
+                                    <div class="js-input-all">
+                                        <div class="js-dropdown js-dropdown-onclick">
+                                            <select class="myselect_block js-select">
+                                                    <option value="0">2014</option>
+                                                    <option value="1">2015</option>
+                                                    <option value="2" selected>2016</option>
+                                                    <option value="3">2017</option>
+                                                    <option value="4">2018</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-product__fields-item-poauto">
+                                <button class="btn-style filter__btn js-open">Подобрать</button>
+                            </div>
+                            <div class="filter-product__fields-item-poauto">
+                            <a href="tel:+375296113232" class="filter__order-call"> 
+                                <svg class="filter__tab-phone">
+                                    <use xlink:href="filter/img/sprite.svg#consult_phone"></use>
+                                </svg>
+                                Бесплатная консультация
+                            </a>
+                        </div>
+                        </div>
+                        <div class=" filter-product__item filter-product__btn">
+                            <span class="filter-product__btn-text">Автосеть рекомендует:</span>
+                            <p class="filter-product__btn-bold">
+                                Регулярно проверяйте давление в шинах
+                                <span class="filter-product__btn-span">
+                                    - это не только совет по безопасности
+                                </span>
+                            </p>
+                            <button class="btn-style filter__btn js-open">Подобрать</button>
+                        </div>
+                    </div>
+
+                    <div class="filter__choose-goods hidden">
+                        <div class="filter-product__your-car">
+                            <span class="filter-product__marka">BMW 5 (E39) 520i 2002</span>
+                            <span class="filter-product__change-car js-close">Выбрать другой автомобиль</span>
+                        </div>
+                        <div class="filter-product__your-size">
+                            <div class="filter-product__your-size-item">
+                                <span class="filter-product__your-size-item-value">16’’</span>
+                                <ul class="filter-product__your-size-list">
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size1" name="size">
+                                        <label for="size1" class="radio-label">215/55 R16</label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size2" name="size">
+                                        <label for="size2" class="radio-label">225/55 R16
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size3" name="size">
+                                        <label for="size3" class="radio-label">235/50 R16</label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size4" name="size">
+                                        <label for="size4" class="radio-label">245/50 R16</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-product__your-size-item">
+                                <span class="filter-product__your-size-item-value">17’’</span>
+                                <ul class="filter-product__your-size-list">
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size5" name="size">
+                                        <label for="size5" class="radio-label">225/45 R17 <span>(передняя ось)</span></label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size6" name="size">
+                                        <label for="size6" class="radio-label">245/40 R17 <span>(задняя ось)</span>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size7" name="size">
+                                        <label for="size7" class="radio-label">235/45 R17 <span>(передняя ось)</span></label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size8" name="size">
+                                        <label for="size8" class="radio-label">255/40 R17 <span>(задняя ось)</span></label>
+                                    </li>
+                                     <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size9" name="size">
+                                        <label for="size9" class="radio-label">245/45 R17</label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size10" name="size">
+                                        <label for="size10" class="radio-label">255/40 R17</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter-product__your-size-item">
+                                <span class="filter-product__your-size-item-value">18’’</span>
+                                <ul class="filter-product__your-size-list">
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size11" name="size">
+                                        <label for="size11" class="radio-label">225/40 R18 <span>(передняя ось)</span></label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size12" name="size">
+                                        <label for="size12" class="radio-label">255/35 R18 <span>(задняя ось)</span>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size13" name="size">
+                                        <label for="size13" class="radio-label">235/40 R18 <span>(передняя ось)</span></label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size14" name="size">
+                                        <label for="size14" class="radio-label">265/35 R18 <span>(задняя ось)</span></label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size15" name="size">
+                                        <label for="size15" class="radio-label">245/35 R18</label>
+                                    </li>
+                                    <li class="filter-product__your-size-list_item">
+                                        <input type="radio" id="size16" name="size">
+                                        <label for="size16" class="radio-label">245/40 R18</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="filter-product__item filter-product__pic" style="background-image: url(filter/img/car_tire.png)">
+                        </div>
+                        <div class=" filter-product__item filter-product__fields clear">
+                            <div class="filter-product__fields-item-poauto">
+                                <label class="filter__label">Сезон:</label>
+                                <div class="myselect_wrapper">
+                                    <div class="js-input-all">
+                                        <div class="js-dropdown js-dropdown-onclick">
+                                            <select class="myselect_block js-select">
+                                                    <option value="0">Горные</option>
+                                                    <option value="1">Всесезонные</option>
+                                                    <option value="2">Зимние</option>
+                                                    <option value="3" selected>Летние</option>
+                                                    <option value="4">Лыжные</option>
+                                                    <option value="5">Санки</option>
+                                                    <option value="6">Велосипедные</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-product__fields-item-poauto">
+                                <label class="filter__label">Производитель:</label>
+                                <div class="myselect_wrapper">
+                                    <div class="js-input-all">
+                                        <div class="js-dropdown js-dropdown-onclick">
+                                            <select class="myselect_block js-select">
+                                                    <option value="0">Puma</option>
+                                                    <option value="1">Nike</option>
+                                                    <option value="2" selected>Adidas</option>
+                                                    <option value="3">Reebok</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="filter-product__fields-item-poauto">
+                               <button class="btn-style filter__btn">Подобрать</button>
+                            </div>
+                        </div>
+                        <div class=" filter-product__item filter-product__btn">
+                            <button class="btn-style filter__btn">Подобрать</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+
+
+
+
+            <section class="filter__find-block clear">
+                <div class="filter__find-block-left">
+                    <div class="filter__find-block-index">
+                        <div class="myselect_wrapper">
+                            <label class="filter__label">Индекс нагрузки:</label>
+                            <div class="js-input-all">
+                                <div class="js-dropdown js-dropdown-onclick">
+                                    <select class="myselect_block js-select">
+                                            <option value="0">город1</option>
+                                            <option value="1">город2</option>
+                                            <option value="2">город3</option>
+                                            <option value="3" selected>Все</option>
+                                            <option value="4">город5</option>
+                                            <option value="5">город6</option>
+                                            <option value="6">город7</option>
+                                            <option value="7">город8</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter__find-block-info">
+                        <p>Найдено: <span class="filter__count">51</span> вариант <span class="fillter__size"> 225/45 R17</span></p>
+                    </div>
+                </div>
+                <div class="filter__find-block-right">
+                    <div class="filter__find-block-btns clear">
+                        <span class="filter__find-block-btn active">Сначала дешёвые</span>
+                        <span class="filter__find-block-btn">Сначала дорогие</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+    
+</body>
+
+</html>
