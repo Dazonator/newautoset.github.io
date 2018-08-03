@@ -183,8 +183,9 @@
     margin-top: 20px;
   }
   .filter-car-rims .filter__color-item {
-    padding: 10px 20px 10px 0px;
-    width: auto;
+    padding: 10px 0px;
+    width: 33.3333333%;
+    min-width: 140px;
   }
   .filter-car-rims .filter-product__your-size-list {
     columns: 1;

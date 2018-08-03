@@ -614,6 +614,9 @@
   .filter__find-block-btn {
     width: 135px;
   }
+  .filter__choose-goods .filter-product__pic {
+      display: none;
+  }
   .filter__choose-goods .filter-product__fields-item-poauto:nth-of-type(3) {
     display: block;
   }
