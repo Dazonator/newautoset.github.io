@@ -134,6 +134,9 @@ input[type="checkbox"]{
 .radio-label:hover{
   cursor: pointer;
 }
+.radio-label:hover:before{
+  box-shadow: 0px 0px 0px 1px #adadad;
+}
 .chbox-label:hover{
   cursor: pointer;
 }
