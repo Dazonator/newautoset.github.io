@@ -41,7 +41,7 @@
 }
 
 .filter-car-rims .filter__color-item + .filter__color-item {
-  margin-left: 30px;
+  margin-left: 25px;
 }
 
 .filter-car-rims .filter__color-item input[type="checkbox"]:checked + .chbox-label:before {
@@ -142,15 +142,15 @@
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin: -10px 0px;
+    margin: -10px;
   }
   .filter-car-rims .filter-product__fields-item-param:nth-of-type(8) .filter__label {
     display: block;
     width: 100%;
   }
   .filter-car-rims .filter__color-item {
-    padding: 10px 0px;
-    width: 30%;
+    padding: 10px;
+    width: 33.333333333%;
   }
   .filter-car-rims .filter__color-item + .filter__color-item {
     margin-left: 0px;
@@ -183,9 +183,7 @@
     margin-top: 20px;
   }
   .filter-car-rims .filter__color-item {
-    padding: 10px 0px;
-    width: 33.3333333%;
-    min-width: 140px;
+    width: 50%;
   }
   .filter-car-rims .filter-product__your-size-list {
     columns: 1;
