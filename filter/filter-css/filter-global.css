@@ -629,6 +629,9 @@
 }
 
 @media (max-width: 767px) {
+  .container-block {
+    width: 100%;
+  }
   .filter-product__pic {
     display: none;
   }
@@ -701,12 +704,12 @@
   .filter-product__your-size-desc:nth-of-type(2) li span.left  {
     width: 155px;
   }
+  .filter-product__your-size-desc {
+    padding-right: 20px;
+  }
 }
 
 @media (max-width: 639px) {
-  .container-block {
-    width: 100%;
-  }
   .filter__tab {
     width: 50%;
   }
