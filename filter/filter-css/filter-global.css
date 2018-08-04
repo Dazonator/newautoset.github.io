@@ -276,13 +276,17 @@
   display: inline-block;
   vertical-align: middle;
 }
-
-.filter__find-block-btn {
-  text-align: center;
+.filter__find-block-btn-wrapper{
   display: inline-block;
   vertical-align: middle;
   width: 275px;
   height: 36px;
+}
+.filter__find-block-btn {
+  display: block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
   border-radius: 3px;
   background-color: #777;
   font-size: 14px;
@@ -290,7 +294,7 @@
   color: #b2b2b2;
 }
 
-.filter__find-block-btn + .filter__find-block-btn {
+.filter__find-block-btn-wrapper + .filter__find-block-btn-wrapper {
   margin-left: 17px;
 }
 
@@ -544,7 +548,7 @@
   .filter-product__btn {
     min-width: 225px;
   }
-  .filter__find-block-btn {
+  .filter__find-block-btn-wrapper {
     width: 215px;
   }
   .filter-product__btn-span {
@@ -611,7 +615,7 @@
     font-size: 16px;
     line-height: 19px;
   }
-  .filter__find-block-btn {
+  .filter__find-block-btn-wrapper {
     width: 135px;
   }
   .filter__choose-goods .filter-product__pic {
@@ -693,12 +697,17 @@
   }
   .filter__find-block-btns {
     display: block;
+    margin: 0 -10px;
   }
-  .filter__find-block-btn {
-    width: 290px;
+  .filter__find-block-btn-wrapper {
+    width: 50%;
+    float: left;
+    padding: 0 10px;
   }
-  .filter__find-block-btn + .filter__find-block-btn {
-    margin-left: 16px;
+  .filter__find-block-btn-wrapper + .filter__find-block-btn-wrapper {
+    margin-left: 0px;
+    float: right;
+    width: 50%;
   }
   .filter-product__your-size-desc li span.left,
   .filter-product__your-size-desc:nth-of-type(2) li span.left  {
@@ -706,6 +715,17 @@
   }
   .filter-product__your-size-desc {
     padding-right: 20px;
+  }
+  .filter__find-block-left {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    -ms-align-items: center;
+    align-items: center;
   }
 }
 
@@ -802,15 +822,7 @@
     margin-left: 0px;
     margin-top: 10px;
   }
-  .filter__find-block-btn {
-    width: 48%;
-    float: left;
-  }
-  .filter__find-block-btn + .filter__find-block-btn {
-    margin-left: 0px;
-    float: right;
-    width: 48%;
-  }
+  
   .filter-product__your-size-desc{
     float: none;
     display: block;
