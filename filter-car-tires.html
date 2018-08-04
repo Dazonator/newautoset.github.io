@@ -198,25 +198,338 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="filter-product__fields-item-param">
+
+
+
+
+                        <div class="filter-product__fields-item-param filter-multi js-input-all js-menu-search">
                             <label class="filter__label">Производитель:</label>
-                            <div class="myselect_wrapper">
-                                <div class="js-input-all">
-                                    <div class="js-dropdown js-dropdown-onclick">
-                                        <select class="myselect_block js-select">
-                                                <option value="0">Toy</option>
-                                                <option value="1">Kama</option>
-                                                <option value="2">Continental</option>
-                                                <option value="3" selected>Все</option>
-                                                <option value="4">Continental</option>
-                                                <option value="5">Continental</option>
-                                                <option value="6">Continental</option>
-                                                <option value="7">Continental</option>
-                                        </select>
+                            <div class="filter-block-dropdown js-dropdown js-dropdown-onclick">
+                                <div class="filter-block-dropdown__btn">
+                                    <span class="js-input-data-receiver js-dropdown__btn" onmousedown="return false" onselectstart="return false" data-default="Все производители">Все производители</span>
+                                </div>
+                                <div class="filter-block-dropdown-body js-dropdown__body">
+                                    <div class="filter-block-dropdown-body__header clear">
+                                        <div class="filter-header-item">
+                                            <input class="input js-menu-search__input" type="search">
+                                            <svg class="search-icon">
+                                                <use xlink:href="img/sprite.svg#search_icon"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="filter-header-item choise-all clear" onmousedown="return false" onselectstart="return false">
+                                            <div class="filter-header-item_sub-item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input-all__main" type="checkbox">
+                                                    <span class="chbox-label" >Все производители</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-header-item" style="display: none">
+                                            <span>Выбрано: <span class="js-input-count"></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="filter-block-dropdown-body__main">
+                                        <ul onmousedown="return false" onselectstart="return false">
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input name="defFilter[SUPPLIER][]" value="177" class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">Barum</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input name="defFilter[SUPPLIER][]" value="178" class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">BFGOODRICH</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">BRIDGESTONE</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">CONTINENTAL</span>
+                                                </label>
+                                            </li><li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">CORDIANT</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">DELINTE</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">DUNLOP</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">FIRESTONE</span>
+                                                </label>
+                                            </li><li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">FORMULA</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">FORTUNA</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">FULDA</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">GENERAL</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">GISLAVED</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">GOODYEAR</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">HANKOOK</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">IMPERIAL</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">KLEBER</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">KORMORAN</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">LANDSAIL</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">LAUFENN</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">LINGLONG</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">MATADOR</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">MAXXIS</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">MICHELIN</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">MINERVA</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">NEXEN</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">NITTO</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">NOKIAN</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">PIRELLI</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">PREMIORRI</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">ROADSTONE</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">SAILUN</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">SAVA</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">STARFIRE</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">TAURUS</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">TIGAR</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">TORQUE</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">TOYO</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">TRIANGLE</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">TUNGA</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">VIATTI</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">VIKING</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">WANLI</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">YOKOHAMA</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">АМТЕЛ</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">КАМА</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">РОСАВА</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter-block-dropdown-body__footer clear">
+                                            <input type="submit" value="Применить" class="btn-style">
+                                        
+                                        
                                     </div>
                                 </div>
-                            </div>
+                            </div>                      
                         </div>
+
+
+
+
+
+
+
+
+
+
                         <div class="filter-product__fields-item-param">
                             <button class="btn-style filter__btn">
                                 Подобрать
@@ -555,20 +868,325 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="filter-product__fields-item-poauto">
+                            <div class="filter-product__fields-item-poauto js-input-all js-menu-search">
                                 <label class="filter__label">Производитель:</label>
-                                <div class="myselect_wrapper">
-                                    <div class="js-input-all">
-                                        <div class="js-dropdown js-dropdown-onclick">
-                                            <select class="myselect_block js-select">
-                                                    <option value="0">Puma</option>
-                                                    <option value="1">Nike</option>
-                                                    <option value="2" selected>Adidas</option>
-                                                    <option value="3">Reebok</option>
-                                            </select>
+                                <div class="filter-block-dropdown js-dropdown js-dropdown-onclick">
+                                    <div class="filter-block-dropdown__btn">
+                                        <span class="js-input-data-receiver js-dropdown__btn" onmousedown="return false" onselectstart="return false" data-default="Все производители">Все производители</span>
+                                    </div>
+                                    <div class="filter-block-dropdown-body js-dropdown__body">
+                                        <div class="filter-block-dropdown-body__header clear">
+                                            <div class="filter-header-item">
+                                                <input class="input js-menu-search__input" type="search">
+                                                <svg class="search-icon">
+                                                    <use xlink:href="img/sprite.svg#search_icon"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="filter-header-item choise-all clear" onmousedown="return false" onselectstart="return false">
+                                                <div class="filter-header-item_sub-item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input-all__main" type="checkbox">
+                                                        <span class="chbox-label" >Все производители</span>
+                                                    </label>
+                                                </div>
+                                                 
+                                                
+                                            </div>
+                                            <div class="filter-header-item" style="display: none">
+                                                <span>Выбрано: <span class="js-input-count"></span></span>
+                                            </div>
+                                        </div>
+                                        <div class="filter-block-dropdown-body__main">
+                                            <ul onmousedown="return false" onselectstart="return false">
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input name="defFilter[SUPPLIER][]" value="177" class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">Barum</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input name="defFilter[SUPPLIER][]" value="178" class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">BFGOODRICH</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">BRIDGESTONE</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">CONTINENTAL</span>
+                                                    </label>
+                                                </li><li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">CORDIANT</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">DELINTE</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">DUNLOP</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">FIRESTONE</span>
+                                                    </label>
+                                                </li><li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">FORMULA</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">FORTUNA</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">FULDA</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">GENERAL</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">GISLAVED</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">GOODYEAR</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">HANKOOK</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">IMPERIAL</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">KLEBER</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">KORMORAN</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">LANDSAIL</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">LAUFENN</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">LINGLONG</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">MATADOR</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">MAXXIS</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">MICHELIN</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">MINERVA</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">NEXEN</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">NITTO</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">NOKIAN</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">PIRELLI</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">PREMIORRI</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">ROADSTONE</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">SAILUN</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">SAVA</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">STARFIRE</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">TAURUS</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">TIGAR</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">TORQUE</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">TOYO</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">TRIANGLE</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">TUNGA</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">VIATTI</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">VIKING</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">WANLI</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">YOKOHAMA</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">АМТЕЛ</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">КАМА</span>
+                                                    </label>
+                                                </li>
+                                                <li class="input-group__item">
+                                                    <label class="checkbox-label">
+                                                        <input class="checkbox js-input" type="checkbox">
+                                                        <span class="chbox-label checkbox-text">РОСАВА</span>
+                                                    </label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="filter-block-dropdown-body__footer clear">
+                                                <input type="submit" value="Применить" class="btn-style">
+                                            
+                                            
                                         </div>
                                     </div>
-                                </div>
+                                </div>                     
                             </div>
                             <div class="filter-product__fields-item-poauto">
                                <button class="btn-style filter__btn">Подобрать</button>
