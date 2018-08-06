@@ -494,9 +494,6 @@ body.touch select.myselect_block
     .filter-multichoose .filter-multichoose-body__main ul {
       columns: 2;
     }
-    .filter-multichoose .filter-multichoose-body__main {
-      margin-top: 14px;
-    }
 }
 
 @media (max-width: 479px) {
