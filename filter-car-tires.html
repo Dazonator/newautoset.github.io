@@ -206,7 +206,7 @@
                             <label class="filter__label">Производитель:</label>
                             <div class="filter-multichoose js-dropdown js-dropdown-onclick">
                                 <div class="filter-multichoose__btn">
-                                    <span class="js-input-data-receiver js-dropdown__btn" onmousedown="return false" onselectstart="return false" data-default="Все производители">Все производители</span>
+                                    <span class="js-input-data-receiver js-dropdown__btn" onmousedown="return false" onselectstart="return false" data-default="Все">Все</span>
                                 </div>
                                 <div class="filter-multichoose-body js-dropdown__body">
                                     <div class="filter-multichoose-body__header clear">
@@ -224,6 +224,10 @@
                                                 </label>
                                             </div>
                                         </div>
+                                        <div class="filter-header-item">
+                                           <input type="submit" value="Применить" class="btn-style js-close-btn">
+                                        </div>
+                                        
                                         <div class="filter-header-item" style="display: none">
                                             <span>Выбрано: <span class="js-input-count"></span></span>
                                         </div>
@@ -513,9 +517,9 @@
                                         </ul>
                                     </div>
                                     <div class="filter-multichoose-body__footer clear">
-                                            <input type="submit" value="Применить" class="btn-style">
-                                        
-                                        
+                                        <div class="filter-multichoose-body__footer-item">
+                                            <input type="submit" value="Применить" class="btn-style js-close-btn">
+                                        </div>
                                     </div>
                                 </div>
                             </div>                      
@@ -850,7 +854,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="filter-product__item filter-product__pic" style="background-image: url(filter/img/car_tire.png)">
+                        <div class="filter__choose-goods-footer">
+                             <div class="filter-product__item filter-product__pic" style="background-image: url(filter/img/car_tire.png)">
                         </div>
                         <div class=" filter-product__item filter-product__fields clear">
                             <div class="filter-product__fields-item-poauto">
@@ -872,7 +877,7 @@
                                 <label class="filter__label">Производитель:</label>
                                 <div class="filter-multichoose js-dropdown js-dropdown-onclick">
                                     <div class="filter-multichoose__btn">
-                                        <span class="js-input-data-receiver js-dropdown__btn" onmousedown="return false" onselectstart="return false" data-default="Все производители">Все производители</span>
+                                        <span class="js-input-data-receiver js-dropdown__btn" onmousedown="return false" onselectstart="return false" data-default="Все">Все</span>
                                     </div>
                                     <div class="filter-multichoose-body js-dropdown__body">
                                         <div class="filter-multichoose-body__header clear">
@@ -889,9 +894,11 @@
                                                         <span class="chbox-label" >Все производители</span>
                                                     </label>
                                                 </div>
-                                                 
-                                                
                                             </div>
+                                            <div class="filter-header-item">
+                                               <input type="submit" value="Применить" class="btn-style js-close-btn">
+                                            </div>
+                                            
                                             <div class="filter-header-item" style="display: none">
                                                 <span>Выбрано: <span class="js-input-count"></span></span>
                                             </div>
@@ -1181,12 +1188,12 @@
                                             </ul>
                                         </div>
                                         <div class="filter-multichoose-body__footer clear">
-                                                <input type="submit" value="Применить" class="btn-style">
-                                            
-                                            
+                                            <div class="filter-multichoose-body__footer-item">
+                                                <input type="submit" value="Применить" class="btn-style js-close-btn">
+                                            </div>
                                         </div>
                                     </div>
-                                </div>                     
+                                </div>                      
                             </div>
                             <div class="filter-product__fields-item-poauto">
                                <button class="btn-style filter__btn">Подобрать</button>
@@ -1195,6 +1202,8 @@
                         <div class=" filter-product__item filter-product__btn">
                             <button class="btn-style filter__btn">Подобрать</button>
                         </div>
+                        </div>
+                       
                     </div>
                     
                 </div>

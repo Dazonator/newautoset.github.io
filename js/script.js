@@ -931,7 +931,7 @@ console.log(modalTop);
                                 if (text === '' || text === receiverDefault)
                                     receiver.html($(val).closest('label').find('.checkbox-text').html());
                                 else
-                                    receiver.html(text + '/' + $(val).closest('label').find('.checkbox-text').html());
+                                    receiver.html(text + ', ' + $(val).closest('label').find('.checkbox-text').html());
                             })
                         }
                     });
@@ -985,7 +985,7 @@ console.log(modalTop);
                                 if (text === '' || text === receiverDefault)
                                     receiver.html($this.closest('label').find('.checkbox-text').html());
                                 else
-                                    receiver.html(receiver.html() + '/' + $this.closest('label').find('.checkbox-text').html());
+                                    receiver.html(receiver.html() + ', ' + $this.closest('label').find('.checkbox-text').html());
                             } else {
                                 if (text === '' || text === receiverDefault)
                                     $.each(inputs.filter(':checked'), function (idex, val) {
@@ -993,11 +993,11 @@ console.log(modalTop);
                                         if (text === '' || text === receiverDefault)
                                             receiver.html($(val).closest('label').find('.checkbox-text').html());
                                         else
-                                            receiver.html(text + '/' + $(val).closest('label').find('.checkbox-text').html());
+                                            receiver.html(text + ', ' + $(val).closest('label').find('.checkbox-text').html());
                                     });
                                 else {
-                                    var newText = receiver.html().replace('/' + $this.closest('label').find('.checkbox-text').html(), '');
-                                    newText = newText.replace($this.closest('label').find('.checkbox-text').html() + '/', '');
+                                    var newText = receiver.html().replace(', ' + $this.closest('label').find('.checkbox-text').html(), '');
+                                    newText = newText.replace($this.closest('label').find('.checkbox-text').html() + ', ', '');
                                     receiver.html(newText);
 
                                     if(!inputs.filter(':checked').length)

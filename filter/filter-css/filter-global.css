@@ -216,6 +216,7 @@
 .filter__block {
   display: table;
   width: 100%;
+  table-layout: fixed;
   padding: 20px 90px 0px 90px;
   background-color: #fff;
   background-color: #d8d8d8;
@@ -343,7 +344,7 @@
 .filter-product__fields {
   padding-left: 10px;
   padding-bottom: 20px;
-  min-width: 600px;
+  width: 600px;
 }
 
 .filter-product__fields-item-param {
@@ -380,7 +381,7 @@
   position: relative;
   padding-left: 10px;
   padding-bottom: 20px;
-  min-width: 285px;
+  width: 285px;
   font-size: 14px;
   line-height: 16px;
   color: #666;
@@ -532,6 +533,11 @@
   color: #666;
   width: 135px;
 }
+.filter__choose-goods-footer{
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
 
 
 @media (max-width: 1440px) {
@@ -549,10 +555,10 @@
     width: 215px;
   }
   .filter-product__fields {
-    min-width: 480px;
+    width: 480px;
   }
   .filter-product__btn {
-    min-width: 225px;
+    width: 225px;
   }
   .filter__find-block-btn-wrapper {
     width: 215px;
@@ -580,7 +586,7 @@
     width: 167px;
   }
   .filter-product__fields {
-    min-width: auto;
+    width: auto;
     display: block;
     margin: 0 -10px;
     padding-left: 20px;
@@ -748,18 +754,17 @@
   .filter-product__fields {
     margin: 0px;
   }
-  .filter-product__fields-item-param,
+  .filter-product__fields-item-param{
+    width: 100%;
+    padding: 0px;
+    display: table;
+    table-layout: fixed;
+  }
   .filter-product__fields-item-poauto {
     width: 100%;
     padding: 0px;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: space-between;
-    -ms-align-items: center;
-    align-items: center;
+    display: table;
+    table-layout: fixed;
   }
   .filter-product__fields-item-param + .filter-product__fields-item-param,
   .filter-product__fields-item-poauto + .filter-product__fields-item-poauto {
@@ -778,13 +783,18 @@
   .filter-product__fields-item-poauto:nth-of-type(5) {
     margin-top: 20px;
   }
-  .filter__label {
+  .filter-product__fields-item-param .filter__label,
+  .filter-product__fields-item-poauto .filter__label {
+    display: table-cell;
     margin-bottom: 0px;
     min-width: 120px;
+    width: 120px;
+    vertical-align: middle;
   }
-  .filter__block .myselect_wrapper {
-    width: auto;
-    flex-grow: 1;
+  .filter-product__fields-item-param .myselect_wrapper,
+  .filter-product__fields-item-param .filter-multichoose {
+    display: table-cell;
+    vertical-align: middle;
   }
   .filter__order-call {
     display: table;

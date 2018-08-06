@@ -1,5 +1,7 @@
 $(document).ready(function () {
-	
+	$(".js-close-btn").on("click", function(){
+		$(".open").removeClass("open");
+	});
 	$(".open").removeClass("open");
 	$(".allClose").on("click", function(){
 		$(".open").removeClass("open");

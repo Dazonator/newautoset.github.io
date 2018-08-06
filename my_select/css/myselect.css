@@ -242,10 +242,10 @@ body.touch select.myselect_block
   position: absolute;
   z-index: 99;
   top: auto;
-  right: 20px;
-  left: 20px;
+  right: 0px;
+  left: 0px;
   display: none;
-  max-width: 960px;
+  width: 1300px;
   margin: 0 auto;
   margin-top: 25px;
   padding: 20px;
@@ -329,16 +329,18 @@ body.touch select.myselect_block
 
 .filter-multichoose .filter-multichoose-body__header {
   display: block;
-  margin: -10px;
+  margin: 0 -10px;
 }
 .filter-multichoose .filter-header-item{
   position: relative;
   float: left;
-  width: 80%;
-  padding: 10px;
+  width: 60%;
+  padding: 0 10px;
 }
 .filter-multichoose .filter-header-item:nth-of-type(2){
-  float: right;
+  width: 20%;
+}
+.filter-multichoose .filter-header-item:nth-of-type(3){
   width: 20%;
 }
 
@@ -389,8 +391,8 @@ body.touch select.myselect_block
       background-image: url(../../img/cb_checked_some.svg);
 }
 .filter-multichoose .filter-multichoose-body__main{
-  margin-top: 10px;
-  padding: 5px 0px;
+  margin-top: 20px;
+  padding: 14px 0px;
   border-top: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
 }
@@ -400,7 +402,7 @@ body.touch select.myselect_block
 }
 
 .filter-multichoose .filter-multichoose-body__main ul span {
-  display: block;
+  display: inline-block;
   cursor: pointer;
   font-size: 14px;
   line-height: 30px;
@@ -412,24 +414,49 @@ body.touch select.myselect_block
   margin-top: -10px;
 }
 .filter-multichoose .filter-multichoose-body__footer{
-  padding-top: 10px;
+  padding-top: 20px;
   text-align: right;
+  margin: 0 -10px;
 }
 
-.filter-multichoose .filter-multichoose-body__footer .btn-style{
-  width: 158px;
+.filter-multichoose .filter-multichoose-body__footer .filter-multichoose-body__footer-item{
+  width: 20%;
   float: right;
+  padding: 0 10px;
 }
 
 /*---------------------------------------------------------------*/
 /*---------------------------------------------------------------*/
-@media (max-width: 1440px) {}
+@media (max-width: 1440px) {
+  .filter-multichoose .filter-multichoose-body{
+    width: 1160px;
+  }
+}
 
-@media (max-width: 1199px) {}
+@media (max-width: 1199px) {
+  .filter-multichoose .filter-multichoose-body{
+    width: 920px;
+  }
+}
 
 @media (max-width: 959px) {
     .modal {
-        width: 728px;
+      width: 728px;
+    }
+    .filter-multichoose .filter-header-item {
+      width: 50%;
+    }
+    .filter-multichoose .filter-header-item:nth-of-type(2) {
+      width: 27%;
+    } 
+    .filter-multichoose .filter-header-item:nth-of-type(3) {
+      width: 23%;
+    } 
+    .filter-multichoose .filter-multichoose-body__footer .filter-multichoose-body__footer-item {
+      width: 23%;
+    }
+    .filter-multichoose .filter-multichoose-body{
+      width: 728px;
     }
 }
 
@@ -437,11 +464,38 @@ body.touch select.myselect_block
     .modal {
         width: 600px;
     }
+    .filter-multichoose .filter-header-item {
+      width: 100%;
+    }
+    .filter-multichoose .filter-multichoose-body__main ul {
+      columns: 3;
+    }
+    .filter-multichoose .filter-header-item:nth-of-type(2) {
+      width: 50%;
+      margin-top: 20px;
+    } 
+    .filter-multichoose .filter-header-item:nth-of-type(3) {
+      width: 50%;
+      margin-top: 20px;
+      float: right;
+    } 
+    .filter-multichoose .filter-multichoose-body__footer .filter-multichoose-body__footer-item {
+      width: 50%;
+    }
+    .filter-multichoose .filter-multichoose-body{
+      width: calc(100% - 40px);
+    }
 }
 
 @media (max-width: 639px) {
     .modal {
         width: 440px;
+    }
+    .filter-multichoose .filter-multichoose-body__main ul {
+      columns: 2;
+    }
+    .filter-multichoose .filter-multichoose-body__main {
+      margin-top: 14px;
     }
 }
 
@@ -451,6 +505,21 @@ body.touch select.myselect_block
     }
      .modal-header {
         padding: 12px 35px;
+    }
+    .filter-multichoose .filter-multichoose-body__main ul {
+      columns: 1;
+    }
+    .filter-multichoose .filter-header-item:nth-of-type(2) {
+      width: 100%;
+    } 
+    .filter-multichoose .filter-header-item:nth-of-type(3) {
+      width: 100%;
+    } 
+    .filter-multichoose .filter-multichoose-body__footer .filter-multichoose-body__footer-item {
+      width: 100%;
+    }
+    .filter-multichoose .filter-header-item .chbox-label {
+      line-height: 20px;
     }
 }
 
@@ -469,4 +538,3 @@ body.touch select.myselect_block
         height: 9px;
     } 
 }
-

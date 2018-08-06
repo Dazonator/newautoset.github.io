@@ -1,3 +1,17 @@
+.filter-car-rims .filter-product__fields {
+    width: 905px;
+    display: block;
+    margin: 0 -10px;
+    padding-left: 20px;
+}
+.filter-car-rims .filter__choose-car .filter-product__fields,
+.filter-car-rims .filter__choose-goods .filter-product__fields{
+  width: 600px;
+  margin: 0px;
+  padding-left: 10px;
+  display: table-cell;
+} 
+.filter-car-rims .filter__choose-car,
 .filter-car-rims .filter-product__pic {
   background-size: contain;
 }
@@ -41,7 +55,7 @@
 }
 
 .filter-car-rims .filter__color-item + .filter__color-item {
-  margin-left: 25px;
+  margin-left: 27px;
 }
 
 .filter-car-rims .filter__color-item input[type="checkbox"]:checked + .chbox-label:before {
@@ -114,11 +128,18 @@
   .filter-product__your-size-list {
     columns: 3;
   }
+  .filter-car-rims .filter__choose-car .filter-product__fields,
+  .filter-car-rims .filter__choose-goods .filter-product__fields {
+    width: 480px;
+  }
+  .filter-car-rims .filter-product__fields {
+    width: 725px;
+  }
 }
 
 @media (max-width: 959px) {
   .filter-car-rims .filter-product__fields-item-param {
-    width: 33%;
+    width: 33.3333333333333333%;
   }
   .filter-car-rims .filter-product__fields-item-param:nth-of-type(1) {
     width: 100%;
@@ -148,8 +169,32 @@
   .filter-product__your-size-list {
     columns: 2;
   }
+  .filter-car-rims .filter-product__fields {
+    width: 580px;
+  }
+  .filter-car-rims .filter__choose-car .filter-product__fields,
+  .filter-car-rims .filter__choose-goods .filter-product__fields {
+    display: block;
+    margin: 0 -10px;
+    padding-left: 20px;
+    width: auto;
+  }
+  .filter-car-rims .filter__choose-goods .filter-product__fields{
+    padding-left: 0px;
+  }
 }
-
+@media (max-width: 767px){
+  .filter-car-rims .filter-product__fields {
+    width: auto;
+    padding-left: 0px;
+  }
+  .filter-car-rims .filter__choose-car .filter-product__fields{
+    padding-left: 0px;
+  }
+  .filter-car-rims .filter__choose-goods .filter-product__fields{
+    margin: 0px;
+  }
+}
 @media (max-width: 639px) {
   .filter-product__fields {
     margin: 0px -10px;
@@ -180,12 +225,23 @@
   }
   .filter-car-rims .filter__label {
     margin-bottom: 4px;
-    min-width: 120px;
+    width: auto;
+    display: block;
   }
+  .filter-car-rims .filter-product__fields-item-param .myselect_wrapper,
+  .filter-car-rims .filter-product__fields-item-param .filter-multichoose {
+    display: block;
+    vertical-align: middle;
+}
   .filter-car-rims .filter-product__fields-item-poauto .filter__label {
     margin-bottom: 0px;
   }
   .filter-car-rims .filter__choose-car .filter-product__fields {
     margin: 0px;
+  }
+  .filter-car-rims .filter__choose-car .filter-product__fields .filter__label,
+  .filter-car-rims .filter__choose-goods .filter-product__fields .filter__label{
+    display: table-cell;
+    width: 120px;
   }
 }
