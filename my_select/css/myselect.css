@@ -485,6 +485,11 @@ body.touch select.myselect_block
     .filter-multichoose .filter-multichoose-body{
       width: calc(100% - 40px);
     }
+    @supports not (width: calc(100% - 40px)) {
+      .filter-multichoose .filter-multichoose-body{
+        width: 600px;
+      }
+    }
 }
 
 @media (max-width: 639px) {
@@ -493,6 +498,11 @@ body.touch select.myselect_block
     }
     .filter-multichoose .filter-multichoose-body__main ul {
       columns: 2;
+    }
+    @supports not (width: calc(100% - 40px)) {
+      .filter-multichoose .filter-multichoose-body{
+        width: 440px;
+      }
     }
 }
 
@@ -518,19 +528,26 @@ body.touch select.myselect_block
     .filter-multichoose .filter-header-item .chbox-label {
       line-height: 20px;
     }
+    @supports not (width: calc(100% - 40px)) {
+      .filter-multichoose .filter-multichoose-body{
+        width: 280px;
+      }
+    }
 }
 
 @media (max-width: 320px) {}
 /*---------Edge----------------------*/
 @supports (-ms-ime-align:auto) {
-    .myselect_block span.select-value:after {
+    .myselect_block span.select-value:after,
+    .filter-multichoose .filter-multichoose__btn span:after {
         width: 15px;
         height: 9px;
     } 
 }
 /*---------------------IE-----------------*/
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .myselect_block span.select-value:after {
+    .myselect_block span.select-value:after,
+    .filter-multichoose .filter-multichoose__btn span:after {
         width: 15px;
         height: 9px;
     } 
