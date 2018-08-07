@@ -184,24 +184,24 @@
   fill: #e2001a;
 }
 
-.cabinet__nav-item-active {
+.cabinet__nav-item.active {
   background-color: #e2001a;
 }
-.cabinet__nav-item-active:hover .cabinet__nav-link{
+.cabinet__nav-item.active:hover .cabinet__nav-link{
   color: #fff;
 }
-.cabinet__nav-item-active:hover .cabinet__nav-icon{
+.cabinet__nav-item.active:hover .cabinet__nav-icon{
   color: #fff;
   fill: #fff;
 }
 
 
-.cabinet__nav-item-active .cabinet__nav-link {
+.cabinet__nav-item.active .cabinet__nav-link {
   color: #fff;
   font-weight: bold;
 }
 
-.cabinet__nav-item-active .cabinet__nav-icon {
+.cabinet__nav-item.active .cabinet__nav-icon {
   color: #fff;
   fill: #fff;
 }
@@ -334,7 +334,7 @@
 /*------------Перебить Минск----------------------*/
 /*------------Перебить Минск----------------------*/
 /*------------Перебить Минск----------------------*/
-.cabinet__nav-item-active .cabinet__nav-link:hover{
+.cabinet__nav-item.active .cabinet__nav-link:hover{
   color: #fff;
 }
 
