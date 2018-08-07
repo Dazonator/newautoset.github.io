@@ -22,11 +22,11 @@
   line-height: 26px;
   font-weight: bold;
   color: #000;
-  margin-bottom: 4px;
 }
 
 .dropdown__body-mask {
   position: relative;
+  margin-top: 20px;
 }
 .dropdown__body .mask-decor {
   position: absolute;
@@ -51,11 +51,13 @@
 .show_message_ok {
   padding: 20px;
   width: auto;
-  min-width: 250px;
+  min-width: 260px;
+  width: 260px;
   position: absolute;
   z-index: 99;
   top: 100%;
-  left: 20px;
+  left: 50%;
+  margin-left: -130px;
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   background-color: #fff;
@@ -201,25 +203,63 @@
 }
 
 .filter__find-block-index {
-  position: relative;
   display: inline-block;
   vertical-align: middle;
 }
-
-.filter__find-block-index .myselect_wrapper {
+.filter__find-block-index-wrapper{
   position: relative;
-  width: 120px;
 }
-
-.filter__find-block-index .myselect_wrapper label {
+.filter__find-block-index .filter__label{
   position: absolute;
+  display: block;
   top: -20px;
   left: 0px;
+  margin-bottom: 0px;
   font-size: 14px;
   line-height: 16px;
   color: #b2b2b2;
 }
-
+.filter__find-block-index .filter-multichoose{
+  width: 120px;
+  position: relative;
+}
+.filter__find-block-index .filter-multichoose-body{
+  width: 160px;
+  left: 0px;
+  margin: 0px;
+  margin-top: 25px;
+}
+.filter__find-block-index .filter-multichoose-body__main ul{
+  columns: 1;
+}
+.filter__find-block-index .filter-multichoose-body__footer{
+  text-align: left;
+  margin: 0px;
+  padding-top: 10px;
+}
+.filter__find-block-index .filter-multichoose .filter-multichoose-body__footer .filter-multichoose-body__footer-item{
+  width: 100%;
+  padding: 0px;
+}
+.filter__find-block-index .filter-multichoose .filter-multichoose-body__header{
+  margin: 0px;
+}
+.filter__find-block-index .filter-multichoose .filter-header-item{
+  padding: 0px;
+}
+.filter__find-block-index .filter-multichoose .filter-header-item .chbox-label {
+    display: block;
+    line-height: 20px;
+    padding-left: 30px;
+}
+.filter__find-block-index .filter-multichoose .filter-header-item .chbox-label:before{
+  margin-top: 0px;
+  top: 0px;
+}
+.filter__find-block-index .filter-multichoose .filter-multichoose-body__main{
+  margin-top: 10px;
+  position: 5px 0px;
+}
 .filter__find-block-info {
   display: inline-block;
   vertical-align: middle;
@@ -602,7 +642,8 @@
   .filter-product__your-size-desc:nth-of-type(2) li span.left {
     width: 123px;
   }
-  .dropdown__body {
+  .dropdown__body,
+  .show_message_ok {
     left: 20px;
     margin-left: 0px;
   }
@@ -653,20 +694,7 @@
   .filter__find-block {
     padding: 15px 20px 15px 20px;
   }
-  .filter__find-block-index .myselect_wrapper {
-    width: 290px;
-    padding-left: 130px;
-  }
-  .filter__find-block-index .myselect_wrapper label {
-    top: 50%;
-    margin-top: -8px;
-    margin-bottom: 0px;
-  }
-  .filter__find-block-info {
-    margin-left: 16px;
-    width: 290px;
-    text-align: center;
-  }
+  
   .filter__find-block-right {
     width: 100%;
     margin-top: 10px;
@@ -693,15 +721,41 @@
     padding-right: 20px;
   }
   .filter__find-block-left {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
+    display: block;
     width: 100%;
-    justify-content: center;
-    -ms-align-items: center;
-    align-items: center;
+  }
+  .filter__find-block-index {
+    float: left;
+    width: 50%;
+    padding-right: 10px;
+  }
+  .filter__find-block-info {
+    float: right;
+    width: 50%;
+    padding: 8px 0px 8px 10px;
+    margin-left: 0px;
+    text-align: center;
+  }
+  .filter__find-block-index-wrapper {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+
+  }
+  .filter__find-block-index .filter__label {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: table-cell;
+  }
+  .filter__find-block-index .filter-multichoose {
+    width: 50%;
+    display: table-cell;
+  }
+  .filter__find-block-index .filter-multichoose-body {
+    left: 0px;
+    margin: 0px auto;
+    margin-top: 25px;
   }
 }
 
@@ -788,12 +842,11 @@
     display: block;
   }
   .filter__find-block-index {
+    float: none;
     display: block;
-  }
-  .filter__find-block-index .myselect_wrapper {
-    width: 280px;
-    padding-left: 130px;
+    padding-right: 0px;
     margin: 0 auto;
+    width: 100%;
   }
   .filter__find-block-info {
     display: block;
@@ -801,6 +854,7 @@
     width: 100%;
     margin-left: 0px;
     margin-top: 10px;
+    padding: 0px;
   }
   
   .filter-product__your-size-desc{
@@ -819,7 +873,21 @@
     min-width: 144px;
     padding-right: 10px;
   }
-
+  .filter__find-block-index .filter__label {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+  .filter__find-block-index .filter-multichoose {
+    display: inline-block;
+    width: 160px;
+    vertical-align: middle;
+  }
+  .filter__find-block-index-wrapper {
+    display: table;
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 539px) {

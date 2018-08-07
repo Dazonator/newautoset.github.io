@@ -50,9 +50,9 @@
                             <span class="dropdown__body-caption">Введите номер телефона</span>
                             <div class="dropdown__body-mask">
                                 <span class="mask-decor">+375</span>
-                                <input class="input_decor js-mask-input--phone" id="input_back_call" type="tel" value="" placeholder="(__) ___-__-__">
+                                <input class="input-style js-mask-input--phone" id="input_back_call" type="tel" value="" placeholder="(__) ___-__-__">
                             </div>
-                            <span class="dropdown__body-btn js-dropdown-order-call">
+                            <span class="btn-style js-dropdown-order-call">
                                 Закажите звонок
                             </span>
                         </form>
@@ -546,25 +546,65 @@
                 </div>
             </section>
             <section class="filter__find-block clear">
-                <div class="filter__find-block-left">
+                <div class="filter__find-block-left clear">
                     <div class="filter__find-block-index">
-                        <div class="myselect_wrapper">
+                        <div class="filter__find-block-index-wrapper js-input-all js-menu-search">
                             <label class="filter__label">Индекс нагрузки:</label>
-                            <div class="js-input-all">
-                                <div class="js-dropdown js-dropdown-onclick">
-                                    <select class="myselect_block js-select">
-                                            <option value="0">город1</option>
-                                            <option value="1">город2</option>
-                                            <option value="2">город3</option>
-                                            <option value="3" selected>Все</option>
-                                            <option value="4">город5</option>
-                                            <option value="5">город6</option>
-                                            <option value="6">город7</option>
-                                            <option value="7">город8</option>
-                                    </select>
+                            <div class="filter-multichoose js-dropdown js-dropdown-onclick">
+                                <div class="filter-multichoose__btn">
+                                    <span class="js-input-data-receiver js-dropdown__btn" onmousedown="return false" onselectstart="return false" data-default="Все">Все</span>
+                                </div>
+                                <div class="filter-multichoose-body js-dropdown__body">
+                                    <div class="filter-multichoose-body__header clear">
+                                        <div class="filter-header-item choise-all clear" onmousedown="return false" onselectstart="return false">
+                                            <div class="filter-header-item_sub-item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input-all__main" type="checkbox">
+                                                    <span class="chbox-label" >Все</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="filter-header-item" style="display: none">
+                                            <span>Выбрано: <span class="js-input-count"></span></span>
+                                        </div>
+                                    </div>
+                                    <div class="filter-multichoose-body__main">
+                                        <ul onmousedown="return false" onselectstart="return false">
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">89 = 580 кг</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">90 = 600 кг</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">91 = 615 кг</span>
+                                                </label>
+                                            </li>
+                                            <li class="input-group__item">
+                                                <label class="checkbox-label">
+                                                    <input class="checkbox js-input" type="checkbox">
+                                                    <span class="chbox-label checkbox-text">94 = 670 кг</span>
+                                                </label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="filter-multichoose-body__footer clear">
+                                        <div class="filter-multichoose-body__footer-item">
+                                            <input type="submit" value="Применить" class="btn-style js-close-btn">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="filter__find-block-info">
                         <p>Найдено: <span class="filter__count">51</span> вариант <span class="fillter__size"> 225/45 R17</span></p>
