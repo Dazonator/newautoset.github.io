@@ -258,7 +258,7 @@
 }
 .filter__find-block-index .filter-multichoose .filter-multichoose-body__main{
   margin-top: 10px;
-  position: 5px 0px;
+  padding: 5px 0px;
 }
 .filter__find-block-info {
   display: inline-block;
