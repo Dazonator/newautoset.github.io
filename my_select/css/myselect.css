@@ -430,7 +430,7 @@ body.touch select.myselect_block
 
 /*----------------Заказать звонок-------------------*/
 /*----------------Заказать звонок-------------------*/
-.dropdown__body {
+.order__call {
   padding: 20px;
   display: none;
   max-width: 260px;
@@ -444,20 +444,18 @@ body.touch select.myselect_block
   box-shadow: 0 0px 15px rgba(0, 0, 0, 0.4);
   background-color: #fff;
 }
-
-.dropdown__body-caption {
+.order__call-caption {
   display: block;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: #000;
 }
-
-.dropdown__body-mask {
+.order__call-mask {
   position: relative;
   margin-top: 20px;
 }
-.dropdown__body .mask-decor {
+.order__call .mask-decor {
   position: absolute;
   left: 10px;
   z-index: 1;
@@ -466,17 +464,14 @@ body.touch select.myselect_block
   font-weight: bold;
   color: #000;
 }
-.dropdown__body-mask .input-style{
+.order__call-mask .input-style{
   padding-left: 50px;
   margin-bottom: 20px;
 }
-
-
-.dropdown__body-btn:hover {
+.order__call-btn:hover {
   cursor: pointer;
   background-color: #ff2c2c;
 }
-
 .show_message_ok {
   padding: 20px;
   width: auto;
@@ -497,7 +492,7 @@ body.touch select.myselect_block
   font-weight: 700;
 }
 
-.dropdown__body.open {
+.order__call.open {
   display: block;
 }
 /*----------------Заказать звонок-END-------------------*/
@@ -534,7 +529,7 @@ body.touch select.myselect_block
     .filter-multichoose .filter-multichoose-body{
       width: 728px;
     }
-    .dropdown__body,
+    .order__call,
     .show_message_ok {
       left: 20px;
       margin-left: 0px;
