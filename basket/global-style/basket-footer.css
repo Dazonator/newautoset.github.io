@@ -468,7 +468,8 @@
   text-align: left;
   padding: 0px 20px;
   background-color: #fff;
-  font-size: 12px;
+  font-size: 14px;
+  line-height: 17px;
   overflow: hidden; 
 }
 .bskt-footer-pablickContract_modal-main-block{
@@ -484,12 +485,15 @@
   margin-top: 20px;
   text-align: center;
   font-size: 22px;
+  line-height: 30px;
   font-weight: bold;
 }
 .bskt-footer-pablickContract_modal-main-caption-description{
   display: block;
+  margin-top: 4px;
   text-align: center;
-  font-size: 14px;
+  font-size: 18px;
+  line-height: 22px;
 }
 .bskt-footer-pablickContract_modal-main-list-caption{
   font-weight: bold;
