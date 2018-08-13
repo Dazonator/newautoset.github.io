@@ -609,9 +609,6 @@
     width: 50%;
     float: right;
   }
-  .filter__find-block {
-    padding: 15px 20px 15px 20px;
-  }
   
   .filter__find-block-right {
     width: 100%;
@@ -638,42 +635,33 @@
   .filter-product__your-size-desc {
     padding-right: 20px;
   }
-  .filter__find-block-left {
-    display: block;
-    width: 100%;
-  }
-  .filter__find-block-index {
-    float: left;
-    width: 50%;
-    padding-right: 10px;
-  }
-  .filter__find-block-info {
-    float: right;
-    width: 50%;
-    padding: 8px 0px 8px 10px;
-    margin-left: 0px;
-    text-align: center;
-  }
-  .filter__find-block-index-wrapper {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-
-  }
-  .filter__find-block-index .filter__label {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    display: table-cell;
-  }
-  .filter__find-block-index .filter-multichoose {
-    width: 50%;
-    display: table-cell;
-  }
   .filter__find-block-index .filter-multichoose-body {
     left: 0px;
     margin: 0px auto;
     margin-top: 25px;
+  }
+  .filter__find-block-left{
+    width: 100%;
+  }
+  .filter__find-block-left-wrapper{
+    margin: 0 -10px;
+  }
+  .filter__find-block-index{
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+  }
+  .filter__find-block-info{
+    padding: 0 10px;
+    margin-left: 0px;
+    width: 50%;
+    text-align: center;
+  }
+  .filter__find-block-index .filter-multichoose {
+    width: 100%;
+  }
+  .filter__find-block-info p {
+    line-height: 36px;
   }
 }
 
@@ -755,25 +743,6 @@
   .filter__choose-goods .filter-product__fields .btn-style {
     width: 100%;
   }
-  .filter__find-block-left {
-    width: 100%;
-    display: block;
-  }
-  .filter__find-block-index {
-    float: none;
-    display: block;
-    padding-right: 0px;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .filter__find-block-info {
-    display: block;
-    text-align: center;
-    width: 100%;
-    margin-left: 0px;
-    margin-top: 10px;
-    padding: 0px;
-  }
   
   .filter-product__your-size-desc{
     float: none;
@@ -791,23 +760,15 @@
     min-width: 144px;
     padding-right: 10px;
   }
-  .filter__find-block-index .filter__label {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 5px;
+}
+@media (max-width: 559px) {
+  .filter__find-block-info p{
+    line-height: 19px;
   }
-  .filter__find-block-index .filter-multichoose {
-    display: inline-block;
-    width: 160px;
-    vertical-align: middle;
-  }
-  .filter__find-block-index-wrapper {
-    display: table;
-    width: auto;
-    margin: 0 auto;
+  .filter__find-block-info p .fillter__size{
+    display: block;
   }
 }
-
 @media (max-width: 539px) {
   .filter__tab-text {
     padding: 9px 70px 8px;
