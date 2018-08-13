@@ -767,13 +767,6 @@
   }
   .filter__find-block-index .filter-multichoose {
     width: 100%;
-}
-@media (max-width: 559px) {
-  .filter__find-block-info p{
-    line-height: 19px;
-  }
-  .filter__find-block-info p .fillter__size{
-    display: block;
   }
 }
 @media (max-width: 539px) {
