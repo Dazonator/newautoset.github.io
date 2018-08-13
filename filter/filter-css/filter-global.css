@@ -1,4 +1,3 @@
-
 .container-block {
   padding: 0px;
 }
@@ -115,36 +114,43 @@
 }
 
 .filter__find-block {
-  padding: 35px 90px 15px 90px;
+  padding: 15px 90px 15px 90px;
   background-color: #666;
+}
+.filter__find-block-wrapper{
+  margin: 0 -10px;
 }
 
 .filter__find-block-left {
   float: left;
+  width: 50%;
+  padding: 0 10px;
 }
 
 .filter__find-block-right {
   float: right;
+  width: 50%;
+  padding: 0 10px;
 }
 
 .filter__find-block-index {
-  display: inline-block;
-  vertical-align: middle;
+  float: right;
 }
 .filter__find-block-index-wrapper{
   position: relative;
 }
 .filter__find-block-index .filter__label{
-  position: absolute;
-  display: block;
-  top: -20px;
-  left: 0px;
-  margin-bottom: 0px;
+  display: inline-block;
+  vertical-align: middle;
   font-size: 14px;
   line-height: 16px;
   color: #b2b2b2;
+  margin-bottom: 0px;
 }
 .filter__find-block-index .filter-multichoose{
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 4px;
   width: 120px;
   position: relative;
 }
@@ -186,17 +192,23 @@
   padding: 5px 0px;
 }
 .filter__find-block-info {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 17px;
+  float: left;
 }
 
 .filter__find-block-info p {
-  display: block;
-  font-size: 18px;
-  line-height: 21px;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  line-height: 36px;
   font-weight: bold;
   color: #b2b2b2;
+}
+.filter__find-block-info p .filter__caption{
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 14px;
+  line-height: 16px;
 }
 
 .filter__find-block-info span {
@@ -205,14 +217,12 @@
 }
 
 .filter__find-block-btns {
-  display: inline-block;
-  vertical-align: middle;
+  margin: 0 -10px;
 }
 .filter__find-block-btn-wrapper{
-  display: inline-block;
-  vertical-align: middle;
-  width: 275px;
-  height: 36px;
+  float: left;
+  width: 50%;
+  padding: 0 10px;
 }
 .filter__find-block-btn {
   display: block;
@@ -224,10 +234,6 @@
   font-size: 14px;
   line-height: 36px;
   color: #b2b2b2;
-}
-
-.filter__find-block-btn-wrapper + .filter__find-block-btn-wrapper {
-  margin-left: 17px;
 }
 
 .filter__find-block-btn:hover {
@@ -470,7 +476,7 @@
     padding: 20px 20px 0px 20px;
   }
   .filter__find-block {
-    padding: 35px 20px 15px 20px;
+    padding: 15px 20px 15px 20px;
   }
 }
 
@@ -485,15 +491,37 @@
   .filter-product__btn {
     width: 225px;
   }
-  .filter__find-block-btn-wrapper {
-    width: 215px;
-  }
   .filter-product__btn-span {
     display: none;
   }
   .filter-product__btn .btn-style {
     width: 215px;
   }
+  .filter__find-block-info {
+    text-align: center;
+    width: 50%
+  }
+  .filter__find-block-info p{
+    line-height: 18px;
+  }
+  .filter__find-block-info p .filter__caption {
+    display: block;
+    margin-bottom: 4px;
+    margin-right: 0px;
+  }
+  .filter__find-block-info .fillter__size {
+    display: block;
+  }
+  .filter__find-block-index .filter__label {
+    display: block;
+    margin-bottom: 4px;
+  }
+  .filter__find-block-index .filter-multichoose {
+    margin-left: 0px;
+  }
+  .filter__find-block-right {
+    margin-top: 20px;
+}
 }
 
 @media (max-width: 959px) {
@@ -548,9 +576,6 @@
   .filter__find-block-info p {
     font-size: 16px;
     line-height: 19px;
-  }
-  .filter__find-block-btn-wrapper {
-    width: 135px;
   }
   .filter__choose-goods .filter-product__pic {
       display: none;
@@ -609,25 +634,6 @@
     width: 50%;
     float: right;
   }
-  
-  .filter__find-block-right {
-    width: 100%;
-    margin-top: 10px;
-  }
-  .filter__find-block-btns {
-    display: block;
-    margin: 0 -10px;
-  }
-  .filter__find-block-btn-wrapper {
-    width: 50%;
-    float: left;
-    padding: 0 10px;
-  }
-  .filter__find-block-btn-wrapper + .filter__find-block-btn-wrapper {
-    margin-left: 0px;
-    float: right;
-    width: 50%;
-  }
   .filter-product__your-size-desc li span.left,
   .filter-product__your-size-desc:nth-of-type(2) li span.left  {
     width: 155px;
@@ -636,32 +642,8 @@
     padding-right: 20px;
   }
   .filter__find-block-index .filter-multichoose-body {
-    left: 0px;
     margin: 0px auto;
     margin-top: 25px;
-  }
-  .filter__find-block-left{
-    width: 100%;
-  }
-  .filter__find-block-left-wrapper{
-    margin: 0 -10px;
-  }
-  .filter__find-block-index{
-    float: left;
-    width: 50%;
-    padding: 0 10px;
-  }
-  .filter__find-block-info{
-    padding: 0 10px;
-    margin-left: 0px;
-    width: 50%;
-    text-align: center;
-  }
-  .filter__find-block-index .filter-multichoose {
-    width: 100%;
-  }
-  .filter__find-block-info p {
-    line-height: 36px;
   }
 }
 
@@ -760,6 +742,31 @@
     min-width: 144px;
     padding-right: 10px;
   }
+  .filter__find-block-left {
+    width: 100%;
+  }
+  .filter__find-block-right {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .filter__find-block-btns {
+    margin: 0 -5px;
+  }
+  .filter__find-block-btn-wrapper {
+    padding: 0 5px;
+  }
+  .filter__find-block-left-wrapper.clear{
+    margin: 0 -5px;
+  }
+  .filter__find-block-info {
+    padding: 0 5px;
+  }
+  .filter__find-block-index {
+    width: 50%;
+    padding: 0 5px;
+  }
+  .filter__find-block-index .filter-multichoose {
+    width: 100%;
 }
 @media (max-width: 559px) {
   .filter__find-block-info p{
@@ -778,6 +785,12 @@
 @media (max-width: 479px) {
   .filter__tab-text {
     padding: 9px 40px 8px;
+  }
+  .filter__find-block-index .filter-multichoose-body {
+    margin: 0px;
+    margin-top: 25px;
+    right: 0px;
+    left: auto;
   }
 }
 
