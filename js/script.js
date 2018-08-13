@@ -181,7 +181,6 @@ var View = new (function () {
                 htmlbody.animate({scrollTop: modalTop - 50}, Math.abs(modalTop - winScrollTop));
             }
 
-console.log(modalTop);
             modal.css('top', modalTop);
 
             var modalSlider = modal.find('.js-modal-image-slider');
