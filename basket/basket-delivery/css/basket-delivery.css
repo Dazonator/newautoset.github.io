@@ -466,18 +466,6 @@
   background-repeat: no-repeat;
 }
 
-.bskt-delivery-page__punkt-block_item-map_icon {
-  display: block;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 12px;
-  height: 17px;
-  color: #e2001a;
-  fill: #e2001a;
-
-}
-
 .bskt-delivery-page__punkt-block_item-map-modal-main {
   height: 400px;
 }
