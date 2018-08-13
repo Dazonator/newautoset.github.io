@@ -1,4 +1,8 @@
 $(document).ready(function () {
+	$(".myselect_wrapper").on("click",function(){
+		$(".filter-multichoose").removeClass("open");
+		$(".filter-multichoose-body").removeClass("open");
+	});
 	$(".js-close-btn").on("click", function(){
 		$(".open").removeClass("open");
 	});
