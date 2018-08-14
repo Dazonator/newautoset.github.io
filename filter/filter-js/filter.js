@@ -1,4 +1,7 @@
 $(document).ready(function () {
+	$(".js-select").on("click", function(){
+		$(".open").removeClass("open");
+	})
 	$(".js-close-btn").on("click", function(){
 		$(".open").removeClass("open");
 	});
