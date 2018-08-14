@@ -409,6 +409,10 @@
     {
         padding-left: 20px;
     }
+    .bskt-main__cart-item_pic-link_img
+    {
+        width: 175px;
+    }
 
     
 }
