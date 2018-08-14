@@ -1,7 +1,11 @@
 $(document).ready(function () {
 	$(".js-select").on("click", function(){
 		$(".open").removeClass("open");
-	})
+	});
+	$(".filter-multichoose").on("click", function(){
+		$(".js-select").change();
+		alert("sdfdssfdfs");
+	});
 	$(".js-close-btn").on("click", function(){
 		$(".open").removeClass("open");
 	});
