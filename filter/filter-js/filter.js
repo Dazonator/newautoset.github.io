@@ -3,7 +3,7 @@ $(document).ready(function () {
 		$(".open").removeClass("open");
 	});
 	$(".filter-multichoose").on("click", function(){
-		$(".js-select").focusout();
+		$(".js-select").slideUp();
 		// alert("dsfsdfsdfsd");
 	});
 	$(".js-close-btn").on("click", function(){
