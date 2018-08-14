@@ -3,7 +3,8 @@ $(document).ready(function () {
 		$(".open").removeClass("open");
 	});
 	$(".filter-multichoose").on("click", function(){
-		$(".js-select").change();
+		$(".js-select").focusout();
+		// alert("dsfsdfsdfsd");
 	});
 	$(".js-close-btn").on("click", function(){
 		$(".open").removeClass("open");
