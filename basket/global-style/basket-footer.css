@@ -671,35 +671,41 @@
         padding: 0 5px;
         text-align: center;
     }
-    .bskt-footer-block-table-row {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-        -moz-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-        -o-flex-wrap: wrap;
-        flex-wrap: wrap;
-    }
+    @supports (display: flex){
+        .bskt-footer-block-table-row {
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
 
-    .bskt-footer-block {
-         margin: 0px; 
-         display: -webkit-flex;
-         display: -moz-flex;
-         display: -ms-flex;
-         display: -o-flex;
-         display: flex;
-         -webkit-flex-wrap: wrap;
-         -moz-flex-wrap: wrap;
-         -ms-flex-wrap: wrap;
-         -o-flex-wrap: wrap;
-         flex-wrap: wrap;
-         justify-content: flex-start;
-         -ms-align-items: flex-start;
-         align-items: flex-start;
+        .bskt-footer-block {
+             margin: 0px; 
+             display: -webkit-flex;
+             display: -moz-flex;
+             display: -ms-flex;
+             display: -o-flex;
+             display: flex;
+             -webkit-flex-wrap: wrap;
+             -moz-flex-wrap: wrap;
+             -ms-flex-wrap: wrap;
+             -o-flex-wrap: wrap;
+             flex-wrap: wrap;
+             justify-content: flex-start;
+             -ms-align-items: flex-start;
+             align-items: flex-start;
+        }
     }
+    .bskt-footer-block-table-row{
+        display: block;
+    }
+   
     .bskt-footer-left {
         display: block;
         padding: 0px;
@@ -735,6 +741,8 @@
         order: 5;
     }
     .bskt-footer-right_next {
+        display: block;
+        width: 100%;
         padding: 20px 0px 0px 0px;
         -webkit-order: 3;
         -moz-order: 3;
@@ -762,6 +770,7 @@
         -ms-order: 4;
         -o-order: 4;
         order: 4;
+        width: 100%;
     }
     
     .bskt-footer-fromCabinet
