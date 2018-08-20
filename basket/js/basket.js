@@ -89,5 +89,16 @@ $(document).ready(function () {
             $(".bskt-footer-pablickContract_modal-main_scroll-top").removeClass("visible");
         }
     });
+    $(".js-no-email").on("click", function(){
+        $(".js-no-email").toggleClass("check");
+        if($(this).hasClass("check")){
+            $(".bskt-oder-page-block__field-email").prop('disabled',true);
+            $(".bskt-oder-page-block__field-email").val("нет"); 
+        }
+        else{
+            $(".bskt-oder-page-block__field-email").prop('disabled',false);
+            $(".bskt-oder-page-block__field-email").val("konstantinopolsky@yandex.ru");
+        }
+    });
 
 });

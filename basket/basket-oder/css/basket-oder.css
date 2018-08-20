@@ -54,6 +54,20 @@ input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
   padding: 10px;
   position: relative;
 }
+.bskt-oder-page-block__field-email:disabled{
+  background-color: #eee;
+  color: #e0e0e0;
+}
+.bskt-oder-page-block__field-item .chbox-label{
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  padding-left: 30px;
+  -webkit-tap-highlight-color: transparent;
+  -ms-tap-highlight-color: transparent;
+  -moz-tap-highlight-color: transparent;
+  -o-tap-highlight-color: transparent;
+}
 
 .bskt-oder-page-block__field-item-caption{
   display: inline-block;
@@ -103,7 +117,7 @@ input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
   overflow: hidden;
   resize:none;
 }
-.bskt-oder-page-block__field-person .bskt-oder-page-block__field-item:nth-of-type(6) {
+.bskt-oder-page-block__field-person .bskt-oder-page-block__field-item:nth-of-type(7) {
   width: 100%;
 }
 @supports (display: flex){
@@ -158,7 +172,7 @@ input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
   @supports (display: flex){
     .bskt-oder-page-block__field{
       flex-wrap: nowrap;
-      max-height: 410px;
+      max-height: 450px;
     }
     .bskt-oder-page-block__field-comment{
       width: 100%;

@@ -315,6 +315,7 @@
 .bskt-footer-right_next
 {
     display: table-cell;
+    vertical-align: bottom;
     margin-top: 0px;
     width: 100%;
     padding: 20px 10px 0px 10px;
@@ -327,18 +328,15 @@
 
 .bskt-footer-right_next-link
 {
+    position: relative;
     font-size: 16px;
     font-weight: bold;
     line-height: 50px;
-
     display: block;
-
     width: 100%;
     height: 50px;
-
     text-align: center;
     text-transform: uppercase;
-
     border-radius: 3px;
         -webkit-tap-highlight-color: transparent;
         -ms-tap-highlight-color: transparent;
