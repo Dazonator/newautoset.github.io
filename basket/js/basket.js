@@ -92,12 +92,12 @@ $(document).ready(function () {
     $(".js-no-email").on("click", function(){
         $(".js-no-email").toggleClass("check");
         if($(this).hasClass("check")){
-            $(".bskt-oder-page-block__field-email").prop('disabled',true);
-            $(".bskt-oder-page-block__field-email").val("нет"); 
+            $("#js-disabled-input").prop('disabled',true);
+            $("#js-disabled-input").val("нет"); 
         }
         else{
-            $(".bskt-oder-page-block__field-email").prop('disabled',false);
-            $(".bskt-oder-page-block__field-email").val("konstantinopolsky@yandex.ru");
+            $("#js-disabled-input").prop('disabled',false);
+            $("#js-disabled-input").val("konstantinopolsky@yandex.ru");
         }
     });
 

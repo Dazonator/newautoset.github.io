@@ -54,7 +54,7 @@ input.bskt-oder-page-block__field-item-input::-ms-input-placeholder {
   padding: 10px;
   position: relative;
 }
-.bskt-oder-page-block__field-email:disabled{
+.bskt-oder-page-block__field-item input:disabled{
   background-color: #eee;
   color: #e0e0e0;
 }
