@@ -20,6 +20,7 @@
 .goods-modals .modal .modal-close-btn {
   top: 0px;
   right: 0px;
+  z-index: 99;
 }
 
 .goods-modals .modal .modal-close-btn_icon {
