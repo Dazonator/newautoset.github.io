@@ -4,9 +4,21 @@
         $(this).addClass("active");
         var data = $(this).attr("data");
         $(".goods-about__content-item").addClass("hidden");
-        $("body").find("div [data='" + data +"-block']").removeClass("hidden");
+        var find_desc = $("body").find("div [data='" + data +"-block']");
+        find_desc.removeClass("hidden");
+        var top_desc = find_desc.offset().top;
+        $("html").animate({scrollTop:top_desc - 20}, 600);
     });
-    // $(".close-cross").on("click", function(){
-    // 	$(this).parent().parent().hide();
-    // })
+    $(".js-anchor").on("click", function(){
+      	var val = $(this).attr("href");
+		var href = val.substring(1, val.length);
+		$(".js-about-tab").removeClass("active");
+		$("body").find("div [data=" + href +"]").addClass("active");
+		$(".goods-about__content-item").addClass("hidden");
+        var find_block = $("body").find("div [data='" + href +"-block']");
+        find_block.removeClass("hidden");
+        var top = find_block.offset().top;
+        console.log(top);
+        $("html").animate({scrollTop:top - 20}, 600);
+    });
  })
