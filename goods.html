@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Goods-cart</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_mobile.css">
+    <link rel="stylesheet" href="https://autoset.by/bitrix/templates/source/css/index_tablet.css">
+    <link rel="stylesheet" href="css/global-style.css">
+    <link rel="stylesheet" href="my_select/css/myselect.css">
+     <link rel="stylesheet" href="goods/goods-css/goods-css.css">
+    <script type="text/javascript" src="https://autoset.by/sourse/js/bower_components/jquery/jquery.min.js"></script>
+    <script src="js/slick-slider.min.js"></script>
+    <script src="js/browser-plugin.min.js"></script>
+    <script src="js/inputmask.min.js"></script>
+    <script src="goods/goods-js/goods-js.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+    if (/MSIE|Trident/.test(navigator.userAgent)) {
+        var iEobject;
+        iEobject = document.createElement('script');
+        iEobject.src = "https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.0.3/svg4everybody.min.js";
+        iEobject.onload = function() {
+            svg4everybody();
+        };
+        document.getElementsByTagName('head')[0].appendChild(iEobject);
+    }
+    </script>
+</head>
+
+<body>
+	<div class="overlay js-overlay"></div>
+	<div class="container-block">
+		<section class="goods clear">
+			<section class="goods-block">
+				<div class="goods-block__name">
+					<span class="goods-block__producer">
+						CONTINENTAL
+						<svg class="goods-block__producer-icon">
+							<use xlink:href="goods/goods-img/sprite-mono.svg#cert_dealer"></use>
+						</svg>
+					</span>
+					<span class="goods-block__model">ContiCrossContact LX Sport</span>
+					<span class="goods-block__size">225/45 R17</span>
+					<div class="goods-block__index">
+						<span class="goods-block__index-value">91Y</span>
+						<div class="hover-body">
+							<div class="hover-body-wrapper">
+								<p>Индекс нагрузки: <span class="bold">91</span> = до 615 кг</p>
+								<p>Нагрузка на 4 колеса: до 2460 кг</p>
+								<p>индекс скорости: <span class="bold">H</span> = до 210 км/ч</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="goods-block__photo clear">
+					<div class="goods-block__photo-block">
+						<img src="goods/goods-img/photo.jpg" alt="tire">
+						<div class="goods-block__photo-label">
+							<svg class="sesson">
+								<use xlink:href="goods/goods-img/sprite-color.svg#seasons-season-winter"></use>
+							</svg>
+							<div class="hover-body">
+								<div class="hover-body-wrapper">
+									<p>Сезонность:</p>
+									<span class="bold">Летняя</span>
+								</div>
+							</div>
+						</div>
+						<div class="goods-block__photo-label">
+							<svg class="thorns">
+								<use xlink:href="goods/goods-img/sprite-color.svg#tire_spiked"></use>
+							</svg>
+							<div class="hover-body">
+								<div class="hover-body-wrapper">
+									<p>Наличие шипов:</p>
+									<span class="bold">Есть</span>
+								</div>
+							</div>
+						</div>
+						<div class="goods-block__photo-info">
+							<div class="goods-block__photo-info_icon">
+								<svg>
+									<use xlink:href="goods/goods-img/sprite-mono.svg#photo-photo-info-i"></use>
+								</svg>
+								<div class="hover-body">
+									<div class="hover-body-wrapper">
+										<p>
+											Рисунок протектора 
+											может отличаться в зависимости от ширины или омологации шины
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="goods-block__photo-info_resize">
+								
+								<a href="#resize-goods" class="js-open-modal">
+									<svg>
+										<use xlink:href="goods/goods-img/sprite-mono.svg#photo-zoom-icon-arrows"></use>
+									</svg>
+								</a>
+								
+							</div>
+						</div>
+					</div>
+					<div class="goods-block__photo-icons">
+						<ul>
+							<li class="goods-block__photo-icons_class">
+								<svg class="">
+									<use xlink:href="goods/goods-img/sprite-color.svg#tire_class_APP"></use>
+								</svg>
+								<div class="hover-body">
+									<div class="hover-body-wrapper">
+										<span>Класс модели</span>
+										<svg class="close-cross">
+											<use xlink:href="goods/goods-img/sprite-mono.svg#close-cross-white"></use>
+										</svg>
+										<svg>
+											<use xlink:href="goods/goods-img/sprite-color.svg#tire_class"></use>
+										</svg>
+										<svg class="APP_class class-label">
+											<use xlink:href="goods/goods-img/sprite-color.svg#APP_class"></use>
+										</svg>
+										<a href="#" class="link-marker">Классификация шин</a>
+									</div>
+								</div>
+							</li>
+							<li class="goods-block__photo-icons_es">
+								<svg class="">
+									<use xlink:href="goods/goods-img/sprite-color.svg#es_icon_a"></use>
+								</svg>
+								<div class="hover-body">
+									<div class="hover-body-wrapper">
+										<span>Евроэтикетка</span>
+										<svg class="close-cross">
+											<use xlink:href="goods/goods-img/sprite-mono.svg#close-cross-white"></use>
+										</svg>
+										<svg>
+											<use xlink:href="goods/goods-img/sprite-color.svg#es_bgr_cl_svgo"></use>
+										</svg>
+										<svg class="es_D-left es-class es-class-left">
+											<use xlink:href="goods/goods-img/sprite-color.svg#es_D"></use>
+										</svg>
+										<svg class="es_A-right es-class es-class-right">
+											<use xlink:href="goods/goods-img/sprite-color.svg#es_A"></use>
+										</svg>
+										<svg class="noise">
+											<use xlink:href="goods/goods-img/sprite-color.svg#es_full"></use>
+										</svg>
+										<span class="noise-value">72<span class="noise-units">dB</span></span>
+										<a href="#" class="link-marker">Подробное описание</a>
+									</div>
+								</div>
+							</li>
+							<li class="goods-block__photo-icons_youtube">
+								<svg class="">
+									<use xlink:href="goods/goods-img/sprite-color.svg#video_youtube_black_red"></use>
+								</svg>
+							</li>
+							<li class="goods-block__photo-icons_longterm">
+								<svg class="">
+									<use xlink:href="goods/goods-img/sprite-color.svg#longterm_6m_blue"></use>
+								</svg>
+								<div class="hover-body">
+									<div class="hover-body-wrapper">
+										<p>Рассрочка до 6 месяцев без переплат!</p>
+										<a href="#" class="link-marker">Подробнее о рассрочке</a>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="goods-marketing mobile">
+					<div class="goods-marketing__icons clear">
+						<div class="goods-marketing__icons-item">
+							<svg>
+								<use xlink:href="goods/goods-img/sprite-mono.svg#marketing-delivery-free-free"></use>
+							</svg>
+							<span>Бесплатная доставка</span>
+						</div>
+						<div class="goods-marketing__icons-item">
+							<svg>
+								<use xlink:href="goods/goods-img/sprite-mono.svg#marketing-warranty-car-tires-2-y"></use>
+							</svg>
+							<span>Гарантия 2&nbspгода</span>
+						</div>
+						<div class="goods-marketing__icons-item">
+							<svg>
+								<use xlink:href="goods/goods-img/sprite-mono.svg#marketing-cashback"></use>
+							</svg>
+							<span>14 дней на&nbspвозврат</span>
+						</div>
+					</div>
+					<div class="goods-marketing__content">
+						<p>
+							<span class="bold">Изготовитель:</span> CONTINENTAL AG - BÜTTNERSTRASSE 25, 30165 HANNOVER, GERMANY
+						</p>
+						<p>
+							<span class="bold">Изготовитель (рус):</span> КОНТИНЕНТАЛЬ AО - БЮТТНЕР ШТРАССЕ 25, 30165 ГАННОВЕР, ГЕРМАНИЯ
+						</p>
+						<p>
+							<span class="bold">Адрес завода изготовителя:</span> Objizdna 1628, 765 31 Otrokovice, Czech Republic
+						</p>
+						<p>
+							<span class="bold">Адрес завода изготовителя (рус):</span> Обжиздна 1628, 765 31 Отроковице, Чехия
+						</p>
+						<p>
+							<span class="bold">Импортер:</span> ТЧУП &apos;Шате-М Плюс&apos; Адрес: Минская обл., Минский р-н., п. Привольный, ул.Мира, 2а
+						</p>
+						<p>
+							<span class="bold">Срок службы:</span> 5 лет
+						</p>
+						<a href="#">Сервисные центры</a>
+					</div>
+				</div>
+			</section>
+			<section class="goods-info">
+				<div class="goods-info__price">
+					<div class="goods-info__official-diller">
+						<p>
+							<svg class="goods-block__producer-icon">
+								<use xlink:href="goods/goods-img/sprite-mono.svg#cert_dealer"></use>
+							</svg>
+							АВТОСЕТЬ — СЕРТИФИЦИРОВАННЫЙ ПРОДАВЕЦ ШИН CONTINENTAL
+						</p>
+					</div>
+					<div class="goods-info__price-block clear">
+						<div class="goods-info__price-left clear">
+							<div class="goods-info__price-label">
+								<span>Цена:</span>
+								<div class="goods__circle-wrapper">
+									<svg class="goods__circle-question">
+										<use xlink:href="goods/goods-img/sprite-mono.svg#29_question_circle"></use>
+									</svg>
+									<div class="hover-body">
+										<div class="hover-body-wrapper">
+											<p class="bold">
+												Стоимость товара без скидки
+											</p>
+											<p>
+												Товар можно оплатить картами рассрочки – "Карты покупок", "Черепаха", "SMART Карта".  Также можно оформить рассрочку под 0% на срок до 6 месяцев. 		         						Более подробную информацию об условиях рассрочки читайте в карточке товара.
+											</p>
+											<a href="#" class="link-marker">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goods-info__price-left-value">
+								<span class="cash">748</span>
+								<span class="coins">97</span>
+								<span class="units">p.</span>
+							</div>
+						</div>
+						<div class="goods-info__price-right clear">
+							<div class="goods-info__price-label">
+								<span>Цена со скидкой:</span>
+								<div class="goods__circle-wrapper">
+									<svg class="goods__circle-question">
+										<use xlink:href="goods/goods-img/sprite-mono.svg#29_question_circle"></use>
+									</svg>
+									<div class="hover-body">
+										<div class="hover-body-wrapper">
+											<p class="bold">
+												Цена со скидкой
+											</p>
+											<p>
+												Товар можно оплатить наличными деньгами или пластиковой карточкой в белорусских рублях в момент получения заказа или по предоплате с помощью системы интернет-банкинг, электронных денег, банкомата, через кассу любого банка.
+											</p>
+											<a href="#" class="link-marker">Подробнее</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goods-info__price-right-value">
+								<span class="cash">710</span>
+								<span class="coins">23</span>
+								<span class="units">p.</span>
+							</div>
+						</div>
+					</div>
+					<div class="goods-info__total">
+						<div class="goods-info__total-block clear">
+							<div class="goods-info__total-left">
+								<label>Количество:</label>
+								<div class="myselect_wrapper">
+									<div class="js-input-all">
+										<div class="js-dropdown js-dropdown-onclick">
+											<select class="myselect_block js-select">
+										            <option value="0">1 шт.</option>
+										            <option value="1">2 шт.</option>
+										            <option value="2">3 шт.</option>
+										            <option value="3" selected>4 шт.</option>
+										            <option value="4">5 шт.</option>
+										            <option value="5">6 шт.</option>
+										            <option value="6">7 шт.</option>
+										            <option value="7">8 шт.</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="goods-info__total-right">
+								<label>
+									<span class="caption">В наличии:</span>
+									<span class="count">более 10 шт.</span>
+								</label>
+								<button>купить</button>
+							</div>
+							<div class="goods-info__total-text">
+								<p>Стоимость <span class="count bold">4 шт.</span> со скидкой: <span class="cash">2840</span><span class="coins">92</span><span class="units bold">р.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="goods-marketing">
+					<div class="goods-marketing__icons clear">
+						<div class="goods-marketing__icons-item">
+							<svg>
+								<use xlink:href="goods/goods-img/sprite-mono.svg#marketing-delivery-free-free"></use>
+							</svg>
+							<span>Бесплатная доставка</span>
+						</div>
+						<div class="goods-marketing__icons-item">
+							<svg>
+								<use xlink:href="goods/goods-img/sprite-mono.svg#marketing-warranty-car-tires-2-y"></use>
+							</svg>
+							<span>Гарантия 2&nbspгода</span>
+						</div>
+						<div class="goods-marketing__icons-item">
+							<svg>
+								<use xlink:href="goods/goods-img/sprite-mono.svg#marketing-cashback"></use>
+							</svg>
+							<span>14 дней на&nbspвозврат</span>
+						</div>
+					</div>
+					<div class="goods-marketing__content">
+						<p>
+							<span class="bold">Изготовитель:</span> CONTINENTAL AG - BÜTTNERSTRASSE 25, 30165 HANNOVER, GERMANY
+						</p>
+						<p>
+							<span class="bold">Изготовитель (рус):</span> КОНТИНЕНТАЛЬ AО - БЮТТНЕР ШТРАССЕ 25, 30165 ГАННОВЕР, ГЕРМАНИЯ
+						</p>
+						<p>
+							<span class="bold">Адрес завода изготовителя:</span> Objizdna 1628, 765 31 Otrokovice, Czech Republic
+						</p>
+						<p>
+							<span class="bold">Адрес завода изготовителя (рус):</span> Обжиздна 1628, 765 31 Отроковице, Чехия
+						</p>
+						<p>
+							<span class="bold">Импортер:</span> ТЧУП &apos;Шате-М Плюс&apos; Адрес: Минская обл., Минский р-н., п. Привольный, ул.Мира, 2а
+						</p>
+						<p>
+							<span class="bold">Срок службы:</span> 5 лет
+						</p>
+						<a href="#">Сервисные центры</a>
+					</div>
+				</div>
+				<div class="goods-desc mobile">
+					<ul class="goods-desc__list">
+						<li class="goods-desc__item">
+							<span class="left">Производство:</span>
+							<span class="right">
+								<span class="right-value">Евросоюз</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Глубина протектора / вес:</span>
+							<span class="right">
+								<span class="right-value">нет данных</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Сезонность:</span>
+							<span class="right">
+								<span class="right-value">летняя</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Индекс нагрузки:</span>
+							<span class="right">
+								<span class="right-value">91 (до 615 кг)</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Нагрузка на 4 колеса:</span>
+							<span class="right">
+								<span class="right-value">до 2460 кг</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Индекс скорости:</span>
+							<span class="right">
+								<span class="right-value">Y (до 300 км/ч)</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Класс модели:</span>
+							<span class="right">
+								<span class="right-value">A++</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Евроэтикетка:</span>
+							<span class="right">
+								<span class="right-value">E B 72dB (2)</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Защита диска:</span>
+							<span class="right">
+								<span class="right-value">Нет</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left withhelper">
+								Маркировка M+S:
+								<div class="goods__circle-wrapper">
+									<svg class="goods__circle-question">
+										<use xlink:href="goods/goods-img/sprite-mono.svg#29_question_circle"></use>
+									</svg>
+									<div class="hover-body">
+										<div class="hover-body-wrapper">
+											<p>
+												Эту маркировку называют альпийской, и только она служит единственным признаком зимней шины. Автопроизводители рекомендуют ориентироваться на символ 3PMSF при выборе шин для зимнего сезона.
+											</p>
+										</div>
+									</div>
+								</div>
+							</span>
+							<span class="right">
+								<span class="right-value">нет данных</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left withhelper">
+								Маркировка 3PMSF:
+								<div class="goods__circle-wrapper">
+									<svg class="goods__circle-question">
+										<use xlink:href="goods/goods-img/sprite-mono.svg#29_question_circle"></use>
+									</svg>
+									<div class="hover-body">
+										<div class="hover-body-wrapper">
+											<p>
+												Эту маркировку называют альпийской, и только она служит единственным признаком зимней шины. Автопроизводители рекомендуют ориентироваться на символ 3PMSF при выборе шин для зимнего сезона.
+											</p>
+										</div>
+									</div>
+								</div>
+							</span>
+							<span class="right">
+								<span class="right-value">нет данных</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Покрытие:</span>
+							<span class="right">
+								<span class="right-value">
+									80% асфальт,
+									20%&nbspбездорожье&nbsp(HT)
+								</span>
+							</span>
+						</li>
+						<li class="goods-desc__item">
+							<span class="left">Протектор:</span>
+							<span class="right">
+								<span class="right-value">
+									асимметричный 
+									ненаправленный
+								</span>
+							</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section class="goods-desc">
+				<ul class="goods-desc__list">
+					<li class="goods-desc__item">
+						<span class="left">Производство:</span>
+						<span class="right">
+							<span class="right-value">Евросоюз</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Глубина протектора / вес:</span>
+						<span class="right">
+							<span class="right-value">нет данных</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Сезонность:</span>
+						<span class="right">
+							<span class="right-value">летняя</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Индекс нагрузки:</span>
+						<span class="right">
+							<span class="right-value">91 (до 615 кг)</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Нагрузка на 4 колеса:</span>
+						<span class="right">
+							<span class="right-value">до 2460 кг</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Индекс скорости:</span>
+						<span class="right">
+							<span class="right-value">Y (до 300 км/ч)</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Класс модели:</span>
+						<span class="right">
+							<span class="right-value">A++</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Евроэтикетка:</span>
+						<span class="right">
+							<span class="right-value">E B 72dB (2)</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Защита диска:</span>
+						<span class="right">
+							<span class="right-value">Нет</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left withhelper">
+							Маркировка M+S:
+							<div class="goods__circle-wrapper">
+								<svg class="goods__circle-question">
+									<use xlink:href="goods/goods-img/sprite-mono.svg#29_question_circle"></use>
+								</svg>
+								<div class="hover-body">
+									<div class="hover-body-wrapper">
+										<p>
+											Эту маркировку называют альпийской, и только она служит единственным признаком зимней шины. Автопроизводители рекомендуют ориентироваться на символ 3PMSF при выборе шин для зимнего сезона.
+										</p>
+									</div>
+								</div>
+							</div>
+						</span>
+						<span class="right">
+							<span class="right-value">нет данных</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left withhelper">
+							Маркировка 3PMSF:
+							<div class="goods__circle-wrapper">
+								<svg class="goods__circle-question">
+									<use xlink:href="goods/goods-img/sprite-mono.svg#29_question_circle"></use>
+								</svg>
+								<div class="hover-body">
+									<div class="hover-body-wrapper">
+										<p>
+											Эту маркировку называют альпийской, и только она служит единственным признаком зимней шины. Автопроизводители рекомендуют ориентироваться на символ 3PMSF при выборе шин для зимнего сезона.
+										</p>
+									</div>
+								</div>
+							</div>
+						</span>
+						<span class="right">
+							<span class="right-value">нет данных</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Покрытие:</span>
+						<span class="right">
+							<span class="right-value">
+								80% асфальт,
+								20%&nbspбездорожье&nbsp(HT)
+							</span>
+						</span>
+					</li>
+					<li class="goods-desc__item">
+						<span class="left">Протектор:</span>
+						<span class="right">
+							<span class="right-value">
+								асимметричный 
+								ненаправленный
+							</span>
+						</span>
+					</li>
+				</ul>
+			</section>
+			<section class="goods-about">
+				<div class="goods-about__block clear">
+					<div class="goods-about__item">
+						<span class="active js-about-tab" data="desc">Описание</span>
+					</div>
+					<div class="goods-about__item">
+						<span class="js-about-tab" data="delivery">Доставка и оплата</span>
+					</div>
+					<div class="goods-about__item">
+						<span class="js-about-tab" data="longterm">Рассрочка</span>
+					</div>
+					<div class="goods-about__item">
+						<span class="js-about-tab" data="warranty">Гарантия</span>
+					</div>
+					<div class="goods-about__item">
+						<span class="js-about-tab" data="es">Евроэтикетка</span>
+					</div>
+					<div class="goods-about__item">
+						<span class="js-about-tab" data="class">Класс модели</span>
+					</div>
+					<div class="goods-about__item">
+						<span class="js-about-tab" data="certificate">Сертификат</span>
+					</div>
+					<div class="goods-about__item">
+						<span class="js-about-tab" data="review">Отзывы</span>
+					</div>
+				</div>
+				<div class="goods-about__content">
+					<div class="goods-about__content-item desc-block" data="desc-block">
+						<p>
+							<span class="bold">Continental ContiCrossContact LX Sport</span> – высококачественная шина для асфальтированных дорог и лёгкого бездорожья. Модель предназначена для владельцев кроссоверов и внедорожников, которые ищут отточенную управляемость и великолепные тормозные характеристики на сухом или мокром дорожном покрытии. Для этого немецкие инженеры применяют многоблочный дизайн с множеством граней сцепления. Блоки протектора шины имеют ламели, которые выступают дополнительным гарантом ходимости в трудных дорожных условиях.
+						</p>
+						<p>
+							Ключевые особенности протектора Continental ContiCrossContact LX Sport:
+						</p>
+						<p>
+							- Заострённые блоки центральной зоны поддерживают надёжное сцепление в трудных дорожных условиях.
+						</p>
+						<p>
+							- Ёмкие дренажные канавки боковых зон эффективно отводят воду из пятна контакта во время сильных осадков.
+							Continental – премиальный немецкий бренд с неизменно высоким качеством.
+						</p>
+					</div>
+					<div class="goods-about__content-item hidden" data="delivery-block">
+						<p>
+							<span class="bold">1. Бесплатная доставка</span> товаров  <span class="bold">в один из магазинов</span> в городах Минск, Брест, Бобруйск, Витебск, Гомель, Гродно, Могилев. 
+							<br>
+							После оформления заказа на сайте <span class="bold">в течение 1-2 дней</span> заказ будет бесплатно доставлен в один из магазинов, где вы сможете его забрать.
+						</p>
+						<p>
+							<span class="bold">2. Доставка по РБ .</span> <br>
+							Доставка осуществляется по всей Республике Беларусь транспортной компанией. 
+							Особенности данного способа доставки: <br> 
+							• Доставка товара осуществляется по 100% предоплате за товар. <br>
+							• Бесплатная доставка. <br> 
+							В день доставки водитель с вами обязательно свяжется для согласования времени доставки. 
+						</p>
+					</div>
+					<div class="goods-about__content-item hidden" data="longterm-block">
+						Не надо копить — можно сразу купить.
+						Уважаемые покупатели, рады сообщить вам, что:
+						Для заказов от 200 рублей Вы можете оформить Рассрочку до 6 месяцев на весь ассортимент товаров, отмеченных синим знаком «Рассрочка 6 месяцев - 0%».
+						Рассрочка действительна при покупке товаров через сайт и в торгово-сервисных центрах «Автосеть».
+						Для оформления рассрочки необходим только паспорт.
+						Вы сами выбираете удобные для Вас условия рассрочки.
+						Купить товары в рассрочку на сайте просто:
+						1. Положите нужные товары в корзину и перейдите к оформлению заказа.
+						2. При оформлении заказа выберите форму оплаты «Рассрочка до 6 месяцев» и укажите первоначальный платеж и удобный для Вас срок рассрочки.
+						3. Ожидайте звонка от нашего специалиста, который проконсультирует Вас по телефону по процедуре оформления документов банка.
+						4. Оформите банковские документы.
+						5. После получения положительного решения от банка наш специалист согласует удобное для Вас время и дату доставки заказа.
+						Дополнительная информация по приобретению товаров в рассрочку:
+						1.Для заказов, приобретаемых в рассрочку не действуют скидки и дополнительные акции.
+						2. В рассрочку можно приобрести любой товар, отмеченный специальным знаком «Рассрочка 6 месяцев – 0%».
+						3.Рассрочка возможна для заказов с общей суммой от 200 рублей.
+						4.Возможный первоначальный взнос от 0 до 50% от суммы заказа.
+						5.Все дополнительные условия и требования по рассрочке предоставляет сотрудник банка в процессе оформления заявки на заключение договора.
+						Любую информацию по рассрочке вы можете получить, обратившись в наш call-центр по телефонам:
+
+						+375 (29) 611 32 32
+						+375 (33) 611 32 32
+
+					</div>
+					<div class="goods-about__content-item hidden" data="warranty-block">
+						<p>
+							Мы предоставляем гарантию на весь ассортимент товаров:
+						</p>
+						<p>
+							<span class="bold">Гарантийный срок на шины</span> - 2 года
+						</p>
+						<p>
+							<span class="bold">Гарантийный срок на диски</span> - Alutec, Anzio 5 лет, остальные диски 1 год
+						</p>
+						<p>
+							<span class="bold">Гарантийный срок на аккумуляторы</span> - 2 года (для коммерческого транспорта - 1 год)
+						</p>
+						<p>
+							<span class="bold">Мы гарантируем</span> сохранение работоспособности проданных товаров и их потребительских свойств в течение гарантийного срока.
+						</p>
+						<p>
+							Гарантия распространяется на все производственные дефекты.
+						</p>
+					</div>
+					<div class="goods-about__content-item es-block hidden" data="es-block">
+						<div class="caption">
+							<span class="bold">Евроэтикетка</span>
+						</div>
+						<div class="es-block__wrapper clear">
+							<div class="es-block__item">
+								<div class="es-block__item-top">
+									<svg>
+										<use xlink:href="goods/goods-img/sprite-color.svg#es_elem_fuel_economy"></use>
+									</svg>
+									<svg>
+										<use xlink:href="goods/goods-img/sprite-color.svg#A_class"></use>
+									</svg>
+								</div>
+								<div class="es-block__item-content">
+									<span class="bold">Топливная экономичность</span>
+									<p>
+										Испытания показали, что грамотный подбор экономичных шин существенно понижает расход топлива. Топливная эффективность напрямую зависит от количества энергии, необходимого шинам для преодоления сопротивления качению. Покрышки с низким  значением сопротивления качению уменьшают расход любого вида топлива за счёт меньших энергозатрат на нагрев и трение. Топливная эффективность расположена в цветовом диапазоне от максимально экономичного класса «А» до наименее экономичного класса «G». К примеру, при среднегодовом пробеге в 30 тысяч километров и усреднённом расходе топлива в 8 литров на «сотню», разница в сжигании между показателями «А» и «G» составляет около 130 литров топлива – чувствительная экономия, которой нельзя пренебрегать. Немаловажно, что шины «зелёного» класса более дружелюбны к окружающей среде. Легковые автомобили рейтингом «D» не оцениваются.
+									</p>
+								</div>
+							</div>
+							<div class="es-block__item">
+								<div class="es-block__item-top">
+									<svg>
+										<use xlink:href="goods/goods-img/sprite-color.svg#es_elem_wet_surface"></use>
+									</svg>
+									<svg>
+										<use xlink:href="goods/goods-img/sprite-color.svg#A_class"></use>
+									</svg>
+								</div>
+								<div class="es-block__item-content">
+									<span class="bold">Сцепление с мокрой дорогой</span>
+									<p>
+										Это основной показатель безопасности шин, который указывает на способность покрышек удерживать надёжное сцепление с мокрым асфальтом. Сила сцепления оценивается длиной тормозного пути при резком торможении на мокрой дороге. Разница между наиболее высоким классом «A» и самым низким классом «F» на скорости 80 км/ч равняется 18 метрам. Необходимо учитывать, что неудовлетворительное состояние дорожного полотна также увеличивает тормозной путь, что крайне немаловажно при возникновении непредвиденных дорожных ситуаций и вождении в экстремальных погодных условиях. Легковые автомобили рейтингами «D» и «G» не оцениваются.
+									</p>
+								</div>
+							</div>
+							<div class="es-block__item">
+								<div class="es-block__item-top">
+									<svg>
+										<use xlink:href="goods/goods-img/sprite-color.svg#es_elem_noise"></use>
+									</svg>
+									<svg>
+										<use xlink:href="goods/goods-img/sprite-color.svg#es_medium"></use>
+									</svg>
+									<svg>
+										<use xlink:href="goods/goods-img/sprite-color.svg#es_elem_noise_bl"></use>
+									</svg>
+									<span class="value">72 <span class="units">dB</span></span>
+								</div>
+								<div class="es-block__item-content">
+									<span class="bold">Уровень шума</span>
+									<p>
+										Шумы, издаваемые автомобильными шинами при движении, увеличивают звуковую нагрузку на городскую среду. Установка тихих покрышек уменьшает это негативное воздействие. Величина наружного шума шин оценивается в децибелах. Для удобства восприятия, кроме числового значения децибел, также указывается графическая маркировка класса шумности. Например, одна чёрная волна означает наиболее тихие покрышки, а три – предельно шумную резину. Две волны приравниваются к умеренному шумовыделению. Если ориентироваться на цифры, то разница между соседними волнами составляет 3 дБ. Для наглядности: 3 дБ дают двукратный прирост в уровне шума, то есть уровень шума от шины с одной волной в четыре раза ниже уровня шума от шины с тремя волнами.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="goods-about__content-item class-block hidden" data="class-block">
+						<div class="caption">
+							<span class="bold">Класс модели</span>
+							<span class="caption-desc bold">(экспертная оценка компании Автосеть)</span>
+						</div>
+						<div class="class-block__top">
+							<svg class="">
+								<use xlink:href="goods/goods-img/sprite-color.svg#APP_class"></use>
+							</svg>
+							<span class="bold">Ультра премиум</span>
+						</div>
+						<div class="class-block__content">
+							<div class="class-block__content-caption">
+								<span class="bold">Классификация шин:</span>
+							</div>
+							<div class="class-block__content-wrapper">
+								<div class="class-block__content-item">
+									<span class="bold">А++ – ультра премиум.</span>
+									<p>
+										Лучшие характеристики позволяют использовать данные шины как в экстремальных условиях на автомобилях повышенной мощности, так и в городском потоке. Шины не подведут ни в каких условиях. Шинами данного класса комплектуются топовые и «заряженные» модели премиальных автопроизводителей. Как правило, шины данного класса являются победителями шинных тестов в больших легковых и SUV-типоразмерах. С шинами данного класса вы сможете выжать максимум из своего автомобиля. Лучше могут быть только ощущения от вождения на треке.
+									</p>
+								</div>
+								<div class="class-block__content-item">
+									<span class="bold">А+ – премиум плюс.</span>
+									<p>
+										Улучшенные характеристики по всем направлениям: комфорт, экономия топлива, превосходные тормозные характеристики на сухом и мокром покрытии. Шинные тесты показывают, что модели данного класса – постоянные участники ТОП-3 и всегда получают отличные оценки экспертов. Данными шинами комплектуются премиальные модели автомобилей, а также входят в топовые комплектации автомобилей большого числа автопроизводителей. Владение шинами данного класса позволит получить позитивный опыт от вождения..
+									</p>
+								</div>
+								<div class="class-block__content-item">
+									<span class="bold">А – премиум.</span>
+									<p>
+										Повышенный комфорт езды, изностойкость шин и экономия топлива – таков набор стандартных характеристик премиальных шин от лучших мировых производителей.Большое количество моделей данного класса идёт на первичную комплектацию многих моделей автомобилей. Шины данного класса регулярно входят в ТОП-5 лучших по результатам независимых тестов.
+									</p>
+								</div>
+								<div class="class-block__content-item">
+									<span class="bold">B+ – стандарт плюс.</span>
+									<p>
+										Шины импортного производства, в которых применяются доказавшие свой успех технологии. Как правило, это шины 2-го эшелона крупнейших мировых производителей шин. За адекватную цену вы получите достойный уровень характеристик. Шины данного уровня получают хорошие оценки экспертов при проведении независимых шинных тестов.
+									</p>
+								</div>
+								<div class="class-block__content-item">
+									<span class="bold">B – стандарт.</span>
+									<p>
+										В основном импортные шины, предлагающие стандартный для европейских стран уровень характеристик. Отличное соотношение цена/качество..
+									</p>
+								</div>
+								<div class="class-block__content-item">
+									<span class="bold">С+ – эконом плюс.</span>
+									<p>
+										Модели обладают улучшенными по сравнению с классом C характеристиками, умеренным уровнем цены.
+									</p>
+								</div>
+								<div class="class-block__content-item">
+									<span class="bold">C – эконом.</span>
+									<p>
+										Шины данного класса имеют базовый уровень характеристик, при этом позволяя покупателю сэкономить за счёт цены.
+									</p>
+								</div>
+								<div class="class-block__content-item">
+									<span class="bold">D – бюджет.</span>
+									<p>
+										Модели, относящиеся к данному классу обладают низким уровнем характеристик, без применения новых технологий. Главное достоинство данного класса моделей – самая низкая цена.
+									</p>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="goods-about__content-item hidden" data="certificate-block">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis mollitia molestias quam consectetur porro quis nam laudantium est, rerum iusto dicta suscipit saepe corporis laborum pariatur eligendi eius officiis! Optio voluptates, corporis molestias perferendis quae quis distinctio placeat et ducimus, sed hic eos cum unde, non quaerat quam, nam repellat provident. Laudantium itaque cupiditate rem ipsa repellendus deserunt est officia quibusdam odit atque fuga qui perspiciatis totam excepturi ab corrupti dolor, exercitationem quo similique. Qui veritatis necessitatibus atque similique nostrum id veniam, nesciunt illo minus. Culpa recusandae ratione asperiores ut quo rem mollitia porro minus nostrum! Repellendus consectetur cupiditate unde earum cumque aliquam dolor atque beatae, officia explicabo mollitia deleniti tempora illum excepturi laudantium aperiam animi facilis porro, sequi laborum ad quaerat nam? Doloremque beatae est nam voluptates voluptate blanditiis, laborum, impedit alias obcaecati animi nisi. Similique, ratione harum nihil id maiores, consectetur aperiam eligendi. Blanditiis rem eveniet voluptas quasi! Autem amet ullam non quae, suscipit error aliquam quis eveniet, animi a inventore placeat tempore, libero maiores quisquam consequatur. Est voluptatibus deleniti, temporibus qui mollitia quasi, vel sunt? Deleniti impedit, quo illum unde, laborum quis assumenda in voluptatibus, minus autem blanditiis. Reiciendis itaque ipsum architecto et earum vero minima vel.
+						</p>
+					</div>
+					<div class="goods-about__content-item hidden" data="review-block">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut asperiores quaerat odit earum minus minima voluptatum provident quo beatae voluptas nesciunt, illo, distinctio, illum! At minima incidunt iste adipisci pariatur unde delectus. Voluptate asperiores ratione ipsum perferendis unde nulla, dicta reiciendis expedita quis molestiae doloremque blanditiis optio incidunt soluta. Sint quae minima delectus saepe voluptatum fugit eos, doloremque ipsa totam odio! Perferendis cupiditate, voluptatum ipsam harum rerum nostrum. Repudiandae non, provident nobis. At, possimus iusto perspiciatis. Est iusto obcaecati voluptate libero eligendi dolorum repellat minima nobis nemo provident, illum cupiditate rerum pariatur commodi ut cumque vitae natus voluptas delectus, similique cum. Itaque cumque vitae laboriosam, sint at excepturi nihil similique tempora est reiciendis expedita velit, sed distinctio nostrum praesentium voluptates doloremque voluptatibus, placeat accusamus! Accusamus expedita ab eos quia provident cupiditate iure mollitia dignissimos ipsa inventore, illo architecto tempora, cumque, omnis reprehenderit unde nam ducimus aliquid est dicta optio et corporis voluptas error. Molestiae, tempora, nobis. In eos distinctio libero similique incidunt quia, iste tempore officiis commodi consequatur consectetur tempora excepturi molestiae doloremque laborum natus illum vitae! Tempora, cupiditate. Commodi dolore ipsum a incidunt esse atque aliquam amet asperiores excepturi harum deserunt, in consequuntur dicta, delectus quos iste id itaque. Voluptas quasi qui placeat laudantium voluptates ex minus doloribus alias voluptatibus id, delectus maxime, consequatur nam, distinctio quam doloremque suscipit porro sequi optio perspiciatis? At ut tempora ipsam, nesciunt aliquam. Rerum repudiandae facilis eius laborum, cupiditate deserunt quisquam aut vitae quia velit. Dolorum quibusdam dicta alias, praesentium eum, temporibus fugit corporis vitae reiciendis recusandae nobis, quas dolor porro amet ipsa mollitia dolore! Ex sunt natus, earum sed expedita tempore voluptatibus, corporis molestias incidunt aliquam possimus magni maiores consequatur iusto? Ducimus voluptas cumque perspiciatis quod eos necessitatibus, tenetur error tempora maiores recusandae nostrum at, alias incidunt esse vel expedita. Aspernatur, obcaecati!
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="goods-modals">
+				<div class="modal-container js-modal-container">
+				    <div class="modal" id="resize-goods">
+				    	<div class="modal-header">
+				    		<span class="modal-close-btn js-close-modal">
+					    		<svg class="modal-close-btn_icon">
+					    			<use xlink:href="my_select/img/sprite.svg#close-cross-white"></use>
+					    		</svg>
+				    		</span>
+				    	</div>
+						<div class="modal-main">
+							 <img src="goods/goods-img/Continental ContiPremiumContact 5.jpg" alt="resize-goods">
+							 <span class="bold">CONTINENTAL</span>
+							 <span>ContiCrossContact LX Sport</span>
+						</div>
+				    </div>
+				</div>
+			</section>
+		</section>
+	</div>
+	<div class="delete"></div> <!-- этот блок удалить -->
+    
+</body>
+
+</html>
