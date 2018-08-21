@@ -1742,6 +1742,7 @@
   }
   .goods-marketing__content-link .hover-body .close-cross {
     display: block;
+    right: 30px;
   }
   .goods-marketing__content-link:hover .hover-body {
     min-width: 320px;
