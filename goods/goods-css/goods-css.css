@@ -858,6 +858,7 @@
   display: inline-block;
   margin-top: 10px;
   position: relative;
+  cursor: pointer;
 }
 .goods-marketing__content-link a{
   display: inline-block;
@@ -866,6 +867,7 @@
   line-height: 16px;
   color: #000;
   pointer-events: none;
+
 }
 
 .goods-marketing__content-link a:after, .goods-marketing__content-link a:before {
