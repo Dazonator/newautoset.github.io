@@ -1742,13 +1742,14 @@
   }
   .goods-marketing__content-link .hover-body .close-cross {
     display: block;
-    right: 30px;
   }
   .goods-marketing__content-link:hover .hover-body {
-    min-width: 320px;
-    width: 100vw;
-    padding: 10px 20px 0px 20px;
-    margin: 0 -20px;
+    min-width: 280px;
+    width: -webkit-calc(100vw - 40px);
+    width: -moz-calc(100vw - 40px);
+    width: -o-calc(100vw - 40px);
+    width: -ms-calc(100vw - 40px);
+    width: calc(100vw - 40px);
   }
 }
 
