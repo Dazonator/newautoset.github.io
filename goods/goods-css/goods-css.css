@@ -1,4 +1,6 @@
-@charset "UTF-8";
+.overlay {
+    background: rgba(255, 255, 255, .95);
+}
 .delete {
   /* это удалить!!!!!!!! */
   height: 350px;
@@ -22,7 +24,9 @@
   right: 0px;
   z-index: 99;
 }
-
+.goods-modals .modal .modal-close-btn:active svg{
+  fill: #5a5a5a;
+} 
 .goods-modals .modal .modal-close-btn_icon {
   color: #999999;
   fill: #999999;
