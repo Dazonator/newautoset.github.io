@@ -1,8 +1,7 @@
 .overlay {
     background: rgba(255, 255, 255, .95);
 }
-.delete {
-  /* это удалить!!!!!!!! */
+.delete { /* это удалить!!!!!!!! */
   height: 350px;
   background-color: #ccc;
 }
@@ -522,6 +521,24 @@
   padding: 15px 0px;
   border-top: 1px solid #ff5000;
   border-bottom: 1px solid #ff5000;
+  position: relative;
+  cursor: pointer;
+}
+.goods-info__official-diller:hover .hover-body{
+  display: block;
+  max-width: 220px;
+  left: 50%;
+  margin-left: -110px;
+  top: 95%;
+}
+.goods-info__official-diller:hover .hover-body p{
+  font-size: 12px;
+  line-height: 14px;
+  color: #000;
+  font-weight: normal;
+  padding-left: 0px;
+  width: auto;
+  text-align: left;
 }
 
 .goods-info__official-diller p {
@@ -1648,6 +1665,10 @@
   }
   .goods-info__price-left .goods__circle-wrapper .hover-body {
     right: -100px;
+  }
+  .goods-info__official-diller:hover .hover-body {
+    top: auto;
+    bottom: 95%;
   }
 }
 
