@@ -922,6 +922,9 @@
   font-size: 14px;
   line-height: 19px;
   color: #000;
+  text-decoration: none;
+  border-bottom: none;
+  outline: none;
 }
 .goods-marketing__content-link .service-punkt span.gray{
   color: #999;
