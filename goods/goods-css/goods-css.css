@@ -540,7 +540,7 @@
 
 .goods-info__price {
   padding-bottom: 20px;
-  box-shadow: inset 0px -2px 0px 0px #dcdcdc;
+  box-shadow: inset 0px -1px 0px 0px #dcdcdc;
 }
 
 .goods-info__price-block {
@@ -573,7 +573,7 @@
   float: left;
   width: 50%;
   padding: 0px 55px 0px 32px;
-  box-shadow: inset -2px 0px 0px 0px #dcdcdc;
+  box-shadow: inset -1px 0px 0px 0px #dcdcdc;
 }
 
 .goods-info__price-left-value {
@@ -780,7 +780,7 @@
 
 .goods-marketing__icons {
   padding-bottom: 10px;
-  border-bottom: 2px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
 }
 
 .goods-marketing__icons-item {
@@ -1621,7 +1621,7 @@
     display: block;
     order: 1;
     margin-top: 20px;
-    border-top: 2px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
   }
   .goods-marketing__icons-item:nth-of-type(1),
   .goods-marketing__icons-item:nth-of-type(2),

@@ -7,7 +7,7 @@
         var find_desc = $("body").find("div [data='" + data +"-block']");
         find_desc.removeClass("hidden");
         var top_desc = find_desc.offset().top;
-        $("html").animate({scrollTop:top_desc - 20}, 600);
+        $("html,body").animate({scrollTop:top_desc - 20}, 600);
     });
     $(".js-anchor").on("click", function(){
       	var val = $(this).attr("href");
@@ -19,6 +19,6 @@
         find_block.removeClass("hidden");
         var top = find_block.offset().top;
         console.log(top);
-        $("html").animate({scrollTop:top - 20}, 600);
+        $("html,body").animate({scrollTop:top - 20}, 600);
     });
  })
