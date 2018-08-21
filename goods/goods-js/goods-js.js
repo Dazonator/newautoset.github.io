@@ -6,7 +6,7 @@
         $(".goods-about__content-item").addClass("hidden");
         var find_desc = $("body").find("div [data='" + data +"-block']");
         find_desc.removeClass("hidden");
-        var top_desc = find_desc.offset().top;
+        var top_desc = $(".goods-about").offset().top;
         $("html,body").animate({scrollTop:top_desc - 20}, 600);
     });
     $(".js-anchor").on("click", function(){
@@ -17,7 +17,7 @@
 		$(".goods-about__content-item").addClass("hidden");
         var find_block = $("body").find("div [data='" + href +"-block']");
         find_block.removeClass("hidden");
-        var top = find_block.offset().top;
+        var top = $(".goods-about").offset().top;
         console.log(top);
         $("html,body").animate({scrollTop:top - 20}, 600);
     });
