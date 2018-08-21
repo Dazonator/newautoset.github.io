@@ -1285,7 +1285,7 @@
   .goods-block .goods-marketing.mobile {
     display: block;
     margin-top: 20px;
-    border-top: 2px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
   }
   .goods-block .goods-marketing__icons-item:nth-of-type(1),
   .goods-block .goods-marketing__icons-item:nth-of-type(2),
