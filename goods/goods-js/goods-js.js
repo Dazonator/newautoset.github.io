@@ -6,8 +6,6 @@
         $(".goods-about__content-item").addClass("hidden");
         var find_desc = $("body").find("div [data='" + data +"-block']");
         find_desc.removeClass("hidden");
-        var top_desc = $(".goods-about").offset().top;
-        $("html,body").animate({scrollTop:top_desc - 20}, 600);
     });
     $(".js-anchor").on("click", function(){
       	var val = $(this).attr("href");
@@ -21,4 +19,29 @@
         console.log(top);
         $("html,body").animate({scrollTop:top - 20}, 600);
     });
+
+
+
+    $(window).load(function(){
+        if($("body").hasClass("touch")){
+            $("body").find(".js-hover").addClass("js-click-hover");
+            $("body").find(".js-hover").removeClass("js-hover");
+            $(".js-click-hover").on("click", function(){
+                $(".js-click-hover").removeClass("open");
+                $(this).addClass("open");
+            })
+        }
+    });
+    $(document).mouseup(function (e){
+        var div = $(".js-click-hover");
+        if (!div.is(e.target)
+            && div.has(e.target).length === 0) {
+            div.removeClass("open");
+        }
+    });
+    $(".js-close-cross").on("click", function(e){
+        e.stopPropagation();
+        $(".open").removeClass("open");
+    })
+    
  })
