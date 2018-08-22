@@ -516,7 +516,7 @@
   margin-left: -110px;
   top: 95%;
 }
-.goods-info__official-diller:hover .hover-body p{
+.goods-info__official-diller .hover-body p{
   font-size: 12px;
   line-height: 14px;
   color: #000;
@@ -1319,7 +1319,7 @@
   .goods-desc__item .left .hover-body {
     left: -100px;
   }
-  .goods-marketing__content-link:hover .hover-body {
+  .goods-marketing__content-link .hover-body {
     min-width: 690px;
   }
   .goods-marketing__content-link .service-punkt {
@@ -1405,7 +1405,7 @@
   .goods-about__item:nth-of-type(7) {
     width: 12%;
   }
-  .goods-marketing__content-link:hover .hover-body {
+  .goods-marketing__content-link .hover-body {
     min-width: 920px;
   }
   .goods-marketing__content-link .service-punkt {
@@ -1501,7 +1501,7 @@
   .goods-about__content {
     padding-top: 17px;
   }
-  .goods-marketing__content-link:hover .hover-body {
+  .goods-marketing__content-link .hover-body {
     min-width: 728px;
   }
   .goods-marketing__content-link .service-punkt {
@@ -1728,7 +1728,7 @@
   .goods-marketing__content-link .hover-body .close-cross {
     display: block;
   }
-  .goods-marketing__content-link:hover .hover-body {
+  .goods-marketing__content-link .hover-body {
     min-width: 280px;
     width: -webkit-calc(100vw - 40px);
     width: -moz-calc(100vw - 40px);
@@ -1802,13 +1802,13 @@
   .goods-marketing__icons-item:nth-of-type(3) {
     width: 33%;
   }
-  .goods-block__photo-label:hover .hover-body {
+  .goods-block__photo-label .hover-body {
     top: 10px;
   }
   .goods-info__price-left .goods__circle-wrapper .hover-body {
     right: -100px;
   }
-  .goods-info__official-diller:hover .hover-body {
+  .goods-info__official-diller .hover-body {
     top: auto;
     bottom: 95%;
   }
