@@ -851,10 +851,11 @@
   line-height: 16px;
   color: #000;
   cursor: pointer;
+  text-decoration: underline;
 
 }
 
-.goods-marketing__content-link .hover-btn:after, .goods-marketing__content-link .hover-btn:before {
+/*.goods-marketing__content-link .hover-btn:after, .goods-marketing__content-link .hover-btn:before {
   content: '';
   display: block;
   position: absolute;
@@ -865,9 +866,9 @@
   background-color: #000;
   transform-origin: center;
   transition: transform 0.25s ease-out;
-}
+}*/
 
-.goods-marketing__content-link .hover-btn:before {
+/*.goods-marketing__content-link .hover-btn:before {
   transform: scale(0);
 }
 
@@ -878,7 +879,7 @@
 .goods-marketing__content-link:hover .hover-btn:before {
   display: block;
   transform: scale(1);
-}
+}*/
 .goods-marketing__content-link .hover-body .close-cross{
   display: none;
   position: absolute;
