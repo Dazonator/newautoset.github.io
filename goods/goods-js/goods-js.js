@@ -27,21 +27,39 @@
             $("body").find(".js-hover").addClass("js-click-hover");
             $("body").find(".js-hover").removeClass("js-hover");
             $(".js-click-hover").on("click", function(){
-                $(".js-click-hover").removeClass("open");
-                $(this).addClass("open");
+                var xsTarget = $(this);
+                if (xsTarget.hasClass('open')) {
+                    xsTarget.removeClass('open');
+                 }
+                else {
+                    $(".js-click-hover").removeClass('open');
+                    setTimeout(function() {
+                        xsTarget.addClass('open');
+                    }, 150);
+                }
             })
         }
     });
-    $(document).mouseup(function (e){
-        var div = $(".js-click-hover");
-        if (!div.is(e.target)
-            && div.has(e.target).length === 0) {
-            div.removeClass("open");
-        }
+    $(document).on('click', function(e) {
+         if (!$(e.target).closest(".js-click-hover").length) {
+             $(".js-click-hover").removeClass("open");
+         }
+         e.stopPropagation();
     });
     $(".js-close-cross").on("click", function(e){
         e.stopPropagation();
         $(".open").removeClass("open");
     })
+
+
+
+
+
+
+
+
+
+    
+     
     
  })
